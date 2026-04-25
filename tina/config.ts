@@ -93,9 +93,9 @@ export default defineConfig({
             required: true,
           },
           {
-            type: "image",
+            type: "string",
             name: "heroImg",
-            label: "Cover Photo",
+            label: "Cover Photo URL",
             required: true,
           },
           {
@@ -166,9 +166,9 @@ export default defineConfig({
             label: "⭐ Featured (shows large in gallery grid)",
           },
           {
-            type: "image",
+            type: "string",
             name: "img",
-            label: "Main Photo",
+            label: "Main Photo URL",
             required: true,
           },
           {
@@ -177,14 +177,14 @@ export default defineConfig({
             label: "Main Photo Alt Text",
           },
           {
-            type: "image",
+            type: "string",
             name: "beforeImage",
-            label: "Before Photo (optional — for before/after)",
+            label: "Before Photo URL (optional — for before/after)",
           },
           {
-            type: "image",
+            type: "string",
             name: "afterImage",
-            label: "After Photo (optional — for before/after)",
+            label: "After Photo URL (optional — for before/after)",
           },
           {
             type: "object",
@@ -195,7 +195,7 @@ export default defineConfig({
               itemProps: (item) => ({ label: item?.alt || "Photo" }),
             },
             fields: [
-              { type: "image", name: "src", label: "Photo" },
+              { type: "string", name: "src", label: "Photo URL" },
               { type: "string", name: "alt", label: "Alt Text" },
             ],
           },
@@ -241,15 +241,15 @@ export default defineConfig({
           },
           // ── Images ────────────────────────────────────────────────────────
           {
-            type: "image",
+            type: "string",
             name: "heroImg",
-            label: "Hero Photo (page banner — 1920×1080)",
+            label: "Hero Photo URL (page banner — 1920×1080)",
             required: true,
           },
           {
-            type: "image",
+            type: "string",
             name: "cardImg",
-            label: "Card Photo (service grid — 800×600)",
+            label: "Card Photo URL (service grid — 800×600)",
           },
           {
             type: "string",
@@ -350,9 +350,9 @@ export default defineConfig({
           },
           // ── Gallery ───────────────────────────────────────────────────────
           {
-            type: "image",
+            type: "string",
             name: "gallery",
-            label: "Gallery Photos (6 photos shown on service page)",
+            label: "Gallery Photo URLs (6 photos shown on service page)",
             list: true,
             ui: {
               min: 1,
@@ -486,14 +486,14 @@ export default defineConfig({
           },
           // ── Branding ──────────────────────────────────────────────────────
           {
-            type: "image",
+            type: "string",
             name: "logo",
-            label: "Logo (PNG/SVG)",
+            label: "Logo URL (PNG/SVG — upload via Media Manager then paste path)",
           },
           {
-            type: "image",
+            type: "string",
             name: "ogImage",
-            label: "Social Share Image (1200×630px — shown when sharing links)",
+            label: "Social Share Image URL (1200×630px — upload via Media Manager)",
           },
           // ── Tracking & integrations ───────────────────────────────────────
           {
