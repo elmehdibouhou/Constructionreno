@@ -93,7 +93,7 @@
             "uid": false
           },
           {
-            "type": "image",
+            "type": "string",
             "name": "heroImg",
             "label": "Cover Photo",
             "required": true,
@@ -214,7 +214,7 @@
             "uid": false
           },
           {
-            "type": "image",
+            "type": "string",
             "name": "img",
             "label": "Main Photo",
             "required": true,
@@ -237,7 +237,7 @@
             "uid": false
           },
           {
-            "type": "image",
+            "type": "string",
             "name": "beforeImage",
             "label": "Before Photo (optional — for before/after)",
             "namespace": [
@@ -248,7 +248,7 @@
             "uid": false
           },
           {
-            "type": "image",
+            "type": "string",
             "name": "afterImage",
             "label": "After Photo (optional — for before/after)",
             "namespace": [
@@ -266,7 +266,7 @@
             "ui": {},
             "fields": [
               {
-                "type": "image",
+                "type": "string",
                 "name": "src",
                 "label": "Photo",
                 "namespace": [
@@ -364,7 +364,7 @@
             "uid": false
           },
           {
-            "type": "image",
+            "type": "string",
             "name": "heroImg",
             "label": "Hero Photo (page banner — 1920×1080)",
             "required": true,
@@ -376,7 +376,7 @@
             "uid": false
           },
           {
-            "type": "image",
+            "type": "string",
             "name": "cardImg",
             "label": "Card Photo (service grid — 800×600)",
             "namespace": [
@@ -580,7 +580,7 @@
             "uid": false
           },
           {
-            "type": "image",
+            "type": "string",
             "name": "gallery",
             "label": "Gallery Photos (6 photos shown on service page)",
             "list": true,
@@ -807,7 +807,7 @@
             "uid": false
           },
           {
-            "type": "image",
+            "type": "string",
             "name": "logo",
             "label": "Logo (PNG/SVG)",
             "namespace": [
@@ -818,7 +818,7 @@
             "uid": false
           },
           {
-            "type": "image",
+            "type": "string",
             "name": "ogImage",
             "label": "Social Share Image (1200×630px — shown when sharing links)",
             "namespace": [
@@ -3542,74 +3542,6 @@
         "kind": "InputObjectTypeDefinition",
         "name": {
           "kind": "Name",
-          "value": "ImageFilter"
-        },
-        "fields": [
-          {
-            "kind": "InputValueDefinition",
-            "name": {
-              "kind": "Name",
-              "value": "startsWith"
-            },
-            "type": {
-              "kind": "NamedType",
-              "name": {
-                "kind": "Name",
-                "value": "String"
-              }
-            }
-          },
-          {
-            "kind": "InputValueDefinition",
-            "name": {
-              "kind": "Name",
-              "value": "eq"
-            },
-            "type": {
-              "kind": "NamedType",
-              "name": {
-                "kind": "Name",
-                "value": "String"
-              }
-            }
-          },
-          {
-            "kind": "InputValueDefinition",
-            "name": {
-              "kind": "Name",
-              "value": "exists"
-            },
-            "type": {
-              "kind": "NamedType",
-              "name": {
-                "kind": "Name",
-                "value": "Boolean"
-              }
-            }
-          },
-          {
-            "kind": "InputValueDefinition",
-            "name": {
-              "kind": "Name",
-              "value": "in"
-            },
-            "type": {
-              "kind": "ListType",
-              "type": {
-                "kind": "NamedType",
-                "name": {
-                  "kind": "Name",
-                  "value": "String"
-                }
-              }
-            }
-          }
-        ]
-      },
-      {
-        "kind": "InputObjectTypeDefinition",
-        "name": {
-          "kind": "Name",
           "value": "RichTextFilter"
         },
         "fields": [
@@ -3744,7 +3676,7 @@
               "kind": "NamedType",
               "name": {
                 "kind": "Name",
-                "value": "ImageFilter"
+                "value": "StringFilter"
               }
             }
           },
@@ -4247,7 +4179,7 @@
               "kind": "NamedType",
               "name": {
                 "kind": "Name",
-                "value": "ImageFilter"
+                "value": "StringFilter"
               }
             }
           },
@@ -4354,7 +4286,7 @@
               "kind": "NamedType",
               "name": {
                 "kind": "Name",
-                "value": "ImageFilter"
+                "value": "StringFilter"
               }
             }
           },
@@ -4382,7 +4314,7 @@
               "kind": "NamedType",
               "name": {
                 "kind": "Name",
-                "value": "ImageFilter"
+                "value": "StringFilter"
               }
             }
           },
@@ -4396,7 +4328,7 @@
               "kind": "NamedType",
               "name": {
                 "kind": "Name",
-                "value": "ImageFilter"
+                "value": "StringFilter"
               }
             }
           },
@@ -5120,7 +5052,7 @@
               "kind": "NamedType",
               "name": {
                 "kind": "Name",
-                "value": "ImageFilter"
+                "value": "StringFilter"
               }
             }
           },
@@ -5134,7 +5066,7 @@
               "kind": "NamedType",
               "name": {
                 "kind": "Name",
-                "value": "ImageFilter"
+                "value": "StringFilter"
               }
             }
           },
@@ -5260,7 +5192,7 @@
               "kind": "NamedType",
               "name": {
                 "kind": "Name",
-                "value": "ImageFilter"
+                "value": "StringFilter"
               }
             }
           },
@@ -6363,7 +6295,7 @@
               "kind": "NamedType",
               "name": {
                 "kind": "Name",
-                "value": "ImageFilter"
+                "value": "StringFilter"
               }
             }
           },
@@ -6377,7 +6309,7 @@
               "kind": "NamedType",
               "name": {
                 "kind": "Name",
-                "value": "ImageFilter"
+                "value": "StringFilter"
               }
             }
           },
