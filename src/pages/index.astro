@@ -1,5 +1,6 @@
 ---
 import { client } from '../../tina/__generated__/client';
+import { prepareTinaData } from '../lib/tina-helper';
 import BaseLayout from '../layouts/BaseLayout.astro';
 import HeroHome from '../components/sections/HeroHome.astro';
 import Stats from '../components/sections/Stats.astro';
@@ -11,12 +12,14 @@ import CtaBanner from '../components/sections/CtaBanner.astro';
 import FloatingCTA from '../components/ui/FloatingCTA.astro';
 
 const homeResult = await client.queries.home({ relativePath: 'home.md' });
-const homeData = homeResult.data.home;
+const { tinaSetup, data: tinaHomeData } = prepareTinaData(homeResult);
+const homeData = tinaHomeData.home;
 ---
 
 <BaseLayout
   title="[Company Name] | Renovation & Roofing in [City], Canada"
   description="Expert renovation, roofing & construction in [City]. Free estimates on kitchen, bathroom & basement renovations, painting, roof replacements & more. Call [Phone]."
+  tinaSetup={tinaSetup}
 >
   <HeroHome data={homeData} />
   <Stats />

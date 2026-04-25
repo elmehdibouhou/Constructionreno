@@ -9,9 +9,10 @@ import CtaBanner from '../components/sections/CtaBanner.astro';
 interface Props {
   service: any;
   relatedServices: any[];
+  tinaSetup?: any;
 }
 
-const { service, relatedServices = [] } = Astro.props;
+const { service, relatedServices = [], tinaSetup } = Astro.props;
 
 const serviceSchema = {
   "@context": "https://schema.org",
@@ -75,6 +76,7 @@ const icons: Record<string, string> = {
   title={service.metaTitle}
   description={service.metaDesc}
   schema={serviceSchema}
+  tinaSetup={tinaSetup}
 >
   <!-- Hero -->
   <section
