@@ -1,16 +1,28 @@
 ---
 import { getCollection } from 'astro:content';
+import { client } from '../../tina/__generated__/client';
 import ServiceLayout from '../../layouts/ServiceLayout.astro';
 
 export async function getStaticPaths() {
   const services = await getCollection('services');
   return services.map(service => ({
     params: { slug: service.slug },
-    props: { service: service.data },
+    props: { slug: service.slug },
   }));
 }
 
-const { service } = Astro.props;
+const { slug } = Astro.props;
+
+const serviceResult = await client.queries.services({ relativePath: `${slug}.md` });
+const serviceData = serviceResult.data.services;
+
+const allServices = await getCollection('services');
+const relatedServices = (serviceData.related ?? [])
+  .map((relSlug: string) => {
+    const entry = allServices.find(s => s.slug === relSlug);
+    return entry ? { slug: entry.slug, ...entry.data } : null;
+  })
+  .filter(Boolean);
 ---
 
-<ServiceLayout service={service} />
+<ServiceLayout service={serviceData} relatedServices={relatedServices} />

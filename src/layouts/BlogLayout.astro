@@ -1,9 +1,11 @@
 ---
+import { tinaField } from 'tinacms/dist/react';
 import BaseLayout from './BaseLayout.astro';
 import BreadcrumbNav from '../components/ui/BreadcrumbNav.astro';
 import CtaBanner from '../components/sections/CtaBanner.astro';
 
 interface Props {
+  tinaData?: any;
   title: string;
   description: string;
   pubDate: string;
@@ -15,6 +17,7 @@ interface Props {
 }
 
 const {
+  tinaData,
   title,
   description,
   pubDate,
@@ -62,13 +65,13 @@ const formattedDate = new Date(pubDate).toLocaleDateString('en-CA', {
         { label: title },
       ]} />
       <div class="blog-meta">
-        <span class="blog-category">{category}</span>
+        <span class="blog-category" data-tina-field={tinaData ? tinaField(tinaData, 'category') : undefined}>{category}</span>
         <span style="color:rgba(255,255,255,0.5)">·</span>
-        <time datetime={pubDate} style="color:rgba(255,255,255,0.7); font-size:0.85rem;">{formattedDate}</time>
+        <time datetime={pubDate} style="color:rgba(255,255,255,0.7); font-size:0.85rem;" data-tina-field={tinaData ? tinaField(tinaData, 'pubDate') : undefined}>{formattedDate}</time>
         <span style="color:rgba(255,255,255,0.5)">·</span>
-        <span style="color:rgba(255,255,255,0.7); font-size:0.85rem;">{readTime} read</span>
+        <span style="color:rgba(255,255,255,0.7); font-size:0.85rem;" data-tina-field={tinaData ? tinaField(tinaData, 'readTime') : undefined}>{readTime} read</span>
       </div>
-      <h1 id="blog-h1" style="color:white; max-width:760px;">{title}</h1>
+      <h1 id="blog-h1" style="color:white; max-width:760px;" data-tina-field={tinaData ? tinaField(tinaData, 'title') : undefined}>{title}</h1>
     </div>
   </section>
 

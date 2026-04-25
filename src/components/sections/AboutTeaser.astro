@@ -1,4 +1,8 @@
 ---
+import { tinaField } from 'tinacms/dist/react';
+interface Props { data: any; }
+const { data } = Astro.props;
+
 const values = [
   { label: 'Licensed & Insured' },
   { label: 'Free Estimates' },
@@ -14,7 +18,8 @@ const values = [
       <div class="about-image-col fade-up">
         <div class="about-image-wrap">
           <img
-            src="https://images.unsplash.com/photo-1504307651254-35680f356dfd?w=800&q=80"
+            src={data.aboutImage}
+            data-tina-field={tinaField(data, 'aboutImage')}
             alt="Professional renovation and construction team at work in [City]"
             width="600"
             height="720"
@@ -26,7 +31,7 @@ const values = [
           <div class="about-accent-border" aria-hidden="true"></div>
           <!-- Floating badge -->
           <div class="about-badge" aria-hidden="true">
-            <span class="about-badge-number">15+</span>
+            <span class="about-badge-number" data-tina-field={tinaField(data, 'yearsExperience')}>{data.yearsExperience}</span>
             <span class="about-badge-text">Years<br>Experience</span>
           </div>
         </div>
@@ -35,14 +40,14 @@ const values = [
       <!-- Right: content -->
       <div class="about-content-col fade-up">
         <span class="eyebrow">About Us</span>
-        <h2 style="margin-bottom:0.75rem;">Quality Craftsmanship,<br>Built on Trust</h2>
+        <h2 style="margin-bottom:0.75rem;" data-tina-field={tinaField(data, 'aboutHeadline')}>{data.aboutHeadline}</h2>
         <div class="gold-rule"></div>
 
-        <p style="color:var(--color-gray-800); line-height:var(--leading-relaxed); margin-bottom:1.25rem; font-size:var(--text-lg);">
-          We are a family-run renovation and roofing company based in [City], dedicated to transforming homes with exceptional quality and care. Every project is treated like it's our own home.
+        <p style="color:var(--color-gray-800); line-height:var(--leading-relaxed); margin-bottom:1.25rem; font-size:var(--text-lg);" data-tina-field={tinaField(data, 'aboutPara1')}>
+          {data.aboutPara1}
         </p>
-        <p style="color:var(--color-gray-800); line-height:var(--leading-relaxed); margin-bottom:2rem;">
-          From a single bathroom refresh to a complete custom home build, our team brings over 15 years of trade expertise, transparent pricing, and a commitment to finishing on time and on budget.
+        <p style="color:var(--color-gray-800); line-height:var(--leading-relaxed); margin-bottom:2rem;" data-tina-field={tinaField(data, 'aboutPara2')}>
+          {data.aboutPara2}
         </p>
 
         <!-- Value pills -->

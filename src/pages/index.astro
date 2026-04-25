@@ -1,4 +1,5 @@
 ---
+import { client } from '../tina/__generated__/client';
 import BaseLayout from '../layouts/BaseLayout.astro';
 import HeroHome from '../components/sections/HeroHome.astro';
 import Stats from '../components/sections/Stats.astro';
@@ -8,16 +9,19 @@ import RecentWork from '../components/sections/RecentWork.astro';
 import TestimonialSlider from '../components/sections/TestimonialSlider.astro';
 import CtaBanner from '../components/sections/CtaBanner.astro';
 import FloatingCTA from '../components/ui/FloatingCTA.astro';
+
+const homeResult = await client.queries.home({ relativePath: 'home.md' });
+const homeData = homeResult.data.home;
 ---
 
 <BaseLayout
   title="[Company Name] | Renovation & Roofing in [City], Canada"
   description="Expert renovation, roofing & construction in [City]. Free estimates on kitchen, bathroom & basement renovations, painting, roof replacements & more. Call [Phone]."
 >
-  <HeroHome />
+  <HeroHome data={homeData} />
   <Stats />
   <ServicesGrid />
-  <AboutTeaser />
+  <AboutTeaser data={homeData} />
   <RecentWork />
   <TestimonialSlider />
   <CtaBanner />
