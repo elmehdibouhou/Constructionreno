@@ -1,10 +1,12 @@
 ---
+import { getCollection } from 'astro:content';
 import BaseLayout from '../../layouts/BaseLayout.astro';
-import services from '../../data/services.json';
 import CtaBanner from '../../components/sections/CtaBanner.astro';
 
-const renovation = services.filter(s => s.category === 'Renovation' || s.category === 'Construction');
-const roofing = services.filter(s => s.category === 'Roofing');
+const services = await getCollection('services');
+
+const renovation = services.filter(s => s.data.category === 'Renovation' || s.data.category === 'Construction');
+const roofing = services.filter(s => s.data.category === 'Roofing');
 ---
 
 <BaseLayout
@@ -38,11 +40,11 @@ const roofing = services.filter(s => s.category === 'Roofing');
         {renovation.map(s => (
           <a href={`/services/${s.slug}`} class="all-service-card card-hover">
             <div class="all-service-img img-overlay">
-              <img src={s.cardImg} alt={s.alt} width="600" height="400" loading="lazy" decoding="async" style="width:100%;height:100%;object-fit:cover;" />
+              <img src={s.data.cardImg} alt={s.data.alt} width="600" height="400" loading="lazy" decoding="async" style="width:100%;height:100%;object-fit:cover;" />
             </div>
             <div class="all-service-body">
-              <h3 class="all-service-title">{s.title}</h3>
-              <p class="all-service-tagline">{s.tagline}</p>
+              <h3 class="all-service-title">{s.data.title}</h3>
+              <p class="all-service-tagline">{s.data.tagline}</p>
               <span class="all-service-link">Learn More →</span>
             </div>
           </a>
@@ -61,11 +63,11 @@ const roofing = services.filter(s => s.category === 'Roofing');
         {roofing.map(s => (
           <a href={`/services/${s.slug}`} class="all-service-card card-hover">
             <div class="all-service-img img-overlay">
-              <img src={s.cardImg} alt={s.alt} width="600" height="400" loading="lazy" decoding="async" style="width:100%;height:100%;object-fit:cover;" />
+              <img src={s.data.cardImg} alt={s.data.alt} width="600" height="400" loading="lazy" decoding="async" style="width:100%;height:100%;object-fit:cover;" />
             </div>
             <div class="all-service-body">
-              <h3 class="all-service-title">{s.title}</h3>
-              <p class="all-service-tagline">{s.tagline}</p>
+              <h3 class="all-service-title">{s.data.title}</h3>
+              <p class="all-service-tagline">{s.data.tagline}</p>
               <span class="all-service-link">Learn More →</span>
             </div>
           </a>
