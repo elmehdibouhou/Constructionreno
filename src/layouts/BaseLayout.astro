@@ -10,6 +10,7 @@ interface Props {
   canonical?: string;
   schema?: object;
   noIndex?: boolean;
+  tinaSetup?: { id: string; query: string; variables: unknown; data: unknown };
 }
 
 const {
@@ -19,6 +20,7 @@ const {
   canonical,
   schema,
   noIndex = false,
+  tinaSetup,
 } = Astro.props;
 
 const siteUrl = "https://[domain].ca";
@@ -105,6 +107,11 @@ const orgSchema = {
   <!-- Page-specific schema (optional) -->
   {schema && <script type="application/ld+json" set:html={JSON.stringify(schema)} />}
 
+  <!-- Tina CMS visual editing setup (only active when in /admin iframe) -->
+  {tinaSetup && (
+    <script type="application/json" id="__tina_setup" set:html={JSON.stringify(tinaSetup)} />
+  )}
+
   <!-- Google Analytics 4 — replace G-XXXXXXXXXX -->
   <!--
   <script async src="https://www.googletagmanager.com/gtag/js?id=G-XXXXXXXXXX"></script>
@@ -144,6 +151,50 @@ const orgSchema = {
     );
 
     document.querySelectorAll('.fade-up').forEach((el) => observer.observe(el));
+  </script>
+
+  <!-- Tina CMS visual editing runtime (activates click-to-edit in /admin iframe) -->
+  <script>
+    const __tinaEl = document.getElementById('__tina_setup');
+    if (__tinaEl) {
+      const setup = JSON.parse(__tinaEl.textContent || '{}');
+      // Register this document's form with the Tina admin parent
+      parent.postMessage({ type: 'open', ...setup }, '*');
+      parent.postMessage({ type: 'url-changed' }, '*');
+
+      // Listen for admin messages
+      window.addEventListener('message', function(e) {
+        if (!e.data || typeof e.data !== 'object') return;
+
+        // Admin enables click-to-edit mode
+        if (e.data.type === 'quickEditEnabled' && e.data.value) {
+          // Visual highlight styles
+          const style = document.createElement('style');
+          style.textContent = [
+            '[data-tina-field]{outline:2px dashed rgba(34,150,254,.5);transition:box-shadow .15s,outline .15s}',
+            '[data-tina-field]:hover{outline:2px solid rgba(34,150,254,1);cursor:pointer;box-shadow:inset 100vi 100vh rgba(34,150,254,.3)}',
+          ].join('');
+          document.head.appendChild(style);
+
+          // Click handler — send selected field to admin
+          document.addEventListener('click', function(ev) {
+            const target = (ev.target as Element).closest('[data-tina-field]') as HTMLElement | null;
+            if (target) {
+              ev.preventDefault();
+              ev.stopPropagation();
+              const fieldName = target.getAttribute('data-tina-field');
+              if (fieldName) {
+                parent.postMessage({ type: 'field:selected', fieldName }, '*');
+              }
+            }
+          }, true);
+
+          // Notify admin whether this page has tina fields
+          const hasFields = !!document.querySelector('[data-tina-field]');
+          parent.postMessage({ type: 'quick-edit', value: hasFields }, '*');
+        }
+      });
+    }
   </script>
 </body>
 </html>
