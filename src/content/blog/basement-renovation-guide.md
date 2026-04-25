@@ -1,11 +1,11 @@
 ---
-title: "Complete Guide to Basement Renovation in Canada (2026)"
-description: "Everything homeowners need to know about finishing a basement — costs, timelines, permits, and design ideas to maximise your investment."
-pubDate: "2026-01-15"
-heroImg: "https://images.unsplash.com/photo-1565538810643-b5bdb714032a?w=1920&q=80"
-heroAlt: "Finished basement with modern lighting and open layout"
-category: "Renovation"
-readTime: "8 min"
+title: Complete Guide to Basement Renovation in Canada (2025)
+pubDate: 2026-01-15T00:00:00.000Z
+category: Renovation
+readTime: 8 min
+description: 'Everything homeowners need to know about finishing a basement — costs, timelines, permits, and design ideas to maximise your investment.'
+heroImg: 'https://images.unsplash.com/photo-1565538810643-b5bdb714032a?w=1920&q=80'
+heroAlt: Finished basement with modern lighting and open layout
 ---
 
 A finished basement is one of the highest-return renovations a Canadian homeowner can make. Done right, it adds liveable square footage, improves energy efficiency, and can add **15–25% to your home's resale value**. This guide walks you through every phase — from planning and permits to design ideas and final costs.
@@ -14,12 +14,12 @@ A finished basement is one of the highest-return renovations a Canadian homeowne
 
 Before swinging a hammer, assess the space carefully. A successful basement renovation starts with a dry, structurally sound shell. Address any of the following before beginning interior work:
 
-- **Water infiltration:** Any evidence of seepage, efflorescence (white mineral staining), or mould must be remediated first. Finishing over a damp basement guarantees future damage.
-- **Ceiling height:** Most Canadian building codes require a minimum of 6'11" (2.1 m) finished ceiling height for a habitable space. Below that, your options are limited or you'll need to lower the slab.
-- **Foundation cracks:** Hairline cracks are common; stair-step or horizontal cracks in block foundations may indicate structural movement and warrant an engineer's inspection.
-- **HVAC and electrical capacity:** Your existing furnace and electrical panel may need upgrading to support a finished basement, especially if you plan on a bathroom or kitchen.
+* **Water infiltration:** Any evidence of seepage, efflorescence (white mineral staining), or mould must be remediated first. Finishing over a damp basement guarantees future damage.
+* **Ceiling height:** Most Canadian building codes require a minimum of 6'11" (2.1 m) finished ceiling height for a habitable space. Below that, your options are limited or you'll need to lower the slab.
+* **Foundation cracks:** Hairline cracks are common; stair-step or horizontal cracks in block foundations may indicate structural movement and warrant an engineer's inspection.
+* **HVAC and electrical capacity:** Your existing furnace and electrical panel may need upgrading to support a finished basement, especially if you plan on a bathroom or kitchen.
 
-> "We always do a moisture audit before any framing goes up. Skipping that step is the single biggest mistake homeowners make when finishing a basement." — [Company Name] Project Manager
+> "We always do a moisture audit before any framing goes up. Skipping that step is the single biggest mistake homeowners make when finishing a basement." — \[Company Name] Project Manager
 
 ## Do You Need a Permit?
 
@@ -33,13 +33,13 @@ Our team handles all permit applications as part of every [basement renovation p
 
 Costs vary widely depending on province, finish quality, and scope. Here's a realistic breakdown for a mid-range finish in most Canadian markets:
 
-| Component | Basic | Mid-Range | High-End |
-|-----------|-------|-----------|----------|
-| Framing & drywall | $8–12/sq ft | $12–18/sq ft | $18–28/sq ft |
-| Flooring (LVP/carpet) | $4–7/sq ft | $7–12/sq ft | $12–20/sq ft |
-| Full bathroom add | $8,000–12,000 | $12,000–20,000 | $20,000–35,000 |
-| Electrical & lighting | $3,000–5,000 | $5,000–9,000 | $9,000–15,000 |
-| HVAC extension | $1,500–3,000 | $3,000–5,500 | $5,500–10,000 |
+| Component             | Basic         | Mid-Range      | High-End       |
+| --------------------- | ------------- | -------------- | -------------- |
+| Framing & drywall     | $8–12/sq ft   | $12–18/sq ft   | $18–28/sq ft   |
+| Flooring (LVP/carpet) | $4–7/sq ft    | $7–12/sq ft    | $12–20/sq ft   |
+| Full bathroom add     | $8,000–12,000 | $12,000–20,000 | $20,000–35,000 |
+| Electrical & lighting | $3,000–5,000  | $5,000–9,000   | $9,000–15,000  |
+| HVAC extension        | $1,500–3,000  | $3,000–5,500   | $5,500–10,000  |
 
 For a typical 800 sq ft unfinished basement, expect a total project cost of **$40,000–$80,000 CAD** for a mid-range finish including a bathroom. Basic rec-room finishes without a bathroom can come in at $25,000–$40,000.
 
@@ -96,11 +96,11 @@ A basement renovation involves multiple trades — framing, plumbing, electrical
 
 Key questions to ask any contractor:
 
-- Are you licensed and insured in this province?
-- Will you pull all required permits?
-- Do you have WSIB (or provincial equivalent) coverage for all workers?
-- Can you provide 3 references from similar basement projects completed in the last 12 months?
-- What's included in the contract price, and what could cause it to increase?
+* Are you licensed and insured in this province?
+* Will you pull all required permits?
+* Do you have WSIB (or provincial equivalent) coverage for all workers?
+* Can you provide 3 references from similar basement projects completed in the last 12 months?
+* What's included in the contract price, and what could cause it to increase?
 
 Read our full guide on [how to choose a renovation contractor](/blog/choosing-renovation-contractor) for a complete checklist.
 
