@@ -1,13 +1,19 @@
 ---
+import { client } from '../../tina/__generated__/client';
+import { prepareTinaData } from '../lib/tina-helper';
 import BaseLayout from '../layouts/BaseLayout.astro';
 import areaData from '../data/service-areas.json';
 import CtaBanner from '../components/sections/CtaBanner.astro';
 import services from '../data/services.json';
+
+const settingsResult = await client.queries.settings({ relativePath: 'main.md' });
+const { tinaSetup } = prepareTinaData(settingsResult);
 ---
 
 <BaseLayout
   title="Service Areas | [Company Name] — [City] & Surrounding Area"
   description="[Company Name] serves [City] and surrounding communities with renovation, roofing & construction services. View our full service area."
+  tinaSetup={tinaSetup}
 >
 
   <section

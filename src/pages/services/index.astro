@@ -1,7 +1,12 @@
 ---
 import { getCollection } from 'astro:content';
+import { client } from '../../../tina/__generated__/client';
+import { prepareTinaData } from '../../lib/tina-helper';
 import BaseLayout from '../../layouts/BaseLayout.astro';
 import CtaBanner from '../../components/sections/CtaBanner.astro';
+
+const servicesResult = await client.queries.servicesConnection();
+const { tinaSetup } = prepareTinaData(servicesResult);
 
 const services = await getCollection('services');
 
@@ -12,6 +17,7 @@ const roofing = services.filter(s => s.data.category === 'Roofing');
 <BaseLayout
   title="All Services | [Company Name] — Renovation & Roofing [City]"
   description="Complete renovation, construction, painting & roofing services in [City]. 16 services — kitchen, bathroom, basement, roof replacement, metal roofing & more. Free estimates."
+  tinaSetup={tinaSetup}
 >
 
   <!-- Hero -->

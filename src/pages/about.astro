@@ -1,7 +1,12 @@
 ---
+import { client } from '../../tina/__generated__/client';
+import { prepareTinaData } from '../lib/tina-helper';
 import BaseLayout from '../layouts/BaseLayout.astro';
 import CtaBanner from '../components/sections/CtaBanner.astro';
 import TestimonialSlider from '../components/sections/TestimonialSlider.astro';
+
+const settingsResult = await client.queries.settings({ relativePath: 'main.md' });
+const { tinaSetup } = prepareTinaData(settingsResult);
 
 const values = [
   { title: 'Honest Communication', desc: 'We tell you what we find, what it costs, and how long it takes — before work starts. No surprises, no upsells.' },
@@ -14,6 +19,7 @@ const values = [
 <BaseLayout
   title="About Us | [Company Name] — [City] Renovation & Roofing"
   description="Learn about [Company Name] — a family-run renovation and roofing company in [City] with 15+ years of experience. Licensed, insured, 5-year warranty."
+  tinaSetup={tinaSetup}
 >
 
   <!-- Hero -->

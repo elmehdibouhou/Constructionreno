@@ -1,0 +1,583 @@
+---
+import { getCollection, getEntry } from 'astro:content';
+import BaseLayout from '../../layouts/BaseLayout.astro';
+import CtaBanner from '../../components/sections/CtaBanner.astro';
+
+export async function getStaticPaths() {
+  const projects = await getCollection('projects');
+  return projects.map((p) => ({
+    params: { slug: p.slug },
+    props: { project: p },
+  }));
+}
+
+const { project } = Astro.props;
+const p = project.data;
+
+// SEO fields — fall back to generated values if not set
+const metaTitle = p.metaTitle ?? `${p.title} | [Company Name] Portfolio — [City]`;
+const metaDesc = p.metaDesc ?? p.description ?? `View the ${p.title} project completed by [Company Name] in ${p.location ?? '[City]'}.`;
+
+// JSON-LD: CreativeWork schema for portfolio projects
+const projectSchema = {
+  "@context": "https://schema.org",
+  "@type": "CreativeWork",
+  "name": p.title,
+  "description": p.description,
+  "image": p.img,
+  "dateCreated": p.year,
+  "locationCreated": {
+    "@type": "City",
+    "name": p.location ?? "[City]"
+  },
+  "creator": {
+    "@type": "HomeAndConstructionBusiness",
+    "name": "[Company Name]",
+    "url": "https://example.ca"
+  },
+  "genre": p.category,
+  "url": `https://example.ca/projects/${project.slug}`
+};
+
+const gallery = p.galleryImages ?? [];
+const highlights = p.highlights ?? [];
+
+// Related: all projects in same category (excluding this one), max 3
+const allProjects = await getCollection('projects');
+const related = allProjects
+  .filter((r) => r.slug !== project.slug && r.data.category === p.category)
+  .slice(0, 3);
+---
+
+<BaseLayout
+  title={metaTitle}
+  description={metaDesc}
+  ogImage={p.img}
+  schema={projectSchema}
+>
+
+  <!-- Breadcrumb -->
+  <nav class="breadcrumb-bar" aria-label="Breadcrumb">
+    <div class="container">
+      <ol class="breadcrumb-list">
+        <li><a href="/">Home</a></li>
+        <li aria-hidden="true">›</li>
+        <li><a href="/our-work">Our Work</a></li>
+        <li aria-hidden="true">›</li>
+        <li aria-current="page">{p.title}</li>
+      </ol>
+    </div>
+  </nav>
+
+  <!-- Hero -->
+  <section
+    class="project-hero"
+    style={`background: linear-gradient(105deg, rgba(10,30,42,0.85) 0%, rgba(10,30,42,0.45) 100%), url('${p.img}') center/cover no-repeat;`}
+    aria-labelledby="project-h1"
+  >
+    <div class="container">
+      <span class="eyebrow" style="color:var(--color-accent-300);">{p.category}</span>
+      <h1 id="project-h1" style="color:white; max-width:720px; margin-bottom:1rem;">{p.title}</h1>
+      <p class="project-hero-meta">
+        <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true">
+          <path d="M21 10c0 7-9 13-9 13S3 17 3 10a9 9 0 0118 0z"/><circle cx="12" cy="10" r="3"/>
+        </svg>
+        {p.location ?? '[City]'}
+        {p.year && (
+          <>
+            <span aria-hidden="true"> · </span>
+            <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true">
+              <rect x="3" y="4" width="18" height="18" rx="2"/><line x1="16" y1="2" x2="16" y2="6"/><line x1="8" y1="2" x2="8" y2="6"/><line x1="3" y1="10" x2="21" y2="10"/>
+            </svg>
+            Completed {p.year}
+          </>
+        )}
+      </p>
+    </div>
+  </section>
+
+  <!-- Main Content -->
+  <section class="section">
+    <div class="container">
+      <div class="project-layout">
+
+        <!-- Left: Main content -->
+        <div class="project-main">
+
+          <!-- Description -->
+          <div class="project-description fade-up">
+            <h2 class="project-section-title">About This Project</h2>
+            <p class="project-lead">{p.description}</p>
+          </div>
+
+          <!-- Photo Gallery -->
+          {gallery.length > 0 && (
+            <div class="project-gallery fade-up">
+              <h2 class="project-section-title">Project Photos</h2>
+              <div class:list={['gallery-grid', gallery.length === 1 ? 'gallery-grid--single' : gallery.length === 2 ? 'gallery-grid--two' : 'gallery-grid--three']}>
+                <!-- Hero image always first, full width if 1 image -->
+                <div class="gallery-item gallery-item--main">
+                  <img
+                    src={p.img}
+                    alt={p.alt ?? p.title}
+                    width="900"
+                    height="600"
+                    loading="eager"
+                    decoding="async"
+                    class="gallery-img"
+                  />
+                </div>
+                {gallery.map((imgUrl, i) => (
+                  <div class="gallery-item">
+                    <img
+                      src={imgUrl}
+                      alt={`${p.title} — photo ${i + 2}`}
+                      width="600"
+                      height="400"
+                      loading="lazy"
+                      decoding="async"
+                      class="gallery-img"
+                    />
+                  </div>
+                ))}
+              </div>
+            </div>
+          )}
+
+          <!-- Highlights -->
+          {highlights.length > 0 && (
+            <div class="project-highlights fade-up">
+              <h2 class="project-section-title">Project Highlights</h2>
+              <ul class="highlights-list">
+                {highlights.map((h) => (
+                  <li class="highlight-item">
+                    <span class="highlight-check" aria-hidden="true">
+                      <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5">
+                        <polyline points="20 6 9 17 4 12"/>
+                      </svg>
+                    </span>
+                    <span>{h}</span>
+                  </li>
+                ))}
+              </ul>
+            </div>
+          )}
+
+        </div>
+
+        <!-- Right: Sidebar -->
+        <aside class="project-sidebar">
+
+          <!-- Project details card -->
+          <div class="sidebar-card fade-up">
+            <h3 class="sidebar-card-title">Project Details</h3>
+            <dl class="project-stats">
+              <div class="stat-row">
+                <dt>
+                  <svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true">
+                    <path d="M3 9l9-7 9 7v11a2 2 0 01-2 2H5a2 2 0 01-2-2z"/><polyline points="9 22 9 12 15 12 15 22"/>
+                  </svg>
+                  Category
+                </dt>
+                <dd>{p.category}</dd>
+              </div>
+              <div class="stat-row">
+                <dt>
+                  <svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true">
+                    <path d="M21 10c0 7-9 13-9 13S3 17 3 10a9 9 0 0118 0z"/><circle cx="12" cy="10" r="3"/>
+                  </svg>
+                  Location
+                </dt>
+                <dd>{p.location ?? '[City]'}</dd>
+              </div>
+              {p.year && (
+                <div class="stat-row">
+                  <dt>
+                    <svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true">
+                      <rect x="3" y="4" width="18" height="18" rx="2"/><line x1="16" y1="2" x2="16" y2="6"/><line x1="8" y1="2" x2="8" y2="6"/><line x1="3" y1="10" x2="21" y2="10"/>
+                    </svg>
+                    Year
+                  </dt>
+                  <dd>{p.year}</dd>
+                </div>
+              )}
+              {p.area && (
+                <div class="stat-row">
+                  <dt>
+                    <svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true">
+                      <polyline points="15 3 21 3 21 9"/><polyline points="9 21 3 21 3 15"/><line x1="21" y1="3" x2="14" y2="10"/><line x1="3" y1="21" x2="10" y2="14"/>
+                    </svg>
+                    Scope
+                  </dt>
+                  <dd>{p.area}</dd>
+                </div>
+              )}
+            </dl>
+          </div>
+
+          <!-- CTA card -->
+          <div class="sidebar-card sidebar-card--cta fade-up">
+            <h3 class="sidebar-cta-title">Start Your Project</h3>
+            <p class="sidebar-cta-text">Every project begins with a free, no-obligation estimate. Tell us about your home and we'll make it happen.</p>
+            <a href="/free-estimate" class="btn-primary" style="display:block; text-align:center; text-decoration:none;">
+              Get a Free Estimate
+              <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" style="display:inline; margin-left:0.35rem;" aria-hidden="true">
+                <line x1="5" y1="12" x2="19" y2="12"/><polyline points="12 5 19 12 12 19"/>
+              </svg>
+            </a>
+            <a href="tel:[Phone]" class="sidebar-phone">
+              <svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true">
+                <path d="M22 16.92v3a2 2 0 01-2.18 2 19.79 19.79 0 01-8.63-3.07A19.5 19.5 0 014.64 10.6 19.79 19.79 0 011.6 2.06 2 2 0 013.58 0h3a2 2 0 012 1.72c.13.96.36 1.9.7 2.81a2 2 0 01-.45 2.11L7.91 7.91a16 16 0 006.16 6.16l.96-.96a2 2 0 012.11-.45c.91.34 1.85.57 2.81.7A2 2 0 0122 16.92z"/>
+              </svg>
+              [Phone]
+            </a>
+          </div>
+
+          <!-- Back link -->
+          <a href="/our-work" class="back-link">
+            <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true">
+              <line x1="19" y1="12" x2="5" y2="12"/><polyline points="12 19 5 12 12 5"/>
+            </svg>
+            All Projects
+          </a>
+
+        </aside>
+      </div>
+    </div>
+  </section>
+
+  <!-- Related Projects -->
+  {related.length > 0 && (
+    <section class="section section-light">
+      <div class="container">
+        <span class="eyebrow">More {p.category}</span>
+        <h2 style="margin-bottom:2rem;">Similar Projects</h2>
+        <div class="related-grid">
+          {related.map((r) => (
+            <a href={`/projects/${r.slug}`} class="related-card">
+              <div class="related-img-wrap">
+                <img
+                  src={r.data.img}
+                  alt={r.data.alt ?? r.data.title}
+                  width="600"
+                  height="400"
+                  loading="lazy"
+                  decoding="async"
+                  class="related-img"
+                />
+              </div>
+              <div class="related-info">
+                <p class="related-cat">{r.data.category}</p>
+                <p class="related-title">{r.data.title}</p>
+                <p class="related-loc">{r.data.location ?? '[City]'} · {r.data.year}</p>
+              </div>
+            </a>
+          ))}
+        </div>
+      </div>
+    </section>
+  )}
+
+  <CtaBanner
+    heading="Inspired by What You See?"
+    subtext="Every project starts with a free estimate. Tell us about your home and we'll bring your vision to life."
+  />
+
+</BaseLayout>
+
+<style>
+/* ─── Breadcrumb ─── */
+.breadcrumb-bar {
+  background: var(--color-off-white, #F7F5F0);
+  border-bottom: 1px solid var(--color-gray-100);
+  padding-block: 0.75rem;
+}
+.breadcrumb-list {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  gap: 0.4rem;
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  font-size: 0.8rem;
+  color: var(--color-gray-500);
+}
+.breadcrumb-list a {
+  color: var(--color-primary-700);
+  text-decoration: none;
+}
+.breadcrumb-list a:hover { text-decoration: underline; }
+.breadcrumb-list [aria-current="page"] { color: var(--color-gray-600); }
+
+/* ─── Hero ─── */
+.project-hero {
+  padding-block: 5rem 4rem;
+  min-height: 340px;
+  display: flex;
+  align-items: flex-end;
+  position: relative;
+}
+.project-hero .container { position: relative; z-index: 1; }
+.project-hero h1 {
+  font-size: var(--text-5xl);
+  line-height: 1.1;
+  margin-block: 0.5rem 0.75rem;
+}
+.project-hero-meta {
+  display: flex;
+  align-items: center;
+  gap: 0.4rem;
+  color: rgba(255,255,255,0.75);
+  font-size: var(--text-sm);
+  flex-wrap: wrap;
+}
+
+/* ─── Layout ─── */
+.project-layout {
+  display: grid;
+  grid-template-columns: 1fr 340px;
+  gap: 3rem;
+  align-items: start;
+}
+
+/* ─── Main content ─── */
+.project-section-title {
+  font-size: var(--text-2xl);
+  margin-bottom: 1rem;
+  color: var(--color-primary-800);
+}
+.project-description { margin-bottom: 2.5rem; }
+.project-lead {
+  font-size: var(--text-lg);
+  line-height: 1.75;
+  color: var(--color-gray-700);
+}
+
+/* ─── Gallery ─── */
+.project-gallery { margin-bottom: 2.5rem; }
+.gallery-grid {
+  display: grid;
+  gap: 0.75rem;
+  grid-template-columns: 1fr 1fr;
+  grid-template-rows: auto auto;
+}
+.gallery-grid--single { grid-template-columns: 1fr; }
+.gallery-grid--two { grid-template-columns: 1fr 1fr; }
+.gallery-grid--three { grid-template-columns: 1fr 1fr; }
+
+.gallery-item--main {
+  grid-column: 1 / -1;
+}
+.gallery-img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  display: block;
+  border-radius: var(--radius-md);
+  aspect-ratio: 16/9;
+}
+.gallery-item--main .gallery-img { aspect-ratio: 16/9; }
+.gallery-item:not(.gallery-item--main) .gallery-img { aspect-ratio: 4/3; }
+
+/* ─── Highlights ─── */
+.project-highlights { margin-bottom: 1rem; }
+.highlights-list {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 0.6rem 1.5rem;
+}
+.highlight-item {
+  display: flex;
+  align-items: flex-start;
+  gap: 0.6rem;
+  font-size: var(--text-sm);
+  line-height: 1.5;
+  color: var(--color-gray-700);
+}
+.highlight-check {
+  flex-shrink: 0;
+  width: 24px;
+  height: 24px;
+  background: var(--color-accent-100, #F5EDDA);
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-top: 0.05rem;
+  color: var(--color-accent-700);
+}
+
+/* ─── Sidebar ─── */
+.project-sidebar {
+  position: sticky;
+  top: 5rem;
+  display: flex;
+  flex-direction: column;
+  gap: 1.25rem;
+}
+.sidebar-card {
+  background: var(--color-off-white, #F7F5F0);
+  border: 1px solid var(--color-gray-100);
+  border-radius: var(--radius-lg);
+  padding: 1.5rem;
+}
+.sidebar-card--cta {
+  background: var(--color-primary-800);
+  border-color: var(--color-primary-700);
+  color: white;
+}
+.sidebar-card-title {
+  font-size: var(--text-base);
+  font-weight: 600;
+  text-transform: uppercase;
+  letter-spacing: 0.08em;
+  color: var(--color-primary-800);
+  margin-bottom: 1rem;
+  font-family: var(--font-body);
+}
+
+/* Project stats */
+.project-stats { margin: 0; }
+.stat-row {
+  display: flex;
+  flex-direction: column;
+  gap: 0.15rem;
+  padding-block: 0.7rem;
+  border-bottom: 1px solid var(--color-gray-200);
+}
+.stat-row:last-child { border-bottom: none; padding-bottom: 0; }
+.stat-row dt {
+  display: flex;
+  align-items: center;
+  gap: 0.4rem;
+  font-size: 0.7rem;
+  font-weight: 600;
+  text-transform: uppercase;
+  letter-spacing: 0.1em;
+  color: var(--color-gray-400);
+  font-family: var(--font-body);
+}
+.stat-row dd {
+  font-size: var(--text-sm);
+  font-weight: 500;
+  color: var(--color-primary-800);
+  margin: 0;
+}
+
+/* CTA card */
+.sidebar-cta-title {
+  font-family: var(--font-display);
+  font-size: var(--text-xl);
+  font-weight: 400;
+  color: white;
+  margin-bottom: 0.75rem;
+}
+.sidebar-cta-text {
+  font-size: var(--text-sm);
+  color: rgba(255,255,255,0.75);
+  margin-bottom: 1.25rem;
+  line-height: 1.6;
+}
+.sidebar-phone {
+  display: flex;
+  align-items: center;
+  gap: 0.4rem;
+  justify-content: center;
+  margin-top: 0.75rem;
+  color: var(--color-accent-300);
+  font-size: var(--text-sm);
+  font-weight: 500;
+  text-decoration: none;
+  transition: color var(--duration-fast);
+}
+.sidebar-phone:hover { color: white; }
+
+/* Back link */
+.back-link {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.4rem;
+  font-size: var(--text-sm);
+  font-weight: 500;
+  color: var(--color-primary-700);
+  text-decoration: none;
+  transition: color var(--duration-fast);
+  padding: 0.25rem 0;
+}
+.back-link:hover { color: var(--color-accent-700); }
+
+/* ─── Related projects ─── */
+.related-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 1.25rem;
+}
+.related-card {
+  text-decoration: none;
+  border-radius: var(--radius-md);
+  overflow: hidden;
+  background: white;
+  border: 1px solid var(--color-gray-100);
+  transition: transform var(--duration-fast), box-shadow var(--duration-fast);
+  display: block;
+}
+.related-card:hover {
+  transform: translateY(-4px);
+  box-shadow: var(--shadow-lg);
+}
+.related-img-wrap { aspect-ratio: 4/3; overflow: hidden; }
+.related-img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  transition: transform var(--duration-normal);
+}
+.related-card:hover .related-img { transform: scale(1.04); }
+.related-info { padding: 1rem; }
+.related-cat {
+  font-size: 0.65rem;
+  text-transform: uppercase;
+  letter-spacing: 0.1em;
+  font-weight: 600;
+  color: var(--color-accent-700);
+  margin-bottom: 0.25rem;
+}
+.related-title {
+  font-weight: 600;
+  color: var(--color-primary-800);
+  font-size: var(--text-base);
+  margin-bottom: 0.2rem;
+}
+.related-loc {
+  font-size: 0.75rem;
+  color: var(--color-gray-500);
+}
+
+/* ─── Responsive ─── */
+@media (max-width: 1023px) {
+  .project-layout {
+    grid-template-columns: 1fr;
+  }
+  .project-sidebar {
+    position: static;
+  }
+  .highlights-list {
+    grid-template-columns: 1fr;
+  }
+  .related-grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+@media (max-width: 639px) {
+  .project-hero { padding-block: 3.5rem 2.5rem; min-height: 260px; }
+  .project-hero h1 { font-size: var(--text-4xl); }
+  .gallery-grid { grid-template-columns: 1fr; }
+  .gallery-item--main { grid-column: 1; }
+  .related-grid { grid-template-columns: 1fr; }
+}
+</style>
