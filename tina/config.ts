@@ -55,11 +55,6 @@ export default defineConfig({
         format: "md",
         ui: {
           router: ({ document }) => `/blog/${document._sys.filename}`,
-          defaultItem: () => ({
-            category: "Renovation",
-            readTime: "5 min",
-            pubDate: new Date().toISOString(),
-          }),
         },
         fields: [
           {
@@ -127,16 +122,6 @@ export default defineConfig({
         format: "md",
         ui: {
           router: () => "/our-work",
-          itemProps: (item) => ({
-            label: item?.title
-              ? `${item.title} — ${item.category ?? ""}`
-              : "New Project",
-          }),
-          defaultItem: () => ({
-            featured: false,
-            location: "[City]",
-            year: new Date().getFullYear().toString(),
-          }),
         },
         fields: [
           {
@@ -233,11 +218,6 @@ export default defineConfig({
         format: "md",
         ui: {
           router: ({ document }) => `/services/${document._sys.filename}`,
-          itemProps: (item) => ({
-            label: item?.title
-              ? `${item.category === "Roofing & Exteriors" ? "🏠" : "🔨"} ${item.title}`
-              : "New Service",
-          }),
         },
         fields: [
           {
@@ -400,16 +380,6 @@ export default defineConfig({
         format: "md",
         ui: {
           router: () => "/testimonials",
-          itemProps: (item) => ({
-            label: item?.clientName
-              ? `${item.active !== false ? "✅" : "❌"} ${item.clientName} — ${item.projectType ?? ""}`
-              : "New Review",
-          }),
-          defaultItem: () => ({
-            rating: 5,
-            active: true,
-            location: "[City]",
-          }),
         },
         fields: [
           {
