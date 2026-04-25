@@ -1,11 +1,17 @@
 ---
+import { client } from '../../tina/__generated__/client';
+import { prepareTinaData } from '../lib/tina-helper';
 import BaseLayout from '../layouts/BaseLayout.astro';
 import EstimateForm from '../components/ui/EstimateForm.astro';
+
+const settingsResult = await client.queries.settings({ relativePath: 'main.md' });
+const { tinaSetup } = prepareTinaData(settingsResult);
 ---
 
 <BaseLayout
   title="Get a Free Estimate | [Company Name] — [City]"
   description="Request a free renovation or roofing estimate from [Company Name] in [City]. No obligation, detailed written quote within 3–5 business days. Fill out our form."
+  tinaSetup={tinaSetup}
 >
 
   <section

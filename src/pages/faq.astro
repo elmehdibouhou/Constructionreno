@@ -1,7 +1,12 @@
 ---
+import { client } from '../../tina/__generated__/client';
+import { prepareTinaData } from '../lib/tina-helper';
 import BaseLayout from '../layouts/BaseLayout.astro';
 import faqData from '../data/faq.json';
 import CtaBanner from '../components/sections/CtaBanner.astro';
+
+const settingsResult = await client.queries.settings({ relativePath: 'main.md' });
+const { tinaSetup } = prepareTinaData(settingsResult);
 
 const allQuestions = faqData.flatMap(cat => cat.questions);
 
@@ -20,6 +25,7 @@ const faqSchema = {
   title="FAQ | [Company Name] — Renovation & Roofing Questions Answered"
   description="Answers to frequently asked questions about renovation costs, timelines, permits & warranties in [City]. Expert advice from local renovation and roofing professionals."
   schema={faqSchema}
+  tinaSetup={tinaSetup}
 >
 
   <section

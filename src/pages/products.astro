@@ -1,12 +1,18 @@
 ---
+import { client } from '../../tina/__generated__/client';
+import { prepareTinaData } from '../lib/tina-helper';
 import BaseLayout from '../layouts/BaseLayout.astro';
 import products from '../data/products.json';
 import CtaBanner from '../components/sections/CtaBanner.astro';
+
+const settingsResult = await client.queries.settings({ relativePath: 'main.md' });
+const { tinaSetup } = prepareTinaData(settingsResult);
 ---
 
 <BaseLayout
   title="Products & Materials | [Company Name] — [City]"
   description="Premium roofing, siding, countertop & flooring products used by [Company Name] in [City]. GAF, CertainTeed, James Hardie, Silestone & more. Free estimates."
+  tinaSetup={tinaSetup}
 >
 
   <section

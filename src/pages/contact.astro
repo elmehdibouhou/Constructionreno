@@ -1,11 +1,17 @@
 ---
+import { client } from '../../tina/__generated__/client';
+import { prepareTinaData } from '../lib/tina-helper';
 import BaseLayout from '../layouts/BaseLayout.astro';
 import ContactForm from '../components/ui/ContactForm.astro';
+
+const settingsResult = await client.queries.settings({ relativePath: 'main.md' });
+const { tinaSetup } = prepareTinaData(settingsResult);
 ---
 
 <BaseLayout
   title="Contact Us | [Company Name] — [City]"
   description="Contact [Company Name] for renovations, roofing & construction in [City]. Call [Phone], email us, or fill out our quick form. We respond within 1 business day."
+  tinaSetup={tinaSetup}
 >
 
   <!-- Hero -->

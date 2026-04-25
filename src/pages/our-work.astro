@@ -1,7 +1,12 @@
 ---
 import { getCollection } from 'astro:content';
+import { client } from '../../tina/__generated__/client';
+import { prepareTinaData } from '../lib/tina-helper';
 import BaseLayout from '../layouts/BaseLayout.astro';
 import CtaBanner from '../components/sections/CtaBanner.astro';
+
+const projectsResult = await client.queries.projectsConnection();
+const { tinaSetup } = prepareTinaData(projectsResult);
 
 const allProjects = await getCollection('projects');
 const projects = allProjects.sort((a, b) => {
@@ -16,6 +21,7 @@ const categories = ['All', ...new Set(projects.map(p => p.data.category))];
 <BaseLayout
   title="Our Work | [Company Name] — Renovation & Roofing Portfolio"
   description="View completed renovation and roofing projects by [Company Name] in [City]. Kitchen renovations, roof replacements, home additions & more."
+  tinaSetup={tinaSetup}
 >
 
   <!-- Hero -->

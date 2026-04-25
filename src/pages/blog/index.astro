@@ -1,7 +1,12 @@
 ---
 import { getCollection } from 'astro:content';
+import { client } from '../../../tina/__generated__/client';
+import { prepareTinaData } from '../../lib/tina-helper';
 import BaseLayout from '../../layouts/BaseLayout.astro';
 import CtaBanner from '../../components/sections/CtaBanner.astro';
+
+const blogResult = await client.queries.blogConnection();
+const { tinaSetup } = prepareTinaData(blogResult);
 
 const allPosts = await getCollection('blog');
 const posts = allPosts.sort((a, b) => new Date(b.data.pubDate).getTime() - new Date(a.data.pubDate).getTime());
@@ -10,6 +15,7 @@ const posts = allPosts.sort((a, b) => new Date(b.data.pubDate).getTime() - new D
 <BaseLayout
   title="Blog | [Company Name] — Renovation & Roofing Tips for [City] Homeowners"
   description="Expert renovation and roofing tips, design trends, and homeowner guides from [Company Name] in [City], [Province]."
+  tinaSetup={tinaSetup}
 >
 
   <section
