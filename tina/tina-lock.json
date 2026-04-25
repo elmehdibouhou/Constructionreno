@@ -3184,6 +3184,13 @@
               "kind": "Name",
               "value": "Folder"
             }
+          },
+          {
+            "kind": "NamedType",
+            "name": {
+              "kind": "Name",
+              "value": "Home"
+            }
           }
         ]
       },
