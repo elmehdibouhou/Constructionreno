@@ -1,18 +1,21 @@
 ---
+import { getCollection } from 'astro:content';
 import BaseLayout from '../layouts/BaseLayout.astro';
 import CtaBanner from '../components/sections/CtaBanner.astro';
 
-const reviews = [
-  { name: 'Sarah M.', project: 'Kitchen Renovation', location: '[City]', rating: 5, date: 'March 2026', quote: 'Absolutely stunning results. They transformed our outdated kitchen into a modern masterpiece. The team was professional, clean, and completed everything on time and on budget. Highly recommend to anyone in [City]!' },
-  { name: 'David & Karen L.', project: 'Roof Replacement', location: '[City]', rating: 5, date: 'February 2026', quote: 'After getting 3 quotes, we chose this team for their transparent pricing and excellent reviews. Best decision we made. Our new roof looks incredible and was completed in just 2 days. The property was left spotless.' },
-  { name: 'James T.', project: 'Basement Renovation', location: '[City]', rating: 5, date: 'January 2026', quote: 'They converted our unfinished basement into a beautiful living space my family uses every single day. The craftsmanship is exceptional. On budget, on time, and the cleanup was impeccable.' },
-  { name: 'Michelle B.', project: 'Bathroom Renovation', location: '[City]', rating: 5, date: 'December 2025', quote: 'My master bathroom is now a genuine spa retreat. Every detail was handled perfectly. The tile work is absolutely flawless. I\'ve already referred three neighbours.' },
-  { name: 'Robert & Linda P.', project: 'Home Addition', location: '[City]', rating: 5, date: 'November 2025', quote: 'We added a family room and additional bedroom. The team managed every aspect seamlessly — permits, framing, all trades — and the finished result matches our original home perfectly. Incredible experience.' },
-  { name: 'Priya S.', project: 'Exterior Painting', location: '[City]', rating: 5, date: 'October 2025', quote: 'Our home exterior went from tired and dated to absolutely stunning. The prep work was thorough, the colours chosen with us were perfect, and the finish is immaculate. Very professional from start to finish.' },
-  { name: 'Tom & Angela W.', project: 'Roof Replacement + Siding', location: '[City]', rating: 5, date: 'September 2025', quote: 'We had the roof and siding done at the same time. The coordination was seamless — it felt like one integrated project rather than two contractors. Our home looks brand new. The price was fair and the quality is exceptional.' },
-  { name: 'Danielle F.', project: 'Kitchen Renovation', location: '[City]', rating: 5, date: 'August 2025', quote: 'From the design consultation through to the final walkthrough, the experience was perfect. They listened to exactly what I wanted, offered smart suggestions, and delivered beyond my expectations. Worth every dollar.' },
-  { name: 'Michael K.', project: 'Metal Roofing', location: '[City]', rating: 5, date: 'July 2025', quote: 'Had a standing seam metal roof installed. The workmanship is exceptional — perfectly aligned panels, clean flashing details, everything done exactly right. It\'s the roof I\'ll never have to replace again.' },
-];
+const allReviews = await getCollection('testimonials');
+const reviews = allReviews
+  .filter(r => r.data.active !== false)
+  .sort((a, b) => {
+    const months = ['January','February','March','April','May','June','July','August','September','October','November','December'];
+    const parseDate = (d: string) => {
+      const [month, year] = d.split(' ');
+      return new Date(parseInt(year), months.indexOf(month));
+    };
+    const aDate = a.data.date ? parseDate(a.data.date) : new Date(0);
+    const bDate = b.data.date ? parseDate(b.data.date) : new Date(0);
+    return bDate.getTime() - aDate.getTime();
+  });
 ---
 
 <BaseLayout
@@ -42,20 +45,20 @@ const reviews = [
     <div class="container">
       <div class="reviews-grid">
         {reviews.map((r) => (
-          <article class="review-card fade-up" aria-label={`Review by ${r.name}`}>
+          <article class="review-card fade-up" aria-label={`Review by ${r.data.clientName}`}>
             <header class="review-header">
-              <div class="review-avatar" aria-hidden="true">{r.name.charAt(0)}</div>
+              <div class="review-avatar" aria-hidden="true">{r.data.clientName.charAt(0)}</div>
               <div>
-                <p class="review-name">{r.name}</p>
-                <p class="review-meta">{r.project} · {r.location}</p>
+                <p class="review-name">{r.data.clientName}</p>
+                <p class="review-meta">{r.data.projectType}{r.data.location ? ` · ${r.data.location}` : ''}</p>
               </div>
               <div style="margin-left:auto; display:flex; flex-direction:column; align-items:flex-end; gap:0.2rem;">
-                <div aria-label={`${r.rating} out of 5 stars`} style="color:var(--color-accent-500); font-size:0.95rem;">{'★'.repeat(r.rating)}</div>
-                <time style="font-size:0.75rem; color:var(--color-gray-600);">{r.date}</time>
+                <div aria-label={`${r.data.rating} out of 5 stars`} style="color:var(--color-accent-500); font-size:0.95rem;">{'★'.repeat(r.data.rating ?? 5)}</div>
+                <time style="font-size:0.75rem; color:var(--color-gray-600);">{r.data.date}</time>
               </div>
             </header>
             <blockquote>
-              <p class="review-quote">"{r.quote}"</p>
+              <p class="review-quote">"{r.data.reviewText}"</p>
             </blockquote>
             <div class="review-verified">
               <svg width="14" height="14" viewBox="0 0 24 24" fill="none" aria-hidden="true">

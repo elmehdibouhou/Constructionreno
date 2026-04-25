@@ -1,10 +1,10 @@
 ---
 title: "Interior & Exterior Painting"
 category: "Renovation"
+tagline: "A fresh coat of paint is the fastest way to transform a space."
 heroImg: "https://images.unsplash.com/photo-1562259949-e8e7689d7828?w=1920&q=80"
 cardImg: "https://images.unsplash.com/photo-1562259949-e8e7689d7828?w=800&q=75"
 alt: "Professional interior painting in [City]"
-tagline: "A fresh coat of paint is the fastest way to transform a space."
 intro1: "Professional painting is about far more than colour. It's proper preparation, the right primer, expert application, and clean edges that make the difference between a DIY look and a showroom finish. Our [City] painting team delivers that showroom finish every time."
 intro2: "We handle interior and exterior painting for homes of all sizes — from a single accent wall to a full house repaint inside and out. We use only premium paints (Benjamin Moore, Sherwin-Williams) and protect all surfaces before we ever open a can."
 metaTitle: "Interior & Exterior Painting [City] | [Company Name] — Free Estimate"
@@ -15,13 +15,13 @@ whyUs:
   - "Clean, low-odour application with full furniture protection"
   - "Exterior painting with premium weather-resistant coatings"
 benefits:
-  - icon: "palette"
+  - icon: palette
     title: "Colour Consultation"
     desc: "Our team offers complimentary colour consultation — we help you choose shades that complement your home's architecture, natural light, and existing finishes."
-  - icon: "check-square"
+  - icon: check-square
     title: "Meticulous Prep"
     desc: "We fill cracks, sand surfaces, apply the correct primer, and tape every edge. Proper preparation is what separates a lasting paint job from one that peels within a year."
-  - icon: "sun"
+  - icon: sun
     title: "Exterior Protection"
     desc: "Our exterior coatings protect against [Province]'s freeze-thaw cycles, UV damage, and moisture. We prep and prime before applying two full coats."
 faqs:
@@ -34,14 +34,14 @@ faqs:
   - q: "What exterior painting prep do you do?"
     a: "All exterior surfaces are pressure washed, scraped, sanded, primed, and caulked before painting. This prep work is what ensures the paint bonds properly and lasts for years."
 gallery:
-  - "https://images.unsplash.com/photo-1562259949-e8e7689d7828?w=800&q=75"
-  - "https://images.unsplash.com/photo-1589939705384-5185137a7f0f?w=800&q=75"
-  - "https://images.unsplash.com/photo-1558618047-3c8c76ca7d13?w=800&q=75"
-  - "https://images.unsplash.com/photo-1497366216548-37526070297c?w=800&q=75"
-  - "https://images.unsplash.com/photo-1600210492493-0946911123ea?w=800&q=75"
-  - "https://images.unsplash.com/photo-1618221195710-dd6b41faaea6?w=800&q=75"
+  - https://images.unsplash.com/photo-1562259949-e8e7689d7828?w=800&q=75
+  - https://images.unsplash.com/photo-1589939705384-5185137a7f0f?w=800&q=75
+  - https://images.unsplash.com/photo-1558618047-3c8c76ca7d13?w=800&q=75
+  - https://images.unsplash.com/photo-1497366216548-37526070297c?w=800&q=75
+  - https://images.unsplash.com/photo-1600210492493-0946911123ea?w=800&q=75
+  - https://images.unsplash.com/photo-1618221195710-dd6b41faaea6?w=800&q=75
 related:
-  - "kitchen-renovation"
-  - "exterior-renovations"
-  - "basement-renovation"
+  - kitchen-renovation
+  - exterior-renovations
+  - basement-renovation
 ---

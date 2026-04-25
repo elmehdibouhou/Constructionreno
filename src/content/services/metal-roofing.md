@@ -1,10 +1,10 @@
 ---
 title: "Metal Roofing"
 category: "Roofing"
+tagline: "The last roof you'll ever need to install."
 heroImg: "https://images.unsplash.com/photo-1449844908441-8829872d2607?w=1920&q=80"
 cardImg: "https://images.unsplash.com/photo-1449844908441-8829872d2607?w=800&q=75"
 alt: "Metal roofing installation in [City]"
-tagline: "The last roof you'll ever need to install."
 intro1: "Metal roofing is the premium choice for [Province] homeowners who want a roof that lasts 40–70 years with minimal maintenance. Standing seam and exposed fastener metal panels are energy-efficient, lightweight, and available in a wide range of colours."
 intro2: "We are experienced in both exposed fastener steel roofing and concealed fastener standing seam systems. Our metal roof installations include proper underlayment, closed-cell insulation options, and trim and flashing work that matches the clean aesthetic of the panels."
 metaTitle: "Metal Roofing [City] | [Company Name] — Standing Seam & Steel"
@@ -15,13 +15,13 @@ whyUs:
   - "Energy Star rated for solar reflectance"
   - "Excellent performance in [Province] snow loads"
 benefits:
-  - icon: "clock"
+  - icon: clock
     title: "50-Year Lifespan"
     desc: "Metal roofing lasts 2–3× longer than asphalt shingles. Properly installed steel or aluminum roofing can last 40–70 years with minimal maintenance."
-  - icon: "sun"
+  - icon: sun
     title: "Energy Efficiency"
     desc: "Metal roofs reflect solar radiation, reducing summer cooling costs by up to 25%. Many products are Energy Star rated and qualify for energy efficiency credits."
-  - icon: "cloud-snow"
+  - icon: cloud-snow
     title: "Snow Performance"
     desc: "Metal panels shed snow efficiently, reducing the structural load on your roof deck and minimising ice dam formation during [Province] winters."
 faqs:
@@ -34,14 +34,14 @@ faqs:
   - q: "Can metal roofing be installed over existing shingles?"
     a: "Yes, in many cases metal panels can be installed over existing asphalt shingles, saving tear-off costs. We assess the existing deck condition before recommending this approach."
 gallery:
-  - "https://images.unsplash.com/photo-1449844908441-8829872d2607?w=800&q=75"
-  - "https://images.unsplash.com/photo-1558618666-fcd25c85cd64?w=800&q=75"
-  - "https://images.unsplash.com/photo-1416331108676-a22ccb276e35?w=800&q=75"
-  - "https://images.unsplash.com/photo-1570129477492-45c003edd2be?w=800&q=75"
-  - "https://images.unsplash.com/photo-1504307651254-35680f356dfd?w=800&q=75"
-  - "https://images.unsplash.com/photo-1582268611958-ebfd161ef9cf?w=800&q=75"
+  - https://images.unsplash.com/photo-1449844908441-8829872d2607?w=800&q=75
+  - https://images.unsplash.com/photo-1558618666-fcd25c85cd64?w=800&q=75
+  - https://images.unsplash.com/photo-1416331108676-a22ccb276e35?w=800&q=75
+  - https://images.unsplash.com/photo-1570129477492-45c003edd2be?w=800&q=75
+  - https://images.unsplash.com/photo-1504307651254-35680f356dfd?w=800&q=75
+  - https://images.unsplash.com/photo-1582268611958-ebfd161ef9cf?w=800&q=75
 related:
-  - "roof-replacement"
-  - "roof-repairs"
-  - "exterior-renovations"
+  - roof-replacement
+  - roof-repairs
+  - exterior-renovations
 ---

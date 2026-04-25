@@ -1,10 +1,10 @@
 ---
 title: "Roof Replacement"
 category: "Roofing"
+tagline: "Protect your home with a roof built to last."
 heroImg: "https://images.unsplash.com/photo-1558618666-fcd25c85cd64?w=1920&q=80"
 cardImg: "https://images.unsplash.com/photo-1558618666-fcd25c85cd64?w=800&q=75"
 alt: "Roof replacement in [City]"
-tagline: "Protect your home with a roof built to last."
 intro1: "Your roof is your home's first line of defence against [Province]'s harsh weather. When it's time for a replacement, you need a team that installs it right — with proper underlayment, ventilation, flashing, and quality shingles that carry full manufacturer warranties."
 intro2: "We are certified installers for GAF, CertainTeed, and Owens Corning roofing systems. Every replacement includes a full tear-off, deck inspection, ice-and-water shield on all eaves, proper ventilation assessment, and clean-up with a magnetic nail sweep of your property."
 metaTitle: "Roof Replacement [City] | [Company Name] — Free Estimate"
@@ -15,13 +15,13 @@ whyUs:
   - "Ice & water shield on all eaves and valleys"
   - "Magnetic nail sweep — property left spotless"
 benefits:
-  - icon: "shield"
+  - icon: shield
     title: "Manufacturer Warranty"
     desc: "Our certified installs qualify for full manufacturer system warranties — up to 50-year shingle warranties with enhanced wind and algae resistance."
-  - icon: "wind"
+  - icon: wind
     title: "Ventilation Excellence"
     desc: "Proper attic ventilation extends the life of your new roof by years. We assess and upgrade ventilation on every project."
-  - icon: "check-circle"
+  - icon: check-circle
     title: "Clean & Professional"
     desc: "We protect your landscaping, remove all old shingles and debris, and complete a magnetic nail sweep of the entire property before we leave."
 faqs:
@@ -34,14 +34,14 @@ faqs:
   - q: "What shingle brands do you recommend?"
     a: "We recommend GAF Timberline HDZ, CertainTeed Landmark, and Owens Corning Duration shingles — all of which offer excellent durability for [Province]'s climate, strong wind ratings, and attractive aesthetics."
 gallery:
-  - "https://images.unsplash.com/photo-1558618666-fcd25c85cd64?w=800&q=75"
-  - "https://images.unsplash.com/photo-1504307651254-35680f356dfd?w=800&q=75"
-  - "https://images.unsplash.com/photo-1449844908441-8829872d2607?w=800&q=75"
-  - "https://images.unsplash.com/photo-1416331108676-a22ccb276e35?w=800&q=75"
-  - "https://images.unsplash.com/photo-1570129477492-45c003edd2be?w=800&q=75"
-  - "https://images.unsplash.com/photo-1582268611958-ebfd161ef9cf?w=800&q=75"
+  - https://images.unsplash.com/photo-1558618666-fcd25c85cd64?w=800&q=75
+  - https://images.unsplash.com/photo-1504307651254-35680f356dfd?w=800&q=75
+  - https://images.unsplash.com/photo-1449844908441-8829872d2607?w=800&q=75
+  - https://images.unsplash.com/photo-1416331108676-a22ccb276e35?w=800&q=75
+  - https://images.unsplash.com/photo-1570129477492-45c003edd2be?w=800&q=75
+  - https://images.unsplash.com/photo-1582268611958-ebfd161ef9cf?w=800&q=75
 related:
-  - "roof-repairs"
-  - "metal-roofing"
-  - "roof-inspection"
+  - roof-repairs
+  - metal-roofing
+  - roof-inspection
 ---

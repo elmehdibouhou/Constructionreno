@@ -1,10 +1,10 @@
 ---
 title: "Bathroom Renovation"
 category: "Renovation"
+tagline: "Your personal spa retreat starts here."
 heroImg: "https://images.unsplash.com/photo-1552321554-5fefe8c9ef14?w=1920&q=80"
 cardImg: "https://images.unsplash.com/photo-1552321554-5fefe8c9ef14?w=800&q=75"
 alt: "Luxury bathroom renovation in [City]"
-tagline: "Your personal spa retreat starts here."
 intro1: "A beautifully renovated bathroom can completely change how you start and end your day. Our [City] bathroom renovation team specialises in creating luxurious, spa-inspired spaces — from sleek modern designs to warm, timeless classics."
 intro2: "We manage the full scope: custom tile work, walk-in showers, soaker tubs, vanities, heated floors, and all plumbing and electrical work. Every detail is coordinated in-house so you have one point of contact throughout."
 metaTitle: "Bathroom Renovation [City] | [Company Name] — Free Estimate"
@@ -15,13 +15,13 @@ whyUs:
   - "Full plumbing & waterproofing guaranteed"
   - "Accessible & universal design options available"
 benefits:
-  - icon: "droplets"
+  - icon: droplets
     title: "Spa-Quality Finishes"
     desc: "Porcelain, marble-look, and natural stone tiles installed with precision. We create the luxurious finishes you see in design magazines."
-  - icon: "tool"
+  - icon: tool
     title: "Waterproofing Expertise"
     desc: "Every shower and wet area is properly waterproofed to prevent moisture damage. We never cut corners on the prep work that protects your investment."
-  - icon: "zap"
+  - icon: zap
     title: "Heated Floors"
     desc: "We install in-floor radiant heating systems during renovation — the perfect upgrade that transforms your bathroom into a year-round comfort zone."
 faqs:
@@ -34,14 +34,14 @@ faqs:
   - q: "Do you offer accessible bathroom renovations?"
     a: "Yes — we specialize in barrier-free and accessible bathroom designs including walk-in showers with zero thresholds, grab bars, comfort-height toilets, and wider doorways for mobility aid access."
 gallery:
-  - "https://images.unsplash.com/photo-1552321554-5fefe8c9ef14?w=800&q=75"
-  - "https://images.unsplash.com/photo-1507652313519-d4e9174996dd?w=800&q=75"
-  - "https://images.unsplash.com/photo-1600566753086-00f18fb6b3ea?w=800&q=75"
-  - "https://images.unsplash.com/photo-1584622650111-993a426fbf0a?w=800&q=75"
-  - "https://images.unsplash.com/photo-1604014237800-1c9102c219da?w=800&q=75"
-  - "https://images.unsplash.com/photo-1629079447777-1e605162dc8d?w=800&q=75"
+  - https://images.unsplash.com/photo-1552321554-5fefe8c9ef14?w=800&q=75
+  - https://images.unsplash.com/photo-1507652313519-d4e9174996dd?w=800&q=75
+  - https://images.unsplash.com/photo-1600566753086-00f18fb6b3ea?w=800&q=75
+  - https://images.unsplash.com/photo-1584622650111-993a426fbf0a?w=800&q=75
+  - https://images.unsplash.com/photo-1604014237800-1c9102c219da?w=800&q=75
+  - https://images.unsplash.com/photo-1629079447777-1e605162dc8d?w=800&q=75
 related:
-  - "kitchen-renovation"
-  - "basement-renovation"
-  - "home-additions"
+  - kitchen-renovation
+  - basement-renovation
+  - home-additions
 ---
