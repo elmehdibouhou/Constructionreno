@@ -1,27 +1,37 @@
 ---
 import { getCollection } from 'astro:content';
+import { client } from '../../tina/__generated__/client';
 import BlogLayout from '../../layouts/BlogLayout.astro';
 
 export async function getStaticPaths() {
   const posts = await getCollection('blog');
   return posts.map(post => ({
     params: { slug: post.slug },
-    props: { post },
+    props: { slug: post.slug },
   }));
 }
 
-const { post } = Astro.props;
+const { slug } = Astro.props;
+
+// Tina data for visual editing annotations
+const tinaResult = await client.queries.blog({ relativePath: `${slug}.md` });
+const tinaData = tinaResult.data.blog;
+
+// Render markdown body from Content Collections
+const posts = await getCollection('blog');
+const post = posts.find(p => p.slug === slug)!;
 const { Content } = await post.render();
 ---
 
 <BlogLayout
-  title={post.data.title}
-  description={post.data.description}
-  pubDate={post.data.pubDate}
-  heroImg={post.data.heroImg}
-  heroAlt={post.data.heroAlt}
-  category={post.data.category}
-  readTime={post.data.readTime}
+  tinaData={tinaData}
+  title={tinaData.title}
+  description={tinaData.description}
+  pubDate={tinaData.pubDate}
+  heroImg={tinaData.heroImg}
+  heroAlt={tinaData.heroAlt ?? ''}
+  category={tinaData.category}
+  readTime={tinaData.readTime ?? ''}
 >
   <Content />
 </BlogLayout>

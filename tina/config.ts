@@ -425,7 +425,79 @@ export default defineConfig({
       },
 
       // ═══════════════════════════════════════════════════════════════════════
-      // 5. SITE SETTINGS (singleton) — src/content/settings/main.md
+      // 5. HOMEPAGE CONTENT (singleton) — src/content/pages/home.md
+      // ═══════════════════════════════════════════════════════════════════════
+      {
+        name: "home",
+        label: "🏠 Homepage",
+        path: "src/content/pages",
+        format: "md",
+        match: { include: "home" },
+        ui: {
+          allowedActions: { create: false, delete: false },
+          global: true,
+        },
+        fields: [
+          // ── Hero section ──────────────────────────────────────────────────
+          {
+            type: "string",
+            name: "heroLine1",
+            label: "Hero — Line 1",
+          },
+          {
+            type: "string",
+            name: "heroLine2",
+            label: "Hero — Line 2",
+          },
+          {
+            type: "string",
+            name: "heroLine3",
+            label: "Hero — Line 3 (italic gold)",
+          },
+          {
+            type: "string",
+            name: "heroSub",
+            label: "Hero — Subtext",
+            ui: { component: "textarea" },
+          },
+          {
+            type: "string",
+            name: "heroImage",
+            label: "Hero — Background Image URL",
+          },
+          // ── About section ─────────────────────────────────────────────────
+          {
+            type: "string",
+            name: "aboutHeadline",
+            label: "About — Headline",
+          },
+          {
+            type: "string",
+            name: "aboutPara1",
+            label: "About — Paragraph 1",
+            ui: { component: "textarea" },
+          },
+          {
+            type: "string",
+            name: "aboutPara2",
+            label: "About — Paragraph 2",
+            ui: { component: "textarea" },
+          },
+          {
+            type: "string",
+            name: "aboutImage",
+            label: "About — Photo URL",
+          },
+          {
+            type: "string",
+            name: "yearsExperience",
+            label: "About — Years of Experience Badge (e.g. 15+)",
+          },
+        ],
+      },
+
+      // ═══════════════════════════════════════════════════════════════════════
+      // 6. SITE SETTINGS (singleton) — src/content/settings/main.md
       // ═══════════════════════════════════════════════════════════════════════
       {
         name: "settings",

@@ -1,4 +1,7 @@
 ---
+import { tinaField } from 'tinacms/dist/react';
+interface Props { data: any; }
+const { data } = Astro.props;
 ---
 
 <section class="hero" aria-label="Homepage hero">
@@ -6,7 +9,7 @@
   <!-- Background image (LCP — eager load) -->
   <div class="hero-bg" aria-hidden="true">
     <img
-      src="https://images.unsplash.com/photo-1600607687939-ce8a6c25118c?w=1920&q=80"
+      src={data.heroImage}
       alt=""
       width="1920"
       height="1080"
@@ -27,13 +30,13 @@
       <span class="eyebrow hero-eyebrow">Renovation & Roofing — [City], Canada</span>
 
       <h1 class="hero-h1">
-        We Build Homes.<br>
-        We Restore Roofs.<br>
-        <em>We Craft Spaces.</em>
+        <span data-tina-field={tinaField(data, 'heroLine1')}>{data.heroLine1}</span><br>
+        <span data-tina-field={tinaField(data, 'heroLine2')}>{data.heroLine2}</span><br>
+        <em data-tina-field={tinaField(data, 'heroLine3')}>{data.heroLine3}</em>
       </h1>
 
-      <p class="hero-sub">
-        Quality renovation, construction, painting &amp; roofing across [City], [Province]. Trusted by 300+ homeowners. Free estimates, no obligation.
+      <p class="hero-sub" data-tina-field={tinaField(data, 'heroSub')}>
+        {data.heroSub}
       </p>
 
       <div class="hero-actions">
