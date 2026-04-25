@@ -1,0 +1,86 @@
+[
+  {
+    "category": "Getting Started",
+    "questions": [
+      {
+        "q": "Do you offer free estimates?",
+        "a": "Yes — all estimates are completely free with no obligation. We'll visit your property, assess the scope of work, and provide a detailed written quote within 3–5 business days. There's no pressure and no follow-up sales calls."
+      },
+      {
+        "q": "How do I get started?",
+        "a": "Simply fill out our Free Estimate form online, call us at [Phone], or email us at info@[domain].ca. We'll schedule a convenient time to visit your property and discuss your project."
+      },
+      {
+        "q": "What areas do you serve?",
+        "a": "We primarily serve [City] and the surrounding area including [neighbouring communities]. Contact us to confirm we cover your location — we regularly travel up to 60 km from our base."
+      },
+      {
+        "q": "Are you licensed and insured?",
+        "a": "Yes. We carry full general liability insurance ($2M minimum coverage) and all our tradespeople hold their required provincial licences. We can provide proof of insurance to any client upon request."
+      }
+    ]
+  },
+  {
+    "category": "Renovation Projects",
+    "questions": [
+      {
+        "q": "How long does a typical renovation take?",
+        "a": "Timelines vary by project: a bathroom renovation typically takes 2–4 weeks; a kitchen renovation 4–8 weeks; a basement 6–10 weeks; and a full home addition 3–5 months. We provide a detailed project schedule before work begins and keep you updated throughout."
+      },
+      {
+        "q": "Do you handle permits?",
+        "a": "Yes — for all projects that require building permits, we handle the application, submissions, and inspections on your behalf. Permit fees are included in your quote. We never start structural or mechanical work without proper permits in place."
+      },
+      {
+        "q": "Can I supply my own materials?",
+        "a": "Yes, you're welcome to supply fixtures, tiles, or hardware you've already purchased. We'll review them in advance to confirm compatibility and factor them into our installation quote. Just note that client-supplied materials aren't covered by our workmanship warranty if they're defective."
+      },
+      {
+        "q": "Do you use subcontractors?",
+        "a": "For specialized trade work (electrical, plumbing, HVAC), we work with a small group of licensed subtrades we've vetted and worked with for years. All work is coordinated, supervised, and quality-checked by our team. We take responsibility for the entire project."
+      },
+      {
+        "q": "What happens if the project exceeds the budget?",
+        "a": "We provide detailed written quotes and do our best to identify potential issues before work begins. Unforeseen conditions (e.g., hidden water damage, asbestos, outdated wiring) can arise. If they do, we notify you immediately with a written change order before proceeding — no surprises."
+      }
+    ]
+  },
+  {
+    "category": "Roofing",
+    "questions": [
+      {
+        "q": "How long does a roof last in [Province]?",
+        "a": "Asphalt shingles in [Province] last 20–30 years with proper ventilation and maintenance. Metal roofing lasts 40–70 years. We can assess your current roof's remaining lifespan during a free inspection."
+      },
+      {
+        "q": "How do I know if I need a new roof?",
+        "a": "Signs include: shingles curling, cracking, or missing; granules accumulating in your gutters; visible daylight in your attic; water stains on ceilings after rain; or a roof over 20–25 years old. Contact us for a free roof assessment."
+      },
+      {
+        "q": "What shingle warranty do you provide?",
+        "a": "Our shingle installations qualify for full manufacturer system warranties — typically 30–50 year limited shingle warranties plus our own 5-year labour warranty. We install GAF, CertainTeed, and Owens Corning products."
+      },
+      {
+        "q": "Do you offer financing for roofing?",
+        "a": "Yes — we work with financing partners that offer flexible payment options for roofing and renovation projects. Ask us about 12-month interest-free and low-rate extended term options when you request your estimate."
+      }
+    ]
+  },
+  {
+    "category": "Pricing & Payment",
+    "questions": [
+      {
+        "q": "What forms of payment do you accept?",
+        "a": "We accept e-Transfer, cheque, credit card (Visa/Mastercard), and bank draft. For larger projects, we typically structure payments as: 10–15% deposit to schedule, 40% at project start, 40% at substantial completion, and 5–10% on final walkthrough."
+      },
+      {
+        "q": "Are your prices competitive?",
+        "a": "We're not the cheapest option — and we're transparent about that. We use quality materials, employ licensed tradespeople, pull proper permits, and back our work with a 5-year warranty. If you've received a lower quote, ask us to review it and we'll tell you honestly what the difference is."
+      },
+      {
+        "q": "Do you offer any financing options?",
+        "a": "Yes — we partner with home renovation lenders that offer flexible terms. Options include 0% financing for 12 months and longer-term low-rate loans. Ask about financing when you request your estimate."
+      }
+    ]
+  }
+]

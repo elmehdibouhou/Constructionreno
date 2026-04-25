@@ -1,0 +1,197 @@
+[
+  {
+    "slug": "kitchen",
+    "title": "Kitchen Inspiration & Ideas",
+    "metaTitle": "Kitchen Renovation Ideas [City] | [Company Name]",
+    "metaDesc": "Explore stunning kitchen renovation ideas for [City] homes. Modern, traditional & transitional kitchen designs. Get inspired, then get a free estimate.",
+    "intro": "The kitchen is the heart of every home. Whether you dream of a sleek modern open-concept layout, a warm farmhouse aesthetic, or a timeless transitional design, our gallery of completed [City] kitchen projects will inspire your renovation.",
+    "heroImg": "/images/inspiration/kitchen/kitchen-hero.webp",
+    "ideas": [
+      {
+        "title": "Open-Concept Kitchen",
+        "desc": "Remove walls to create a seamless flow between kitchen, dining, and living areas. Open layouts maximise natural light and make entertaining effortless.",
+        "img": "/images/inspiration/kitchen/kitchen-idea-openconcept.webp"
+      },
+      {
+        "title": "Quartz Countertops",
+        "desc": "Quartz is the most popular countertop material for good reason — durable, non-porous, and available in hundreds of patterns from marble-look to solid contemporary.",
+        "img": "/images/inspiration/kitchen/kitchen-idea-quartz.webp"
+      },
+      {
+        "title": "Two-Tone Cabinetry",
+        "desc": "Pair a deep navy or forest green lower cabinet with crisp white uppers for a designer look that balances boldness with brightness.",
+        "img": "/images/inspiration/kitchen/kitchen-idea-twotone.webp"
+      },
+      {
+        "title": "Statement Kitchen Island",
+        "desc": "A large island with waterfall countertops, integrated seating, and under-counter storage is the ultimate functional and aesthetic centrepiece.",
+        "img": "/images/inspiration/kitchen/kitchen-idea-island.webp"
+      }
+    ],
+    "serviceSlug": "kitchen-renovation",
+    "gallery": [
+      "/images/inspiration/kitchen/kitchen-project-1.webp",
+      "/images/inspiration/kitchen/kitchen-project-2.webp",
+      "/images/inspiration/kitchen/kitchen-project-3.webp",
+      "/images/inspiration/kitchen/kitchen-project-4.webp",
+      "/images/inspiration/kitchen/kitchen-project-5.webp",
+      "/images/inspiration/kitchen/kitchen-project-6.webp"
+    ]
+  },
+  {
+    "slug": "bathroom",
+    "title": "Bathroom Inspiration & Ideas",
+    "metaTitle": "Bathroom Renovation Ideas [City] | [Company Name]",
+    "metaDesc": "Stunning bathroom renovation ideas for [City] homes. Spa retreats, modern ensuites & accessible designs. Get inspired & book your free estimate.",
+    "intro": "A beautifully renovated bathroom is one of the highest-return investments you can make in your home. Browse our collection of completed [City] bathroom projects — from minimalist modern ensuites to warm, spa-inspired retreats.",
+    "heroImg": "https://images.unsplash.com/photo-1552321554-5fefe8c9ef14?w=1920&q=80",
+    "ideas": [
+      {
+        "title": "Walk-In Shower Sanctuary",
+        "desc": "Replace a dated tub-shower combo with a frameless glass walk-in shower featuring large-format porcelain tiles, a bench, and a rain shower head for the full spa experience.",
+        "img": "https://images.unsplash.com/photo-1600566753086-00f18fb6b3ea?w=800&q=75"
+      },
+      {
+        "title": "Heated Tile Floors",
+        "desc": "In-floor radiant heating transforms your morning routine. We install electric heating mats under tile during renovation for whole-floor warmth.",
+        "img": "https://images.unsplash.com/photo-1584622650111-993a426fbf0a?w=800&q=75"
+      },
+      {
+        "title": "Floating Vanity",
+        "desc": "A floating double vanity with under-cabinet lighting creates the illusion of space and allows easier floor cleaning — a must in modern bathroom design.",
+        "img": "https://images.unsplash.com/photo-1604014237800-1c9102c219da?w=800&q=75"
+      },
+      {
+        "title": "Statement Tile Feature Wall",
+        "desc": "A bold feature tile behind the shower or vanity is the design moment that makes a bathroom feel designed rather than just functional.",
+        "img": "https://images.unsplash.com/photo-1629079447777-1e605162dc8d?w=800&q=75"
+      }
+    ],
+    "serviceSlug": "bathroom-renovation",
+    "gallery": [
+      "https://images.unsplash.com/photo-1552321554-5fefe8c9ef14?w=800&q=75",
+      "https://images.unsplash.com/photo-1600566753086-00f18fb6b3ea?w=800&q=75",
+      "https://images.unsplash.com/photo-1584622650111-993a426fbf0a?w=800&q=75",
+      "https://images.unsplash.com/photo-1604014237800-1c9102c219da?w=800&q=75",
+      "https://images.unsplash.com/photo-1629079447777-1e605162dc8d?w=800&q=75",
+      "https://images.unsplash.com/photo-1507652313519-d4e9174996dd?w=800&q=75"
+    ]
+  },
+  {
+    "slug": "basement",
+    "title": "Basement Renovation Ideas",
+    "metaTitle": "Basement Renovation Ideas [City] | [Company Name]",
+    "metaDesc": "Basement finishing ideas for [City] homes. Media rooms, home offices, in-law suites & more. Turn unused space into valuable living area. Free estimate.",
+    "intro": "Your unfinished basement holds more potential than you realise. From cozy home theatres to income-generating in-law suites, browse these [City] basement transformation projects for ideas that match your goals and budget.",
+    "heroImg": "https://images.unsplash.com/photo-1565538810643-b5bdb714032a?w=1920&q=80",
+    "ideas": [
+      {
+        "title": "Home Theatre Room",
+        "desc": "A dedicated media room with acoustic wall treatment, tiered seating, hidden wiring, and a proper A/V setup turns your basement into the neighbourhood's favourite movie destination.",
+        "img": "https://images.unsplash.com/photo-1555041469-a586c61ea9bc?w=800&q=75"
+      },
+      {
+        "title": "Legal In-Law Suite",
+        "desc": "A properly permitted secondary unit with bedroom, kitchen, bathroom, and separate entrance can generate $1,800–$2,500/month in rental income.",
+        "img": "https://images.unsplash.com/photo-1617806118233-18e1de247200?w=800&q=75"
+      },
+      {
+        "title": "Home Office & Gym",
+        "desc": "Combine a dedicated workspace with a home gym in your basement — soundproofed, climate-controlled, and separated from the main living area.",
+        "img": "https://images.unsplash.com/photo-1600210492486-724fe5c67fb0?w=800&q=75"
+      },
+      {
+        "title": "Kids Playroom & Family Room",
+        "desc": "A bright, well-insulated basement family room with a durable LVP floor, pot lights, and a half-bath becomes the most-used space in the house.",
+        "img": "https://images.unsplash.com/photo-1583847268964-b28dc8f51f92?w=800&q=75"
+      }
+    ],
+    "serviceSlug": "basement-renovation",
+    "gallery": [
+      "https://images.unsplash.com/photo-1565538810643-b5bdb714032a?w=800&q=75",
+      "https://images.unsplash.com/photo-1555041469-a586c61ea9bc?w=800&q=75",
+      "https://images.unsplash.com/photo-1617806118233-18e1de247200?w=800&q=75",
+      "https://images.unsplash.com/photo-1600210492486-724fe5c67fb0?w=800&q=75",
+      "https://images.unsplash.com/photo-1583847268964-b28dc8f51f92?w=800&q=75",
+      "https://images.unsplash.com/photo-1600566752355-35792bedcfea?w=800&q=75"
+    ]
+  },
+  {
+    "slug": "living-room",
+    "title": "Living Room Renovation Ideas",
+    "metaTitle": "Living Room Renovation Ideas [City] | [Company Name]",
+    "metaDesc": "Living room renovation & refresh ideas for [City] homes. Feature walls, fireplace surrounds, built-in shelving & more. Free estimate.",
+    "intro": "Your living room sets the tone for the entire home. Browse these [City] living room transformation projects for inspiration on feature walls, fireplace surrounds, built-in cabinetry, and flooring upgrades that make a dramatic difference.",
+    "heroImg": "https://images.unsplash.com/photo-1586023492125-27b2c045efd7?w=1920&q=80",
+    "ideas": [
+      {
+        "title": "Fireplace Feature Wall",
+        "desc": "A floor-to-ceiling fireplace surround in stone, tile, or shiplap — with a floating wood mantel — creates a dramatic focal point that anchors the entire room.",
+        "img": "https://images.unsplash.com/photo-1600210492493-0946911123ea?w=800&q=75"
+      },
+      {
+        "title": "Built-In Shelving & Cabinetry",
+        "desc": "Custom built-ins flanking a fireplace or filling an awkward wall add both storage and character that prefab furniture simply cannot achieve.",
+        "img": "https://images.unsplash.com/photo-1618221195710-dd6b41faaea6?w=800&q=75"
+      },
+      {
+        "title": "Hardwood Flooring",
+        "desc": "Engineered hardwood or solid wood flooring immediately elevates a space. We offer installation, refinishing of existing hardwood, and matching to adjacent rooms.",
+        "img": "https://images.unsplash.com/photo-1497366216548-37526070297c?w=800&q=75"
+      },
+      {
+        "title": "Open Concept Conversion",
+        "desc": "Opening a wall between the living room and kitchen or dining area is the single renovation that delivers the most perceived space improvement.",
+        "img": "https://images.unsplash.com/photo-1600585154526-990dced4db0d?w=800&q=75"
+      }
+    ],
+    "serviceSlug": "basement-renovation",
+    "gallery": [
+      "https://images.unsplash.com/photo-1586023492125-27b2c045efd7?w=800&q=75",
+      "https://images.unsplash.com/photo-1600210492493-0946911123ea?w=800&q=75",
+      "https://images.unsplash.com/photo-1618221195710-dd6b41faaea6?w=800&q=75",
+      "https://images.unsplash.com/photo-1497366216548-37526070297c?w=800&q=75",
+      "https://images.unsplash.com/photo-1600585154526-990dced4db0d?w=800&q=75",
+      "https://images.unsplash.com/photo-1555041469-a586c61ea9bc?w=800&q=75"
+    ]
+  },
+  {
+    "slug": "design",
+    "title": "Design Trends for [City] Homes",
+    "metaTitle": "Home Design Trends 2026 | [Company Name] [City]",
+    "metaDesc": "2026 home design trends for [City] homeowners. Warm minimalism, organic textures, smart home integration & energy-efficient design. Expert insight from local renovation pros.",
+    "intro": "Design trends in 2026 are moving toward warmth, texture, and longevity — away from stark white minimalism and toward spaces that feel lived-in and authentic. Here's what we're seeing in [City] renovation projects right now.",
+    "heroImg": "https://images.unsplash.com/photo-1618221195710-dd6b41faaea6?w=1920&q=80",
+    "ideas": [
+      {
+        "title": "Warm Minimalism",
+        "desc": "Organic materials — wood, stone, linen, clay — in warm neutral tones replace cold grey and sterile white. Simplicity with soul.",
+        "img": "https://images.unsplash.com/photo-1600585154340-be6161a56a0c?w=800&q=75"
+      },
+      {
+        "title": "Curved & Organic Forms",
+        "desc": "Rounded arches, curved cabinetry, and organic shapes are replacing sharp 90° corners. The effect is softer, more human, and genuinely distinctive.",
+        "img": "https://images.unsplash.com/photo-1600566752355-35792bedcfea?w=800&q=75"
+      },
+      {
+        "title": "Fluted & Textured Surfaces",
+        "desc": "Fluted wood panels, textured tiles, and reeded glass add tactile depth and visual interest to kitchens, bathrooms, and living spaces.",
+        "img": "https://images.unsplash.com/photo-1584622650111-993a426fbf0a?w=800&q=75"
+      },
+      {
+        "title": "Dark & Moody Kitchens",
+        "desc": "Dramatic deep navy, forest green, and charcoal cabinetry paired with brass hardware — bold, timeless, and a direct reaction to years of all-white kitchens.",
+        "img": "https://images.unsplash.com/photo-1556909172-89cf0b79bfb0?w=800&q=75"
+      }
+    ],
+    "serviceSlug": "kitchen-renovation",
+    "gallery": [
+      "https://images.unsplash.com/photo-1618221195710-dd6b41faaea6?w=800&q=75",
+      "https://images.unsplash.com/photo-1600585154340-be6161a56a0c?w=800&q=75",
+      "https://images.unsplash.com/photo-1600566752355-35792bedcfea?w=800&q=75",
+      "https://images.unsplash.com/photo-1584622650111-993a426fbf0a?w=800&q=75",
+      "https://images.unsplash.com/photo-1556909172-89cf0b79bfb0?w=800&q=75",
+      "https://images.unsplash.com/photo-1497366216548-37526070297c?w=800&q=75"
+    ]
+  }
+]

@@ -1,0 +1,108 @@
+---
+import BaseLayout from '../../layouts/BaseLayout.astro';
+import services from '../../data/services.json';
+import CtaBanner from '../../components/sections/CtaBanner.astro';
+
+const renovation = services.filter(s => s.category === 'Renovation' || s.category === 'Construction');
+const roofing = services.filter(s => s.category === 'Roofing');
+---
+
+<BaseLayout
+  title="All Services | [Company Name] — Renovation & Roofing [City]"
+  description="Complete renovation, construction, painting & roofing services in [City]. 16 services — kitchen, bathroom, basement, roof replacement, metal roofing & more. Free estimates."
+>
+
+  <!-- Hero -->
+  <section
+    class="page-hero"
+    style="background:linear-gradient(105deg,rgba(10,30,42,0.9) 0%,rgba(10,30,42,0.6) 100%), url('https://images.unsplash.com/photo-1556909114-f6e7ad7d3136?w=1920&q=80') center/cover;"
+    aria-labelledby="services-h1"
+  >
+    <div class="container" style="position:relative; z-index:1; padding-block:6rem;">
+      <span class="eyebrow">What We Do</span>
+      <h1 id="services-h1" style="color:white; max-width:600px; margin-bottom:1rem;">Our Services</h1>
+      <p style="color:rgba(255,255,255,0.8); font-size:var(--text-lg); max-width:520px; margin-bottom:2rem;">
+        From a single bathroom refresh to a complete custom home build — expert craftsmanship on every project.
+      </p>
+      <a href="/free-estimate" class="btn-primary">Get a Free Estimate →</a>
+    </div>
+  </section>
+
+  <!-- Renovation services -->
+  <section class="section">
+    <div class="container">
+      <span class="eyebrow">Renovation & Construction</span>
+      <h2 style="margin-bottom:0.5rem;">Renovation Services</h2>
+      <div class="gold-rule"></div>
+      <div class="all-services-grid">
+        {renovation.map(s => (
+          <a href={`/services/${s.slug}`} class="all-service-card card-hover">
+            <div class="all-service-img img-overlay">
+              <img src={s.cardImg} alt={s.alt} width="600" height="400" loading="lazy" decoding="async" style="width:100%;height:100%;object-fit:cover;" />
+            </div>
+            <div class="all-service-body">
+              <h3 class="all-service-title">{s.title}</h3>
+              <p class="all-service-tagline">{s.tagline}</p>
+              <span class="all-service-link">Learn More →</span>
+            </div>
+          </a>
+        ))}
+      </div>
+    </div>
+  </section>
+
+  <!-- Roofing services -->
+  <section class="section section-light">
+    <div class="container">
+      <span class="eyebrow">Roofing & Exteriors</span>
+      <h2 style="margin-bottom:0.5rem;">Roofing Services</h2>
+      <div class="gold-rule"></div>
+      <div class="all-services-grid">
+        {roofing.map(s => (
+          <a href={`/services/${s.slug}`} class="all-service-card card-hover">
+            <div class="all-service-img img-overlay">
+              <img src={s.cardImg} alt={s.alt} width="600" height="400" loading="lazy" decoding="async" style="width:100%;height:100%;object-fit:cover;" />
+            </div>
+            <div class="all-service-body">
+              <h3 class="all-service-title">{s.title}</h3>
+              <p class="all-service-tagline">{s.tagline}</p>
+              <span class="all-service-link">Learn More →</span>
+            </div>
+          </a>
+        ))}
+      </div>
+    </div>
+  </section>
+
+  <CtaBanner />
+
+</BaseLayout>
+
+<style>
+.page-hero { position: relative; }
+.all-services-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 1.5rem;
+  margin-top: 1rem;
+}
+.all-service-card {
+  border-radius: var(--radius-lg);
+  overflow: hidden;
+  box-shadow: var(--shadow-card);
+  background: white;
+  display: block;
+  color: inherit;
+  text-decoration: none;
+  border: 1px solid var(--color-gray-100);
+  transition: transform var(--duration-normal) var(--ease-out), box-shadow var(--duration-normal);
+}
+.all-service-img { aspect-ratio: 3/2; overflow: hidden; }
+.all-service-body { padding: 1.25rem 1.5rem 1.5rem; }
+.all-service-title { font-size: var(--text-xl); font-weight: 600; margin-bottom: 0.4rem; color: var(--color-primary-800); }
+.all-service-tagline { font-size: 0.875rem; color: var(--color-gray-600); line-height: 1.5; margin-bottom: 1rem; }
+.all-service-link { font-size: 0.8rem; font-weight: 600; color: var(--color-accent-700); letter-spacing: 0.04em; transition: color var(--duration-fast); }
+.all-service-card:hover .all-service-link { color: var(--color-accent-500); }
+@media (max-width: 1023px) { .all-services-grid { grid-template-columns: repeat(2, 1fr); } }
+@media (max-width: 639px) { .all-services-grid { grid-template-columns: 1fr; } }
+</style>

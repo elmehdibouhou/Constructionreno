@@ -1,0 +1,187 @@
+---
+---
+
+<form
+  action="https://formspree.io/f/[FORM_ID]"
+  method="POST"
+  class="estimate-form"
+  novalidate
+>
+  <input type="hidden" name="_subject" value="New Free Estimate Request — [City]" />
+  <input type="hidden" name="_next" value="https://[domain].ca/thank-you" />
+
+  <!-- Service + Property type -->
+  <div class="form-row">
+    <div class="form-group">
+      <label for="ef-service" class="form-label">Service Needed <span class="form-required" aria-hidden="true">*</span></label>
+      <select id="ef-service" name="service" class="form-select" required>
+        <option value="">Select a service</option>
+        <optgroup label="Renovation">
+          <option>Kitchen Renovation</option>
+          <option>Bathroom Renovation</option>
+          <option>Basement Renovation</option>
+          <option>Interior Painting</option>
+          <option>Exterior Painting</option>
+          <option>Home Addition</option>
+          <option>Custom Home</option>
+          <option>Exterior Renovation</option>
+        </optgroup>
+        <optgroup label="Roofing & Exteriors">
+          <option>Roof Replacement</option>
+          <option>Roof Repair</option>
+          <option>Metal Roofing</option>
+          <option>Exterior Siding</option>
+          <option>Soffit & Fascia</option>
+          <option>Eavestrough & Gutters</option>
+          <option>Venting Upgrade</option>
+          <option>Roof Inspection</option>
+          <option>Snow Removal</option>
+        </optgroup>
+        <option value="Other">Other / Not Sure</option>
+      </select>
+    </div>
+    <div class="form-group">
+      <label class="form-label">Property Type</label>
+      <div class="radio-group">
+        <label class="radio-label">
+          <input type="radio" name="property_type" value="Residential" checked /> Residential
+        </label>
+        <label class="radio-label">
+          <input type="radio" name="property_type" value="Commercial" /> Commercial
+        </label>
+      </div>
+    </div>
+  </div>
+
+  <!-- Budget + Timeline -->
+  <div class="form-row">
+    <div class="form-group">
+      <label for="ef-budget" class="form-label">Estimated Budget</label>
+      <select id="ef-budget" name="budget" class="form-select">
+        <option value="">Select a range</option>
+        <option>Under $10,000</option>
+        <option>$10,000 – $25,000</option>
+        <option>$25,000 – $50,000</option>
+        <option>$50,000 – $100,000</option>
+        <option>$100,000+</option>
+      </select>
+    </div>
+    <div class="form-group">
+      <label for="ef-timeline" class="form-label">Preferred Timeline</label>
+      <select id="ef-timeline" name="timeline" class="form-select">
+        <option value="">Select timeline</option>
+        <option>As soon as possible</option>
+        <option>1–3 months</option>
+        <option>3–6 months</option>
+        <option>Just exploring options</option>
+      </select>
+    </div>
+  </div>
+
+  <!-- Contact info -->
+  <div class="form-row">
+    <div class="form-group">
+      <label for="ef-name" class="form-label">Full Name <span class="form-required" aria-hidden="true">*</span></label>
+      <input type="text" id="ef-name" name="name" class="form-input" required autocomplete="name" placeholder="Jane Smith" />
+    </div>
+    <div class="form-group">
+      <label for="ef-email" class="form-label">Email Address <span class="form-required" aria-hidden="true">*</span></label>
+      <input type="email" id="ef-email" name="email" class="form-input" required autocomplete="email" placeholder="jane@email.com" />
+    </div>
+  </div>
+
+  <div class="form-row">
+    <div class="form-group">
+      <label for="ef-phone" class="form-label">Phone Number <span class="form-required" aria-hidden="true">*</span></label>
+      <input type="tel" id="ef-phone" name="phone" class="form-input" required autocomplete="tel" placeholder="(613) 555-0123" />
+    </div>
+    <div class="form-group">
+      <label for="ef-address" class="form-label">Street Address</label>
+      <input type="text" id="ef-address" name="address" class="form-input" autocomplete="street-address" placeholder="123 Main St" />
+    </div>
+  </div>
+
+  <div class="form-row">
+    <div class="form-group">
+      <label for="ef-city" class="form-label">City</label>
+      <input type="text" id="ef-city" name="city" class="form-input" autocomplete="address-level2" placeholder="[City]" />
+    </div>
+    <div class="form-group">
+      <label for="ef-postal" class="form-label">Postal Code</label>
+      <input type="text" id="ef-postal" name="postal_code" class="form-input" autocomplete="postal-code" placeholder="K1A 0A6" />
+    </div>
+  </div>
+
+  <div class="form-group">
+    <label for="ef-source" class="form-label">How did you hear about us?</label>
+    <select id="ef-source" name="source" class="form-select">
+      <option value="">Select an option</option>
+      <option>Google Search</option>
+      <option>Google Maps</option>
+      <option>Facebook</option>
+      <option>Instagram</option>
+      <option>Referral from friend</option>
+      <option>Saw your truck or sign</option>
+      <option>Other</option>
+    </select>
+  </div>
+
+  <div class="form-group">
+    <label for="ef-message" class="form-label">Tell us about your project <span class="form-required" aria-hidden="true">*</span></label>
+    <textarea id="ef-message" name="message" class="form-textarea" rows="5" required placeholder="Please describe your project in as much detail as you can — scope of work, special requirements, photos available, etc."></textarea>
+  </div>
+
+  <button type="submit" class="btn-primary form-submit-large">
+    Get My Free Estimate
+    <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" aria-hidden="true"><path d="M5 12h14M12 5l7 7-7 7"/></svg>
+  </button>
+
+  <p style="font-size:0.78rem; color:var(--color-gray-600); margin-top:0.75rem; text-align:center;">
+    We respond within 1 business day. No spam, no obligation.
+  </p>
+</form>
+
+<style>
+.estimate-form { display: flex; flex-direction: column; gap: 1.25rem; }
+
+.form-row {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 1.25rem;
+}
+
+.form-group { display: flex; flex-direction: column; gap: 0.4rem; }
+
+.form-required { color: var(--color-accent-500); }
+
+.radio-group {
+  display: flex;
+  gap: 1.5rem;
+  padding: 0.75rem 0;
+}
+
+.radio-label {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+  font-size: var(--text-base);
+  cursor: pointer;
+}
+
+.radio-label input[type="radio"] {
+  accent-color: var(--color-accent-500);
+  width: 16px;
+  height: 16px;
+}
+
+.form-submit-large {
+  width: 100%;
+  justify-content: center;
+  padding: 1rem;
+  font-size: 0.9rem;
+}
+
+@media (max-width: 639px) {
+  .form-row { grid-template-columns: 1fr; }
+}
+</style>

@@ -1,0 +1,111 @@
+---
+import BaseLayout from '../layouts/BaseLayout.astro';
+import products from '../data/products.json';
+import CtaBanner from '../components/sections/CtaBanner.astro';
+---
+
+<BaseLayout
+  title="Products & Materials | [Company Name] — [City]"
+  description="Premium roofing, siding, countertop & flooring products used by [Company Name] in [City]. GAF, CertainTeed, James Hardie, Silestone & more. Free estimates."
+>
+
+  <section
+    style="background:linear-gradient(105deg,rgba(10,30,42,0.9) 0%,rgba(10,30,42,0.6) 100%),url('https://images.unsplash.com/photo-1558618666-fcd25c85cd64?w=1920&q=80') center/cover; padding-block:6rem 4rem;"
+    aria-labelledby="products-h1"
+  >
+    <div class="container" style="position:relative; z-index:1;">
+      <span class="eyebrow">What We Use</span>
+      <h1 id="products-h1" style="color:white; max-width:600px; margin-bottom:1rem;">Products & Materials</h1>
+      <p style="color:rgba(255,255,255,0.8); max-width:520px; font-size:var(--text-lg);">
+        We use only premium, manufacturer-certified products — the same materials we would choose for our own homes.
+      </p>
+    </div>
+  </section>
+
+  <section class="section">
+    <div class="container">
+      {products.map((cat) => (
+        <div class="product-category">
+          <h2 class="product-cat-heading">{cat.category}</h2>
+          <div class="products-grid">
+            {cat.items.map(item => (
+              <div class="product-card">
+                <div class="product-img">
+                  <img
+                    src={item.img}
+                    alt={`${item.brand} ${item.name}`}
+                    width="400"
+                    height="260"
+                    loading="lazy"
+                    decoding="async"
+                    style="width:100%; height:100%; object-fit:cover;"
+                  />
+                </div>
+                <div class="product-body">
+                  <p class="product-brand">{item.brand}</p>
+                  <h3 class="product-name">{item.name}</h3>
+                  <p class="product-desc">{item.description}</p>
+                  <div class="product-warranty">
+                    <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"/></svg>
+                    <span>{item.warranty} Warranty</span>
+                  </div>
+                </div>
+              </div>
+            ))}
+          </div>
+        </div>
+      ))}
+    </div>
+  </section>
+
+  <CtaBanner
+    heading="Ask About Our Product Recommendations"
+    subtext="Not sure which material is right for your project? We'll guide you to the best option for your budget, style, and climate."
+  />
+
+</BaseLayout>
+
+<style>
+.product-category { margin-bottom: 4rem; }
+.product-cat-heading {
+  font-size: var(--text-3xl);
+  margin-bottom: 1.5rem;
+  padding-bottom: 0.75rem;
+  border-bottom: 2px solid var(--color-accent-500);
+}
+.products-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 1.5rem;
+}
+.product-card {
+  background: white;
+  border-radius: var(--radius-lg);
+  overflow: hidden;
+  box-shadow: var(--shadow-card);
+  border: 1px solid var(--color-gray-100);
+}
+.product-img { aspect-ratio: 16/10; overflow: hidden; }
+.product-body { padding: 1.5rem; }
+.product-brand {
+  font-size: 0.65rem;
+  text-transform: uppercase;
+  letter-spacing: 0.12em;
+  font-weight: 700;
+  color: var(--color-accent-700);
+  margin-bottom: 0.25rem;
+}
+.product-name { font-size: var(--text-xl); font-weight: 600; margin-bottom: 0.5rem; }
+.product-desc { font-size: 0.875rem; color: var(--color-gray-800); line-height: 1.6; margin-bottom: 1rem; }
+.product-warranty {
+  display: flex;
+  align-items: center;
+  gap: 0.4rem;
+  font-size: 0.78rem;
+  font-weight: 600;
+  color: var(--color-primary-700);
+}
+.product-warranty svg { color: var(--color-accent-500); }
+@media (max-width: 1023px) { .products-grid { grid-template-columns: repeat(2, 1fr); } }
+@media (max-width: 639px) { .products-grid { grid-template-columns: 1fr; } }
+</style>

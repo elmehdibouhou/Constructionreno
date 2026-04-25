@@ -1,0 +1,25 @@
+---
+import BaseLayout from '../layouts/BaseLayout.astro';
+import HeroHome from '../components/sections/HeroHome.astro';
+import Stats from '../components/sections/Stats.astro';
+import ServicesGrid from '../components/sections/ServicesGrid.astro';
+import AboutTeaser from '../components/sections/AboutTeaser.astro';
+import RecentWork from '../components/sections/RecentWork.astro';
+import TestimonialSlider from '../components/sections/TestimonialSlider.astro';
+import CtaBanner from '../components/sections/CtaBanner.astro';
+import FloatingCTA from '../components/ui/FloatingCTA.astro';
+---
+
+<BaseLayout
+  title="[Company Name] | Renovation & Roofing in [City], Canada"
+  description="Expert renovation, roofing & construction in [City]. Free estimates on kitchen, bathroom & basement renovations, painting, roof replacements & more. Call [Phone]."
+>
+  <HeroHome />
+  <Stats />
+  <ServicesGrid />
+  <AboutTeaser />
+  <RecentWork />
+  <TestimonialSlider />
+  <CtaBanner />
+  <FloatingCTA />
+</BaseLayout>

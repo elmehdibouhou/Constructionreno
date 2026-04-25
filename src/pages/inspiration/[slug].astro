@@ -1,0 +1,15 @@
+---
+import InspirationLayout from '../../layouts/InspirationLayout.astro';
+import inspirationData from '../../data/inspiration.json';
+
+export function getStaticPaths() {
+  return inspirationData.map((p) => ({
+    params: { slug: p.slug },
+    props: { page: p },
+  }));
+}
+
+const { page } = Astro.props;
+---
+
+<InspirationLayout page={page} />

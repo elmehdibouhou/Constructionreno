@@ -1,0 +1,56 @@
+---
+---
+
+<!-- Floating phone button — mobile only -->
+<a
+  href="tel:[Phone]"
+  class="floating-cta"
+  aria-label="Call us: [Phone]"
+>
+  <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true">
+    <path d="M22 16.92v3a2 2 0 01-2.18 2 19.79 19.79 0 01-8.63-3.07A19.5 19.5 0 013.07 9.81 19.79 19.79 0 01.12 1.18 2 2 0 012.11 0h3a2 2 0 012 1.72c.127.96.361 1.903.7 2.81a2 2 0 01-.45 2.11L6.09 7.91a16 16 0 006 6l1.27-1.27a2 2 0 012.11-.45c.907.339 1.85.573 2.81.7A2 2 0 0122 16.92z"/>
+  </svg>
+  <span class="floating-cta-label">Call Now</span>
+</a>
+
+<style>
+.floating-cta {
+  position: fixed;
+  bottom: 1.5rem;
+  right: 1.5rem;
+  z-index: var(--z-sticky);
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+  padding: 0.75rem 1.25rem;
+  background-color: var(--color-accent-500);
+  color: var(--color-primary-900);
+  font-weight: 600;
+  font-size: 0.82rem;
+  border-radius: var(--radius-full);
+  box-shadow: var(--shadow-xl), 0 0 0 0 rgba(200,169,110,0.4);
+  transition: transform var(--duration-normal) var(--ease-bounce),
+              box-shadow var(--duration-normal);
+  animation: pulse 2.5s ease-in-out infinite;
+}
+
+.floating-cta:hover {
+  transform: scale(1.05);
+  box-shadow: var(--shadow-xl), 0 0 0 8px rgba(200,169,110,0.15);
+  animation: none;
+}
+
+@keyframes pulse {
+  0%, 100% { box-shadow: var(--shadow-xl), 0 0 0 0 rgba(200,169,110,0.4); }
+  50% { box-shadow: var(--shadow-xl), 0 0 0 10px rgba(200,169,110,0); }
+}
+
+/* Hide on desktop */
+@media (min-width: 1024px) {
+  .floating-cta { display: none; }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .floating-cta { animation: none; }
+}
+</style>

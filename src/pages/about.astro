@@ -1,0 +1,229 @@
+---
+import BaseLayout from '../layouts/BaseLayout.astro';
+import CtaBanner from '../components/sections/CtaBanner.astro';
+import TestimonialSlider from '../components/sections/TestimonialSlider.astro';
+
+const values = [
+  { title: 'Honest Communication', desc: 'We tell you what we find, what it costs, and how long it takes — before work starts. No surprises, no upsells.' },
+  { title: 'Quality Materials Only', desc: 'We refuse to cut corners. We use the same materials we would use on our own homes.' },
+  { title: 'On-Time Delivery', desc: 'We build detailed project schedules and we stick to them. If something changes, you hear from us first.' },
+  { title: 'Lasting Workmanship', desc: 'Everything we do is backed by a 5-year workmanship warranty. We stand behind our work for years, not just until the cheque clears.' },
+];
+---
+
+<BaseLayout
+  title="About Us | [Company Name] — [City] Renovation & Roofing"
+  description="Learn about [Company Name] — a family-run renovation and roofing company in [City] with 15+ years of experience. Licensed, insured, 5-year warranty."
+>
+
+  <!-- Hero -->
+  <section
+    style="background:linear-gradient(105deg,rgba(10,30,42,0.88) 0%,rgba(10,30,42,0.55) 100%),url('https://images.unsplash.com/photo-1504307651254-35680f356dfd?w=1920&q=80') center/cover; padding-block:7rem 5rem; position:relative;"
+    aria-labelledby="about-h1"
+  >
+    <div class="container" style="position:relative; z-index:1;">
+      <span class="eyebrow">About Us</span>
+      <h1 id="about-h1" style="color:white; max-width:600px; margin-bottom:1rem;">Quality Craftsmanship, Built on Trust</h1>
+      <p style="color:rgba(255,255,255,0.8); max-width:520px; font-size:var(--text-lg); line-height:var(--leading-relaxed);">
+        We are a family-run renovation and roofing company based in [City], [Province] — dedicated to transforming homes with exceptional quality and care.
+      </p>
+    </div>
+  </section>
+
+  <!-- Our story -->
+  <section class="section">
+    <div class="container">
+      <div class="about-story-grid">
+        <div class="fade-up">
+          <span class="eyebrow">Our Story</span>
+          <h2 style="margin-bottom:0.75rem;">From Passion to Profession</h2>
+          <div class="gold-rule"></div>
+          <p style="color:var(--color-gray-800); line-height:var(--leading-relaxed); margin-bottom:1.25rem; font-size:var(--text-lg);">
+            [Company Name] was founded more than 15 years ago with a simple belief: every homeowner deserves renovation and roofing work done with the same care and quality that a professional would apply to their own home.
+          </p>
+          <p style="color:var(--color-gray-800); line-height:var(--leading-relaxed); margin-bottom:1.25rem;">
+            What started as a small painting and renovation business has grown into a full-service company handling everything from complete custom home builds to precision roof replacements — serving hundreds of [City] homeowners with the same personal approach we've always had.
+          </p>
+          <p style="color:var(--color-gray-800); line-height:var(--leading-relaxed);">
+            We are a woman-led, family-run business — and that's reflected in how we work. We listen carefully, communicate honestly, and treat every client's home like it's our own.
+          </p>
+        </div>
+        <div class="about-photo-wrap fade-up">
+          <img
+            src="https://images.unsplash.com/photo-1504307651254-35680f356dfd?w=800&q=80"
+            alt="[Company Name] founder and team on a [City] renovation project"
+            width="600"
+            height="750"
+            loading="lazy"
+            decoding="async"
+            class="about-story-photo"
+          />
+          <div class="about-accent-border" aria-hidden="true"></div>
+          <div class="about-badge" aria-hidden="true">
+            <span style="font-family:var(--font-display); font-size:2rem; font-weight:300; color:var(--color-accent-300); line-height:1;">15+</span>
+            <span style="font-size:0.7rem; text-transform:uppercase; letter-spacing:0.1em; font-weight:600; color:rgba(255,255,255,0.8); line-height:1.4;">Years<br>Experience</span>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Values -->
+  <section class="section section-light" aria-labelledby="values-heading">
+    <div class="container">
+      <div style="text-align:center; max-width:600px; margin:0 auto 3rem;">
+        <span class="eyebrow">Our Values</span>
+        <h2 id="values-heading">What We Stand For</h2>
+        <div class="gold-rule" style="margin-inline:auto;"></div>
+      </div>
+      <div class="values-grid">
+        {values.map((v, i) => (
+          <div class="value-card fade-up" style={`transition-delay:${i * 80}ms;`}>
+            <div class="value-number" aria-hidden="true">{String(i + 1).padStart(2, '0')}</div>
+            <h3 class="value-title">{v.title}</h3>
+            <p style="color:var(--color-gray-800); line-height:var(--leading-relaxed); font-size:0.95rem;">{v.desc}</p>
+          </div>
+        ))}
+      </div>
+    </div>
+  </section>
+
+  <!-- Stats -->
+  <section class="section section-dark">
+    <div class="container">
+      <div class="about-stats">
+        {[
+          { num: '15+', label: 'Years in Business' },
+          { num: '300+', label: 'Projects Completed' },
+          { num: '4.9★', label: 'Google Rating' },
+          { num: '100%', label: 'Licensed & Insured' },
+        ].map(s => (
+          <div style="text-align:center; padding:2rem 1rem;">
+            <div style="font-family:var(--font-display); font-size:var(--text-5xl); font-weight:300; color:var(--color-accent-500); line-height:1; margin-bottom:0.5rem;">{s.num}</div>
+            <p style="font-size:0.75rem; letter-spacing:0.12em; text-transform:uppercase; color:rgba(255,255,255,0.6); font-weight:600;">{s.label}</p>
+          </div>
+        ))}
+      </div>
+    </div>
+  </section>
+
+  <!-- Financing section -->
+  <section class="section" id="financing" aria-labelledby="financing-heading">
+    <div class="container container--narrow">
+      <span class="eyebrow">Financing</span>
+      <h2 id="financing-heading" style="margin-bottom:0.75rem;">Flexible Financing Available</h2>
+      <div class="gold-rule"></div>
+      <p style="color:var(--color-gray-800); line-height:var(--leading-relaxed); margin-bottom:1.5rem; font-size:var(--text-lg);">
+        We want quality renovation and roofing work to be accessible for every [City] homeowner. That's why we partner with home improvement lenders to offer flexible payment options.
+      </p>
+      <div class="financing-options">
+        {[
+          { title: '0% for 12 Months', desc: 'Interest-free financing on approved projects. Pay for your renovation over 12 months with zero interest charges.' },
+          { title: 'Low-Rate Extended Terms', desc: 'Longer-term financing with competitive rates — spread your renovation cost over 24–60 months.' },
+          { title: 'No Prepayment Penalty', desc: 'Pay down your balance at any time with no prepayment penalties or fees.' },
+        ].map(o => (
+          <div class="financing-card">
+            <div style="color:var(--color-accent-500); margin-bottom:0.75rem;">
+              <svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.75" aria-hidden="true"><polyline points="20 6 9 17 4 12"/></svg>
+            </div>
+            <h3 style="font-size:var(--text-xl); margin-bottom:0.5rem;">{o.title}</h3>
+            <p style="color:var(--color-gray-800); font-size:0.9rem; line-height:1.6;">{o.desc}</p>
+          </div>
+        ))}
+      </div>
+      <p style="font-size:0.82rem; color:var(--color-gray-600); margin-top:1.5rem;">Ask about financing options when you request your free estimate. Subject to credit approval.</p>
+    </div>
+  </section>
+
+  <TestimonialSlider />
+  <CtaBanner />
+
+</BaseLayout>
+
+<style>
+.about-story-grid {
+  display: grid;
+  grid-template-columns: 1fr 420px;
+  gap: 5rem;
+  align-items: center;
+}
+.about-photo-wrap { position: relative; }
+.about-story-photo {
+  width: 100%;
+  aspect-ratio: 4/5;
+  object-fit: cover;
+  border-radius: var(--radius-lg);
+  position: relative;
+  z-index: 1;
+}
+.about-accent-border {
+  position: absolute;
+  top: 1.5rem; right: -1.5rem;
+  bottom: -1.5rem; left: 1.5rem;
+  border: 2px solid var(--color-accent-500);
+  border-radius: var(--radius-lg);
+  opacity: 0.35;
+  z-index: 0;
+}
+.about-badge {
+  position: absolute;
+  bottom: 2rem; left: -1.5rem;
+  background: var(--color-primary-700);
+  color: white;
+  padding: 1rem 1.25rem;
+  border-radius: var(--radius-md);
+  display: flex;
+  align-items: center;
+  gap: 0.75rem;
+  box-shadow: var(--shadow-lg);
+  z-index: 2;
+}
+.values-grid {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 2rem;
+}
+.value-card {
+  padding: 2rem;
+  background: white;
+  border-radius: var(--radius-lg);
+  box-shadow: var(--shadow-card);
+  border: 1px solid var(--color-gray-100);
+  border-top: 3px solid var(--color-accent-500);
+}
+.value-number {
+  font-family: var(--font-display);
+  font-size: 3rem;
+  font-weight: 300;
+  color: var(--color-gray-200);
+  line-height: 1;
+  margin-bottom: 1rem;
+}
+.value-title { font-size: var(--text-xl); margin-bottom: 0.5rem; }
+.about-stats {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+}
+.financing-options {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 1.5rem;
+  margin-top: 1rem;
+}
+.financing-card {
+  padding: 1.5rem;
+  background: var(--color-off-white);
+  border-radius: var(--radius-lg);
+  border: 1px solid var(--color-gray-200);
+}
+@media (max-width: 1023px) {
+  .about-story-grid { grid-template-columns: 1fr; }
+  .about-accent-border { display: none; }
+  .about-badge { left: 1rem; }
+  .about-stats { grid-template-columns: repeat(2, 1fr); }
+}
+@media (max-width: 767px) {
+  .values-grid { grid-template-columns: 1fr; }
+  .financing-options { grid-template-columns: 1fr; }
+}
+</style>

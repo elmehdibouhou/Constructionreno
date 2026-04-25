@@ -1,0 +1,131 @@
+---
+import BaseLayout from '../layouts/BaseLayout.astro';
+import EstimateForm from '../components/ui/EstimateForm.astro';
+---
+
+<BaseLayout
+  title="Get a Free Estimate | [Company Name] — [City]"
+  description="Request a free renovation or roofing estimate from [Company Name] in [City]. No obligation, detailed written quote within 3–5 business days. Fill out our form."
+>
+
+  <section
+    style="background:linear-gradient(105deg,rgba(10,30,42,0.9) 0%,rgba(10,30,42,0.65) 100%),url('https://images.unsplash.com/photo-1556909114-f6e7ad7d3136?w=1920&q=80') center/cover; padding-block:6rem 4rem;"
+    aria-labelledby="estimate-h1"
+  >
+    <div class="container" style="position:relative; z-index:1;">
+      <span class="eyebrow">Free Estimate</span>
+      <h1 id="estimate-h1" style="color:white; max-width:600px; margin-bottom:1rem;">Get Your Free Estimate</h1>
+      <p style="color:rgba(255,255,255,0.8); max-width:500px; font-size:var(--text-lg);">
+        Fill out the form below and our team will reach out within 1 business day.
+      </p>
+    </div>
+  </section>
+
+  <section class="section">
+    <div class="container">
+      <div class="estimate-layout">
+
+        <!-- Form -->
+        <div>
+          <h2 style="margin-bottom:0.5rem; font-size:var(--text-3xl);">Tell Us About Your Project</h2>
+          <p style="color:var(--color-gray-600); margin-bottom:2rem; line-height:var(--leading-relaxed);">
+            The more detail you share, the more accurate your written estimate will be. All fields marked * are required.
+          </p>
+          <EstimateForm />
+        </div>
+
+        <!-- Trust sidebar -->
+        <aside>
+          <div class="trust-card">
+            <h3 style="color:var(--color-accent-300); margin-bottom:1.5rem; font-family:var(--font-display); font-weight:400; font-size:1.35rem;">What Happens Next</h3>
+            <ol class="process-list">
+              {[
+                { step: '1', title: 'Submit Your Form', desc: 'We receive your project details immediately.' },
+                { step: '2', title: 'We Contact You', desc: 'A team member calls or emails within 1 business day to discuss your project.' },
+                { step: '3', title: 'Site Visit', desc: 'We visit your property at a convenient time to assess scope and take measurements.' },
+                { step: '4', title: 'Written Quote', desc: 'You receive a detailed written estimate within 3–5 business days. No hidden fees.' },
+              ].map(p => (
+                <li class="process-item">
+                  <div class="process-step">{p.step}</div>
+                  <div>
+                    <p style="font-weight:600; color:white; margin-bottom:0.2rem; font-size:0.9rem;">{p.title}</p>
+                    <p style="font-size:0.82rem; color:rgba(255,255,255,0.65); line-height:1.5;">{p.desc}</p>
+                  </div>
+                </li>
+              ))}
+            </ol>
+          </div>
+
+          <div class="trust-card" style="margin-top:1.5rem;">
+            <h3 style="color:var(--color-accent-300); margin-bottom:1rem; font-family:var(--font-display); font-weight:400; font-size:1.2rem;">Our Guarantees</h3>
+            {[
+              'Free estimate, no obligation',
+              'Detailed written quote — no verbal guesses',
+              'Licensed & fully insured',
+              '5-year workmanship warranty',
+              'No subcontracting surprises',
+            ].map(g => (
+              <div style="display:flex; align-items:flex-start; gap:0.6rem; margin-bottom:0.75rem; font-size:0.875rem; color:rgba(255,255,255,0.8); line-height:1.5;">
+                <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" style="color:var(--color-accent-500); flex-shrink:0; margin-top:1px;" aria-hidden="true"><polyline points="20 6 9 17 4 12"/></svg>
+                {g}
+              </div>
+            ))}
+          </div>
+
+          <div style="margin-top:1.5rem; padding:1.25rem; background:var(--color-accent-100); border-radius:var(--radius-lg); border:1px solid var(--color-accent-300);">
+            <p style="font-size:0.85rem; color:var(--color-primary-800); line-height:1.6; font-weight:500;">
+              Prefer to call? Reach us directly at <a href="tel:[Phone]" style="color:var(--color-accent-700); font-weight:700;">[Phone]</a> — Mon–Fri, 8am–5pm.
+            </p>
+          </div>
+        </aside>
+
+      </div>
+    </div>
+  </section>
+
+</BaseLayout>
+
+<style>
+.estimate-layout {
+  display: grid;
+  grid-template-columns: 1fr 360px;
+  gap: 4rem;
+  align-items: start;
+}
+.trust-card {
+  background: var(--color-primary-800);
+  border-radius: var(--radius-lg);
+  padding: 1.75rem;
+  border: 1px solid rgba(200,169,110,0.15);
+  position: sticky;
+  top: 100px;
+}
+.process-list {
+  list-style: none;
+  display: flex;
+  flex-direction: column;
+  gap: 1.25rem;
+}
+.process-item {
+  display: flex;
+  align-items: flex-start;
+  gap: 1rem;
+}
+.process-step {
+  width: 28px;
+  height: 28px;
+  border-radius: 50%;
+  background: var(--color-accent-500);
+  color: var(--color-primary-900);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-weight: 700;
+  font-size: 0.8rem;
+  flex-shrink: 0;
+}
+@media (max-width: 1023px) {
+  .estimate-layout { grid-template-columns: 1fr; }
+  .trust-card { position: static; }
+}
+</style>

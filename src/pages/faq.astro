@@ -1,0 +1,141 @@
+---
+import BaseLayout from '../layouts/BaseLayout.astro';
+import faqData from '../data/faq.json';
+import CtaBanner from '../components/sections/CtaBanner.astro';
+
+const allQuestions = faqData.flatMap(cat => cat.questions);
+
+const faqSchema = {
+  "@context": "https://schema.org",
+  "@type": "FAQPage",
+  "mainEntity": allQuestions.map(q => ({
+    "@type": "Question",
+    "name": q.q,
+    "acceptedAnswer": { "@type": "Answer", "text": q.a }
+  }))
+};
+---
+
+<BaseLayout
+  title="FAQ | [Company Name] — Renovation & Roofing Questions Answered"
+  description="Answers to frequently asked questions about renovation costs, timelines, permits & warranties in [City]. Expert advice from local renovation and roofing professionals."
+  schema={faqSchema}
+>
+
+  <section
+    style="background:linear-gradient(105deg,rgba(10,30,42,0.9) 0%,rgba(10,30,42,0.6) 100%),url('https://images.unsplash.com/photo-1600585154526-990dced4db0d?w=1920&q=80') center/cover; padding-block:6rem 4rem;"
+    aria-labelledby="faq-h1"
+  >
+    <div class="container" style="position:relative; z-index:1;">
+      <span class="eyebrow">Frequently Asked Questions</span>
+      <h1 id="faq-h1" style="color:white; max-width:600px; margin-bottom:1rem;">Common Questions, Honest Answers</h1>
+      <p style="color:rgba(255,255,255,0.8); max-width:500px; font-size:var(--text-lg);">
+        Can't find what you're looking for? Call us at <a href="tel:[Phone]" style="color:var(--color-accent-300);">[Phone]</a>.
+      </p>
+    </div>
+  </section>
+
+  <section class="section">
+    <div class="container">
+      <div class="faq-layout">
+        <aside class="faq-sidebar" aria-label="FAQ categories">
+          {faqData.map((cat, i) => (
+            <a href={`#cat-${i}`} class="faq-cat-link">{cat.category}</a>
+          ))}
+          <div style="margin-top:2rem; padding:1.5rem; background:var(--color-primary-800); border-radius:var(--radius-lg); border:1px solid rgba(200,169,110,0.15);">
+            <p style="font-size:0.875rem; color:rgba(255,255,255,0.75); margin-bottom:1rem; line-height:1.6; font-family:var(--font-display); font-size:1.1rem; color:var(--color-accent-300);">Still have questions?</p>
+            <a href="/contact" class="btn-primary" style="font-size:0.75rem; padding:0.6rem 1.25rem; width:100%; justify-content:center;">Contact Us</a>
+            <a href="tel:[Phone]" style="display:block; text-align:center; font-size:0.8rem; color:rgba(255,255,255,0.6); margin-top:0.75rem;">[Phone]</a>
+          </div>
+        </aside>
+
+        <main>
+          {faqData.map((cat, i) => (
+            <div id={`cat-${i}`} style="margin-bottom:3rem;">
+              <h2 style="font-size:var(--text-3xl); margin-bottom:1.5rem; padding-bottom:0.75rem; border-bottom:2px solid var(--color-accent-500);">{cat.category}</h2>
+              <div class="faq-list">
+                {cat.questions.map((item, j) => (
+                  <div class="faq-item">
+                    <button
+                      class="faq-trigger"
+                      aria-expanded="false"
+                      aria-controls={`faq-${i}-${j}`}
+                      id={`trigger-${i}-${j}`}
+                      type="button"
+                    >
+                      <span>{item.q}</span>
+                      <svg class="faq-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true">
+                        <line x1="12" y1="5" x2="12" y2="19"/>
+                        <line x1="5" y1="12" x2="19" y2="12"/>
+                      </svg>
+                    </button>
+                    <div class="faq-body" id={`faq-${i}-${j}`} role="region" aria-labelledby={`trigger-${i}-${j}`}>
+                      <div class="faq-body-inner">{item.a}</div>
+                    </div>
+                  </div>
+                ))}
+              </div>
+            </div>
+          ))}
+        </main>
+      </div>
+    </div>
+  </section>
+
+  <CtaBanner
+    heading="Still Have Questions?"
+    subtext="Our team is happy to answer any question about your renovation or roofing project — no obligation."
+  />
+
+</BaseLayout>
+
+<style>
+.faq-layout {
+  display: grid;
+  grid-template-columns: 220px 1fr;
+  gap: 4rem;
+  align-items: start;
+}
+.faq-sidebar {
+  position: sticky;
+  top: 100px;
+  display: flex;
+  flex-direction: column;
+  gap: 0.25rem;
+}
+.faq-cat-link {
+  display: block;
+  padding: 0.6rem 0.75rem;
+  font-size: 0.875rem;
+  color: var(--color-gray-800);
+  border-radius: var(--radius-sm);
+  border-left: 2px solid transparent;
+  transition: all var(--duration-fast);
+  font-weight: 500;
+}
+.faq-cat-link:hover {
+  color: var(--color-primary-700);
+  background: var(--color-gray-100);
+  border-left-color: var(--color-accent-500);
+}
+@media (max-width: 1023px) {
+  .faq-layout { grid-template-columns: 1fr; }
+  .faq-sidebar { position: static; flex-direction: row; flex-wrap: wrap; }
+}
+</style>
+
+<script>
+  document.querySelectorAll('.faq-trigger').forEach((trigger) => {
+    trigger.addEventListener('click', () => {
+      const expanded = trigger.getAttribute('aria-expanded') === 'true';
+      trigger.closest('.faq-list')?.querySelectorAll('.faq-trigger').forEach(t => {
+        t.setAttribute('aria-expanded', 'false');
+        (t.nextElementSibling as HTMLElement)?.classList.remove('is-open');
+      });
+      if (!expanded) {
+        trigger.setAttribute('aria-expanded', 'true');
+        (trigger.nextElementSibling as HTMLElement)?.classList.add('is-open');
+      }
+    });
+  });
+</script>

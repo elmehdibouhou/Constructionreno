@@ -1,0 +1,271 @@
+---
+import BaseLayout from './BaseLayout.astro';
+import BreadcrumbNav from '../components/ui/BreadcrumbNav.astro';
+import ContactForm from '../components/ui/ContactForm.astro';
+import inspirationData from '../data/inspiration.json';
+
+interface Props {
+  page: (typeof inspirationData)[0];
+}
+const { page } = Astro.props;
+---
+
+<BaseLayout title={page.metaTitle} description={page.metaDesc}>
+
+  <!-- Hero -->
+  <section
+    class="inspiration-hero"
+    style={`background-image: url('${page.heroImg}');`}
+    aria-labelledby="insp-h1"
+  >
+    <div class="hero-overlay" aria-hidden="true"></div>
+    <div class="container insp-hero-content">
+      <BreadcrumbNav crumbs={[
+        { label: 'Home', href: '/' },
+        { label: 'Inspiration', href: '/inspiration/kitchen' },
+        { label: page.title },
+      ]} />
+      <h1 id="insp-h1" style="color:white; margin-top:1rem; max-width:700px;">{page.title}</h1>
+    </div>
+  </section>
+
+  <!-- Main content with sidebar -->
+  <div class="container insp-layout">
+
+    <!-- Sidebar -->
+    <aside class="insp-sidebar" aria-label="Inspiration categories">
+      <p class="sidebar-heading">Browse Ideas</p>
+      <nav>
+        <ul role="list" style="list-style:none;">
+          {inspirationData.map(cat => (
+            <li>
+              <a
+                href={`/inspiration/${cat.slug}`}
+                class:list={['sidebar-link', { 'sidebar-link--active': cat.slug === page.slug }]}
+              >
+                {cat.title.split(' ')[0]} Inspiration
+              </a>
+            </li>
+          ))}
+        </ul>
+      </nav>
+
+      <!-- Sticky CTA -->
+      <div class="sidebar-cta">
+        <p style="font-size:0.875rem; color:rgba(255,255,255,0.75); margin-bottom:1rem; line-height:1.6;">
+          Ready to turn inspiration into reality?
+        </p>
+        <a href="/free-estimate" class="btn-primary" style="font-size:0.75rem; padding:0.65rem 1.25rem; width:100%; justify-content:center;">Free Estimate →</a>
+        <a href="tel:[Phone]" style="display:block; text-align:center; font-size:0.8rem; color:rgba(255,255,255,0.65); margin-top:0.75rem;">[Phone]</a>
+      </div>
+    </aside>
+
+    <!-- Main content -->
+    <main class="insp-main" id="main-content">
+
+      <!-- Intro -->
+      <div style="margin-bottom:3rem; padding-top:3rem;">
+        <p class="body-lg" style="color:var(--color-gray-800); max-width:680px;">{page.intro}</p>
+        <div class="gold-rule"></div>
+      </div>
+
+      <!-- Gallery grid -->
+      <section aria-labelledby="gallery-heading">
+        <h2 id="gallery-heading" style="margin-bottom:1.5rem; font-size:var(--text-3xl);">Project Gallery</h2>
+        <div class="insp-gallery">
+          {page.gallery.map((img, i) => (
+            <div class="insp-gallery-item img-overlay card-hover">
+              <img
+                src={img}
+                alt={`${page.title} project ${i + 1} in [City]`}
+                width="600"
+                height="450"
+                loading="lazy"
+                decoding="async"
+                style="width:100%; height:100%; object-fit:cover;"
+              />
+            </div>
+          ))}
+        </div>
+      </section>
+
+      <!-- Ideas section -->
+      <section style="margin-top:4rem;" aria-labelledby="ideas-heading">
+        <h2 id="ideas-heading" style="margin-bottom:2rem; font-size:var(--text-3xl);">Top Ideas & Trends</h2>
+        <div class="ideas-grid">
+          {page.ideas.map(idea => (
+            <div class="idea-card fade-up">
+              <div class="idea-img img-zoom">
+                <img
+                  src={idea.img}
+                  alt={idea.title}
+                  width="600"
+                  height="400"
+                  loading="lazy"
+                  decoding="async"
+                  style="width:100%; height:100%; object-fit:cover;"
+                />
+              </div>
+              <div class="idea-content">
+                <h3 class="idea-title">{idea.title}</h3>
+                <p style="color:var(--color-gray-800); line-height:var(--leading-relaxed); font-size:0.95rem;">{idea.desc}</p>
+              </div>
+            </div>
+          ))}
+        </div>
+      </section>
+
+      <!-- Service link -->
+      <section class="insp-service-cta" aria-labelledby="service-cta-heading">
+        <div class="insp-service-cta-inner">
+          <span class="eyebrow" style="color:var(--color-accent-300);">Ready to Get Started?</span>
+          <h2 id="service-cta-heading" style="color:white; margin-bottom:0.75rem;">Turn Your Vision Into Reality</h2>
+          <div class="gold-rule"></div>
+          <p style="color:rgba(255,255,255,0.75); max-width:500px; line-height:var(--leading-relaxed); margin-bottom:2rem;">
+            Our [City] renovation team would love to discuss your project. Free estimates, no obligation.
+          </p>
+          <div style="display:flex; gap:1rem; flex-wrap:wrap;">
+            <a href={`/services/${page.serviceSlug}`} class="btn-primary">View Our {page.title.split(' ')[0]} Services</a>
+            <a href="/free-estimate" class="btn-outline">Free Estimate</a>
+          </div>
+        </div>
+      </section>
+
+      <!-- Inline contact form -->
+      <section style="margin-top:4rem; padding-top:4rem; border-top:1px solid var(--color-gray-200);">
+        <h2 style="margin-bottom:0.5rem; font-size:var(--text-3xl);">Request a Free Estimate</h2>
+        <p style="color:var(--color-gray-600); margin-bottom:2rem;">Tell us about your project and we'll be in touch within 1 business day.</p>
+        <ContactForm />
+      </section>
+
+    </main>
+  </div>
+
+</BaseLayout>
+
+<style>
+.inspiration-hero {
+  position: relative;
+  background-size: cover;
+  background-position: center;
+  min-height: 50vh;
+  display: flex;
+  align-items: flex-end;
+  padding-bottom: 3rem;
+}
+.insp-hero-content {
+  position: relative;
+  z-index: 1;
+  padding-top: 6rem;
+}
+
+.insp-layout {
+  display: grid;
+  grid-template-columns: 260px 1fr;
+  gap: 4rem;
+  align-items: start;
+  padding-block: 3rem;
+}
+
+/* Sidebar */
+.insp-sidebar {
+  position: sticky;
+  top: 100px;
+}
+.sidebar-heading {
+  font-size: 0.65rem;
+  letter-spacing: 0.14em;
+  text-transform: uppercase;
+  color: var(--color-accent-500);
+  font-weight: 700;
+  margin-bottom: 0.75rem;
+}
+.sidebar-link {
+  display: block;
+  padding: 0.6rem 0.75rem;
+  font-size: 0.875rem;
+  color: var(--color-gray-800);
+  border-radius: var(--radius-sm);
+  border-left: 2px solid transparent;
+  transition: all var(--duration-fast);
+}
+.sidebar-link:hover {
+  color: var(--color-primary-700);
+  background-color: var(--color-gray-100);
+  border-left-color: var(--color-accent-500);
+}
+.sidebar-link--active {
+  color: var(--color-primary-700);
+  background-color: var(--color-accent-100);
+  border-left-color: var(--color-accent-500);
+  font-weight: 600;
+}
+.sidebar-cta {
+  margin-top: 2rem;
+  padding: 1.5rem;
+  background: var(--color-primary-800);
+  border-radius: var(--radius-lg);
+  border: 1px solid rgba(200,169,110,0.2);
+}
+
+/* Gallery */
+.insp-gallery {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 0.75rem;
+}
+.insp-gallery-item {
+  aspect-ratio: 4/3;
+  border-radius: var(--radius-md);
+  overflow: hidden;
+  cursor: pointer;
+}
+
+/* Ideas */
+.ideas-grid {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 2rem;
+}
+.idea-card {
+  border-radius: var(--radius-lg);
+  overflow: hidden;
+  box-shadow: var(--shadow-card);
+  border: 1px solid var(--color-gray-100);
+  background: white;
+}
+.idea-img {
+  aspect-ratio: 3/2;
+  overflow: hidden;
+}
+.idea-img img { transition: transform var(--duration-slow) var(--ease-out); }
+.idea-card:hover .idea-img img { transform: scale(1.05); }
+.idea-content { padding: 1.5rem; }
+.idea-title {
+  font-size: var(--text-xl);
+  font-weight: 600;
+  margin-bottom: 0.5rem;
+  color: var(--color-primary-800);
+}
+
+/* Service CTA */
+.insp-service-cta {
+  margin-top: 4rem;
+  border-radius: var(--radius-xl);
+  overflow: hidden;
+  background: var(--color-primary-800);
+}
+.insp-service-cta-inner {
+  padding: 3rem;
+}
+
+@media (max-width: 1023px) {
+  .insp-layout { grid-template-columns: 1fr; }
+  .insp-sidebar { position: static; }
+  .insp-gallery { grid-template-columns: repeat(2, 1fr); }
+}
+@media (max-width: 639px) {
+  .ideas-grid { grid-template-columns: 1fr; }
+  .insp-gallery { grid-template-columns: 1fr; }
+}
+</style>

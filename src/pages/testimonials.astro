@@ -1,0 +1,131 @@
+---
+import BaseLayout from '../layouts/BaseLayout.astro';
+import CtaBanner from '../components/sections/CtaBanner.astro';
+
+const reviews = [
+  { name: 'Sarah M.', project: 'Kitchen Renovation', location: '[City]', rating: 5, date: 'March 2026', quote: 'Absolutely stunning results. They transformed our outdated kitchen into a modern masterpiece. The team was professional, clean, and completed everything on time and on budget. Highly recommend to anyone in [City]!' },
+  { name: 'David & Karen L.', project: 'Roof Replacement', location: '[City]', rating: 5, date: 'February 2026', quote: 'After getting 3 quotes, we chose this team for their transparent pricing and excellent reviews. Best decision we made. Our new roof looks incredible and was completed in just 2 days. The property was left spotless.' },
+  { name: 'James T.', project: 'Basement Renovation', location: '[City]', rating: 5, date: 'January 2026', quote: 'They converted our unfinished basement into a beautiful living space my family uses every single day. The craftsmanship is exceptional. On budget, on time, and the cleanup was impeccable.' },
+  { name: 'Michelle B.', project: 'Bathroom Renovation', location: '[City]', rating: 5, date: 'December 2025', quote: 'My master bathroom is now a genuine spa retreat. Every detail was handled perfectly. The tile work is absolutely flawless. I\'ve already referred three neighbours.' },
+  { name: 'Robert & Linda P.', project: 'Home Addition', location: '[City]', rating: 5, date: 'November 2025', quote: 'We added a family room and additional bedroom. The team managed every aspect seamlessly — permits, framing, all trades — and the finished result matches our original home perfectly. Incredible experience.' },
+  { name: 'Priya S.', project: 'Exterior Painting', location: '[City]', rating: 5, date: 'October 2025', quote: 'Our home exterior went from tired and dated to absolutely stunning. The prep work was thorough, the colours chosen with us were perfect, and the finish is immaculate. Very professional from start to finish.' },
+  { name: 'Tom & Angela W.', project: 'Roof Replacement + Siding', location: '[City]', rating: 5, date: 'September 2025', quote: 'We had the roof and siding done at the same time. The coordination was seamless — it felt like one integrated project rather than two contractors. Our home looks brand new. The price was fair and the quality is exceptional.' },
+  { name: 'Danielle F.', project: 'Kitchen Renovation', location: '[City]', rating: 5, date: 'August 2025', quote: 'From the design consultation through to the final walkthrough, the experience was perfect. They listened to exactly what I wanted, offered smart suggestions, and delivered beyond my expectations. Worth every dollar.' },
+  { name: 'Michael K.', project: 'Metal Roofing', location: '[City]', rating: 5, date: 'July 2025', quote: 'Had a standing seam metal roof installed. The workmanship is exceptional — perfectly aligned panels, clean flashing details, everything done exactly right. It\'s the roof I\'ll never have to replace again.' },
+];
+---
+
+<BaseLayout
+  title="Testimonials | [Company Name] — [City] Client Reviews"
+  description="Read verified reviews from [Company Name] clients in [City]. Kitchen renovations, roof replacements, basement finishing & more. 4.9★ average on Google."
+>
+
+  <section
+    style="background:linear-gradient(105deg,rgba(10,30,42,0.88) 0%,rgba(10,30,42,0.55) 100%),url('https://images.unsplash.com/photo-1600585154340-be6161a56a0c?w=1920&q=80') center/cover; padding-block:6rem 4rem;"
+    aria-labelledby="testimonials-h1"
+  >
+    <div class="container" style="position:relative; z-index:1;">
+      <span class="eyebrow">Client Reviews</span>
+      <h1 id="testimonials-h1" style="color:white; max-width:600px; margin-bottom:1rem;">What Our Clients Say</h1>
+      <div style="display:flex; align-items:center; gap:1rem; flex-wrap:wrap;">
+        <div style="display:flex; align-items:center; gap:0.5rem; padding:0.5rem 1.25rem; background:rgba(255,255,255,0.1); border-radius:var(--radius-full); border:1px solid rgba(255,255,255,0.15);">
+          <span style="color:var(--color-accent-300); font-size:1.1rem;">★★★★★</span>
+          <span style="color:white; font-weight:600;">4.9 / 5</span>
+          <span style="color:rgba(255,255,255,0.6); font-size:0.85rem;">on Google</span>
+        </div>
+        <span style="color:rgba(255,255,255,0.6); font-size:0.9rem;">300+ completed projects · [City], [Province]</span>
+      </div>
+    </div>
+  </section>
+
+  <section class="section">
+    <div class="container">
+      <div class="reviews-grid">
+        {reviews.map((r) => (
+          <article class="review-card fade-up" aria-label={`Review by ${r.name}`}>
+            <header class="review-header">
+              <div class="review-avatar" aria-hidden="true">{r.name.charAt(0)}</div>
+              <div>
+                <p class="review-name">{r.name}</p>
+                <p class="review-meta">{r.project} · {r.location}</p>
+              </div>
+              <div style="margin-left:auto; display:flex; flex-direction:column; align-items:flex-end; gap:0.2rem;">
+                <div aria-label={`${r.rating} out of 5 stars`} style="color:var(--color-accent-500); font-size:0.95rem;">{'★'.repeat(r.rating)}</div>
+                <time style="font-size:0.75rem; color:var(--color-gray-600);">{r.date}</time>
+              </div>
+            </header>
+            <blockquote>
+              <p class="review-quote">"{r.quote}"</p>
+            </blockquote>
+            <div class="review-verified">
+              <svg width="14" height="14" viewBox="0 0 24 24" fill="none" aria-hidden="true">
+                <path fill="#4285F4" d="M22.56 12.25c0-.78-.07-1.53-.2-2.25H12v4.26h5.92c-.26 1.37-1.04 2.53-2.21 3.31v2.77h3.57c2.08-1.92 3.28-4.74 3.28-8.09z"/>
+                <path fill="#34A853" d="M12 23c2.97 0 5.46-.98 7.28-2.66l-3.57-2.77c-.98.66-2.23 1.06-3.71 1.06-2.86 0-5.29-1.93-6.16-4.53H2.18v2.84C3.99 20.53 7.7 23 12 23z"/>
+                <path fill="#FBBC05" d="M5.84 14.09c-.22-.66-.35-1.36-.35-2.09s.13-1.43.35-2.09V7.07H2.18C1.43 8.55 1 10.22 1 12s.43 3.45 1.18 4.93l2.85-2.22.81-.62z"/>
+                <path fill="#EA4335" d="M12 5.38c1.62 0 3.06.56 4.21 1.64l3.15-3.15C17.45 2.09 14.97 1 12 1 7.7 1 3.99 3.47 2.18 7.07l3.66 2.84c.87-2.6 3.3-4.53 6.16-4.53z"/>
+              </svg>
+              <span>Verified Google Review</span>
+            </div>
+          </article>
+        ))}
+      </div>
+    </div>
+  </section>
+
+  <CtaBanner
+    heading="Ready to Be Our Next Happy Client?"
+    subtext="Join hundreds of [City] homeowners who trust us with their most valuable asset."
+  />
+
+</BaseLayout>
+
+<style>
+.reviews-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 1.5rem;
+}
+.review-card {
+  background: white;
+  border-radius: var(--radius-lg);
+  padding: 1.75rem;
+  box-shadow: var(--shadow-card);
+  border: 1px solid var(--color-gray-100);
+  display: flex;
+  flex-direction: column;
+  gap: 1.25rem;
+}
+.review-header {
+  display: flex;
+  align-items: flex-start;
+  gap: 0.875rem;
+}
+.review-avatar {
+  width: 44px;
+  height: 44px;
+  border-radius: 50%;
+  background: var(--color-primary-700);
+  color: white;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-weight: 700;
+  font-size: 1.1rem;
+  flex-shrink: 0;
+}
+.review-name { font-weight: 600; font-size: 0.95rem; color: var(--color-text); margin-bottom: 0.15rem; }
+.review-meta { font-size: 0.78rem; color: var(--color-gray-600); }
+.review-quote { font-size: 0.9rem; color: var(--color-gray-800); line-height: var(--leading-relaxed); font-style: italic; }
+.review-verified {
+  display: flex;
+  align-items: center;
+  gap: 0.4rem;
+  font-size: 0.72rem;
+  color: var(--color-gray-600);
+  padding-top: 0.75rem;
+  border-top: 1px solid var(--color-gray-100);
+  margin-top: auto;
+}
+@media (max-width: 1023px) { .reviews-grid { grid-template-columns: repeat(2, 1fr); } }
+@media (max-width: 639px) { .reviews-grid { grid-template-columns: 1fr; } }
+</style>

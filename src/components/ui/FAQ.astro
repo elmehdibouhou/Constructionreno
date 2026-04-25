@@ -1,0 +1,60 @@
+---
+interface Props {
+  items: { q: string; a: string }[];
+  dark?: boolean;
+}
+const { items, dark = false } = Astro.props;
+---
+
+<div class:list={['faq-list', { 'faq-list--dark': dark }]}>
+  {items.map((item, i) => (
+    <div class="faq-item">
+      <button
+        class="faq-trigger"
+        aria-expanded="false"
+        aria-controls={`faq-body-${i}`}
+        id={`faq-trigger-${i}`}
+        type="button"
+      >
+        <span>{item.q}</span>
+        <svg class="faq-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true">
+          <line x1="12" y1="5" x2="12" y2="19"/>
+          <line x1="5" y1="12" x2="19" y2="12"/>
+        </svg>
+      </button>
+      <div
+        class="faq-body"
+        id={`faq-body-${i}`}
+        role="region"
+        aria-labelledby={`faq-trigger-${i}`}
+      >
+        <div class="faq-body-inner">{item.a}</div>
+      </div>
+    </div>
+  ))}
+</div>
+
+<style>
+.faq-list--dark .faq-item { border-bottom-color: rgba(255,255,255,0.1); }
+.faq-list--dark .faq-trigger { color: rgba(255,255,255,0.9); }
+.faq-list--dark .faq-trigger:hover,
+.faq-list--dark .faq-trigger[aria-expanded="true"] { color: var(--color-accent-300); }
+.faq-list--dark .faq-body-inner { color: rgba(255,255,255,0.65); }
+</style>
+
+<script>
+  document.querySelectorAll('.faq-trigger').forEach((trigger) => {
+    trigger.addEventListener('click', () => {
+      const expanded = trigger.getAttribute('aria-expanded') === 'true';
+      // Close all siblings in same list
+      trigger.closest('.faq-list')?.querySelectorAll('.faq-trigger').forEach((t) => {
+        t.setAttribute('aria-expanded', 'false');
+        (t.nextElementSibling as HTMLElement)?.classList.remove('is-open');
+      });
+      if (!expanded) {
+        trigger.setAttribute('aria-expanded', 'true');
+        (trigger.nextElementSibling as HTMLElement)?.classList.add('is-open');
+      }
+    });
+  });
+</script>

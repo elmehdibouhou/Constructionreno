@@ -1,0 +1,118 @@
+---
+import BaseLayout from '../layouts/BaseLayout.astro';
+---
+
+<BaseLayout
+  title="Terms of Service | [Company Name]"
+  description="Terms of Service for [Company Name] — the terms governing use of our website and renovation services."
+>
+
+  <section style="background:linear-gradient(105deg,rgba(10,30,42,0.92) 0%,rgba(10,30,42,0.7) 100%),url('https://images.unsplash.com/photo-1557804506-669a67965ba0?w=1920&q=80') center/cover; padding-block:5rem 3rem;" aria-labelledby="terms-h1">
+    <div class="container" style="position:relative; z-index:1;">
+      <span class="eyebrow">Legal</span>
+      <h1 id="terms-h1" style="color:white; max-width:600px; margin-bottom:0.5rem;">Terms of Service</h1>
+      <p style="color:rgba(255,255,255,0.65); font-size:0.875rem;">Last updated: January 1, 2026</p>
+    </div>
+  </section>
+
+  <section class="section">
+    <div class="container">
+      <div class="legal-layout">
+        <div class="legal-content prose">
+
+          <p>Please read these Terms of Service ("Terms") carefully before using the website operated by <strong>[Company Name]</strong> ("we," "us," or "our") or engaging our renovation and construction services. By accessing this website or entering into a contract for services, you agree to be bound by these Terms.</p>
+
+          <h2>Use of This Website</h2>
+          <p>You may use this website for lawful purposes only. You agree not to:</p>
+          <ul>
+            <li>Use the site in any way that violates applicable Canadian federal or provincial law</li>
+            <li>Attempt to gain unauthorized access to any portion of the website</li>
+            <li>Transmit any material that is defamatory, offensive, or otherwise objectionable</li>
+            <li>Use automated tools to scrape, copy, or republish content without written permission</li>
+          </ul>
+
+          <h2>Information Accuracy</h2>
+          <p>We make reasonable efforts to ensure information on this website is accurate and current. However, we do not warrant that the content is complete, accurate, or up-to-date. Project cost estimates, timelines, and product availability are subject to change based on current market conditions and individual project scope assessments.</p>
+
+          <h2>Services and Contracts</h2>
+          <p>This website provides general information about our renovation, roofing, and construction services. Submitting an inquiry or estimate request does not constitute a contract for services. All service engagements are governed by a separate written contract executed by both parties, which specifies scope of work, pricing, payment terms, and warranty provisions.</p>
+
+          <h3>Estimates and Pricing</h3>
+          <p>Free estimates provided through this website or by our team are non-binding until incorporated into a signed contract. Final pricing is subject to site inspection and confirmed material selection. Cost ranges discussed in blog posts or service pages are indicative only and do not constitute quotes for any specific project.</p>
+
+          <h3>Permits and Compliance</h3>
+          <p>We obtain all required permits for projects we undertake. Homeowners are responsible for ensuring their project scope and any requested modifications comply with applicable municipal bylaws, HOA rules, and property restrictions that may not be apparent from initial discussions.</p>
+
+          <h2>Intellectual Property</h2>
+          <p>All content on this website — including text, photographs, graphics, logos, and design — is owned by [Company Name] or licensed to us, and is protected by Canadian copyright law. You may not reproduce, distribute, or create derivative works from any content without prior written permission.</p>
+          <p>Project photographs displayed on this website depict work completed by our team. They may not be used by third parties without written consent.</p>
+
+          <h2>Limitation of Liability</h2>
+          <p>To the fullest extent permitted by applicable law, [Company Name] shall not be liable for any indirect, incidental, special, or consequential damages arising from your use of this website or reliance on information contained herein. Our total liability for any claim arising from this website shall not exceed $100 CAD.</p>
+          <p>This limitation does not apply to liability arising from our renovation services, which is governed by the applicable service contract and applicable law.</p>
+
+          <h2>Third-Party Links</h2>
+          <p>This website may contain links to third-party websites for your convenience. We have no control over, and assume no responsibility for, the content, privacy policies, or practices of any third-party website. Linking does not imply endorsement.</p>
+
+          <h2>Warranty Disclaimer</h2>
+          <p>This website and its content are provided on an "as is" and "as available" basis without warranties of any kind, express or implied, including warranties of merchantability, fitness for a particular purpose, or non-infringement. We do not warrant that the website will be uninterrupted or error-free.</p>
+          <p>Warranties for our renovation and construction services are specified in individual project contracts and are governed by applicable provincial consumer protection legislation.</p>
+
+          <h2>Governing Law</h2>
+          <p>These Terms are governed by the laws of the Province of [Province] and the federal laws of Canada applicable therein, without regard to conflict of law principles. Any disputes arising from these Terms shall be subject to the exclusive jurisdiction of the courts of [Province].</p>
+
+          <h2>Changes to These Terms</h2>
+          <p>We reserve the right to modify these Terms at any time. Changes will be posted on this page with an updated effective date. Your continued use of the website after modifications constitutes acceptance of the revised Terms.</p>
+
+          <h2>Contact Us</h2>
+          <p>For questions about these Terms, please contact us:</p>
+          <ul>
+            <li><strong>Email:</strong> <a href="mailto:info@[domain].ca">info@[domain].ca</a></li>
+            <li><strong>Phone:</strong> <a href="tel:[Phone]">[Phone]</a></li>
+            <li><strong>Mail:</strong> [Address], [City], [Province]</li>
+          </ul>
+
+        </div>
+      </div>
+    </div>
+  </section>
+
+</BaseLayout>
+
+<style>
+.legal-layout {
+  max-width: 760px;
+  margin: 0 auto;
+}
+.legal-content.prose h2 {
+  font-family: var(--font-display);
+  font-size: var(--text-2xl);
+  font-weight: 400;
+  color: var(--color-primary-900);
+  margin: 2.5rem 0 0.75rem;
+  padding-top: 1rem;
+  border-top: 1px solid var(--color-gray-100);
+}
+.legal-content.prose h3 {
+  font-size: var(--text-lg);
+  font-weight: 600;
+  color: var(--color-primary-800);
+  margin: 1.5rem 0 0.5rem;
+}
+.legal-content.prose p {
+  color: var(--color-gray-800);
+  line-height: var(--leading-relaxed);
+  margin-bottom: 1.1rem;
+}
+.legal-content.prose ul {
+  margin: 0.5rem 0 1.25rem 1.5rem;
+  display: flex;
+  flex-direction: column;
+  gap: 0.35rem;
+  color: var(--color-gray-800);
+}
+.legal-content.prose ul li { line-height: var(--leading-relaxed); }
+.legal-content.prose ul li::marker { color: var(--color-accent-500); }
+.legal-content.prose a { color: var(--color-primary-600); text-decoration: underline; text-underline-offset: 3px; }
+.legal-content.prose a:hover { color: var(--color-accent-700); }
+</style>

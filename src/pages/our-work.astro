@@ -1,0 +1,197 @@
+---
+import BaseLayout from '../layouts/BaseLayout.astro';
+import CtaBanner from '../components/sections/CtaBanner.astro';
+
+const projects = [
+  { title: 'Modern Open-Concept Kitchen', category: 'Kitchen Renovation', city: '[City]', img: 'https://images.unsplash.com/photo-1556909114-f6e7ad7d3136?w=900&q=80', alt: 'Modern kitchen renovation' },
+  { title: 'Spa-Style Primary Ensuite', category: 'Bathroom Renovation', city: '[City]', img: 'https://images.unsplash.com/photo-1552321554-5fefe8c9ef14?w=600&q=75', alt: 'Luxury spa bathroom renovation' },
+  { title: 'Finished Basement Suite', category: 'Basement Renovation', city: '[City]', img: 'https://images.unsplash.com/photo-1565538810643-b5bdb714032a?w=600&q=75', alt: 'Finished basement living space' },
+  { title: 'Full Exterior Re-Roof', category: 'Roof Replacement', city: '[City]', img: 'https://images.unsplash.com/photo-1558618666-fcd25c85cd64?w=600&q=75', alt: 'Complete roof replacement' },
+  { title: 'James Hardie Siding', category: 'Exterior Siding', city: '[City]', img: 'https://images.unsplash.com/photo-1582268611958-ebfd161ef9cf?w=600&q=75', alt: 'James Hardie fibre cement siding' },
+  { title: 'Interior Repaint + Trim', category: 'Painting', city: '[City]', img: 'https://images.unsplash.com/photo-1562259949-e8e7689d7828?w=600&q=75', alt: 'Full interior painting project' },
+  { title: 'Standing Seam Metal Roof', category: 'Metal Roofing', city: '[City]', img: 'https://images.unsplash.com/photo-1449844908441-8829872d2607?w=600&q=75', alt: 'Standing seam metal roof installation' },
+  { title: 'Two-Storey Home Addition', category: 'Home Addition', city: '[City]', img: 'https://images.unsplash.com/photo-1572120360610-d971b9d7767c?w=600&q=75', alt: 'Two-storey home addition construction' },
+  { title: 'Custom Home Build', category: 'Custom Homes', city: '[City]', img: 'https://images.unsplash.com/photo-1600607687939-ce8a6c25118c?w=900&q=80', alt: 'Custom home build in [City]' },
+  { title: 'Seamless Eavestrough System', category: 'Eavestrough', city: '[City]', img: 'https://images.unsplash.com/photo-1512917774080-9991f1c4c750?w=600&q=75', alt: 'Seamless aluminum eavestrough installation' },
+];
+
+const categories = ['All', ...new Set(projects.map(p => p.category))];
+---
+
+<BaseLayout
+  title="Our Work | [Company Name] — Renovation & Roofing Portfolio"
+  description="View completed renovation and roofing projects by [Company Name] in [City]. Kitchen renovations, roof replacements, home additions & more."
+>
+
+  <!-- Hero -->
+  <section
+    style="background:linear-gradient(105deg,rgba(10,30,42,0.88) 0%,rgba(10,30,42,0.55) 100%),url('https://images.unsplash.com/photo-1600607687939-ce8a6c25118c?w=1920&q=80') center/cover; padding-block:6rem 4rem;"
+    aria-labelledby="work-h1"
+  >
+    <div class="container" style="position:relative; z-index:1;">
+      <span class="eyebrow">Our Portfolio</span>
+      <h1 id="work-h1" style="color:white; max-width:600px; margin-bottom:1rem;">Our Work</h1>
+      <p style="color:rgba(255,255,255,0.8); max-width:500px; font-size:var(--text-lg);">
+        Browse completed renovation and roofing projects across [City] and the surrounding area.
+      </p>
+    </div>
+  </section>
+
+  <!-- Gallery with filter -->
+  <section class="section">
+    <div class="container">
+
+      <!-- Filter bar -->
+      <div class="gallery-filters" role="tablist" aria-label="Filter projects by category">
+        {categories.map((cat, i) => (
+          <button
+            class:list={['filter-btn', { active: i === 0 }]}
+            data-filter={cat === 'All' ? 'all' : cat}
+            role="tab"
+            aria-selected={i === 0}
+            type="button"
+          >
+            {cat}
+          </button>
+        ))}
+      </div>
+
+      <!-- Project grid -->
+      <div class="gallery-grid" id="gallery-grid">
+        {projects.map((p, i) => (
+          <div
+            class:list={['gallery-project', { 'gallery-project--large': i === 0 || i === 8 }]}
+            data-category={p.category}
+          >
+            <div class="gallery-project-inner img-overlay">
+              <img
+                src={p.img}
+                alt={p.alt}
+                width={i === 0 || i === 8 ? 900 : 600}
+                height={i === 0 || i === 8 ? 600 : 400}
+                loading={i < 4 ? 'eager' : 'lazy'}
+                decoding="async"
+                style="width:100%; height:100%; object-fit:cover;"
+              />
+              <div class="gallery-project-label">
+                <p class="gallery-project-cat">{p.category}</p>
+                <p class="gallery-project-title">{p.title}</p>
+                <p class="gallery-project-city">{p.city}</p>
+              </div>
+            </div>
+          </div>
+        ))}
+      </div>
+
+    </div>
+  </section>
+
+  <CtaBanner
+    heading="Inspired by What You See?"
+    subtext="Every project starts with a free estimate. Tell us about your home and we'll make it happen."
+  />
+
+</BaseLayout>
+
+<style>
+.gallery-filters {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.5rem;
+  margin-bottom: 2.5rem;
+}
+.filter-btn {
+  padding: 0.5rem 1.25rem;
+  border-radius: var(--radius-full);
+  border: 1.5px solid var(--color-gray-200);
+  background: transparent;
+  font-size: 0.82rem;
+  font-weight: 500;
+  color: var(--color-gray-800);
+  cursor: pointer;
+  transition: all var(--duration-fast);
+  font-family: var(--font-body);
+}
+.filter-btn:hover { border-color: var(--color-primary-600); color: var(--color-primary-700); }
+.filter-btn.active {
+  background: var(--color-primary-700);
+  border-color: var(--color-primary-700);
+  color: white;
+}
+.gallery-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 1rem;
+  grid-auto-flow: dense;
+}
+.gallery-project { border-radius: var(--radius-md); overflow: hidden; }
+.gallery-project--large { grid-column: span 2; }
+.gallery-project-inner {
+  position: relative;
+  aspect-ratio: 4/3;
+  border-radius: var(--radius-md);
+  overflow: hidden;
+  cursor: pointer;
+}
+.gallery-project--large .gallery-project-inner { aspect-ratio: 16/9; }
+.gallery-project-label {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  padding: 1.25rem;
+  z-index: 2;
+  opacity: 0;
+  transform: translateY(8px);
+  transition: opacity var(--duration-normal) var(--ease-out),
+              transform var(--duration-normal) var(--ease-out);
+}
+.gallery-project:hover .gallery-project-label { opacity: 1; transform: translateY(0); }
+.gallery-project-cat {
+  font-size: 0.65rem;
+  letter-spacing: 0.12em;
+  text-transform: uppercase;
+  color: var(--color-accent-300);
+  font-weight: 600;
+  margin-bottom: 0.2rem;
+}
+.gallery-project-title {
+  font-weight: 600;
+  color: white;
+  font-size: 1rem;
+  margin-bottom: 0.15rem;
+}
+.gallery-project-city {
+  font-size: 0.78rem;
+  color: rgba(255,255,255,0.65);
+}
+.gallery-project--hidden { display: none; }
+@media (max-width: 1023px) {
+  .gallery-grid { grid-template-columns: repeat(2, 1fr); }
+  .gallery-project--large { grid-column: span 2; }
+}
+@media (max-width: 639px) {
+  .gallery-grid { grid-template-columns: 1fr; }
+  .gallery-project--large { grid-column: span 1; }
+}
+</style>
+
+<script>
+  document.querySelectorAll('.filter-btn').forEach((btn) => {
+    btn.addEventListener('click', () => {
+      document.querySelectorAll('.filter-btn').forEach(b => {
+        b.classList.remove('active');
+        b.setAttribute('aria-selected', 'false');
+      });
+      btn.classList.add('active');
+      btn.setAttribute('aria-selected', 'true');
+
+      const filter = (btn as HTMLElement).dataset.filter ?? 'all';
+      document.querySelectorAll('.gallery-project').forEach((project) => {
+        const cat = (project as HTMLElement).dataset.category ?? '';
+        const show = filter === 'all' || cat === filter;
+        project.classList.toggle('gallery-project--hidden', !show);
+      });
+    });
+  });
+</script>

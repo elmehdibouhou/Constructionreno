@@ -1,0 +1,43 @@
+---
+import BaseLayout from '../layouts/BaseLayout.astro';
+---
+
+<BaseLayout
+  title="Thank You | [Company Name]"
+  description="Thank you for contacting [Company Name]. We'll be in touch within 1 business day."
+  noIndex={true}
+>
+  <section style="min-height:80vh; display:flex; align-items:center; background:var(--color-off-white);">
+    <div class="container" style="text-align:center; padding-block:4rem;">
+      <div class="thank-you-icon" aria-hidden="true">
+        <svg width="48" height="48" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.75" style="color:var(--color-accent-500);" aria-hidden="true"><path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"/><polyline points="9 12 11 14 15 10"/></svg>
+      </div>
+      <h1 style="font-size:var(--text-5xl); margin-bottom:1rem;">Thank You!</h1>
+      <div class="gold-rule" style="margin-inline:auto;"></div>
+      <p style="font-size:var(--text-xl); color:var(--color-gray-800); max-width:520px; margin:0 auto 1.5rem; line-height:var(--leading-relaxed);">
+        Your message has been received. A member of our team will be in touch within <strong>1 business day</strong>.
+      </p>
+      <p style="color:var(--color-gray-600); margin-bottom:2.5rem;">
+        If your request is urgent, call us directly at <a href="tel:[Phone]" style="color:var(--color-primary-600); font-weight:600;">[Phone]</a>.
+      </p>
+      <div style="display:flex; gap:1rem; justify-content:center; flex-wrap:wrap;">
+        <a href="/" class="btn-primary">Back to Home</a>
+        <a href="/our-work" class="btn-ghost">View Our Work</a>
+      </div>
+    </div>
+  </section>
+</BaseLayout>
+
+<style>
+.thank-you-icon {
+  width: 80px;
+  height: 80px;
+  border-radius: 50%;
+  background: var(--color-accent-100);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin: 0 auto 2rem;
+  border: 2px solid var(--color-accent-300);
+}
+</style>

@@ -1,0 +1,302 @@
+---
+---
+
+<section class="hero" aria-label="Homepage hero">
+
+  <!-- Background image (LCP — eager load) -->
+  <div class="hero-bg" aria-hidden="true">
+    <img
+      src="https://images.unsplash.com/photo-1600607687939-ce8a6c25118c?w=1920&q=80"
+      alt=""
+      width="1920"
+      height="1080"
+      loading="eager"
+      fetchpriority="high"
+      decoding="sync"
+      class="hero-bg-img"
+    />
+    <!-- Gradient overlay -->
+    <div class="hero-overlay" aria-hidden="true"></div>
+    <!-- Three.js canvas (desktop only) -->
+    <canvas id="hero-canvas" class="hero-canvas" aria-hidden="true"></canvas>
+  </div>
+
+  <!-- Content -->
+  <div class="container hero-content">
+    <div class="hero-text">
+      <span class="eyebrow hero-eyebrow">Renovation & Roofing — [City], Canada</span>
+
+      <h1 class="hero-h1">
+        We Build Homes.<br>
+        We Restore Roofs.<br>
+        <em>We Craft Spaces.</em>
+      </h1>
+
+      <p class="hero-sub">
+        Quality renovation, construction, painting &amp; roofing across [City], [Province]. Trusted by 300+ homeowners. Free estimates, no obligation.
+      </p>
+
+      <div class="hero-actions">
+        <a href="/free-estimate" class="btn-primary hero-btn-primary">
+          Get a Free Estimate
+          <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" aria-hidden="true"><path d="M5 12h14M12 5l7 7-7 7"/></svg>
+        </a>
+        <a href="/our-work" class="btn-outline">
+          View Our Work
+        </a>
+      </div>
+
+      <!-- Trust badges -->
+      <div class="hero-trust" aria-label="Trust indicators">
+        <div class="trust-item">
+          <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><polyline points="20 6 9 17 4 12"/></svg>
+          Licensed & Insured
+        </div>
+        <div class="trust-item">
+          <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><polyline points="20 6 9 17 4 12"/></svg>
+          Free Estimates
+        </div>
+        <div class="trust-item">
+          <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><polyline points="20 6 9 17 4 12"/></svg>
+          5-Year Warranty
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- Scroll indicator -->
+  <a href="#services" class="scroll-indicator" aria-label="Scroll to services">
+    <div class="scroll-dot"></div>
+  </a>
+
+</section>
+
+<style>
+.hero {
+  position: relative;
+  min-height: 100vh;
+  display: flex;
+  align-items: center;
+  overflow: hidden;
+}
+
+/* Background layer */
+.hero-bg {
+  position: absolute;
+  inset: 0;
+  z-index: 0;
+}
+.hero-bg-img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  object-position: center;
+}
+.hero-canvas {
+  position: absolute;
+  inset: 0;
+  z-index: 1;
+  pointer-events: none;
+}
+
+/* Content layer */
+.hero-content {
+  position: relative;
+  z-index: 2;
+  padding-block: clamp(6rem, 12vw, 8rem);
+}
+
+.hero-text {
+  max-width: 650px;
+}
+
+.hero-eyebrow {
+  color: var(--color-accent-300);
+  margin-bottom: 1.5rem;
+}
+
+.hero-h1 {
+  font-family: var(--font-display);
+  font-size: var(--text-7xl);
+  font-weight: 300;
+  line-height: 1.05;
+  letter-spacing: -0.03em;
+  color: var(--color-white);
+  margin-bottom: 1.5rem;
+}
+.hero-h1 em {
+  font-style: italic;
+  color: var(--color-accent-300);
+}
+
+.hero-sub {
+  font-size: var(--text-lg);
+  color: rgba(255,255,255,0.8);
+  line-height: var(--leading-relaxed);
+  max-width: 520px;
+  margin-bottom: 2.5rem;
+}
+
+.hero-actions {
+  display: flex;
+  gap: 1rem;
+  flex-wrap: wrap;
+  align-items: center;
+  margin-bottom: 2rem;
+}
+
+.hero-btn-primary {
+  font-size: 0.82rem;
+  padding: 0.85rem 2rem;
+  box-shadow: 0 6px 30px rgba(200,169,110,0.4);
+}
+
+.hero-trust {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 1.25rem;
+}
+
+.trust-item {
+  display: flex;
+  align-items: center;
+  gap: 0.4rem;
+  font-size: 0.8rem;
+  font-weight: 500;
+  color: rgba(255,255,255,0.65);
+  letter-spacing: 0.03em;
+}
+.trust-item svg { color: var(--color-accent-400, #5B9BB8); }
+
+/* Scroll indicator */
+.scroll-indicator {
+  position: absolute;
+  bottom: 2rem;
+  left: 50%;
+  transform: translateX(-50%);
+  z-index: 2;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 0.5rem;
+  opacity: 0.6;
+  transition: opacity var(--duration-normal);
+}
+.scroll-indicator:hover { opacity: 1; }
+.scroll-dot {
+  width: 24px;
+  height: 40px;
+  border: 2px solid rgba(255,255,255,0.4);
+  border-radius: 12px;
+  position: relative;
+}
+.scroll-dot::before {
+  content: '';
+  position: absolute;
+  top: 6px;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 4px;
+  height: 8px;
+  background: var(--color-accent-300);
+  border-radius: 2px;
+  animation: scroll-bounce 1.8s ease-in-out infinite;
+}
+
+@keyframes scroll-bounce {
+  0%, 100% { transform: translateX(-50%) translateY(0); opacity: 1; }
+  80% { transform: translateX(-50%) translateY(12px); opacity: 0; }
+}
+
+/* Mobile adjustments */
+@media (max-width: 767px) {
+  .hero-h1 { font-size: var(--text-5xl); }
+  .hero-actions { flex-direction: column; align-items: flex-start; }
+  .btn-outline { display: none; }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .scroll-dot::before { animation: none; }
+}
+</style>
+
+<script>
+  // ── Three.js Hero Particles (desktop only) ─────────────────
+  // Only load on desktop and when motion is allowed
+  const prefersReducedMotion = window.matchMedia('(prefers-reduced-motion: reduce)').matches;
+  const isDesktop = window.innerWidth >= 1024;
+
+  if (isDesktop && !prefersReducedMotion) {
+    window.addEventListener('load', async () => {
+      try {
+        const THREE = await import('https://cdn.jsdelivr.net/npm/three@0.160.0/build/three.module.js');
+        const canvas = document.getElementById('hero-canvas') as HTMLCanvasElement;
+        if (!canvas) return;
+
+        const scene = new THREE.Scene();
+        const camera = new THREE.PerspectiveCamera(60, window.innerWidth / window.innerHeight, 0.1, 100);
+        camera.position.z = 8;
+
+        const renderer = new THREE.WebGLRenderer({ canvas, alpha: true, antialias: false });
+        renderer.setPixelRatio(Math.min(window.devicePixelRatio, 1.5));
+        renderer.setSize(window.innerWidth, window.innerHeight);
+
+        // 80 wireframe icosahedra
+        const geometry = new THREE.IcosahedronGeometry(0.3, 0);
+        const material = new THREE.MeshBasicMaterial({
+          color: 0xC8A96E,
+          wireframe: true,
+          transparent: true,
+          opacity: 0.22,
+        });
+
+        const meshes: InstanceType<typeof THREE.Mesh>[] = [];
+        for (let i = 0; i < 80; i++) {
+          const mesh = new THREE.Mesh(geometry, material);
+          mesh.position.set(
+            (Math.random() - 0.5) * 22,
+            (Math.random() - 0.5) * 14,
+            (Math.random() - 0.5) * 8,
+          );
+          mesh.rotation.set(Math.random() * Math.PI, Math.random() * Math.PI, 0);
+          scene.add(mesh);
+          meshes.push(mesh);
+        }
+
+        let scrollY = 0;
+        window.addEventListener('scroll', () => { scrollY = window.scrollY; }, { passive: true });
+
+        let animId: number;
+        function animate() {
+          animId = requestAnimationFrame(animate);
+          meshes.forEach((mesh, i) => {
+            mesh.rotation.y += 0.002 + i * 0.00004;
+            mesh.rotation.x += 0.001;
+          });
+          camera.position.y = -scrollY * 0.003;
+          renderer.render(scene, camera);
+        }
+        animate();
+
+        // Stop rendering when hero is out of view
+        const heroEl = canvas.closest('section');
+        if (heroEl) {
+          const stopObs = new IntersectionObserver((entries) => {
+            if (!entries[0].isIntersecting) cancelAnimationFrame(animId);
+            else animate();
+          });
+          stopObs.observe(heroEl);
+        }
+
+        window.addEventListener('resize', () => {
+          camera.aspect = window.innerWidth / window.innerHeight;
+          camera.updateProjectionMatrix();
+          renderer.setSize(window.innerWidth, window.innerHeight);
+        });
+
+      } catch {
+        // Three.js unavailable — CSS gradient fallback already visible
+      }
+    });
+  }
+</script>

@@ -1,0 +1,256 @@
+---
+import BaseLayout from './BaseLayout.astro';
+import BreadcrumbNav from '../components/ui/BreadcrumbNav.astro';
+import CtaBanner from '../components/sections/CtaBanner.astro';
+
+interface Props {
+  title: string;
+  description: string;
+  pubDate: string;
+  updatedDate?: string;
+  heroImg: string;
+  heroAlt: string;
+  category: string;
+  readTime: string;
+}
+
+const {
+  title,
+  description,
+  pubDate,
+  updatedDate,
+  heroImg,
+  heroAlt,
+  category,
+  readTime,
+} = Astro.props;
+
+const articleSchema = {
+  "@context": "https://schema.org",
+  "@type": "BlogPosting",
+  "headline": title,
+  "description": description,
+  "author": { "@type": "Organization", "name": "[Company Name]" },
+  "publisher": {
+    "@type": "Organization",
+    "name": "[Company Name]",
+    "logo": { "@type": "ImageObject", "url": "https://example.ca/images/logo.png" }
+  },
+  "datePublished": pubDate,
+  "dateModified": updatedDate || pubDate,
+  "image": heroImg,
+};
+
+const formattedDate = new Date(pubDate).toLocaleDateString('en-CA', {
+  year: 'numeric', month: 'long', day: 'numeric'
+});
+---
+
+<BaseLayout {title} {description} schema={articleSchema}>
+
+  <!-- Hero -->
+  <section
+    class="blog-hero"
+    style={`background-image:url('${heroImg}');`}
+    aria-labelledby="blog-h1"
+  >
+    <div class="hero-overlay" aria-hidden="true"></div>
+    <div class="container blog-hero-content">
+      <BreadcrumbNav crumbs={[
+        { label: 'Home', href: '/' },
+        { label: 'Blog', href: '/blog' },
+        { label: title },
+      ]} />
+      <div class="blog-meta">
+        <span class="blog-category">{category}</span>
+        <span style="color:rgba(255,255,255,0.5)">·</span>
+        <time datetime={pubDate} style="color:rgba(255,255,255,0.7); font-size:0.85rem;">{formattedDate}</time>
+        <span style="color:rgba(255,255,255,0.5)">·</span>
+        <span style="color:rgba(255,255,255,0.7); font-size:0.85rem;">{readTime} read</span>
+      </div>
+      <h1 id="blog-h1" style="color:white; max-width:760px;">{title}</h1>
+    </div>
+  </section>
+
+  <!-- Article body -->
+  <div class="container blog-layout">
+
+    <!-- Article content -->
+    <article class="blog-article prose" aria-labelledby="blog-h1">
+      <slot />
+    </article>
+
+    <!-- Sidebar -->
+    <aside class="blog-sidebar">
+      <div class="blog-sidebar-card">
+        <p class="sidebar-cta-title">Ready to Start Your Project?</p>
+        <p style="font-size:0.875rem; color:rgba(255,255,255,0.7); line-height:1.6; margin-bottom:1.25rem;">
+          Get a free, no-obligation estimate from our [City] team.
+        </p>
+        <a href="/free-estimate" class="btn-primary" style="font-size:0.75rem; width:100%; justify-content:center;">Free Estimate →</a>
+        <a href="tel:[Phone]" style="display:block; text-align:center; font-size:0.8rem; color:rgba(255,255,255,0.55); margin-top:0.75rem; padding:0.5rem;">[Phone]</a>
+      </div>
+
+      <div class="blog-sidebar-card" style="margin-top:1.5rem;">
+        <p class="sidebar-cta-title">Popular Services</p>
+        <ul role="list" style="list-style:none; display:flex; flex-direction:column; gap:0.5rem; margin-top:0.75rem;">
+          {[
+            ['Kitchen Renovation', '/services/kitchen-renovation'],
+            ['Bathroom Renovation', '/services/bathroom-renovation'],
+            ['Basement Renovation', '/services/basement-renovation'],
+            ['Roof Replacement', '/services/roof-replacement'],
+            ['Painting', '/services/painting'],
+          ].map(([label, href]) => (
+            <li>
+              <a href={href} style="font-size:0.875rem; color:rgba(255,255,255,0.65); display:flex; align-items:center; gap:0.5rem; padding:0.3rem 0; transition:color 0.15s;" class="sidebar-service-link">
+                <span style="color:var(--color-accent-500);">›</span> {label}
+              </a>
+            </li>
+          ))}
+        </ul>
+      </div>
+    </aside>
+
+  </div>
+
+  <CtaBanner />
+
+</BaseLayout>
+
+<style>
+.blog-hero {
+  position: relative;
+  background-size: cover;
+  background-position: center;
+  min-height: 55vh;
+  display: flex;
+  align-items: flex-end;
+  padding-bottom: 3rem;
+}
+.blog-hero-content {
+  position: relative;
+  z-index: 1;
+  padding-top: 6rem;
+}
+.blog-meta {
+  display: flex;
+  align-items: center;
+  gap: 0.75rem;
+  margin-bottom: 1rem;
+  flex-wrap: wrap;
+}
+.blog-category {
+  display: inline-block;
+  padding: 0.2rem 0.75rem;
+  background: var(--color-accent-500);
+  color: var(--color-primary-900);
+  font-size: 0.72rem;
+  font-weight: 700;
+  letter-spacing: 0.1em;
+  text-transform: uppercase;
+  border-radius: var(--radius-full);
+}
+
+.blog-layout {
+  display: grid;
+  grid-template-columns: 1fr 300px;
+  gap: 4rem;
+  align-items: start;
+  padding-block: 4rem;
+}
+
+/* Prose styles */
+.blog-article.prose {
+  max-width: none;
+  line-height: var(--leading-relaxed);
+  color: var(--color-gray-800);
+}
+.blog-article.prose :global(h2) {
+  font-family: var(--font-display);
+  font-size: var(--text-3xl);
+  font-weight: 400;
+  color: var(--color-primary-900);
+  margin: 2.5rem 0 1rem;
+  padding-top: 1rem;
+  border-top: 1px solid var(--color-gray-100);
+}
+.blog-article.prose :global(h3) {
+  font-family: var(--font-body);
+  font-size: var(--text-xl);
+  font-weight: 600;
+  color: var(--color-primary-800);
+  margin: 2rem 0 0.75rem;
+}
+.blog-article.prose :global(p) {
+  margin-bottom: 1.25rem;
+  font-size: var(--text-base);
+}
+.blog-article.prose :global(ul),
+.blog-article.prose :global(ol) {
+  margin: 1rem 0 1.5rem 1.5rem;
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
+}
+.blog-article.prose :global(li) { line-height: var(--leading-relaxed); }
+.blog-article.prose :global(ul li)::marker { color: var(--color-accent-500); }
+.blog-article.prose :global(strong) { color: var(--color-primary-800); font-weight: 600; }
+.blog-article.prose :global(a) {
+  color: var(--color-primary-600);
+  text-decoration: underline;
+  text-underline-offset: 3px;
+}
+.blog-article.prose :global(a:hover) { color: var(--color-accent-700); }
+.blog-article.prose :global(blockquote) {
+  border-left: 3px solid var(--color-accent-500);
+  padding: 1rem 1.5rem;
+  margin: 2rem 0;
+  background: var(--color-accent-100);
+  border-radius: 0 var(--radius-md) var(--radius-md) 0;
+  font-style: italic;
+  color: var(--color-primary-700);
+}
+.blog-article.prose :global(table) {
+  width: 100%;
+  border-collapse: collapse;
+  margin: 2rem 0;
+  font-size: 0.9rem;
+}
+.blog-article.prose :global(th) {
+  background: var(--color-primary-800);
+  color: white;
+  padding: 0.75rem 1rem;
+  text-align: left;
+  font-weight: 600;
+  font-size: 0.8rem;
+  letter-spacing: 0.05em;
+  text-transform: uppercase;
+}
+.blog-article.prose :global(td) {
+  padding: 0.75rem 1rem;
+  border-bottom: 1px solid var(--color-gray-200);
+}
+.blog-article.prose :global(tr:nth-child(even) td) { background: var(--color-gray-100); }
+
+/* Sidebar */
+.blog-sidebar { position: sticky; top: 100px; }
+.blog-sidebar-card {
+  background: var(--color-primary-800);
+  border-radius: var(--radius-lg);
+  padding: 1.5rem;
+  border: 1px solid rgba(200,169,110,0.15);
+}
+.sidebar-cta-title {
+  font-family: var(--font-display);
+  font-size: 1.2rem;
+  font-weight: 400;
+  color: var(--color-accent-300);
+  margin-bottom: 0.75rem;
+}
+.sidebar-service-link:hover { color: white !important; }
+
+@media (max-width: 1023px) {
+  .blog-layout { grid-template-columns: 1fr; }
+  .blog-sidebar { position: static; }
+}
+</style>

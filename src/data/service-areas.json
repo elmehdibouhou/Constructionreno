@@ -1,0 +1,12 @@
+{
+  "primary": "[City]",
+  "province": "[Province]",
+  "areas": [
+    { "name": "[City]", "description": "Our home base. We have completed 200+ renovation and roofing projects throughout [City].", "distance": "0 km" },
+    { "name": "[Neighbourhood 1]", "description": "Serving homeowners in [Neighbourhood 1] with kitchen, bathroom, and exterior renovations.", "distance": "5 km" },
+    { "name": "[Neighbourhood 2]", "description": "Roofing and renovation services throughout [Neighbourhood 2].", "distance": "8 km" },
+    { "name": "[Nearby Town 1]", "description": "Full renovation and roofing services available in [Nearby Town 1].", "distance": "15 km" },
+    { "name": "[Nearby Town 2]", "description": "Serving [Nearby Town 2] residents with the same quality and care as our local clients.", "distance": "22 km" },
+    { "name": "[Nearby Town 3]", "description": "Renovation and roofing projects in [Nearby Town 3] — contact us to confirm scheduling.", "distance": "30 km" }
+  ]
+}

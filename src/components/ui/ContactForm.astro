@@ -1,0 +1,106 @@
+---
+interface Props {
+  dark?: boolean;
+}
+const { dark = false } = Astro.props;
+---
+
+<form
+  action="https://formspree.io/f/[FORM_ID]"
+  method="POST"
+  class:list={['contact-form', { 'contact-form--dark': dark }]}
+  novalidate
+>
+  <input type="hidden" name="_subject" value="New Renovation Enquiry — [City]" />
+  <input type="hidden" name="_next" value="https://[domain].ca/thank-you" />
+
+  <div class="form-row">
+    <div class="form-group">
+      <label for="cf-name" class="form-label">Full Name <span aria-hidden="true" class="form-required">*</span></label>
+      <input type="text" id="cf-name" name="name" class="form-input" required autocomplete="name" placeholder="Jane Smith" />
+    </div>
+    <div class="form-group">
+      <label for="cf-email" class="form-label">Email Address <span aria-hidden="true" class="form-required">*</span></label>
+      <input type="email" id="cf-email" name="email" class="form-input" required autocomplete="email" placeholder="jane@email.com" />
+    </div>
+  </div>
+
+  <div class="form-row">
+    <div class="form-group">
+      <label for="cf-phone" class="form-label">Phone Number <span aria-hidden="true" class="form-required">*</span></label>
+      <input type="tel" id="cf-phone" name="phone" class="form-input" required autocomplete="tel" placeholder="(613) 555-0123" />
+    </div>
+    <div class="form-group">
+      <label for="cf-postal" class="form-label">Postal Code</label>
+      <input type="text" id="cf-postal" name="postal_code" class="form-input" autocomplete="postal-code" placeholder="K1A 0A6" />
+    </div>
+  </div>
+
+  <div class="form-group">
+    <label for="cf-source" class="form-label">How did you hear about us?</label>
+    <select id="cf-source" name="source" class="form-select">
+      <option value="">Select an option</option>
+      <option>Google Search</option>
+      <option>Google Maps</option>
+      <option>Facebook</option>
+      <option>Instagram</option>
+      <option>Referral from friend</option>
+      <option>Saw your truck or sign</option>
+      <option>Other</option>
+    </select>
+  </div>
+
+  <div class="form-group">
+    <label for="cf-message" class="form-label">Tell us about your project <span aria-hidden="true" class="form-required">*</span></label>
+    <textarea id="cf-message" name="message" class="form-textarea" rows="5" required placeholder="Describe your project, timeline, and any specific questions..."></textarea>
+  </div>
+
+  <button type="submit" class="btn-primary form-submit">
+    Send Message
+    <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" aria-hidden="true"><path d="M5 12h14M12 5l7 7-7 7"/></svg>
+  </button>
+</form>
+
+<style>
+.contact-form { display: flex; flex-direction: column; gap: 1.25rem; }
+
+.form-row {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 1.25rem;
+}
+
+.form-group { display: flex; flex-direction: column; gap: 0.4rem; }
+
+.form-required { color: var(--color-accent-500); }
+
+.form-submit {
+  width: 100%;
+  justify-content: center;
+  padding: 0.875rem;
+  font-size: 0.85rem;
+}
+
+/* Dark variant */
+.contact-form--dark .form-label { color: rgba(255,255,255,0.8); }
+.contact-form--dark .form-input,
+.contact-form--dark .form-select,
+.contact-form--dark .form-textarea {
+  background-color: rgba(255,255,255,0.07);
+  border-color: rgba(255,255,255,0.15);
+  color: var(--color-white);
+}
+.contact-form--dark .form-input::placeholder,
+.contact-form--dark .form-textarea::placeholder { color: rgba(255,255,255,0.35); }
+.contact-form--dark .form-input:focus,
+.contact-form--dark .form-select:focus,
+.contact-form--dark .form-textarea:focus {
+  border-color: var(--color-accent-500);
+  background-color: rgba(255,255,255,0.1);
+}
+.contact-form--dark .form-select option { background-color: var(--color-primary-800); }
+
+@media (max-width: 639px) {
+  .form-row { grid-template-columns: 1fr; }
+}
+</style>

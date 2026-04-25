@@ -1,0 +1,97 @@
+[
+  {
+    "category": "Roofing Shingles",
+    "items": [
+      {
+        "brand": "GAF",
+        "name": "Timberline HDZ",
+        "description": "The #1 selling shingle in North America. Dimensional look with StrikeZone nailing area for faster, more accurate installation. 130 mph wind resistance, algae protection.",
+        "warranty": "Lifetime Limited",
+        "img": "https://images.unsplash.com/photo-1558618666-fcd25c85cd64?w=400&q=75"
+      },
+      {
+        "brand": "CertainTeed",
+        "name": "Landmark Series",
+        "description": "Heavy-weight, dual-layer construction with a natural wood-shake appearance. Superior algae resistance and excellent colour retention for [Province]'s climate.",
+        "warranty": "Lifetime Limited",
+        "img": "https://images.unsplash.com/photo-1504307651254-35680f356dfd?w=400&q=75"
+      },
+      {
+        "brand": "Owens Corning",
+        "name": "Duration Series",
+        "description": "SureNail Technology provides superior wind resistance. Patented triple layer protection at the nailing zone. Available in 50+ colours.",
+        "warranty": "Lifetime Limited",
+        "img": "https://images.unsplash.com/photo-1449844908441-8829872d2607?w=400&q=75"
+      }
+    ]
+  },
+  {
+    "category": "Metal Roofing",
+    "items": [
+      {
+        "brand": "Steel Craft",
+        "name": "Standing Seam Steel",
+        "description": "Concealed fastener standing seam panels for a sleek, modern look. 40-year coating warranty, Class 4 hail resistance, suitable for [Province] snow loads.",
+        "warranty": "40-Year Coating",
+        "img": "https://images.unsplash.com/photo-1416331108676-a22ccb276e35?w=400&q=75"
+      }
+    ]
+  },
+  {
+    "category": "Exterior Siding",
+    "items": [
+      {
+        "brand": "James Hardie",
+        "name": "HardiePlank Lap Siding",
+        "description": "Fibre cement siding that's engineered for [Province]'s climate. Resists rot, fire, and insects. 15-year finish warranty. Available in 700+ colours.",
+        "warranty": "30-Year Product / 15-Year Finish",
+        "img": "https://images.unsplash.com/photo-1582268611958-ebfd161ef9cf?w=400&q=75"
+      },
+      {
+        "brand": "Gentek",
+        "name": "Ultra Premium Vinyl",
+        "description": "Thick-wall vinyl siding with insulated backing for improved R-value. Lifetime transferable warranty. Low maintenance, never needs painting.",
+        "warranty": "Lifetime Limited",
+        "img": "https://images.unsplash.com/photo-1570129477492-45c003edd2be?w=400&q=75"
+      }
+    ]
+  },
+  {
+    "category": "Countertops",
+    "items": [
+      {
+        "brand": "Silestone",
+        "name": "HybriQ Quartz",
+        "description": "Non-porous quartz surface that resists stains, scratches, and bacteria. Available in 90+ designs from classic white to dramatic dark stone. 25-year warranty.",
+        "warranty": "25-Year",
+        "img": "https://images.unsplash.com/photo-1484154218962-a197022b5858?w=400&q=75"
+      },
+      {
+        "brand": "MSI",
+        "name": "Q Premium Quartz",
+        "description": "Beautiful marble-look and solid colour options at exceptional value. Consistent colouring, non-porous, and extremely durable for busy kitchens.",
+        "warranty": "Lifetime",
+        "img": "https://images.unsplash.com/photo-1556909114-f6e7ad7d3136?w=400&q=75"
+      }
+    ]
+  },
+  {
+    "category": "Flooring",
+    "items": [
+      {
+        "brand": "Shaw",
+        "name": "Resilient Luxury Vinyl Plank",
+        "description": "100% waterproof LVP with a realistic wood look. Perfect for basements, kitchens, and bathrooms. Lifetime residential wear warranty.",
+        "warranty": "Lifetime Residential",
+        "img": "https://images.unsplash.com/photo-1565538810643-b5bdb714032a?w=400&q=75"
+      },
+      {
+        "brand": "Mirage",
+        "name": "Engineered Hardwood",
+        "description": "Made in Canada, Mirage engineered hardwood offers the warmth of real wood with dimensional stability for [Province]'s climate swings. Available in 900+ options.",
+        "warranty": "25-Year Surface",
+        "img": "https://images.unsplash.com/photo-1497366216548-37526070297c?w=400&q=75"
+      }
+    ]
+  }
+]

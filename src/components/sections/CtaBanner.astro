@@ -1,0 +1,76 @@
+---
+interface Props {
+  heading?: string;
+  subtext?: string;
+  bgImg?: string;
+}
+
+const {
+  heading = "Ready to Transform Your Space?",
+  subtext = "Get your free estimate today — no obligation, no pressure. Just honest advice from experienced tradespeople.",
+  bgImg = "https://images.unsplash.com/photo-1504307651254-35680f356dfd?w=1920&q=80",
+} = Astro.props;
+---
+
+<section
+  class="cta-banner"
+  style={`background-image: url('${bgImg}');`}
+  aria-labelledby="cta-heading"
+>
+  <div class="cta-overlay" aria-hidden="true"></div>
+  <div class="container cta-content">
+    <div class="cta-text">
+      <h2 id="cta-heading" style="color:var(--color-white); margin-bottom:1rem;">{heading}</h2>
+      <p style="color:rgba(255,255,255,0.8); font-size:var(--text-lg); line-height:var(--leading-relaxed); max-width:540px; margin-bottom:2.5rem;">
+        {subtext}
+      </p>
+      <div style="display:flex; gap:1rem; flex-wrap:wrap; align-items:center;">
+        <a href="/free-estimate" class="btn-primary">
+          Get a Free Estimate →
+        </a>
+        <a href="tel:[Phone]" class="btn-outline" style="gap:0.5rem;">
+          <svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><path d="M22 16.92v3a2 2 0 01-2.18 2 19.79 19.79 0 01-8.63-3.07A19.5 19.5 0 013.07 9.81 19.79 19.79 0 01.12 1.18 2 2 0 012.11 0h3a2 2 0 012 1.72c.127.96.361 1.903.7 2.81a2 2 0 01-.45 2.11L6.09 7.91a16 16 0 006 6l1.27-1.27a2 2 0 012.11-.45c.907.339 1.85.573 2.81.7A2 2 0 0122 16.92z"/></svg>
+          Call [Phone]
+        </a>
+      </div>
+    </div>
+  </div>
+</section>
+
+<style>
+.cta-banner {
+  position: relative;
+  background-size: cover;
+  background-position: center;
+  background-attachment: fixed;
+  padding-block: clamp(5rem, 10vw, 8rem);
+  overflow: hidden;
+}
+
+.cta-overlay {
+  position: absolute;
+  inset: 0;
+  background: linear-gradient(
+    105deg,
+    rgba(10, 30, 42, 0.92) 0%,
+    rgba(10, 30, 42, 0.70) 60%,
+    rgba(10, 30, 42, 0.50) 100%
+  );
+}
+
+.cta-content {
+  position: relative;
+  z-index: 1;
+}
+
+/* Disable parallax on mobile (causes flicker) */
+@media (max-width: 767px) {
+  .cta-banner {
+    background-attachment: scroll;
+  }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .cta-banner { background-attachment: scroll; }
+}
+</style>

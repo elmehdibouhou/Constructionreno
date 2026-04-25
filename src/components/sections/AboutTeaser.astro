@@ -1,0 +1,163 @@
+---
+const values = [
+  { label: 'Licensed & Insured' },
+  { label: 'Free Estimates' },
+  { label: '5-Year Workmanship Warranty' },
+];
+---
+
+<section class="section" id="about">
+  <div class="container">
+    <div class="about-grid">
+
+      <!-- Left: image with decorative accent -->
+      <div class="about-image-col fade-up">
+        <div class="about-image-wrap">
+          <img
+            src="https://images.unsplash.com/photo-1504307651254-35680f356dfd?w=800&q=80"
+            alt="Professional renovation and construction team at work in [City]"
+            width="600"
+            height="720"
+            loading="lazy"
+            decoding="async"
+            class="about-photo"
+          />
+          <!-- Decorative gold accent border -->
+          <div class="about-accent-border" aria-hidden="true"></div>
+          <!-- Floating badge -->
+          <div class="about-badge" aria-hidden="true">
+            <span class="about-badge-number">15+</span>
+            <span class="about-badge-text">Years<br>Experience</span>
+          </div>
+        </div>
+      </div>
+
+      <!-- Right: content -->
+      <div class="about-content-col fade-up">
+        <span class="eyebrow">About Us</span>
+        <h2 style="margin-bottom:0.75rem;">Quality Craftsmanship,<br>Built on Trust</h2>
+        <div class="gold-rule"></div>
+
+        <p style="color:var(--color-gray-800); line-height:var(--leading-relaxed); margin-bottom:1.25rem; font-size:var(--text-lg);">
+          We are a family-run renovation and roofing company based in [City], dedicated to transforming homes with exceptional quality and care. Every project is treated like it's our own home.
+        </p>
+        <p style="color:var(--color-gray-800); line-height:var(--leading-relaxed); margin-bottom:2rem;">
+          From a single bathroom refresh to a complete custom home build, our team brings over 15 years of trade expertise, transparent pricing, and a commitment to finishing on time and on budget.
+        </p>
+
+        <!-- Value pills -->
+        <div class="about-values" role="list">
+          {values.map((v) => (
+            <div class="about-value-pill" role="listitem">
+              <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" aria-hidden="true" style="color:var(--color-accent-500); flex-shrink:0;"><polyline points="20 6 9 17 4 12"/></svg>
+              {v.label}
+            </div>
+          ))}
+        </div>
+
+        <a href="/about" class="btn-ghost" style="margin-top:2rem;">Our Story →</a>
+      </div>
+
+    </div>
+  </div>
+</section>
+
+<style>
+.about-grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 5rem;
+  align-items: center;
+}
+
+.about-image-wrap {
+  position: relative;
+  display: inline-block;
+  width: 100%;
+}
+
+.about-photo {
+  width: 100%;
+  height: auto;
+  border-radius: var(--radius-lg);
+  object-fit: cover;
+  aspect-ratio: 5/6;
+  position: relative;
+  z-index: 1;
+}
+
+/* Offset gold border accent */
+.about-accent-border {
+  position: absolute;
+  top: 1.5rem;
+  right: -1.5rem;
+  bottom: -1.5rem;
+  left: 1.5rem;
+  border: 2px solid var(--color-accent-500);
+  border-radius: var(--radius-lg);
+  opacity: 0.4;
+  z-index: 0;
+  pointer-events: none;
+}
+
+/* Floating experience badge */
+.about-badge {
+  position: absolute;
+  bottom: 2rem;
+  left: -1.5rem;
+  background-color: var(--color-primary-700);
+  color: var(--color-white);
+  padding: 1rem 1.25rem;
+  border-radius: var(--radius-md);
+  display: flex;
+  align-items: center;
+  gap: 0.75rem;
+  box-shadow: var(--shadow-lg);
+  z-index: 2;
+}
+
+.about-badge-number {
+  font-family: var(--font-display);
+  font-size: 2rem;
+  font-weight: 300;
+  color: var(--color-accent-300);
+  line-height: 1;
+}
+
+.about-badge-text {
+  font-size: 0.75rem;
+  letter-spacing: 0.05em;
+  text-transform: uppercase;
+  font-weight: 600;
+  color: rgba(255,255,255,0.8);
+  line-height: 1.4;
+}
+
+.about-values {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.75rem;
+}
+
+.about-value-pill {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.5rem;
+  padding: 0.5rem 1rem;
+  background-color: var(--color-accent-100);
+  color: var(--color-primary-800);
+  font-size: 0.85rem;
+  font-weight: 500;
+  border-radius: var(--radius-full);
+  border: 1px solid var(--color-accent-300);
+}
+
+@media (max-width: 1023px) {
+  .about-grid {
+    grid-template-columns: 1fr;
+    gap: 3rem;
+  }
+  .about-accent-border { display: none; }
+  .about-badge { left: 1rem; bottom: 1rem; }
+}
+</style>
