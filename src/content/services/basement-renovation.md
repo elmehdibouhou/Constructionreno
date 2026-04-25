@@ -1,10 +1,10 @@
 ---
 title: "Basement Renovation"
 category: "Renovation"
+tagline: "Unlock your home's hidden square footage."
 heroImg: "https://images.unsplash.com/photo-1565538810643-b5bdb714032a?w=1920&q=80"
 cardImg: "https://images.unsplash.com/photo-1565538810643-b5bdb714032a?w=800&q=75"
 alt: "Finished basement renovation in [City]"
-tagline: "Unlock your home's hidden square footage."
 intro1: "Your unfinished basement holds enormous potential — a home office, media room, in-law suite, or rental unit. Our [City] basement renovation team transforms bare concrete into fully finished living spaces that add real value to your home."
 intro2: "We handle every aspect: waterproofing assessment, framing, insulation, electrical, drywall, flooring, pot lights, and full finishing. We also handle all necessary building permits with the city."
 metaTitle: "Basement Renovation [City] | [Company Name] — Free Estimate"
@@ -15,13 +15,13 @@ whyUs:
   - "In-law suite & legal secondary unit expertise"
   - "Egress windows & proper ventilation installed"
 benefits:
-  - icon: "home"
+  - icon: home
     title: "Add Living Space"
     desc: "A finished basement can add 500–1,500 sq ft of liveable space to your home — worth significantly more than the renovation cost."
-  - icon: "dollar-sign"
+  - icon: dollar-sign
     title: "Generate Rental Income"
     desc: "A legal secondary suite or in-law apartment can generate $1,500–$2,500/month in rental income, dramatically improving your home's ROI."
-  - icon: "check-circle"
+  - icon: check-circle
     title: "Permit-Compliant"
     desc: "Every basement renovation we complete meets current [Province] building code requirements. We handle all permits and inspections."
 faqs:
@@ -34,14 +34,14 @@ faqs:
   - q: "Can a finished basement be used as a rental unit?"
     a: "Yes, but it must meet specific legal requirements including egress windows, fire separation, separate entrance, and HVAC. We are experienced in building legal secondary suites that comply with municipal requirements."
 gallery:
-  - "https://images.unsplash.com/photo-1565538810643-b5bdb714032a?w=800&q=75"
-  - "https://images.unsplash.com/photo-1600566752355-35792bedcfea?w=800&q=75"
-  - "https://images.unsplash.com/photo-1617806118233-18e1de247200?w=800&q=75"
-  - "https://images.unsplash.com/photo-1555041469-a586c61ea9bc?w=800&q=75"
-  - "https://images.unsplash.com/photo-1600210492486-724fe5c67fb0?w=800&q=75"
-  - "https://images.unsplash.com/photo-1583847268964-b28dc8f51f92?w=800&q=75"
+  - https://images.unsplash.com/photo-1565538810643-b5bdb714032a?w=800&q=75
+  - https://images.unsplash.com/photo-1600566752355-35792bedcfea?w=800&q=75
+  - https://images.unsplash.com/photo-1617806118233-18e1de247200?w=800&q=75
+  - https://images.unsplash.com/photo-1555041469-a586c61ea9bc?w=800&q=75
+  - https://images.unsplash.com/photo-1600210492486-724fe5c67fb0?w=800&q=75
+  - https://images.unsplash.com/photo-1583847268964-b28dc8f51f92?w=800&q=75
 related:
-  - "kitchen-renovation"
-  - "bathroom-renovation"
-  - "home-additions"
+  - kitchen-renovation
+  - bathroom-renovation
+  - home-additions
 ---

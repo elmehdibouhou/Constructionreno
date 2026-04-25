@@ -1,10 +1,10 @@
 ---
 title: "Exterior Renovations"
 category: "Renovation"
+tagline: "Exceptional curb appeal starts with exceptional craftsmanship."
 heroImg: "https://images.unsplash.com/photo-1570129477492-45c003edd2be?w=1920&q=80"
 cardImg: "https://images.unsplash.com/photo-1570129477492-45c003edd2be?w=800&q=75"
 alt: "Exterior home renovation in [City]"
-tagline: "Exceptional curb appeal starts with exceptional craftsmanship."
 intro1: "First impressions matter. A beautifully renovated exterior boosts your home's value, enhances curb appeal, and provides real weather protection for the [Province] climate. Our [City] exterior renovation team handles siding, trim, windows, doors, and full exterior makeovers."
 intro2: "We work with all exterior cladding types — vinyl, fibre cement, engineered wood, and stucco — and coordinate all associated work including eavestroughs, windows, insulation upgrades, and exterior painting."
 metaTitle: "Exterior Renovation [City] | [Company Name] — Free Estimate"
@@ -15,13 +15,13 @@ whyUs:
   - "Insulation upgrades available during exterior work"
   - "Exterior painting with premium weather-resistant coatings"
 benefits:
-  - icon: "home"
+  - icon: home
     title: "Curb Appeal"
     desc: "A new exterior immediately transforms how your home looks and feels — from the street and from the inside. Neighbours notice, and buyers pay a premium."
-  - icon: "wind"
+  - icon: wind
     title: "Weather Protection"
     desc: "Quality siding and window installation protects your home from [Province]'s extreme temperature swings, heavy rain, and ice. We install with proper moisture barriers and flashing."
-  - icon: "thermometer"
+  - icon: thermometer
     title: "Energy Savings"
     desc: "Exterior renovations are the ideal time to upgrade wall insulation. We can improve your home's thermal envelope and reduce heating and cooling costs."
 faqs:
@@ -34,14 +34,14 @@ faqs:
   - q: "How long does an exterior renovation take?"
     a: "Full exterior siding replacement on an average home takes 1–2 weeks. Combined siding + windows + trim projects run 2–4 weeks."
 gallery:
-  - "https://images.unsplash.com/photo-1570129477492-45c003edd2be?w=800&q=75"
-  - "https://images.unsplash.com/photo-1582268611958-ebfd161ef9cf?w=800&q=75"
-  - "https://images.unsplash.com/photo-1512917774080-9991f1c4c750?w=800&q=75"
-  - "https://images.unsplash.com/photo-1600585154526-990dced4db0d?w=800&q=75"
-  - "https://images.unsplash.com/photo-1558036117-15d82a90b9b1?w=800&q=75"
-  - "https://images.unsplash.com/photo-1523217582562-09d0def993a6?w=800&q=75"
+  - https://images.unsplash.com/photo-1570129477492-45c003edd2be?w=800&q=75
+  - https://images.unsplash.com/photo-1582268611958-ebfd161ef9cf?w=800&q=75
+  - https://images.unsplash.com/photo-1512917774080-9991f1c4c750?w=800&q=75
+  - https://images.unsplash.com/photo-1600585154526-990dced4db0d?w=800&q=75
+  - https://images.unsplash.com/photo-1558036117-15d82a90b9b1?w=800&q=75
+  - https://images.unsplash.com/photo-1523217582562-09d0def993a6?w=800&q=75
 related:
-  - "siding"
-  - "painting"
-  - "roof-replacement"
+  - siding
+  - painting
+  - roof-replacement
 ---

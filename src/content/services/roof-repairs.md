@@ -1,10 +1,10 @@
 ---
 title: "Roof Repairs"
 category: "Roofing"
+tagline: "Stop the leak before it becomes a disaster."
 heroImg: "https://images.unsplash.com/photo-1504307651254-35680f356dfd?w=1920&q=80"
 cardImg: "https://images.unsplash.com/photo-1504307651254-35680f356dfd?w=800&q=75"
 alt: "Roof repair in [City]"
-tagline: "Stop the leak before it becomes a disaster."
 intro1: "A small roof leak ignored becomes a major structural problem quickly. Our [City] roof repair team responds fast — diagnosing the true source of the leak and fixing it properly the first time, not just patching it temporarily."
 intro2: "We repair all types of roofing issues: missing shingles, damaged flashing around chimneys and vents, ice dam damage, ridge cap failures, and pipe collar leaks. All repairs come with a written warranty."
 metaTitle: "Roof Repairs [City] | [Company Name] — Fast Response"
@@ -15,13 +15,13 @@ whyUs:
   - "Written warranty on all repair work"
   - "Emergency tarping service available"
 benefits:
-  - icon: "zap"
+  - icon: zap
     title: "Fast Response"
     desc: "Roof leaks are emergencies. We offer same-week appointments and emergency tarping to protect your home while we arrange a permanent repair."
-  - icon: "search"
+  - icon: search
     title: "True Diagnosis"
     desc: "We find where water is actually entering — which is often not directly above where it's showing inside. We fix the source, not just the symptom."
-  - icon: "file-text"
+  - icon: file-text
     title: "Written Warranty"
     desc: "All our roof repair work comes with a written labour warranty so you have peace of mind that the fix will hold."
 faqs:
@@ -34,14 +34,14 @@ faqs:
   - q: "What causes most roof leaks?"
     a: "The most common sources of roof leaks in [Province] are deteriorated flashing around chimneys and skylights, failed pipe boot collars, ice dam damage, and missing or lifted shingles. We inspect and address all of these."
 gallery:
-  - "https://images.unsplash.com/photo-1504307651254-35680f356dfd?w=800&q=75"
-  - "https://images.unsplash.com/photo-1558618666-fcd25c85cd64?w=800&q=75"
-  - "https://images.unsplash.com/photo-1416331108676-a22ccb276e35?w=800&q=75"
-  - "https://images.unsplash.com/photo-1449844908441-8829872d2607?w=800&q=75"
-  - "https://images.unsplash.com/photo-1582268611958-ebfd161ef9cf?w=800&q=75"
-  - "https://images.unsplash.com/photo-1570129477492-45c003edd2be?w=800&q=75"
+  - https://images.unsplash.com/photo-1504307651254-35680f356dfd?w=800&q=75
+  - https://images.unsplash.com/photo-1558618666-fcd25c85cd64?w=800&q=75
+  - https://images.unsplash.com/photo-1416331108676-a22ccb276e35?w=800&q=75
+  - https://images.unsplash.com/photo-1449844908441-8829872d2607?w=800&q=75
+  - https://images.unsplash.com/photo-1582268611958-ebfd161ef9cf?w=800&q=75
+  - https://images.unsplash.com/photo-1570129477492-45c003edd2be?w=800&q=75
 related:
-  - "roof-replacement"
-  - "roof-inspection"
-  - "soffit-fascia"
+  - roof-replacement
+  - roof-inspection
+  - soffit-fascia
 ---
