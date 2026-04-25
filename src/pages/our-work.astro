@@ -64,7 +64,7 @@ const categories = ['All', ...new Set(projects.map(p => p.data.category))];
             class:list={['gallery-project', { 'gallery-project--large': p.data.featured }]}
             data-category={p.data.category}
           >
-            <div class="gallery-project-inner img-overlay">
+            <a href={`/projects/${p.slug}`} class="gallery-project-inner img-overlay" aria-label={`View project: ${p.data.title}`}>
               <img
                 src={p.data.img}
                 alt={p.data.alt || p.data.title}
@@ -78,8 +78,9 @@ const categories = ['All', ...new Set(projects.map(p => p.data.category))];
                 <p class="gallery-project-cat">{p.data.category}</p>
                 <p class="gallery-project-title">{p.data.title}</p>
                 <p class="gallery-project-city">{p.data.location}</p>
+                <p class="gallery-project-cta">View Project →</p>
               </div>
-            </div>
+            </a>
           </div>
         ))}
       </div>
@@ -128,11 +129,13 @@ const categories = ['All', ...new Set(projects.map(p => p.data.category))];
 .gallery-project { border-radius: var(--radius-md); overflow: hidden; }
 .gallery-project--large { grid-column: span 2; }
 .gallery-project-inner {
+  display: block;
   position: relative;
   aspect-ratio: 4/3;
   border-radius: var(--radius-md);
   overflow: hidden;
   cursor: pointer;
+  text-decoration: none;
 }
 .gallery-project--large .gallery-project-inner { aspect-ratio: 16/9; }
 .gallery-project-label {
@@ -165,6 +168,15 @@ const categories = ['All', ...new Set(projects.map(p => p.data.category))];
 .gallery-project-city {
   font-size: 0.78rem;
   color: rgba(255,255,255,0.65);
+}
+.gallery-project-cta {
+  display: inline-block;
+  margin-top: 0.5rem;
+  font-size: 0.72rem;
+  font-weight: 600;
+  letter-spacing: 0.08em;
+  color: var(--color-accent-300);
+  text-transform: uppercase;
 }
 .gallery-project--hidden { display: none; }
 @media (max-width: 1023px) {

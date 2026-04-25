@@ -68,6 +68,11 @@ const projectsCollection = defineCollection({
     beforeImage: z.string().optional(),
     afterImage: z.string().optional(),
     description: z.string().optional(),
+    galleryImages: z.array(z.string()).optional(),
+    metaTitle: z.string().optional(),
+    metaDesc: z.string().optional(),
+    highlights: z.array(z.string()).optional(),
+    area: z.string().optional(),
   }),
 });
 
