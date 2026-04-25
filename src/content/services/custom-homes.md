@@ -1,10 +1,10 @@
 ---
 title: "Custom Homes"
 category: "Construction"
+tagline: "Build the home you've always imagined."
 heroImg: "https://images.unsplash.com/photo-1600607687939-ce8a6c25118c?w=1920&q=80"
 cardImg: "https://images.unsplash.com/photo-1600607687939-ce8a6c25118c?w=800&q=75"
 alt: "Custom home construction in [City]"
-tagline: "Build the home you've always imagined."
 intro1: "A custom home is the ultimate expression of your vision. Unlike production builds, every decision is yours — the floor plan, finishes, materials, and features — built exactly the way you want it by a team you trust."
 intro2: "We work with your architect or our design partners to build your dream home from the foundation up. With full in-house project management, you have one point of contact and a team that takes ownership of every detail."
 metaTitle: "Custom Home Builder [City] | [Company Name] — Free Estimate"
@@ -15,13 +15,13 @@ whyUs:
   - "Full project management — one point of contact"
   - "Energy-efficient builds, net-zero capable"
 benefits:
-  - icon: "edit"
+  - icon: edit
     title: "Design Freedom"
     desc: "Every detail is yours to choose — from the floor plan and ceiling heights to the kitchen layout, trim profile, and exterior cladding."
-  - icon: "shield-check"
+  - icon: shield-check
     title: "Quality Assurance"
     desc: "We use only licensed subtrades and inspect every stage of construction. Structural, electrical, and plumbing inspections are completed before proceeding."
-  - icon: "leaf"
+  - icon: leaf
     title: "Energy Efficiency"
     desc: "We build to exceed [Province] energy code requirements, offering options for high-performance insulation, triple-pane windows, and solar-ready framing."
 faqs:
@@ -34,14 +34,14 @@ faqs:
   - q: "What is included in your custom home builds?"
     a: "Our builds include all structural work, electrical, plumbing, HVAC, insulation, drywall, interior trim, flooring, kitchen and bathroom installations, and a complete exterior package including siding, roofing, windows, and doors."
 gallery:
-  - "https://images.unsplash.com/photo-1600607687939-ce8a6c25118c?w=800&q=75"
-  - "https://images.unsplash.com/photo-1613490493576-7fde63acd811?w=800&q=75"
-  - "https://images.unsplash.com/photo-1416331108676-a22ccb276e35?w=800&q=75"
-  - "https://images.unsplash.com/photo-1568605114967-8130f3a36994?w=800&q=75"
-  - "https://images.unsplash.com/photo-1449844908441-8829872d2607?w=800&q=75"
-  - "https://images.unsplash.com/photo-1523217582562-09d0def993a6?w=800&q=75"
+  - https://images.unsplash.com/photo-1600607687939-ce8a6c25118c?w=800&q=75
+  - https://images.unsplash.com/photo-1613490493576-7fde63acd811?w=800&q=75
+  - https://images.unsplash.com/photo-1416331108676-a22ccb276e35?w=800&q=75
+  - https://images.unsplash.com/photo-1568605114967-8130f3a36994?w=800&q=75
+  - https://images.unsplash.com/photo-1449844908441-8829872d2607?w=800&q=75
+  - https://images.unsplash.com/photo-1523217582562-09d0def993a6?w=800&q=75
 related:
-  - "home-additions"
-  - "exterior-renovations"
-  - "basement-renovation"
+  - home-additions
+  - exterior-renovations
+  - basement-renovation
 ---

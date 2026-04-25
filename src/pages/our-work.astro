@@ -1,21 +1,16 @@
 ---
+import { getCollection } from 'astro:content';
 import BaseLayout from '../layouts/BaseLayout.astro';
 import CtaBanner from '../components/sections/CtaBanner.astro';
 
-const projects = [
-  { title: 'Modern Open-Concept Kitchen', category: 'Kitchen Renovation', city: '[City]', img: 'https://images.unsplash.com/photo-1556909114-f6e7ad7d3136?w=900&q=80', alt: 'Modern kitchen renovation' },
-  { title: 'Spa-Style Primary Ensuite', category: 'Bathroom Renovation', city: '[City]', img: 'https://images.unsplash.com/photo-1552321554-5fefe8c9ef14?w=600&q=75', alt: 'Luxury spa bathroom renovation' },
-  { title: 'Finished Basement Suite', category: 'Basement Renovation', city: '[City]', img: 'https://images.unsplash.com/photo-1565538810643-b5bdb714032a?w=600&q=75', alt: 'Finished basement living space' },
-  { title: 'Full Exterior Re-Roof', category: 'Roof Replacement', city: '[City]', img: 'https://images.unsplash.com/photo-1558618666-fcd25c85cd64?w=600&q=75', alt: 'Complete roof replacement' },
-  { title: 'James Hardie Siding', category: 'Exterior Siding', city: '[City]', img: 'https://images.unsplash.com/photo-1582268611958-ebfd161ef9cf?w=600&q=75', alt: 'James Hardie fibre cement siding' },
-  { title: 'Interior Repaint + Trim', category: 'Painting', city: '[City]', img: 'https://images.unsplash.com/photo-1562259949-e8e7689d7828?w=600&q=75', alt: 'Full interior painting project' },
-  { title: 'Standing Seam Metal Roof', category: 'Metal Roofing', city: '[City]', img: 'https://images.unsplash.com/photo-1449844908441-8829872d2607?w=600&q=75', alt: 'Standing seam metal roof installation' },
-  { title: 'Two-Storey Home Addition', category: 'Home Addition', city: '[City]', img: 'https://images.unsplash.com/photo-1572120360610-d971b9d7767c?w=600&q=75', alt: 'Two-storey home addition construction' },
-  { title: 'Custom Home Build', category: 'Custom Homes', city: '[City]', img: 'https://images.unsplash.com/photo-1600607687939-ce8a6c25118c?w=900&q=80', alt: 'Custom home build in [City]' },
-  { title: 'Seamless Eavestrough System', category: 'Eavestrough', city: '[City]', img: 'https://images.unsplash.com/photo-1512917774080-9991f1c4c750?w=600&q=75', alt: 'Seamless aluminum eavestrough installation' },
-];
+const allProjects = await getCollection('projects');
+const projects = allProjects.sort((a, b) => {
+  if (a.data.featured && !b.data.featured) return -1;
+  if (!a.data.featured && b.data.featured) return 1;
+  return 0;
+});
 
-const categories = ['All', ...new Set(projects.map(p => p.category))];
+const categories = ['All', ...new Set(projects.map(p => p.data.category))];
 ---
 
 <BaseLayout
@@ -60,23 +55,23 @@ const categories = ['All', ...new Set(projects.map(p => p.category))];
       <div class="gallery-grid" id="gallery-grid">
         {projects.map((p, i) => (
           <div
-            class:list={['gallery-project', { 'gallery-project--large': i === 0 || i === 8 }]}
-            data-category={p.category}
+            class:list={['gallery-project', { 'gallery-project--large': p.data.featured }]}
+            data-category={p.data.category}
           >
             <div class="gallery-project-inner img-overlay">
               <img
-                src={p.img}
-                alt={p.alt}
-                width={i === 0 || i === 8 ? 900 : 600}
-                height={i === 0 || i === 8 ? 600 : 400}
+                src={p.data.img}
+                alt={p.data.alt || p.data.title}
+                width={p.data.featured ? 900 : 600}
+                height={p.data.featured ? 600 : 400}
                 loading={i < 4 ? 'eager' : 'lazy'}
                 decoding="async"
                 style="width:100%; height:100%; object-fit:cover;"
               />
               <div class="gallery-project-label">
-                <p class="gallery-project-cat">{p.category}</p>
-                <p class="gallery-project-title">{p.title}</p>
-                <p class="gallery-project-city">{p.city}</p>
+                <p class="gallery-project-cat">{p.data.category}</p>
+                <p class="gallery-project-title">{p.data.title}</p>
+                <p class="gallery-project-city">{p.data.location}</p>
               </div>
             </div>
           </div>

@@ -1,10 +1,10 @@
 ---
 title: "Soffit & Fascia"
 category: "Roofing"
+tagline: "The finishing detail that protects your roofline."
 heroImg: "https://images.unsplash.com/photo-1558036117-15d82a90b9b1?w=1920&q=80"
 cardImg: "https://images.unsplash.com/photo-1558036117-15d82a90b9b1?w=800&q=75"
 alt: "Soffit and fascia installation in [City]"
-tagline: "The finishing detail that protects your roofline."
 intro1: "Soffits and fascia protect your roof's edge and overhang from water, pests, and rot — while giving your home's exterior a clean, finished appearance. When they fail, water enters your wall assembly and attic, causing costly damage."
 intro2: "We replace deteriorated wood soffits and fascia with low-maintenance aluminum or vinyl cladding that never rots, requires no painting, and is available in colours to match your siding and trim."
 metaTitle: "Soffit & Fascia [City] | [Company Name] — Free Estimate"
@@ -15,13 +15,13 @@ whyUs:
   - "Custom colour matching to your siding & trim"
   - "Combined with eavestrough replacement for savings"
 benefits:
-  - icon: "shield"
+  - icon: shield
     title: "Pest Prevention"
     desc: "Intact soffit panels prevent birds, squirrels, and insects from entering your attic. We seal all gaps and install proper vented panels."
-  - icon: "wind"
+  - icon: wind
     title: "Attic Ventilation"
     desc: "Vented soffit panels are critical for proper attic airflow, which extends roof shingle life and prevents ice dams in winter."
-  - icon: "droplets"
+  - icon: droplets
     title: "Rot Protection"
     desc: "Aluminum and vinyl soffit and fascia eliminate the rot, peeling paint, and wasp nest issues that plague original wood installations."
 faqs:
@@ -34,14 +34,14 @@ faqs:
   - q: "Should I replace eavestroughs at the same time?"
     a: "If eavestroughs are being removed for soffit and fascia work anyway, combining the replacement saves significant labour cost and ensures a clean, consistent look."
 gallery:
-  - "https://images.unsplash.com/photo-1558036117-15d82a90b9b1?w=800&q=75"
-  - "https://images.unsplash.com/photo-1570129477492-45c003edd2be?w=800&q=75"
-  - "https://images.unsplash.com/photo-1582268611958-ebfd161ef9cf?w=800&q=75"
-  - "https://images.unsplash.com/photo-1523217582562-09d0def993a6?w=800&q=75"
-  - "https://images.unsplash.com/photo-1512917774080-9991f1c4c750?w=800&q=75"
-  - "https://images.unsplash.com/photo-1600585154526-990dced4db0d?w=800&q=75"
+  - https://images.unsplash.com/photo-1558036117-15d82a90b9b1?w=800&q=75
+  - https://images.unsplash.com/photo-1570129477492-45c003edd2be?w=800&q=75
+  - https://images.unsplash.com/photo-1582268611958-ebfd161ef9cf?w=800&q=75
+  - https://images.unsplash.com/photo-1523217582562-09d0def993a6?w=800&q=75
+  - https://images.unsplash.com/photo-1512917774080-9991f1c4c750?w=800&q=75
+  - https://images.unsplash.com/photo-1600585154526-990dced4db0d?w=800&q=75
 related:
-  - "eavestrough"
-  - "siding"
-  - "roof-replacement"
+  - eavestrough
+  - siding
+  - roof-replacement
 ---

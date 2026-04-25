@@ -1,10 +1,10 @@
 ---
 title: "Kitchen Renovation"
 category: "Renovation"
+tagline: "Transform your kitchen into the heart of your home."
 heroImg: "https://images.unsplash.com/photo-1556909114-f6e7ad7d3136?w=1920&q=80"
 cardImg: "https://images.unsplash.com/photo-1556909114-f6e7ad7d3136?w=800&q=75"
 alt: "Modern kitchen renovation in [City]"
-tagline: "Transform your kitchen into the heart of your home."
 intro1: "Your kitchen is more than a place to cook — it's where family gathers, meals are shared, and memories are made. Our [City] kitchen renovation team combines skilled craftsmanship with premium materials to create a space that's beautiful, functional, and built to last."
 intro2: "From a complete gut renovation to a targeted cabinet and countertop refresh, we handle every aspect of the project: design consultation, demolition, plumbing and electrical coordination, custom cabinetry, tile work, and final finishing — with no subcontracting surprises."
 metaTitle: "Kitchen Renovation [City] | [Company Name] — Free Estimate"
@@ -15,13 +15,13 @@ whyUs:
   - "Full plumbing & electrical coordination included"
   - "On-time delivery backed by written contract"
 benefits:
-  - icon: "layout"
+  - icon: layout
     title: "Custom Design"
     desc: "We work with you to design a layout that maximises storage, flow, and style — from open-concept to galley kitchens."
-  - icon: "star"
+  - icon: star
     title: "Premium Materials"
     desc: "We source only top-rated cabinets, countertops, tiles, and fixtures — built to look stunning and stand up to daily use."
-  - icon: "shield"
+  - icon: shield
     title: "5-Year Warranty"
     desc: "All our kitchen renovations are backed by a 5-year workmanship warranty. We stand behind every cabinet door and tile we install."
 faqs:
@@ -34,14 +34,14 @@ faqs:
   - q: "Can I stay in my home during the renovation?"
     a: "Yes — most clients remain in their homes during kitchen renovations. We contain the work area, maintain clean pathways, and work Monday to Friday to minimise disruption to your routine."
 gallery:
-  - "https://images.unsplash.com/photo-1556909114-f6e7ad7d3136?w=800&q=75"
-  - "https://images.unsplash.com/photo-1565538810643-b5bdb714032a?w=800&q=75"
-  - "https://images.unsplash.com/photo-1600585154340-be6161a56a0c?w=800&q=75"
-  - "https://images.unsplash.com/photo-1484154218962-a197022b5858?w=800&q=75"
-  - "https://images.unsplash.com/photo-1556909172-89cf0b79bfb0?w=800&q=75"
-  - "https://images.unsplash.com/photo-1507089947368-19c1da9775ae?w=800&q=75"
+  - https://images.unsplash.com/photo-1556909114-f6e7ad7d3136?w=800&q=75
+  - https://images.unsplash.com/photo-1565538810643-b5bdb714032a?w=800&q=75
+  - https://images.unsplash.com/photo-1600585154340-be6161a56a0c?w=800&q=75
+  - https://images.unsplash.com/photo-1484154218962-a197022b5858?w=800&q=75
+  - https://images.unsplash.com/photo-1556909172-89cf0b79bfb0?w=800&q=75
+  - https://images.unsplash.com/photo-1507089947368-19c1da9775ae?w=800&q=75
 related:
-  - "bathroom-renovation"
-  - "basement-renovation"
-  - "painting"
+  - bathroom-renovation
+  - basement-renovation
+  - painting
 ---

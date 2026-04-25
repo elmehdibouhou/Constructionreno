@@ -1,10 +1,10 @@
 ---
 title: "Roof Inspections"
 category: "Roofing"
+tagline: "Know the true condition of your roof before it becomes an emergency."
 heroImg: "https://images.unsplash.com/photo-1416331108676-a22ccb276e35?w=1920&q=80"
 cardImg: "https://images.unsplash.com/photo-1416331108676-a22ccb276e35?w=800&q=75"
 alt: "Roof inspection in [City]"
-tagline: "Know the true condition of your roof before it becomes an emergency."
 intro1: "A professional roof inspection gives you an accurate picture of your roof's current condition and remaining lifespan — before you're dealing with a leak during a rainstorm. We provide detailed written reports with photos documenting every finding."
 intro2: "Our inspections are commonly requested before home purchases, after severe storms, for insurance claims, and as part of regular maintenance programs. We're independent — our inspection recommendation is based on what's best for your home, not on selling you a new roof."
 metaTitle: "Roof Inspection [City] | [Company Name] — Written Report with Photos"
@@ -15,13 +15,13 @@ whyUs:
   - "Honest, independent assessment"
   - "Insurance claim support documentation"
 benefits:
-  - icon: "file-text"
+  - icon: file-text
     title: "Detailed Report"
     desc: "You receive a comprehensive written report with photographs of all areas inspected, clear findings, and prioritised recommendations."
-  - icon: "search"
+  - icon: search
     title: "Full Inspection Scope"
     desc: "We inspect shingles, flashing, ridge caps, pipe boots, vents, eavestroughs, soffit, fascia, and visible deck condition from the rooftop."
-  - icon: "dollar-sign"
+  - icon: dollar-sign
     title: "Insurance Support"
     desc: "Our inspection reports are accepted by most insurance companies for storm damage claims and are useful documentation for property transactions."
 faqs:
@@ -34,14 +34,14 @@ faqs:
   - q: "Can I use your inspection report for an insurance claim?"
     a: "Yes. Our detailed photo reports with written assessments documenting storm damage or deterioration are accepted by insurance adjusters. We can also meet with adjusters on-site if needed."
 gallery:
-  - "https://images.unsplash.com/photo-1416331108676-a22ccb276e35?w=800&q=75"
-  - "https://images.unsplash.com/photo-1558618666-fcd25c85cd64?w=800&q=75"
-  - "https://images.unsplash.com/photo-1504307651254-35680f356dfd?w=800&q=75"
-  - "https://images.unsplash.com/photo-1449844908441-8829872d2607?w=800&q=75"
-  - "https://images.unsplash.com/photo-1582268611958-ebfd161ef9cf?w=800&q=75"
-  - "https://images.unsplash.com/photo-1570129477492-45c003edd2be?w=800&q=75"
+  - https://images.unsplash.com/photo-1416331108676-a22ccb276e35?w=800&q=75
+  - https://images.unsplash.com/photo-1558618666-fcd25c85cd64?w=800&q=75
+  - https://images.unsplash.com/photo-1504307651254-35680f356dfd?w=800&q=75
+  - https://images.unsplash.com/photo-1449844908441-8829872d2607?w=800&q=75
+  - https://images.unsplash.com/photo-1582268611958-ebfd161ef9cf?w=800&q=75
+  - https://images.unsplash.com/photo-1570129477492-45c003edd2be?w=800&q=75
 related:
-  - "roof-repairs"
-  - "roof-replacement"
-  - "venting"
+  - roof-repairs
+  - roof-replacement
+  - venting
 ---
