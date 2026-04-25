@@ -2738,6 +2738,20 @@
                 "value": "SettingsFilter"
               }
             }
+          },
+          {
+            "kind": "InputValueDefinition",
+            "name": {
+              "kind": "Name",
+              "value": "home"
+            },
+            "type": {
+              "kind": "NamedType",
+              "name": {
+                "kind": "Name",
+                "value": "HomeFilter"
+              }
+            }
           }
         ]
       },
