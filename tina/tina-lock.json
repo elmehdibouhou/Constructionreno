@@ -7589,6 +7589,20 @@
                 "value": "String"
               }
             }
+          },
+          {
+            "kind": "InputValueDefinition",
+            "name": {
+              "kind": "Name",
+              "value": "home"
+            },
+            "type": {
+              "kind": "NamedType",
+              "name": {
+                "kind": "Name",
+                "value": "HomeMutation"
+              }
+            }
           }
         ]
       },
@@ -7666,6 +7680,20 @@
               "name": {
                 "kind": "Name",
                 "value": "SettingsMutation"
+              }
+            }
+          },
+          {
+            "kind": "InputValueDefinition",
+            "name": {
+              "kind": "Name",
+              "value": "home"
+            },
+            "type": {
+              "kind": "NamedType",
+              "name": {
+                "kind": "Name",
+                "value": "HomeMutation"
               }
             }
           }
