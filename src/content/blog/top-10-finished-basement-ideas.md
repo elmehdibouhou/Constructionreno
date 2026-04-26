@@ -1,5 +1,5 @@
 ---
-title: 20 Finished Basement Ideas That Add Magic to Your Home
+title: 10 Finished Basement Ideas That Add Magic to Your Home
 pubDate: 2026-04-27T00:00:00.000Z
 category: Basement Renovation
 readTime: 7 min
