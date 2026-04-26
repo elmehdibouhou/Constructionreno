@@ -34,12 +34,18 @@ faqs:
   - q: "Can metal roofing be installed over existing shingles?"
     a: "Yes, in many cases metal panels can be installed over existing asphalt shingles, saving tear-off costs. We assess the existing deck condition before recommending this approach."
 gallery:
-  - https://images.unsplash.com/photo-1449844908441-8829872d2607?w=800&q=75
-  - https://images.unsplash.com/photo-1558618666-fcd25c85cd64?w=800&q=75
-  - https://images.unsplash.com/photo-1416331108676-a22ccb276e35?w=800&q=75
-  - https://images.unsplash.com/photo-1570129477492-45c003edd2be?w=800&q=75
-  - https://images.unsplash.com/photo-1504307651254-35680f356dfd?w=800&q=75
-  - https://images.unsplash.com/photo-1582268611958-ebfd161ef9cf?w=800&q=75
+  - src: https://images.unsplash.com/photo-1449844908441-8829872d2607?w=800&q=75
+    alt: ""
+  - src: https://images.unsplash.com/photo-1558618666-fcd25c85cd64?w=800&q=75
+    alt: ""
+  - src: https://images.unsplash.com/photo-1416331108676-a22ccb276e35?w=800&q=75
+    alt: ""
+  - src: https://images.unsplash.com/photo-1570129477492-45c003edd2be?w=800&q=75
+    alt: ""
+  - src: https://images.unsplash.com/photo-1504307651254-35680f356dfd?w=800&q=75
+    alt: ""
+  - src: https://images.unsplash.com/photo-1582268611958-ebfd161ef9cf?w=800&q=75
+    alt: ""
 related:
   - roof-replacement
   - roof-repairs

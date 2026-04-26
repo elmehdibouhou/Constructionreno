@@ -34,12 +34,18 @@ faqs:
   - q: "Do you offer accessible bathroom renovations?"
     a: "Yes — we specialize in barrier-free and accessible bathroom designs including walk-in showers with zero thresholds, grab bars, comfort-height toilets, and wider doorways for mobility aid access."
 gallery:
-  - https://images.unsplash.com/photo-1552321554-5fefe8c9ef14?w=800&q=75
-  - https://images.unsplash.com/photo-1507652313519-d4e9174996dd?w=800&q=75
-  - https://images.unsplash.com/photo-1600566753086-00f18fb6b3ea?w=800&q=75
-  - https://images.unsplash.com/photo-1584622650111-993a426fbf0a?w=800&q=75
-  - https://images.unsplash.com/photo-1604014237800-1c9102c219da?w=800&q=75
-  - https://images.unsplash.com/photo-1629079447777-1e605162dc8d?w=800&q=75
+  - src: https://images.unsplash.com/photo-1552321554-5fefe8c9ef14?w=800&q=75
+    alt: ""
+  - src: https://images.unsplash.com/photo-1507652313519-d4e9174996dd?w=800&q=75
+    alt: ""
+  - src: https://images.unsplash.com/photo-1600566753086-00f18fb6b3ea?w=800&q=75
+    alt: ""
+  - src: https://images.unsplash.com/photo-1584622650111-993a426fbf0a?w=800&q=75
+    alt: ""
+  - src: https://images.unsplash.com/photo-1604014237800-1c9102c219da?w=800&q=75
+    alt: ""
+  - src: https://images.unsplash.com/photo-1629079447777-1e605162dc8d?w=800&q=75
+    alt: ""
 related:
   - kitchen-renovation
   - basement-renovation

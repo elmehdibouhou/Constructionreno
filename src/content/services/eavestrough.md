@@ -34,12 +34,18 @@ faqs:
   - q: "Do gutter guards really work?"
     a: "Quality micro-mesh gutter guards significantly reduce maintenance — eliminating full-debris clogs entirely. We recommend and install products that allow water in while keeping leaves and pine needles out."
 gallery:
-  - https://images.unsplash.com/photo-1512917774080-9991f1c4c750?w=800&q=75
-  - https://images.unsplash.com/photo-1570129477492-45c003edd2be?w=800&q=75
-  - https://images.unsplash.com/photo-1582268611958-ebfd161ef9cf?w=800&q=75
-  - https://images.unsplash.com/photo-1558036117-15d82a90b9b1?w=800&q=75
-  - https://images.unsplash.com/photo-1523217582562-09d0def993a6?w=800&q=75
-  - https://images.unsplash.com/photo-1558618666-fcd25c85cd64?w=800&q=75
+  - src: https://images.unsplash.com/photo-1512917774080-9991f1c4c750?w=800&q=75
+    alt: ""
+  - src: https://images.unsplash.com/photo-1570129477492-45c003edd2be?w=800&q=75
+    alt: ""
+  - src: https://images.unsplash.com/photo-1582268611958-ebfd161ef9cf?w=800&q=75
+    alt: ""
+  - src: https://images.unsplash.com/photo-1558036117-15d82a90b9b1?w=800&q=75
+    alt: ""
+  - src: https://images.unsplash.com/photo-1523217582562-09d0def993a6?w=800&q=75
+    alt: ""
+  - src: https://images.unsplash.com/photo-1558618666-fcd25c85cd64?w=800&q=75
+    alt: ""
 related:
   - soffit-fascia
   - siding

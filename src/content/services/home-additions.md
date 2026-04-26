@@ -34,12 +34,18 @@ faqs:
   - q: "Can you match the existing exterior of my home?"
     a: "Yes — matching the existing exterior is a key part of our home addition process. We source matching siding, roofing, windows, and trim so the addition is indistinguishable from the original home."
 gallery:
-  - https://images.unsplash.com/photo-1572120360610-d971b9d7767c?w=800&q=75
-  - https://images.unsplash.com/photo-1600607687939-ce8a6c25118c?w=800&q=75
-  - https://images.unsplash.com/photo-1558036117-15d82a90b9b1?w=800&q=75
-  - https://images.unsplash.com/photo-1582268611958-ebfd161ef9cf?w=800&q=75
-  - https://images.unsplash.com/photo-1541888946425-d81bb19240f5?w=800&q=75
-  - https://images.unsplash.com/photo-1515263487990-61b07816b324?w=800&q=75
+  - src: https://images.unsplash.com/photo-1572120360610-d971b9d7767c?w=800&q=75
+    alt: ""
+  - src: https://images.unsplash.com/photo-1600607687939-ce8a6c25118c?w=800&q=75
+    alt: ""
+  - src: https://images.unsplash.com/photo-1558036117-15d82a90b9b1?w=800&q=75
+    alt: ""
+  - src: https://images.unsplash.com/photo-1582268611958-ebfd161ef9cf?w=800&q=75
+    alt: ""
+  - src: https://images.unsplash.com/photo-1541888946425-d81bb19240f5?w=800&q=75
+    alt: ""
+  - src: https://images.unsplash.com/photo-1515263487990-61b07816b324?w=800&q=75
+    alt: ""
 related:
   - custom-homes
   - basement-renovation

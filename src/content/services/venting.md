@@ -34,12 +34,18 @@ faqs:
   - q: "Can ventilation issues cause mould in the attic?"
     a: "Yes — moisture from bathroom fans, kitchen exhausts, or condensation that are improperly vented into the attic rather than to the exterior can cause significant mould growth. We diagnose and remedy all moisture sources."
 gallery:
-  - https://images.unsplash.com/photo-1523217582562-09d0def993a6?w=800&q=75
-  - https://images.unsplash.com/photo-1558618666-fcd25c85cd64?w=800&q=75
-  - https://images.unsplash.com/photo-1504307651254-35680f356dfd?w=800&q=75
-  - https://images.unsplash.com/photo-1449844908441-8829872d2607?w=800&q=75
-  - https://images.unsplash.com/photo-1582268611958-ebfd161ef9cf?w=800&q=75
-  - https://images.unsplash.com/photo-1570129477492-45c003edd2be?w=800&q=75
+  - src: https://images.unsplash.com/photo-1523217582562-09d0def993a6?w=800&q=75
+    alt: ""
+  - src: https://images.unsplash.com/photo-1558618666-fcd25c85cd64?w=800&q=75
+    alt: ""
+  - src: https://images.unsplash.com/photo-1504307651254-35680f356dfd?w=800&q=75
+    alt: ""
+  - src: https://images.unsplash.com/photo-1449844908441-8829872d2607?w=800&q=75
+    alt: ""
+  - src: https://images.unsplash.com/photo-1582268611958-ebfd161ef9cf?w=800&q=75
+    alt: ""
+  - src: https://images.unsplash.com/photo-1570129477492-45c003edd2be?w=800&q=75
+    alt: ""
 related:
   - roof-replacement
   - roof-inspection

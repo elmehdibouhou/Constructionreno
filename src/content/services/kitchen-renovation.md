@@ -34,12 +34,18 @@ faqs:
   - q: "Can I stay in my home during the renovation?"
     a: "Yes — most clients remain in their homes during kitchen renovations. We contain the work area, maintain clean pathways, and work Monday to Friday to minimise disruption to your routine."
 gallery:
-  - https://images.unsplash.com/photo-1556909114-f6e7ad7d3136?w=800&q=75
-  - https://images.unsplash.com/photo-1565538810643-b5bdb714032a?w=800&q=75
-  - https://images.unsplash.com/photo-1600585154340-be6161a56a0c?w=800&q=75
-  - https://images.unsplash.com/photo-1484154218962-a197022b5858?w=800&q=75
-  - https://images.unsplash.com/photo-1556909172-89cf0b79bfb0?w=800&q=75
-  - https://images.unsplash.com/photo-1507089947368-19c1da9775ae?w=800&q=75
+  - src: https://images.unsplash.com/photo-1556909114-f6e7ad7d3136?w=800&q=75
+    alt: ""
+  - src: https://images.unsplash.com/photo-1565538810643-b5bdb714032a?w=800&q=75
+    alt: ""
+  - src: https://images.unsplash.com/photo-1600585154340-be6161a56a0c?w=800&q=75
+    alt: ""
+  - src: https://images.unsplash.com/photo-1484154218962-a197022b5858?w=800&q=75
+    alt: ""
+  - src: https://images.unsplash.com/photo-1556909172-89cf0b79bfb0?w=800&q=75
+    alt: ""
+  - src: https://images.unsplash.com/photo-1507089947368-19c1da9775ae?w=800&q=75
+    alt: ""
 related:
   - bathroom-renovation
   - basement-renovation

@@ -34,12 +34,18 @@ faqs:
   - q: "What exterior painting prep do you do?"
     a: "All exterior surfaces are pressure washed, scraped, sanded, primed, and caulked before painting. This prep work is what ensures the paint bonds properly and lasts for years."
 gallery:
-  - https://images.unsplash.com/photo-1562259949-e8e7689d7828?w=800&q=75
-  - https://images.unsplash.com/photo-1589939705384-5185137a7f0f?w=800&q=75
-  - https://images.unsplash.com/photo-1558618047-3c8c76ca7d13?w=800&q=75
-  - https://images.unsplash.com/photo-1497366216548-37526070297c?w=800&q=75
-  - https://images.unsplash.com/photo-1600210492493-0946911123ea?w=800&q=75
-  - https://images.unsplash.com/photo-1618221195710-dd6b41faaea6?w=800&q=75
+  - src: https://images.unsplash.com/photo-1562259949-e8e7689d7828?w=800&q=75
+    alt: ""
+  - src: https://images.unsplash.com/photo-1589939705384-5185137a7f0f?w=800&q=75
+    alt: ""
+  - src: https://images.unsplash.com/photo-1558618047-3c8c76ca7d13?w=800&q=75
+    alt: ""
+  - src: https://images.unsplash.com/photo-1497366216548-37526070297c?w=800&q=75
+    alt: ""
+  - src: https://images.unsplash.com/photo-1600210492493-0946911123ea?w=800&q=75
+    alt: ""
+  - src: https://images.unsplash.com/photo-1618221195710-dd6b41faaea6?w=800&q=75
+    alt: ""
 related:
   - kitchen-renovation
   - exterior-renovations

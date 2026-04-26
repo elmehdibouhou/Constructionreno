@@ -34,12 +34,18 @@ faqs:
   - q: "Can I use your inspection report for an insurance claim?"
     a: "Yes. Our detailed photo reports with written assessments documenting storm damage or deterioration are accepted by insurance adjusters. We can also meet with adjusters on-site if needed."
 gallery:
-  - https://images.unsplash.com/photo-1416331108676-a22ccb276e35?w=800&q=75
-  - https://images.unsplash.com/photo-1558618666-fcd25c85cd64?w=800&q=75
-  - https://images.unsplash.com/photo-1504307651254-35680f356dfd?w=800&q=75
-  - https://images.unsplash.com/photo-1449844908441-8829872d2607?w=800&q=75
-  - https://images.unsplash.com/photo-1582268611958-ebfd161ef9cf?w=800&q=75
-  - https://images.unsplash.com/photo-1570129477492-45c003edd2be?w=800&q=75
+  - src: https://images.unsplash.com/photo-1416331108676-a22ccb276e35?w=800&q=75
+    alt: ""
+  - src: https://images.unsplash.com/photo-1558618666-fcd25c85cd64?w=800&q=75
+    alt: ""
+  - src: https://images.unsplash.com/photo-1504307651254-35680f356dfd?w=800&q=75
+    alt: ""
+  - src: https://images.unsplash.com/photo-1449844908441-8829872d2607?w=800&q=75
+    alt: ""
+  - src: https://images.unsplash.com/photo-1582268611958-ebfd161ef9cf?w=800&q=75
+    alt: ""
+  - src: https://images.unsplash.com/photo-1570129477492-45c003edd2be?w=800&q=75
+    alt: ""
 related:
   - roof-repairs
   - roof-replacement

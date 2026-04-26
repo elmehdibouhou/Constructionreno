@@ -35,12 +35,18 @@ faqs:
   - q: "Do you handle bathroom rough-in plumbing for renovations?"
     a: "Yes — rough-in plumbing for bathroom renovations is a core service. We install supply lines, drain lines, and vent stacks in the correct positions per your renovation plan, coordinating with your contractor to ensure everything is code-compliant before walls are closed."
 gallery:
-  - https://images.unsplash.com/photo-1585771724684-38269d6639fd?w=800&q=75
-  - https://images.unsplash.com/photo-1558618048-fbd3e7e6e4d2?w=800&q=75
-  - https://images.unsplash.com/photo-1523413555519-6b8b2be47bb6?w=800&q=75
-  - https://images.unsplash.com/photo-1603575448878-868a20723f5d?w=800&q=75
-  - https://images.unsplash.com/photo-1504328345606-18bbc8c9d7d1?w=800&q=75
-  - https://images.unsplash.com/photo-1609220136736-443140cffec6?w=800&q=75
+  - src: https://images.unsplash.com/photo-1585771724684-38269d6639fd?w=800&q=75
+    alt: ""
+  - src: https://images.unsplash.com/photo-1558618048-fbd3e7e6e4d2?w=800&q=75
+    alt: ""
+  - src: https://images.unsplash.com/photo-1523413555519-6b8b2be47bb6?w=800&q=75
+    alt: ""
+  - src: https://images.unsplash.com/photo-1603575448878-868a20723f5d?w=800&q=75
+    alt: ""
+  - src: https://images.unsplash.com/photo-1504328345606-18bbc8c9d7d1?w=800&q=75
+    alt: ""
+  - src: https://images.unsplash.com/photo-1609220136736-443140cffec6?w=800&q=75
+    alt: ""
 related:
   - commercial-plumbing
   - residential-electrical

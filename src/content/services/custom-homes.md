@@ -34,12 +34,18 @@ faqs:
   - q: "What is included in your custom home builds?"
     a: "Our builds include all structural work, electrical, plumbing, HVAC, insulation, drywall, interior trim, flooring, kitchen and bathroom installations, and a complete exterior package including siding, roofing, windows, and doors."
 gallery:
-  - https://images.unsplash.com/photo-1600607687939-ce8a6c25118c?w=800&q=75
-  - https://images.unsplash.com/photo-1613490493576-7fde63acd811?w=800&q=75
-  - https://images.unsplash.com/photo-1416331108676-a22ccb276e35?w=800&q=75
-  - https://images.unsplash.com/photo-1568605114967-8130f3a36994?w=800&q=75
-  - https://images.unsplash.com/photo-1449844908441-8829872d2607?w=800&q=75
-  - https://images.unsplash.com/photo-1523217582562-09d0def993a6?w=800&q=75
+  - src: https://images.unsplash.com/photo-1600607687939-ce8a6c25118c?w=800&q=75
+    alt: ""
+  - src: https://images.unsplash.com/photo-1613490493576-7fde63acd811?w=800&q=75
+    alt: ""
+  - src: https://images.unsplash.com/photo-1416331108676-a22ccb276e35?w=800&q=75
+    alt: ""
+  - src: https://images.unsplash.com/photo-1568605114967-8130f3a36994?w=800&q=75
+    alt: ""
+  - src: https://images.unsplash.com/photo-1449844908441-8829872d2607?w=800&q=75
+    alt: ""
+  - src: https://images.unsplash.com/photo-1523217582562-09d0def993a6?w=800&q=75
+    alt: ""
 related:
   - home-additions
   - exterior-renovations

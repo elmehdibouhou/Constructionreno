@@ -35,12 +35,18 @@ faqs:
   - q: "Do you offer maintenance contracts for businesses?"
     a: "Yes — we offer scheduled maintenance contracts for commercial and industrial clients including grease trap servicing, backflow preventer testing, drain cleaning, and full plumbing system inspections. All maintenance contracts include priority emergency response."
 gallery:
-  - https://images.unsplash.com/photo-1504328345606-18bbc8c9d7d1?w=800&q=75
-  - https://images.unsplash.com/photo-1585771724684-38269d6639fd?w=800&q=75
-  - https://images.unsplash.com/photo-1558618048-fbd3e7e6e4d2?w=800&q=75
-  - https://images.unsplash.com/photo-1523413555519-6b8b2be47bb6?w=800&q=75
-  - https://images.unsplash.com/photo-1556909172-89cf0b79bfb0?w=800&q=75
-  - https://images.unsplash.com/photo-1603575448878-868a20723f5d?w=800&q=75
+  - src: https://images.unsplash.com/photo-1504328345606-18bbc8c9d7d1?w=800&q=75
+    alt: ""
+  - src: https://images.unsplash.com/photo-1585771724684-38269d6639fd?w=800&q=75
+    alt: ""
+  - src: https://images.unsplash.com/photo-1558618048-fbd3e7e6e4d2?w=800&q=75
+    alt: ""
+  - src: https://images.unsplash.com/photo-1523413555519-6b8b2be47bb6?w=800&q=75
+    alt: ""
+  - src: https://images.unsplash.com/photo-1556909172-89cf0b79bfb0?w=800&q=75
+    alt: ""
+  - src: https://images.unsplash.com/photo-1603575448878-868a20723f5d?w=800&q=75
+    alt: ""
 related:
   - residential-plumbing
   - commercial-electrical

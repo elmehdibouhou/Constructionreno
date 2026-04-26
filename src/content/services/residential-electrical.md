@@ -35,12 +35,18 @@ faqs:
   - q: "Do you offer free estimates?"
     a: "Yes — all residential electrical estimates are completely free. We'll assess the scope, explain exactly what's required, and provide a written quote before any work begins. No hidden fees, no surprises."
 gallery:
-  - https://images.unsplash.com/photo-1621905251189-08b45d6a269e?w=800&q=75
-  - https://images.unsplash.com/photo-1558449028-b53a39d100fc?w=800&q=75
-  - https://images.unsplash.com/photo-1580983559367-0dc2f8934365?w=800&q=75
-  - https://images.unsplash.com/photo-1593941707882-a56bbc8ba518?w=800&q=75
-  - https://images.unsplash.com/photo-1519642918688-7e43b19245d8?w=800&q=75
-  - https://images.unsplash.com/photo-1518770660439-4636190af475?w=800&q=75
+  - src: https://images.unsplash.com/photo-1621905251189-08b45d6a269e?w=800&q=75
+    alt: ""
+  - src: https://images.unsplash.com/photo-1558449028-b53a39d100fc?w=800&q=75
+    alt: ""
+  - src: https://images.unsplash.com/photo-1580983559367-0dc2f8934365?w=800&q=75
+    alt: ""
+  - src: https://images.unsplash.com/photo-1593941707882-a56bbc8ba518?w=800&q=75
+    alt: ""
+  - src: https://images.unsplash.com/photo-1519642918688-7e43b19245d8?w=800&q=75
+    alt: ""
+  - src: https://images.unsplash.com/photo-1518770660439-4636190af475?w=800&q=75
+    alt: ""
 related:
   - commercial-electrical
   - residential-plumbing

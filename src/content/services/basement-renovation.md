@@ -34,12 +34,18 @@ faqs:
   - q: Can a finished basement be used as a rental unit?
     a: 'Yes, but it must meet specific legal requirements including egress windows, fire separation, separate entrance, and HVAC. We are experienced in building legal secondary suites that comply with municipal requirements.'
 gallery:
-  - 'https://images.unsplash.com/photo-1565538810643-b5bdb714032a?w=800&q=75'
-  - 'https://images.unsplash.com/photo-1600566752355-35792bedcfea?w=800&q=75'
-  - 'https://images.unsplash.com/photo-1617806118233-18e1de247200?w=800&q=75'
-  - 'https://images.unsplash.com/photo-1555041469-a586c61ea9bc?w=800&q=75'
-  - 'https://images.unsplash.com/photo-1600210492486-724fe5c67fb0?w=800&q=75'
-  - 'https://images.unsplash.com/photo-1583847268964-b28dc8f51f92?w=800&q=75'
+  - src: https://images.unsplash.com/photo-1565538810643-b5bdb714032a?w=800&q=75
+    alt: ""
+  - src: https://images.unsplash.com/photo-1600566752355-35792bedcfea?w=800&q=75
+    alt: ""
+  - src: https://images.unsplash.com/photo-1617806118233-18e1de247200?w=800&q=75
+    alt: ""
+  - src: https://images.unsplash.com/photo-1555041469-a586c61ea9bc?w=800&q=75
+    alt: ""
+  - src: https://images.unsplash.com/photo-1600210492486-724fe5c67fb0?w=800&q=75
+    alt: ""
+  - src: https://images.unsplash.com/photo-1583847268964-b28dc8f51f92?w=800&q=75
+    alt: ""
 related:
   - kitchen-renovation
   - bathroom-renovation

@@ -35,12 +35,18 @@ faqs:
   - q: "Do you offer maintenance contracts?"
     a: "Yes — we offer preventive maintenance contracts for commercial and industrial clients that include scheduled inspections, panel maintenance, lighting system checks, and priority emergency response. Contact us for a customised maintenance plan."
 gallery:
-  - https://images.unsplash.com/photo-1565193566173-7a0ee3dbe261?w=800&q=75
-  - https://images.unsplash.com/photo-1518770660439-4636190af475?w=800&q=75
-  - https://images.unsplash.com/photo-1581092918056-0c4c3acd3789?w=800&q=75
-  - https://images.unsplash.com/photo-1504328345606-18bbc8c9d7d1?w=800&q=75
-  - https://images.unsplash.com/photo-1621905251189-08b45d6a269e?w=800&q=75
-  - https://images.unsplash.com/photo-1580983559367-0dc2f8934365?w=800&q=75
+  - src: https://images.unsplash.com/photo-1565193566173-7a0ee3dbe261?w=800&q=75
+    alt: ""
+  - src: https://images.unsplash.com/photo-1518770660439-4636190af475?w=800&q=75
+    alt: ""
+  - src: https://images.unsplash.com/photo-1581092918056-0c4c3acd3789?w=800&q=75
+    alt: ""
+  - src: https://images.unsplash.com/photo-1504328345606-18bbc8c9d7d1?w=800&q=75
+    alt: ""
+  - src: https://images.unsplash.com/photo-1621905251189-08b45d6a269e?w=800&q=75
+    alt: ""
+  - src: https://images.unsplash.com/photo-1580983559367-0dc2f8934365?w=800&q=75
+    alt: ""
 related:
   - residential-electrical
   - commercial-plumbing
