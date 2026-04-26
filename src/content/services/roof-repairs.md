@@ -2,8 +2,8 @@
 title: "Roof Repairs"
 category: "Roofing"
 tagline: "Stop the leak before it becomes a disaster."
-heroImg: "https://images.unsplash.com/photo-1504307651254-35680f356dfd?w=1920&q=80"
-cardImg: "https://images.unsplash.com/photo-1504307651254-35680f356dfd?w=800&q=75"
+heroImg: "/images/services/roof-repairs/hero.png"
+cardImg: "/images/services/roof-repairs/hero.png"
 alt: "Roof repair in Ottawa"
 intro1: "A small roof leak ignored becomes a major structural problem quickly. Our Ottawa roof repair team responds fast — diagnosing the true source of the leak and fixing it properly the first time, not just patching it temporarily."
 intro2: "We repair all types of roofing issues: missing shingles, damaged flashing around chimneys and vents, ice dam damage, ridge cap failures, and pipe collar leaks. All repairs come with a written warranty."
@@ -34,18 +34,16 @@ faqs:
   - q: "What causes most roof leaks?"
     a: "The most common sources of roof leaks in Ontario are deteriorated flashing around chimneys and skylights, failed pipe boot collars, ice dam damage, and missing or lifted shingles. We inspect and address all of these."
 gallery:
-  - src: https://images.unsplash.com/photo-1504307651254-35680f356dfd?w=800&q=75
-    alt: ""
-  - src: https://images.unsplash.com/photo-1558618666-fcd25c85cd64?w=800&q=75
-    alt: ""
-  - src: https://images.unsplash.com/photo-1416331108676-a22ccb276e35?w=800&q=75
-    alt: ""
-  - src: https://images.unsplash.com/photo-1449844908441-8829872d2607?w=800&q=75
-    alt: ""
-  - src: https://images.unsplash.com/photo-1582268611958-ebfd161ef9cf?w=800&q=75
-    alt: ""
-  - src: https://images.unsplash.com/photo-1570129477492-45c003edd2be?w=800&q=75
-    alt: ""
+  - src: /images/services/roof-repairs/hero.png
+    alt: "Couvreur réparant bardeaux et solin cheminée Ottawa"
+  - src: /images/services/roof-repairs/gallery-1.png
+    alt: "Inspection toiture Ottawa — détection source infiltration eau"
+  - src: /images/services/roof-repairs/gallery-2.png
+    alt: "Installation solin métallique cheminée brique Ottawa"
+  - src: /images/services/roof-repairs/gallery-3.png
+    alt: "Remplacement bardeaux endommagés Ottawa — avant et après"
+  - src: /images/services/roof-repairs/gallery-4.png
+    alt: "Pose bâche protection urgence toiture endommagée Ottawa"
 related:
   - roof-replacement
   - roof-inspection
