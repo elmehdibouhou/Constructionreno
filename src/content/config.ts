@@ -37,7 +37,7 @@ const servicesCollection = defineCollection({
       q: z.string(),
       a: z.string(),
     })).optional(),
-    gallery: z.array(z.string()).optional(),
+    gallery: z.array(z.union([z.string(), z.object({ src: z.string(), alt: z.string().optional() })])).optional(),
     related: z.array(z.string()).optional(),
   }),
 });
