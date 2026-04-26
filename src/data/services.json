@@ -622,5 +622,153 @@
       "https://images.unsplash.com/photo-1582268611958-ebfd161ef9cf?w=800&q=75"
     ],
     "related": ["roof-repairs", "venting", "roof-inspection"]
+  },
+  {
+    "slug": "residential-electrical",
+    "title": "Residential Electrical Services",
+    "category": "Electrical",
+    "heroImg": "https://images.unsplash.com/photo-1621905251189-08b45d6a269e?w=1920&q=80",
+    "cardImg": "https://images.unsplash.com/photo-1621905251189-08b45d6a269e?w=800&q=75",
+    "alt": "Licensed electrician performing residential electrical work in [City]",
+    "tagline": "Licensed electricians for your home — safe, fast, guaranteed.",
+    "intro1": "Your home's electrical system is the backbone of modern living — and when something goes wrong, safety is the priority. Our [City] licensed electricians handle everything from panel upgrades and new wiring to EV charger installation, smart home automation, smoke detectors, and emergency repairs.",
+    "intro2": "We coordinate all work with proper permits, ensuring every job meets the Canadian Electrical Code. From a single outlet replacement to a full rewire, our team delivers clean, reliable electrical work backed by a written warranty.",
+    "metaTitle": "Residential Electrical Services | Top Design Renovation - [City], Canada",
+    "metaDesc": "Licensed electricians for your home in [City]. Panel upgrades, wiring, EV chargers, emergency repairs. Free estimate — call now!",
+    "whyUs": [
+      "Licensed & insured electricians",
+      "Up to code — all permits handled",
+      "Available 7 days a week"
+    ],
+    "benefits": [
+      { "icon": "shield-check", "title": "Licensed & Insured", "desc": "Every electrician on our team is fully licensed and insured. We carry all required credentials to work on residential properties across [Province]." },
+      { "icon": "zap", "title": "Panel Upgrades", "desc": "From 100A to 200A and beyond — we upgrade electrical panels to support modern demands including EV chargers, hot tubs, and home additions safely." },
+      { "icon": "calendar", "title": "7-Day Availability", "desc": "Electrical emergencies don't respect business hours. Our team is available seven days a week, including same-day emergency response for active hazards." }
+    ],
+    "faqs": [
+      { "q": "Do you handle electrical panel upgrades?", "a": "Yes — panel upgrades are one of our most common residential services. We upgrade from 100A to 200A or higher, handle all permits with the local authority, and arrange ESA inspections. A typical panel upgrade takes one day." },
+      { "q": "Can you install EV chargers at home?", "a": "Absolutely. We install Level 2 EV chargers (240V) for all major vehicle brands including Tesla, Ford, GM, and more. We assess your panel capacity, run the dedicated circuit, and install the charger in your preferred location." },
+      { "q": "Are your electricians licensed in [Province]?", "a": "Yes — all our electricians hold valid [Province] electrical contractor licences and are registered with the Electrical Safety Authority (ESA). All work is inspected and certified to meet Canadian Electrical Code standards." },
+      { "q": "How quickly can you respond to an emergency?", "a": "We offer same-day emergency response for active electrical issues — sparking outlets, tripped breakers that won't reset, and partial power loss. Call our emergency line for rapid dispatch." },
+      { "q": "Do you offer free estimates?", "a": "Yes — all residential electrical estimates are completely free with a written quote before any work begins." }
+    ],
+    "gallery": [
+      "https://images.unsplash.com/photo-1621905251189-08b45d6a269e?w=800&q=75",
+      "https://images.unsplash.com/photo-1558449028-b53a39d100fc?w=800&q=75",
+      "https://images.unsplash.com/photo-1580983559367-0dc2f8934365?w=800&q=75",
+      "https://images.unsplash.com/photo-1593941707882-a56bbc8ba518?w=800&q=75"
+    ],
+    "related": ["commercial-electrical", "residential-plumbing", "home-additions"]
+  },
+  {
+    "slug": "commercial-electrical",
+    "title": "Commercial & Industrial Electrical Services",
+    "category": "Electrical",
+    "heroImg": "https://images.unsplash.com/photo-1565193566173-7a0ee3dbe261?w=1920&q=80",
+    "cardImg": "https://images.unsplash.com/photo-1565193566173-7a0ee3dbe261?w=800&q=75",
+    "alt": "Commercial and industrial electrical installation in [City] factory and warehouse",
+    "tagline": "Complete electrical solutions for businesses, offices, warehouses and industrial facilities.",
+    "intro1": "Businesses and industrial facilities require electrical solutions that go far beyond residential — 3-phase power systems, heavy-duty panel installations, warehouse lighting, industrial machinery connections, generator hookups, and emergency backup systems.",
+    "intro2": "We work around your schedule to minimise downtime, handle all permits and inspections, and deliver work that fully complies with the Canadian Electrical Code for commercial and industrial applications.",
+    "metaTitle": "Commercial & Industrial Electrical | Top Design Renovation - [City]",
+    "metaDesc": "Certified commercial electricians in [City]. Offices, warehouses, factories. 3-phase power, industrial wiring, full code compliance. Get a free quote.",
+    "whyUs": [
+      "Certified for commercial & industrial projects",
+      "Minimal downtime — we work around your schedule",
+      "Full compliance with Canadian electrical codes"
+    ],
+    "benefits": [
+      { "icon": "zap", "title": "3-Phase Power Systems", "desc": "We design and install 3-phase electrical systems for manufacturing, industrial equipment, and large commercial buildings requiring high-capacity power distribution." },
+      { "icon": "shield-check", "title": "Code Compliant", "desc": "All commercial and industrial electrical work is completed to the Canadian Electrical Code (CEC), with full permit management and ESA inspections included." },
+      { "icon": "clock", "title": "Minimal Downtime", "desc": "We schedule work during off-hours, nights, and weekends to keep your operations running. Active-facility electrical work is our specialty." }
+    ],
+    "faqs": [
+      { "q": "Do you work on active industrial facilities?", "a": "Yes — we specialize in working within active facilities, coordinating with site management to minimise disruption to your operations while maintaining the highest safety standards." },
+      { "q": "Can you handle 3-phase electrical systems?", "a": "Yes. 3-phase power installation and upgrades for manufacturing equipment, HVAC systems, and industrial machinery is core to our commercial electrical services." },
+      { "q": "Do you provide electrical compliance certificates?", "a": "Yes — all commercial installations include ESA inspection and certification. We provide full compliance documentation your insurance and building inspectors require." },
+      { "q": "What industries do you serve?", "a": "Manufacturing, warehousing, retail, restaurants, offices, healthcare facilities, automotive shops, and general industrial. Contact us with your specific requirements." },
+      { "q": "Do you offer maintenance contracts?", "a": "Yes — preventive maintenance contracts including scheduled inspections, panel maintenance, and priority emergency response. Contact us for a customised plan." }
+    ],
+    "gallery": [
+      "https://images.unsplash.com/photo-1565193566173-7a0ee3dbe261?w=800&q=75",
+      "https://images.unsplash.com/photo-1518770660439-4636190af475?w=800&q=75",
+      "https://images.unsplash.com/photo-1504328345606-18bbc8c9d7d1?w=800&q=75",
+      "https://images.unsplash.com/photo-1621905251189-08b45d6a269e?w=800&q=75"
+    ],
+    "related": ["residential-electrical", "commercial-plumbing", "custom-homes"]
+  },
+  {
+    "slug": "residential-plumbing",
+    "title": "Residential Plumbing Services",
+    "category": "Plumbing",
+    "heroImg": "https://images.unsplash.com/photo-1585771724684-38269d6639fd?w=1920&q=80",
+    "cardImg": "https://images.unsplash.com/photo-1585771724684-38269d6639fd?w=800&q=75",
+    "alt": "Licensed plumber performing residential plumbing work in [City]",
+    "tagline": "Expert plumbers for your home — repairs, installations and renovations.",
+    "intro1": "From a dripping faucet to a full bathroom rough-in, our [City] licensed plumbers handle every residential plumbing need with precision and care. We serve homeowners throughout [City] with honest pricing, quality workmanship, and emergency availability.",
+    "intro2": "We handle the full scope: leak detection and repair, pipe replacement, water heater installation, drain cleaning, fixture installation, sump pumps, frozen pipe repair, and emergency plumbing. All work meets [Province] plumbing code.",
+    "metaTitle": "Residential Plumbing Services | Top Design Renovation - [City], Canada",
+    "metaDesc": "Expert plumbers for your home in [City]. Repairs, installations, water heaters, emergency service. Licensed & insured. Free estimate.",
+    "whyUs": [
+      "Licensed plumbers, available for emergencies",
+      "Transparent pricing — no surprise fees",
+      "All work guaranteed"
+    ],
+    "benefits": [
+      { "icon": "droplets", "title": "Full-Service Plumbing", "desc": "From emergency repairs to complete bathroom and kitchen plumbing — one licensed team, one point of contact, guaranteed workmanship on every job." },
+      { "icon": "shield-check", "title": "Transparent Pricing", "desc": "You get a written quote before any work begins. We explain every cost clearly and never add surprise charges." },
+      { "icon": "zap", "title": "Emergency Service", "desc": "Burst pipes, sewer backups, and flooding don't wait for business hours. Our emergency plumbers respond quickly to protect your home." }
+    ],
+    "faqs": [
+      { "q": "Do you offer emergency plumbing services?", "a": "Yes — we provide emergency service for active leaks, burst pipes, sewer backups, and flooding. Call our emergency line for same-day or after-hours assistance." },
+      { "q": "Can you replace old galvanized pipes?", "a": "Absolutely. We replace old galvanized plumbing with modern copper or PEX piping — with full permits and inspection in [Province]." },
+      { "q": "Do you install tankless water heaters?", "a": "Yes — we install Navien, Rinnai, Noritz and other leading brands. We assess demand, size the unit, and handle all connections plus permits." },
+      { "q": "What areas do you serve?", "a": "We serve [City] and the surrounding area. Contact us to confirm service in your specific location." },
+      { "q": "Do you handle bathroom rough-in plumbing for renovations?", "a": "Yes — supply lines, drain lines, and vent stacks installed to plan, coordinated with your contractor and code-compliant before walls close." }
+    ],
+    "gallery": [
+      "https://images.unsplash.com/photo-1585771724684-38269d6639fd?w=800&q=75",
+      "https://images.unsplash.com/photo-1558618048-fbd3e7e6e4d2?w=800&q=75",
+      "https://images.unsplash.com/photo-1523413555519-6b8b2be47bb6?w=800&q=75",
+      "https://images.unsplash.com/photo-1504328345606-18bbc8c9d7d1?w=800&q=75"
+    ],
+    "related": ["commercial-plumbing", "residential-electrical", "bathroom-renovation"]
+  },
+  {
+    "slug": "commercial-plumbing",
+    "title": "Commercial & Industrial Plumbing Services",
+    "category": "Plumbing",
+    "heroImg": "https://images.unsplash.com/photo-1504328345606-18bbc8c9d7d1?w=1920&q=80",
+    "cardImg": "https://images.unsplash.com/photo-1504328345606-18bbc8c9d7d1?w=800&q=75",
+    "alt": "Commercial and industrial plumbing installation for restaurant and facility in [City]",
+    "tagline": "Large-scale plumbing solutions for businesses, restaurants, offices and industrial facilities.",
+    "intro1": "Commercial and industrial plumbing demands expertise well beyond residential — large-diameter pipe systems, backflow prevention, grease trap installation, industrial water treatment, and new construction rough-in. Our [City] team delivers on all of it.",
+    "intro2": "We serve restaurants, offices, manufacturing facilities, healthcare sites, and new construction. Every installation meets [Province] plumbing code and National Plumbing Code requirements, with full permit management and compliance documentation.",
+    "metaTitle": "Commercial & Industrial Plumbing | Top Design Renovation - [City]",
+    "metaDesc": "Commercial plumbing specialists in [City]. Restaurants, offices, industrial facilities. Grease traps, backflow, rough-in. Get a free quote.",
+    "whyUs": [
+      "Certified for commercial & industrial projects",
+      "Handles large-scale installations and new builds",
+      "Full compliance with Canadian plumbing codes"
+    ],
+    "benefits": [
+      { "icon": "droplets", "title": "Commercial Kitchen Plumbing", "desc": "Grease traps, 3-compartment sinks, high-volume hot water systems, and health code compliance for restaurants and food service operations." },
+      { "icon": "shield-check", "title": "Code Compliance", "desc": "Every commercial installation meets the National Plumbing Code of Canada and applicable provincial standards, with full compliance documentation provided." },
+      { "icon": "layers", "title": "New Construction Rough-In", "desc": "Complete plumbing rough-in for ground-up commercial builds and multi-unit developments, coordinated with your general contractor." }
+    ],
+    "faqs": [
+      { "q": "Do you work with restaurants and commercial kitchens?", "a": "Yes — grease traps, 3-compartment sinks, dishwasher connections, floor drains, and health code compliance for food service operations." },
+      { "q": "Can you handle plumbing for new commercial construction?", "a": "Absolutely. Complete rough-in and finish work for new commercial builds, coordinating with general contractors and managing all permits." },
+      { "q": "Do you install grease traps?", "a": "Yes — we size, install, and certify grease interceptors to meet municipal requirements. Scheduled maintenance contracts also available." },
+      { "q": "Are you certified for industrial plumbing?", "a": "Yes — process piping, industrial drainage, large-diameter mains, backflow prevention, and cross-connection control per [Province] regulations." },
+      { "q": "Do you offer maintenance contracts for businesses?", "a": "Yes — grease trap servicing, backflow preventer testing, drain cleaning, and system inspections with priority emergency response." }
+    ],
+    "gallery": [
+      "https://images.unsplash.com/photo-1504328345606-18bbc8c9d7d1?w=800&q=75",
+      "https://images.unsplash.com/photo-1585771724684-38269d6639fd?w=800&q=75",
+      "https://images.unsplash.com/photo-1558618048-fbd3e7e6e4d2?w=800&q=75",
+      "https://images.unsplash.com/photo-1523413555519-6b8b2be47bb6?w=800&q=75"
+    ],
+    "related": ["residential-plumbing", "commercial-electrical", "custom-homes"]
   }
 ]

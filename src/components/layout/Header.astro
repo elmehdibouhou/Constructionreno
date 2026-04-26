@@ -23,6 +23,13 @@ const roofingServices = [
   { label: 'Snow Removal',            href: '/services/snow-removal' },
 ];
 
+const electricalPlumbingServices = [
+  { label: 'Residential Electrical',           href: '/services/residential-electrical' },
+  { label: 'Commercial & Industrial Electrical', href: '/services/commercial-electrical' },
+  { label: 'Residential Plumbing',             href: '/services/residential-plumbing' },
+  { label: 'Commercial & Industrial Plumbing', href: '/services/commercial-plumbing' },
+];
+
 const inspirationLinks = [
   { label: 'Kitchen',      href: '/inspiration/kitchen' },
   { label: 'Bathroom',     href: '/inspiration/bathroom' },
@@ -72,18 +79,9 @@ const aboutLinks = [
   <div class="container" style="display:flex; align-items:center; justify-content:space-between; height:80px;">
 
     <!-- Logo -->
-    <a href="/" aria-label="[Company Name] — Home" style="flex-shrink:0; display:flex; align-items:center; gap:0.75rem; text-decoration:none;">
-      <div class="logo-mark" aria-hidden="true">
-        <svg width="36" height="36" viewBox="0 0 36 36" fill="none">
-          <rect width="36" height="36" rx="4" fill="var(--color-accent-500)"/>
-          <path d="M8 26L18 8L28 26" stroke="#0A1E2A" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"/>
-          <path d="M13 20H23" stroke="#0A1E2A" stroke-width="2" stroke-linecap="round"/>
-        </svg>
-      </div>
-      <div class="logo-text">
-        <span style="display:block; font-family:var(--font-display); font-size:1.25rem; font-weight:600; color:var(--color-white); line-height:1.1; letter-spacing:-0.01em;">[Company Name]</span>
-        <span style="display:block; font-size:0.62rem; letter-spacing:0.15em; text-transform:uppercase; color:var(--color-accent-500); font-weight:600;">Renovation & Roofing</span>
-      </div>
+    <a href="/" aria-label="Top Design Renovation — Home" style="flex-shrink:0; display:block; text-decoration:none;">
+      <img src="/Assets/logo-01-primary-dark.svg" alt="Top Design Renovation — Construction & Roofing Canada" width="200" height="75" loading="eager" class="logo-desktop" />
+      <img src="/Assets/logo-05-compact-horizontal.svg" alt="Top Design Renovation" width="150" height="56" loading="eager" class="logo-mobile" />
     </a>
 
     <!-- Desktop navigation -->
@@ -101,7 +99,7 @@ const aboutLinks = [
             <svg width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" aria-hidden="true" class="dropdown-chevron"><polyline points="6 9 12 15 18 9"/></svg>
           </button>
           <div class="mega-menu" id="mega-services" role="region" aria-label="Services menu">
-            <div class="container" style="display:grid; grid-template-columns:1fr 1fr; gap:2rem; padding-block:2rem;">
+            <div class="container" style="display:grid; grid-template-columns:1fr 1fr 1fr; gap:2rem; padding-block:2rem;">
               <div>
                 <p class="mega-col-heading">Renovation</p>
                 <ul role="list" style="list-style:none; display:flex; flex-direction:column; gap:0.25rem;">
@@ -114,6 +112,14 @@ const aboutLinks = [
                 <p class="mega-col-heading">Roofing & Exteriors</p>
                 <ul role="list" style="list-style:none; display:flex; flex-direction:column; gap:0.25rem;">
                   {roofingServices.map(s => (
+                    <li><a href={s.href} class="mega-link">{s.label}</a></li>
+                  ))}
+                </ul>
+              </div>
+              <div>
+                <p class="mega-col-heading">Electrical & Plumbing</p>
+                <ul role="list" style="list-style:none; display:flex; flex-direction:column; gap:0.25rem;">
+                  {electricalPlumbingServices.map(s => (
                     <li><a href={s.href} class="mega-link">{s.label}</a></li>
                   ))}
                 </ul>
@@ -204,7 +210,7 @@ const aboutLinks = [
   <div class="mobile-menu-inner">
 
     <div style="display:flex; justify-content:space-between; align-items:center; margin-bottom:2rem;">
-      <span style="font-family:var(--font-display); font-size:1.1rem; color:var(--color-white); font-weight:600;">[Company Name]</span>
+      <img src="/Assets/logo-05-compact-horizontal.svg" alt="Top Design Renovation" width="140" height="52" loading="lazy" />
       <button class="mobile-close" id="mobile-close" aria-label="Close menu" type="button">
         <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><path d="M18 6 6 18M6 6l12 12"/></svg>
       </button>
@@ -228,6 +234,10 @@ const aboutLinks = [
             ))}
             <p class="mobile-group-label" style="margin-top:1rem;">Roofing & Exteriors</p>
             {roofingServices.map(s => (
+              <a href={s.href} class="mobile-sub-link">{s.label}</a>
+            ))}
+            <p class="mobile-group-label" style="margin-top:1rem;">Electrical & Plumbing</p>
+            {electricalPlumbingServices.map(s => (
               <a href={s.href} class="mobile-sub-link">{s.label}</a>
             ))}
           </div>
@@ -320,9 +330,9 @@ const aboutLinks = [
   border-bottom-color: rgba(255,255,255,0.05);
 }
 
-/* Logo mark */
-.logo-mark svg { transition: transform var(--duration-normal) var(--ease-bounce); }
-a:hover .logo-mark svg { transform: scale(1.08); }
+/* Logo images */
+.logo-desktop { display: block; height: 64px; width: auto; }
+.logo-mobile  { display: none;  height: 48px; width: auto; }
 
 /* ── DESKTOP NAV LINKS ───────────────────────────────────── */
 .nav-link {
@@ -493,6 +503,8 @@ a:hover .logo-mark svg { transform: scale(1.08); }
   .main-nav { display: none; }
   .hamburger { display: flex; }
   .header-cta { display: none; }
+  .logo-desktop { display: none; }
+  .logo-mobile  { display: block; }
 }
 
 /* ── MOBILE MENU ─────────────────────────────────────────── */

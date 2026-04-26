@@ -56,6 +56,20 @@ const services = [
     img: 'https://images.unsplash.com/photo-1600607687939-ce8a6c25118c?w=800&q=75',
     alt: 'Custom home construction',
   },
+  {
+    title: 'Electrical Services',
+    href: '/services/residential-electrical',
+    category: 'Residential & Commercial',
+    img: 'https://images.unsplash.com/photo-1621905251189-08b45d6a269e?w=800&q=75',
+    alt: 'Licensed electrician residential and commercial electrical services',
+  },
+  {
+    title: 'Plumbing Services',
+    href: '/services/residential-plumbing',
+    category: 'Residential & Commercial',
+    img: 'https://images.unsplash.com/photo-1585771724684-38269d6639fd?w=800&q=75',
+    alt: 'Expert plumber residential and commercial plumbing services',
+  },
 ];
 ---
 
@@ -97,7 +111,7 @@ const services = [
     </div>
 
     <div class="section-cta fade-up">
-      <a href="/services" class="btn-ghost">View All 16 Services →</a>
+      <a href="/services" class="btn-ghost">View All Services →</a>
     </div>
 
   </div>
@@ -111,7 +125,7 @@ const services = [
 
 .services-grid {
   display: grid;
-  grid-template-columns: repeat(4, 1fr);
+  grid-template-columns: repeat(5, 1fr);
   gap: 1.25rem;
   margin-bottom: 3rem;
 }
@@ -179,10 +193,16 @@ const services = [
   text-align: center;
 }
 
+@media (max-width: 1279px) {
+  .services-grid { grid-template-columns: repeat(4, 1fr); }
+}
 @media (max-width: 1023px) {
+  .services-grid { grid-template-columns: repeat(3, 1fr); }
+}
+@media (max-width: 767px) {
   .services-grid { grid-template-columns: repeat(2, 1fr); }
 }
-@media (max-width: 639px) {
+@media (max-width: 479px) {
   .services-grid { grid-template-columns: 1fr; }
 }
 </style>

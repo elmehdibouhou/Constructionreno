@@ -1,0 +1,33 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 630" width="1200" height="630">
+  <!-- Background -->
+  <rect x="0" y="0" width="1200" height="630" fill="#0F2633"/>
+  <!-- Gold top + bottom bars -->
+  <rect x="0" y="0" width="1200" height="8" fill="#C8A96E"/>
+  <rect x="0" y="622" width="1200" height="8" fill="#C8A96E"/>
+  <!-- Left gold vertical accent -->
+  <rect x="80" y="0" width="4" height="630" fill="#C8A96E" opacity="0.15"/>
+  <!-- Decorative corner marks -->
+  <polyline points="30,50 30,30 50,30" fill="none" stroke="#C8A96E" stroke-width="2" opacity="0.5"/>
+  <polyline points="1150,30 1170,30 1170,50" fill="none" stroke="#C8A96E" stroke-width="2" opacity="0.5"/>
+  <polyline points="1170,580 1170,600 1150,600" fill="none" stroke="#C8A96E" stroke-width="2" opacity="0.5"/>
+  <polyline points="50,600 30,600 30,580" fill="none" stroke="#C8A96E" stroke-width="2" opacity="0.5"/>
+  <!-- House icon large -->
+  <g transform="translate(100, 160)">
+    <polygon points="100,0 200,75 0,75" fill="none" stroke="#C8A96E" stroke-width="4" stroke-linejoin="round"/>
+    <rect x="28" y="75" width="144" height="100" fill="none" stroke="#C8A96E" stroke-width="4"/>
+    <rect x="68" y="110" width="64" height="65" fill="#C8A96E" opacity="0.85"/>
+    <line x1="100" y1="110" x2="100" y2="175" stroke="#0F2633" stroke-width="3"/>
+    <rect x="32" y="82" width="28" height="28" fill="none" stroke="#C8A96E" stroke-width="3"/>
+    <rect x="112" y="82" width="28" height="28" fill="none" stroke="#C8A96E" stroke-width="3"/>
+  </g>
+  <!-- Main text -->
+  <text x="360" y="260" font-family="Georgia, serif" font-size="88" font-weight="700" fill="#FFFFFF" letter-spacing="4">TOP DESIGN</text>
+  <text x="360" y="345" font-family="Arial, sans-serif" font-size="38" fill="#C8A96E" letter-spacing="18" font-weight="400">RENOVATION</text>
+  <line x1="360" y1="380" x2="1130" y2="380" stroke="#C8A96E" stroke-width="1.2" opacity="0.4"/>
+  <text x="360" y="420" font-family="Arial, sans-serif" font-size="22" fill="#4A7A96" letter-spacing="4">CONSTRUCTION  ·  ROOFING  ·  PAINTING  ·  ELECTRICAL  ·  PLUMBING</text>
+  <line x1="360" y1="460" x2="1130" y2="460" stroke="#C8A96E" stroke-width="1" opacity="0.2"/>
+  <text x="360" y="500" font-family="Arial, sans-serif" font-size="20" fill="#C8A96E" letter-spacing="3" opacity="0.7">topdesignrenovation.ca</text>
+  <!-- Stars -->
+  <text x="360" y="550" font-family="Arial, sans-serif" font-size="26" fill="#C8A96E">★★★★★</text>
+  <text x="510" y="548" font-family="Arial, sans-serif" font-size="16" fill="#7A9DB5" letter-spacing="1">Licensed &amp; Insured  ·  Free Estimates  ·  Serving Canada</text>
+</svg>

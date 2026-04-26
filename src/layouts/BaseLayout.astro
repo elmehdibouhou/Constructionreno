@@ -16,7 +16,7 @@ interface Props {
 const {
   title = "[Company Name] | Renovation & Roofing in [City], Canada",
   description = "Expert renovation, roofing & construction in [City]. Free estimates. Kitchen, bathroom, basement, painting & more. Call [Phone].",
-  ogImage = "/og-image.jpg",
+  ogImage = "/Assets/og-image-1200x630.svg",
   canonical,
   schema,
   noIndex = false,
@@ -31,7 +31,7 @@ const orgSchema = {
   "@type": "HomeAndConstructionBusiness",
   "name": "[Company Name]",
   "url": siteUrl,
-  "logo": `${siteUrl}/images/logo.png`,
+  "logo": `${siteUrl}/Assets/logo-01-primary-dark.svg`,
   "telephone": "[Phone]",
   "email": "info@[domain].ca",
   "address": {
@@ -96,7 +96,7 @@ const orgSchema = {
   />
 
   <!-- Favicons -->
-  <link rel="icon" type="image/svg+xml" href="/favicon.svg" />
+  <link rel="icon" type="image/svg+xml" href="/Assets/logo-07-favicon-64px.svg" />
   <link rel="icon" type="image/x-icon" href="/favicon.ico" />
   <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png" />
   <meta name="theme-color" content="#1B3A4B" />
@@ -153,23 +153,53 @@ const orgSchema = {
     document.querySelectorAll('.fade-up').forEach((el) => observer.observe(el));
   </script>
 
-  <!-- Tina CMS visual editing runtime (activates click-to-edit in /admin iframe) -->
+  <!-- Tina CMS visual editing runtime (activates click-to-edit + live preview in /admin iframe) -->
   <script>
     const __tinaEl = document.getElementById('__tina_setup');
     if (__tinaEl) {
       const setup = JSON.parse(__tinaEl.textContent || '{}');
+
       // Register this document's form with the Tina admin parent
       parent.postMessage({ type: 'open', ...setup }, '*');
       parent.postMessage({ type: 'url-changed' }, '*');
+
+      // Navigate a dot-separated path inside an object
+      function getByPath(obj, pathStr) {
+        return pathStr.split('.').reduce(function(acc, key) {
+          return acc != null ? acc[key] : undefined;
+        }, obj);
+      }
+
+      // Apply live data received from the admin panel to the DOM
+      function applyUpdate(newData) {
+        document.querySelectorAll('[data-tina-field]').forEach(function(el) {
+          var attr = el.getAttribute('data-tina-field');
+          if (!attr) return;
+          var hashIdx = attr.indexOf('#');
+          if (hashIdx === -1) return;
+          if (attr.slice(0, hashIdx) !== setup.id) return;
+          var value = getByPath(newData, attr.slice(hashIdx + 1));
+          if (value == null || typeof value !== 'string') return;
+          if (el.tagName === 'IMG') {
+            el.setAttribute('src', value);
+          } else if (el.childElementCount === 0) {
+            el.textContent = value;
+          }
+        });
+      }
 
       // Listen for admin messages
       window.addEventListener('message', function(e) {
         if (!e.data || typeof e.data !== 'object') return;
 
+        // Live content update — Tina sends { id, data } (no type field)
+        if (e.data.id === setup.id && e.data.data !== undefined) {
+          applyUpdate(e.data.data);
+        }
+
         // Admin enables click-to-edit mode
         if (e.data.type === 'quickEditEnabled' && e.data.value) {
-          // Visual highlight styles
-          const style = document.createElement('style');
+          var style = document.createElement('style');
           style.textContent = [
             '[data-tina-field]{outline:2px dashed rgba(34,150,254,.5);transition:box-shadow .15s,outline .15s}',
             '[data-tina-field]:hover{outline:2px solid rgba(34,150,254,1);cursor:pointer;box-shadow:inset 100vi 100vh rgba(34,150,254,.3)}',
@@ -178,11 +208,11 @@ const orgSchema = {
 
           // Click handler — send selected field to admin
           document.addEventListener('click', function(ev) {
-            const target = (ev.target as Element).closest('[data-tina-field]') as HTMLElement | null;
+            var target = ev.target.closest('[data-tina-field]');
             if (target) {
               ev.preventDefault();
               ev.stopPropagation();
-              const fieldName = target.getAttribute('data-tina-field');
+              var fieldName = target.getAttribute('data-tina-field');
               if (fieldName) {
                 parent.postMessage({ type: 'field:selected', fieldName }, '*');
               }
@@ -190,7 +220,7 @@ const orgSchema = {
           }, true);
 
           // Notify admin whether this page has tina fields
-          const hasFields = !!document.querySelector('[data-tina-field]');
+          var hasFields = !!document.querySelector('[data-tina-field]');
           parent.postMessage({ type: 'quick-edit', value: hasFields }, '*');
         }
       });
