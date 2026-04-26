@@ -2,8 +2,8 @@
 title: "Commercial & Industrial Plumbing Services"
 category: "Plumbing"
 tagline: "Large-scale plumbing solutions for businesses, restaurants, offices and industrial facilities."
-heroImg: "https://images.unsplash.com/photo-1504328345606-18bbc8c9d7d1?w=1920&q=80"
-cardImg: "https://images.unsplash.com/photo-1504328345606-18bbc8c9d7d1?w=800&q=75"
+heroImg: "/images/services/commercial-plumbing/hero.png"
+cardImg: "/images/services/commercial-plumbing/hero.png"
 alt: "Commercial and industrial plumbing installation for restaurant and facility in Ottawa"
 intro1: "Commercial and industrial plumbing demands expertise well beyond residential work — large-diameter pipe systems, backflow prevention, grease trap installation, industrial water treatment, fire suppression connections, and new construction rough-in. Our Ottawa commercial plumbing team delivers on all of it."
 intro2: "We work with restaurants, office buildings, manufacturing facilities, healthcare sites, and new construction projects throughout Ottawa. Every installation meets Ontario plumbing code and National Plumbing Code requirements, with full permit management and compliance documentation provided."
@@ -35,18 +35,20 @@ faqs:
   - q: "Do you offer maintenance contracts for businesses?"
     a: "Yes — we offer scheduled maintenance contracts for commercial and industrial clients including grease trap servicing, backflow preventer testing, drain cleaning, and full plumbing system inspections. All maintenance contracts include priority emergency response."
 gallery:
-  - src: https://images.unsplash.com/photo-1504328345606-18bbc8c9d7d1?w=800&q=75
-    alt: ""
-  - src: https://images.unsplash.com/photo-1585771724684-38269d6639fd?w=800&q=75
-    alt: ""
-  - src: https://images.unsplash.com/photo-1558618048-fbd3e7e6e4d2?w=800&q=75
-    alt: ""
-  - src: https://images.unsplash.com/photo-1523413555519-6b8b2be47bb6?w=800&q=75
-    alt: ""
-  - src: https://images.unsplash.com/photo-1556909172-89cf0b79bfb0?w=800&q=75
-    alt: ""
-  - src: https://images.unsplash.com/photo-1603575448878-868a20723f5d?w=800&q=75
-    alt: ""
+  - src: /images/services/commercial-plumbing/hero.png
+    alt: "Commercial plumbing Ottawa — restaurant kitchen installation"
+  - src: /images/services/commercial-plumbing/gallery-1.png
+    alt: "Grease trap installation Ottawa — commercial kitchen"
+  - src: /images/services/commercial-plumbing/gallery-2.png
+    alt: "Commercial pipe installation Ottawa — large diameter"
+  - src: /images/services/commercial-plumbing/gallery-3.png
+    alt: "Backflow prevention Ottawa — commercial system"
+  - src: /images/services/commercial-plumbing/gallery-4.png
+    alt: "Industrial plumbing Ottawa — warehouse facility"
+  - src: /images/services/commercial-plumbing/gallery-5.png
+    alt: "New construction plumbing rough-in Ottawa — commercial build"
+  - src: /images/services/commercial-plumbing/gallery-6.png
+    alt: "Commercial plumbing inspection Ottawa — code compliance"
 related:
   - residential-plumbing
   - commercial-electrical

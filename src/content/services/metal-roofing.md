@@ -2,8 +2,8 @@
 title: "Metal Roofing"
 category: "Roofing"
 tagline: "The last roof you'll ever need to install."
-heroImg: "https://images.unsplash.com/photo-1449844908441-8829872d2607?w=1920&q=80"
-cardImg: "https://images.unsplash.com/photo-1449844908441-8829872d2607?w=800&q=75"
+heroImg: "/images/services/metal-roofing/hero.png"
+cardImg: "/images/services/metal-roofing/hero.png"
 alt: "Metal roofing installation in Ottawa"
 intro1: "Metal roofing is the premium choice for Ontario homeowners who want a roof that lasts 40–70 years with minimal maintenance. Standing seam and exposed fastener metal panels are energy-efficient, lightweight, and available in a wide range of colours."
 intro2: "We are experienced in both exposed fastener steel roofing and concealed fastener standing seam systems. Our metal roof installations include proper underlayment, closed-cell insulation options, and trim and flashing work that matches the clean aesthetic of the panels."
@@ -34,18 +34,20 @@ faqs:
   - q: "Can metal roofing be installed over existing shingles?"
     a: "Yes, in many cases metal panels can be installed over existing asphalt shingles, saving tear-off costs. We assess the existing deck condition before recommending this approach."
 gallery:
-  - src: https://images.unsplash.com/photo-1449844908441-8829872d2607?w=800&q=75
-    alt: ""
-  - src: https://images.unsplash.com/photo-1558618666-fcd25c85cd64?w=800&q=75
-    alt: ""
-  - src: https://images.unsplash.com/photo-1416331108676-a22ccb276e35?w=800&q=75
-    alt: ""
-  - src: https://images.unsplash.com/photo-1570129477492-45c003edd2be?w=800&q=75
-    alt: ""
-  - src: https://images.unsplash.com/photo-1504307651254-35680f356dfd?w=800&q=75
-    alt: ""
-  - src: https://images.unsplash.com/photo-1582268611958-ebfd161ef9cf?w=800&q=75
-    alt: ""
+  - src: /images/services/metal-roofing/hero.png
+    alt: "Metal roofing installation Ottawa — standing seam panels"
+  - src: /images/services/metal-roofing/gallery-1.png
+    alt: "Steel roofing panels Ottawa — before installation"
+  - src: /images/services/metal-roofing/gallery-2.png
+    alt: "Standing seam metal roof Ottawa — detail view"
+  - src: /images/services/metal-roofing/gallery-3.png
+    alt: "Metal roof installation Ottawa — team at work"
+  - src: /images/services/metal-roofing/gallery-4.png
+    alt: "Completed metal roof Ottawa — aerial view"
+  - src: /images/services/metal-roofing/gallery-5.png
+    alt: "Metal roofing flashing and trim Ottawa"
+  - src: /images/services/metal-roofing/gallery-6.png
+    alt: "Metal roof Ottawa — winter performance result"
 related:
   - roof-replacement
   - roof-repairs

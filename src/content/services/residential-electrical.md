@@ -2,8 +2,8 @@
 title: "Residential Electrical Services"
 category: "Electrical"
 tagline: "Licensed electricians for your home — safe, fast, guaranteed."
-heroImg: "https://images.unsplash.com/photo-1621905251189-08b45d6a269e?w=1920&q=80"
-cardImg: "https://images.unsplash.com/photo-1621905251189-08b45d6a269e?w=800&q=75"
+heroImg: "/images/services/residential-electrical/hero.png"
+cardImg: "/images/services/residential-electrical/hero.png"
 alt: "Licensed electrician performing residential electrical work in Ottawa"
 intro1: "Your home's electrical system is the backbone of modern living — and when something goes wrong, safety is the priority. Our Ottawa licensed electricians handle everything from panel upgrades and new wiring to EV charger installation, smart home automation, smoke detectors, and emergency repairs."
 intro2: "We coordinate all work with proper permits, ensuring every job meets the Canadian Electrical Code. From a single outlet replacement to a full rewire, our team delivers clean, reliable electrical work backed by a written warranty. Available 7 days a week for both scheduled work and emergencies."
@@ -35,20 +35,21 @@ faqs:
   - q: "Do you offer free estimates?"
     a: "Yes — all residential electrical estimates are completely free. We'll assess the scope, explain exactly what's required, and provide a written quote before any work begins. No hidden fees, no surprises."
 gallery:
-  - src: https://images.unsplash.com/photo-1621905251189-08b45d6a269e?w=800&q=75
-    alt: ""
-  - src: https://images.unsplash.com/photo-1558449028-b53a39d100fc?w=800&q=75
-    alt: ""
-  - src: https://images.unsplash.com/photo-1580983559367-0dc2f8934365?w=800&q=75
-    alt: ""
-  - src: https://images.unsplash.com/photo-1593941707882-a56bbc8ba518?w=800&q=75
-    alt: ""
-  - src: https://images.unsplash.com/photo-1519642918688-7e43b19245d8?w=800&q=75
-    alt: ""
-  - src: https://images.unsplash.com/photo-1518770660439-4636190af475?w=800&q=75
-    alt: ""
+  - src: /images/services/residential-electrical/hero.png
+    alt: "Licensed electrician residential Ottawa — panel work"
+  - src: /images/services/residential-electrical/gallery-1.png
+    alt: "Electrical panel upgrade Ottawa — 200A installation"
+  - src: /images/services/residential-electrical/gallery-2.png
+    alt: "EV charger installation Ottawa — Level 2 home charger"
+  - src: /images/services/residential-electrical/gallery-3.png
+    alt: "Residential wiring Ottawa — new circuit installation"
+  - src: /images/services/residential-electrical/gallery-4.png
+    alt: "Pot light installation Ottawa — living room"
+  - src: /images/services/residential-electrical/gallery-5.png
+    alt: "Smoke detector and safety wiring Ottawa"
+  - src: /images/services/residential-electrical/gallery-6.png
+    alt: "ESA inspection Ottawa — electrical certification"
 related:
   - commercial-electrical
   - residential-plumbing
-  - home-additions
 ---

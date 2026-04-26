@@ -2,8 +2,8 @@
 title: "Exterior Renovations"
 category: "Renovation"
 tagline: "Exceptional curb appeal starts with exceptional craftsmanship."
-heroImg: "https://images.unsplash.com/photo-1570129477492-45c003edd2be?w=1920&q=80"
-cardImg: "https://images.unsplash.com/photo-1570129477492-45c003edd2be?w=800&q=75"
+heroImg: "/images/services/exterior-renovations/hero.png"
+cardImg: "/images/services/exterior-renovations/hero.png"
 alt: "Exterior home renovation in Ottawa"
 intro1: "First impressions matter. A beautifully renovated exterior boosts your home's value, enhances curb appeal, and provides real weather protection for the Ontario climate. Our Ottawa exterior renovation team handles siding, trim, windows, doors, and full exterior makeovers."
 intro2: "We work with all exterior cladding types — vinyl, fibre cement, engineered wood, and stucco — and coordinate all associated work including eavestroughs, windows, insulation upgrades, and exterior painting."
@@ -34,18 +34,20 @@ faqs:
   - q: "How long does an exterior renovation take?"
     a: "Full exterior siding replacement on an average home takes 1–2 weeks. Combined siding + windows + trim projects run 2–4 weeks."
 gallery:
-  - src: https://images.unsplash.com/photo-1570129477492-45c003edd2be?w=800&q=75
-    alt: ""
-  - src: https://images.unsplash.com/photo-1582268611958-ebfd161ef9cf?w=800&q=75
-    alt: ""
-  - src: https://images.unsplash.com/photo-1512917774080-9991f1c4c750?w=800&q=75
-    alt: ""
-  - src: https://images.unsplash.com/photo-1600585154526-990dced4db0d?w=800&q=75
-    alt: ""
-  - src: https://images.unsplash.com/photo-1558036117-15d82a90b9b1?w=800&q=75
-    alt: ""
-  - src: https://images.unsplash.com/photo-1523217582562-09d0def993a6?w=800&q=75
-    alt: ""
+  - src: /images/services/exterior-renovations/hero.png
+    alt: "Exterior renovation Ottawa — final result siding and doors"
+  - src: /images/services/exterior-renovations/gallery-1.png
+    alt: "Before exterior renovation Ottawa — original facade"
+  - src: /images/services/exterior-renovations/gallery-2.png
+    alt: "Vinyl siding installation Ottawa — work in progress"
+  - src: /images/services/exterior-renovations/gallery-3.png
+    alt: "James Hardie fibre cement installation Ottawa"
+  - src: /images/services/exterior-renovations/gallery-4.png
+    alt: "Window and door replacement Ottawa"
+  - src: /images/services/exterior-renovations/gallery-5.png
+    alt: "Exterior renovation result Ottawa — side view"
+  - src: /images/services/exterior-renovations/gallery-6.png
+    alt: "Exterior trim and finishing detail Ottawa"
 related:
   - siding
   - painting
