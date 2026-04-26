@@ -2,8 +2,8 @@
 title: "Bathroom Renovation"
 category: "Renovation"
 tagline: "Your personal spa retreat starts here."
-heroImg: "https://images.unsplash.com/photo-1552321554-5fefe8c9ef14?w=1920&q=80"
-cardImg: "https://images.unsplash.com/photo-1552321554-5fefe8c9ef14?w=800&q=75"
+heroImg: "/images/services/bathroom-renovation/hero.png"
+cardImg: "/images/services/bathroom-renovation/hero.png"
 alt: "Luxury bathroom renovation in Ottawa"
 intro1: "A beautifully renovated bathroom can completely change how you start and end your day. Our Ottawa bathroom renovation team specialises in creating luxurious, spa-inspired spaces — from sleek modern designs to warm, timeless classics."
 intro2: "We manage the full scope: custom tile work, walk-in showers, soaker tubs, vanities, heated floors, and all plumbing and electrical work. Every detail is coordinated in-house so you have one point of contact throughout."
@@ -34,20 +34,21 @@ faqs:
   - q: "Do you offer accessible bathroom renovations?"
     a: "Yes — we specialize in barrier-free and accessible bathroom designs including walk-in showers with zero thresholds, grab bars, comfort-height toilets, and wider doorways for mobility aid access."
 gallery:
-  - src: https://images.unsplash.com/photo-1552321554-5fefe8c9ef14?w=800&q=75
-    alt: ""
-  - src: https://images.unsplash.com/photo-1507652313519-d4e9174996dd?w=800&q=75
-    alt: ""
-  - src: https://images.unsplash.com/photo-1600566753086-00f18fb6b3ea?w=800&q=75
-    alt: ""
-  - src: https://images.unsplash.com/photo-1584622650111-993a426fbf0a?w=800&q=75
-    alt: ""
-  - src: https://images.unsplash.com/photo-1604014237800-1c9102c219da?w=800&q=75
-    alt: ""
-  - src: https://images.unsplash.com/photo-1629079447777-1e605162dc8d?w=800&q=75
-    alt: ""
+  - src: /images/services/bathroom-renovation/hero.png
+    alt: "Salle de bain spa luxueuse Ottawa — résultat final"
+  - src: /images/services/bathroom-renovation/gallery-1.png
+    alt: "Chantier salle de bain — pose de carreaux"
+  - src: /images/services/bathroom-renovation/gallery-2.png
+    alt: "Installation douche walk-in Ottawa"
+  - src: /images/services/bathroom-renovation/gallery-3.png
+    alt: "Douche complète — résultat final"
+  - src: /images/services/bathroom-renovation/gallery-4.png
+    alt: "Vanité et lavabo renovés Ottawa"
+  - src: /images/services/bathroom-renovation/gallery-5.png
+    alt: "Installation plancher chauffant salle de bain"
+  - src: /images/services/bathroom-renovation/gallery-6.png
+    alt: "Salle de bain complète — vue d'ensemble"
 related:
   - kitchen-renovation
   - basement-renovation
-  - home-additions
 ---
