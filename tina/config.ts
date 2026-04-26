@@ -348,16 +348,36 @@ export default defineConfig({
               },
             ],
           },
-          // ── Gallery ───────────────────────────────────────────────────────
+          // ── Video embed ───────────────────────────────────────────────────
           {
             type: "string",
+            name: "videoUrl",
+            label: "🎬 Video URL (YouTube or Vimeo — optional)",
+            description: "Paste a YouTube or Vimeo link, e.g. https://www.youtube.com/watch?v=XXXXX",
+          },
+          // ── Gallery ───────────────────────────────────────────────────────
+          {
+            type: "object",
             name: "gallery",
-            label: "Gallery Photo URLs (6 photos shown on service page)",
+            label: "📸 Gallery Photos (up to 9 photos)",
             list: true,
             ui: {
-              min: 1,
-              max: 6,
+              itemProps: (item) => ({ label: item?.alt || item?.src || "Photo" }),
+              max: 9,
             },
+            fields: [
+              {
+                type: "string",
+                name: "src",
+                label: "Photo URL",
+                required: true,
+              },
+              {
+                type: "string",
+                name: "alt",
+                label: "Description (alt text for SEO)",
+              },
+            ],
           },
           // ── Related services ──────────────────────────────────────────────
           {
