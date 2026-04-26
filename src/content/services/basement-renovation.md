@@ -1,5 +1,5 @@
 ---
-title: 'Renovation '
+title: 'Basement Renovation '
 category: Renovation
 tagline: Unlock your home's hidden square footage.
 heroImg: 'https://images.unsplash.com/photo-1565538810643-b5bdb714032a?w=1920&q=80'
