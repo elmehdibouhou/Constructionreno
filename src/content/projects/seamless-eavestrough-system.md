@@ -1,14 +1,14 @@
 ---
 title: "Seamless Eavestrough System"
 category: "Eavestrough"
-location: "[City]"
+location: "Ottawa"
 year: "2026"
 featured: false
 img: "https://images.unsplash.com/photo-1512917774080-9991f1c4c750?w=900&q=80"
 alt: "Seamless aluminum eavestrough with leaf guard installed on a two-storey home"
 description: "Full perimeter seamless aluminum eavestrough system to replace aging sectional gutters that were leaking at every joint. Custom-formed on-site from continuous coil stock to eliminate seams and potential leak points. All-new downspouts with underground drainage extensions direct water 8 feet from the foundation. K-style leaf guard covers installed on all runs. Colour matched to existing fascia board."
-metaTitle: "Seamless Eavestrough & Gutter Installation | [Company Name] Portfolio — [City]"
-metaDesc: "Full-perimeter seamless aluminum eavestrough system in [City] — leaf guard, underground drainage extensions, colour-matched fascia. View project photos from [Company Name]."
+metaTitle: "Seamless Eavestrough & Gutter Installation | Top Design Renovation Portfolio — Ottawa"
+metaDesc: "Full-perimeter seamless aluminum eavestrough system in Ottawa — leaf guard, underground drainage extensions, colour-matched fascia. View project photos from Top Design Renovation."
 area: "Full perimeter — 210 linear feet of eavestrough"
 highlights:
   - "Seamless aluminum formed on-site from continuous coil — no joints, no leaks"

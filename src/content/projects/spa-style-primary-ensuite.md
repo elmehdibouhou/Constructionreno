@@ -1,14 +1,14 @@
 ---
 title: "Spa-Style Primary Ensuite"
 category: "Bathroom Renovation"
-location: "[City]"
+location: "Ottawa"
 year: "2026"
 featured: false
 img: "https://images.unsplash.com/photo-1552321554-5fefe8c9ef14?w=900&q=80"
 alt: "Luxury spa-style primary ensuite with freestanding soaker tub and walk-in shower"
 description: "Complete primary ensuite transformation from a dated 1990s 4-piece into a hotel-style retreat. Features a freestanding matte white soaker tub, a large-format tile walk-in shower with rain head and body jets, heated porcelain floors, custom double vanity with vessel sinks, and a dedicated makeup station."
-metaTitle: "Spa-Style Ensuite Bathroom Renovation | [Company Name] Portfolio — [City]"
-metaDesc: "Luxury bathroom renovation in [City] — freestanding soaker tub, walk-in shower with rain head, heated floors, custom vanity. See full photos from [Company Name]."
+metaTitle: "Spa-Style Ensuite Bathroom Renovation | Top Design Renovation Portfolio — Ottawa"
+metaDesc: "Luxury bathroom renovation in Ottawa — freestanding soaker tub, walk-in shower with rain head, heated floors, custom vanity. See full photos from Top Design Renovation."
 area: "120 sq ft — full gut and reconfiguration"
 highlights:
   - "Freestanding matte white soaker tub as centrepiece focal point"

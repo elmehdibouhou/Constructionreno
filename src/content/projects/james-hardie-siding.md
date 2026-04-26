@@ -1,14 +1,14 @@
 ---
 title: "James Hardie Siding"
 category: "Exterior Siding"
-location: "[City]"
+location: "Ottawa"
 year: "2025"
 featured: false
 img: "https://images.unsplash.com/photo-1582268611958-ebfd161ef9cf?w=900&q=80"
 alt: "Contemporary home re-sided with James Hardie HardiePlank fibre cement lap siding in a two-tone scheme"
 description: "Full exterior re-siding with James Hardie HardiePlank fibre cement lap siding. All existing vinyl removed, sheathing inspected and replaced where needed, new Tyvek house wrap installed, then HardiePlank applied with factory-primed finish. Includes new window and door trim boards, corner boards, and a fresh exterior paint in a contemporary dark grey and warm white two-tone scheme."
-metaTitle: "James Hardie Fibre Cement Siding | [Company Name] Portfolio — [City]"
-metaDesc: "Full exterior re-siding with James Hardie HardiePlank in [City] — new house wrap, trim, two-tone paint scheme. View photos and project details from [Company Name]."
+metaTitle: "James Hardie Fibre Cement Siding | Top Design Renovation Portfolio — Ottawa"
+metaDesc: "Full exterior re-siding with James Hardie HardiePlank in Ottawa — new house wrap, trim, two-tone paint scheme. View photos and project details from Top Design Renovation."
 area: "Full exterior — approx. 2,400 sq ft of siding"
 highlights:
   - "James Hardie HardiePlank fibre cement lap siding — 50-year warranty"

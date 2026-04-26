@@ -1,14 +1,14 @@
 ---
 title: "Finished Basement Suite"
 category: "Basement Renovation"
-location: "[City]"
+location: "Ottawa"
 year: "2025"
 featured: false
 img: "https://images.unsplash.com/photo-1565538810643-b5bdb714032a?w=900&q=80"
 alt: "Finished basement with open recreation room, wet bar, and built-in entertainment centre"
 description: "Previously unfinished basement converted into a fully functional family suite. The space now features a large rec room with built-in entertainment wall, a full 3-piece bathroom, wet bar with undermount sink, and a dedicated home office with glass French doors. Full permit pulled, inspected, and closed."
-metaTitle: "Finished Basement Suite | [Company Name] Portfolio — [City]"
-metaDesc: "Unfinished basement transformed into a rec room, full bath, wet bar, and home office in [City]. Fully permitted. View photos and project details from [Company Name]."
+metaTitle: "Finished Basement Suite | Top Design Renovation Portfolio — Ottawa"
+metaDesc: "Unfinished basement transformed into a rec room, full bath, wet bar, and home office in Ottawa. Fully permitted. View photos and project details from Top Design Renovation."
 area: "1,100 sq ft — rec room, bath, office, wet bar"
 highlights:
   - "Full building permit pulled and final inspection passed"

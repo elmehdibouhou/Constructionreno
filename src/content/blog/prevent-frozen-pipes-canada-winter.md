@@ -90,7 +90,7 @@ Call a [licensed plumber](/services/residential-plumbing) immediately if:
 
 **If a pipe bursts:** Shut off the main water supply immediately — the shutoff valve is typically near the front foundation wall of your basement or where the main line enters the home — then call an emergency plumber right away.
 
-Our [City] plumbers provide emergency residential plumbing service for burst pipes and freeze damage, with fast response to minimise water damage and restore service.
+Our Ottawa plumbers provide emergency residential plumbing service for burst pipes and freeze damage, with fast response to minimise water damage and restore service.
 
 ## The Cost of Burst Pipes vs. Prevention
 

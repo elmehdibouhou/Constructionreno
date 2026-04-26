@@ -1,14 +1,14 @@
 ---
 title: "Full Exterior Re-Roof"
 category: "Roof Replacement"
-location: "[City]"
+location: "Ottawa"
 year: "2026"
 featured: false
 img: "https://images.unsplash.com/photo-1558618666-fcd25c85cd64?w=900&q=80"
 alt: "Complete architectural shingle roof replacement on a two-storey residential home"
 description: "Complete tear-off and replacement of a 2,800 sq ft residential roof. All existing shingles, underlayment, and rotted decking removed down to bare sheathing. New GAF Timberline HDZ architectural shingles installed with fresh ice & water shield on all valleys and eaves, synthetic felt underlayment, and a fully updated ridge and soffit ventilation system."
-metaTitle: "Full Roof Replacement | [Company Name] Portfolio — [City]"
-metaDesc: "Complete tear-off and shingle replacement on a 2,800 sq ft home in [City] — GAF Timberline HDZ, new ice & water shield, updated ventilation. View project details."
+metaTitle: "Full Roof Replacement | Top Design Renovation Portfolio — Ottawa"
+metaDesc: "Complete tear-off and shingle replacement on a 2,800 sq ft home in Ottawa — GAF Timberline HDZ, new ice & water shield, updated ventilation. View project details."
 area: "2,800 sq ft — complete tear-off and replacement"
 highlights:
   - "Full tear-off down to decking — no re-roofing over old shingles"

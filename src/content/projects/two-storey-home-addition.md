@@ -1,14 +1,14 @@
 ---
 title: "Two-Storey Home Addition"
 category: "Home Addition"
-location: "[City]"
+location: "Ottawa"
 year: "2025"
 featured: false
 img: "https://images.unsplash.com/photo-1572120360610-d971b9d7767c?w=900&q=80"
 alt: "Rear two-storey home addition with matching brick exterior and new primary suite above"
 description: "Rear two-storey addition expanding the home's footprint by 640 sq ft across two floors. The main-floor extension creates a dedicated mudroom and laundry suite with built-in cabinetry and a dog wash station. The upper-floor extension adds a full primary bedroom suite with a walk-in closet and spa ensuite. Exterior cladding, windows, and roofline are seamlessly matched to the existing structure."
-metaTitle: "Two-Storey Home Addition | [Company Name] Portfolio — [City]"
-metaDesc: "Two-storey rear addition in [City] — 640 sq ft added, new mudroom/laundry and primary suite. Exterior matched to existing. Full photo gallery from [Company Name]."
+metaTitle: "Two-Storey Home Addition | Top Design Renovation Portfolio — Ottawa"
+metaDesc: "Two-storey rear addition in Ottawa — 640 sq ft added, new mudroom/laundry and primary suite. Exterior matched to existing. Full photo gallery from Top Design Renovation."
 area: "640 sq ft added — main floor + upper floor"
 highlights:
   - "640 sq ft added across two floors with full permit and engineering"

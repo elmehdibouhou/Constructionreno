@@ -1,14 +1,14 @@
 ---
 title: "Custom Home Build"
 category: "Custom Homes"
-location: "[City]"
+location: "Ottawa"
 year: "2025"
 featured: true
 img: "https://images.unsplash.com/photo-1600607687939-ce8a6c25118c?w=1200&q=80"
 alt: "Bright open-concept living space in a custom-built two-storey home"
 description: "Ground-up custom home build — 3,400 sq ft two-storey with an attached double garage. ICF foundation, engineered hardwood throughout, chef's kitchen with quartz waterfall island, and a full walkout lower level. Completed in 11 months from permit to occupancy."
-metaTitle: "Custom Home Build | [Company Name] Portfolio — [City]"
-metaDesc: "See how [Company Name] built a 3,400 sq ft two-storey custom home in [City] — ICF foundation, chef's kitchen, walkout basement, double garage. View the full photo gallery."
+metaTitle: "Custom Home Build | Top Design Renovation Portfolio — Ottawa"
+metaDesc: "See how Top Design Renovation built a 3,400 sq ft two-storey custom home in Ottawa — ICF foundation, chef's kitchen, walkout basement, double garage. View the full photo gallery."
 area: "3,400 sq ft — 2 storeys + double garage"
 highlights:
   - "ICF (Insulated Concrete Form) foundation for superior energy efficiency"

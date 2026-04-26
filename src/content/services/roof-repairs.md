@@ -4,11 +4,11 @@ category: "Roofing"
 tagline: "Stop the leak before it becomes a disaster."
 heroImg: "https://images.unsplash.com/photo-1504307651254-35680f356dfd?w=1920&q=80"
 cardImg: "https://images.unsplash.com/photo-1504307651254-35680f356dfd?w=800&q=75"
-alt: "Roof repair in [City]"
-intro1: "A small roof leak ignored becomes a major structural problem quickly. Our [City] roof repair team responds fast — diagnosing the true source of the leak and fixing it properly the first time, not just patching it temporarily."
+alt: "Roof repair in Ottawa"
+intro1: "A small roof leak ignored becomes a major structural problem quickly. Our Ottawa roof repair team responds fast — diagnosing the true source of the leak and fixing it properly the first time, not just patching it temporarily."
 intro2: "We repair all types of roofing issues: missing shingles, damaged flashing around chimneys and vents, ice dam damage, ridge cap failures, and pipe collar leaks. All repairs come with a written warranty."
-metaTitle: "Roof Repairs [City] | [Company Name] — Fast Response"
-metaDesc: "Fast, reliable roof repairs in [City]. Leaks, missing shingles, damaged flashing & ice dam damage. Written warranty on all repairs. Free estimate."
+metaTitle: "Roof Repairs Ottawa | Top Design Renovation — Fast Response"
+metaDesc: "Fast, reliable roof repairs in Ottawa. Leaks, missing shingles, damaged flashing & ice dam damage. Written warranty on all repairs. Free estimate."
 whyUs:
   - "Fast response — same-week appointments available"
   - "True leak diagnosis, not just surface patching"
@@ -25,14 +25,14 @@ benefits:
     title: "Written Warranty"
     desc: "All our roof repair work comes with a written labour warranty so you have peace of mind that the fix will hold."
 faqs:
-  - q: "How much do roof repairs cost in [City]?"
+  - q: "How much do roof repairs cost in Ottawa?"
     a: "Minor roof repairs (missing shingles, small flashing repairs) typically cost $300–$800. More extensive repairs involving multiple areas or structural damage run $1,000–$3,500. We provide a written estimate before any work begins."
   - q: "How quickly can you respond to a roof leak?"
     a: "We typically offer same-week appointments for roof repairs. For active leaks during rain events, we can provide emergency tarping within 24 hours to prevent further water damage."
   - q: "Should I repair or replace my roof?"
     a: "If your roof is under 15 years old and damage is isolated, a repair is usually the right call. If it's over 20 years old or damage is widespread, a full replacement is often more economical in the long run. We'll give you an honest recommendation."
   - q: "What causes most roof leaks?"
-    a: "The most common sources of roof leaks in [Province] are deteriorated flashing around chimneys and skylights, failed pipe boot collars, ice dam damage, and missing or lifted shingles. We inspect and address all of these."
+    a: "The most common sources of roof leaks in Ontario are deteriorated flashing around chimneys and skylights, failed pipe boot collars, ice dam damage, and missing or lifted shingles. We inspect and address all of these."
 gallery:
   - https://images.unsplash.com/photo-1504307651254-35680f356dfd?w=800&q=75
   - https://images.unsplash.com/photo-1558618666-fcd25c85cd64?w=800&q=75

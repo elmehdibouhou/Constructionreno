@@ -40,7 +40,7 @@ Any food service establishment that prepares food: restaurants, cafes, bakeries,
 
 **Maintenance:** Most municipalities require grease traps to be pumped by a licensed hauler on a defined schedule (often quarterly for busy restaurants) with maintenance records available for inspection.
 
-Our [City] commercial plumbers handle grease trap sizing, installation, and certification. We also connect our clients with certified pump-out services. [Learn more about our commercial plumbing services →](/services/commercial-plumbing)
+Our Ottawa commercial plumbers handle grease trap sizing, installation, and certification. We also connect our clients with certified pump-out services. [Learn more about our commercial plumbing services →](/services/commercial-plumbing)
 
 ## 3-Compartment Sink Requirements
 
@@ -107,7 +107,7 @@ The best way to pass your commercial kitchen plumbing inspection is to work with
 
 **Our process:** We review your kitchen plan before construction begins, identify all code requirements specific to your municipality, and install everything inspection-ready the first time. This approach eliminates expensive call-backs and inspection delays that can push back your opening date by weeks.
 
-Contact our [City] commercial plumbing team for a pre-construction consultation on your restaurant or commercial kitchen project. Free estimates available.
+Contact our Ottawa commercial plumbing team for a pre-construction consultation on your restaurant or commercial kitchen project. Free estimates available.
 
 ---
 
@@ -117,7 +117,7 @@ Contact our [City] commercial plumbing team for a pre-construction consultation 
 Yes — all new commercial kitchen plumbing or modifications to existing plumbing require a building permit and plumbing inspection. Unpermitted work discovered during a health inspection can trigger a complete, costly retrofit and delay your opening. Always work with a licensed plumber who pulls permits as standard practice.
 
 **How much does commercial kitchen plumbing cost in Canada?**
-A complete plumbing installation for a new restaurant (roughly 1,000–2,000 sq ft kitchen) typically costs $15,000–$40,000 in [City], depending on kitchen complexity, number of fixtures, grease trap size, and local code requirements. We provide detailed written estimates after reviewing your kitchen plans at no charge.
+A complete plumbing installation for a new restaurant (roughly 1,000–2,000 sq ft kitchen) typically costs $15,000–$40,000 in Ottawa, depending on kitchen complexity, number of fixtures, grease trap size, and local code requirements. We provide detailed written estimates after reviewing your kitchen plans at no charge.
 
 **What happens if I don't maintain my grease trap?**
 A neglected grease trap overflows fats, oils, and grease into the municipal sewer — a regulatory violation that results in substantial fines from the municipality and required emergency remediation at your expense. Regular scheduled pump-outs are both a legal requirement and essential business risk management.

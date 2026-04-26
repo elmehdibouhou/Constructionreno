@@ -41,7 +41,7 @@ The distance between your electrical panel and the intended charger location (us
 Most Level 2 EV chargers are compatible with all North American EVs via the J1772 connector. Tesla owners can use any J1772 charger with a Tesla-supplied adapter, or install a Tesla Wall Connector directly. Your electrician can advise on compatibility.
 
 **4. Permit Requirement**
-In [Province], installing a 240V dedicated circuit requires a permit and ESA (Electrical Safety Authority) inspection. A licensed electrician handles this entire process on your behalf — it's included in a proper installation.
+In Ontario, installing a 240V dedicated circuit requires a permit and ESA (Electrical Safety Authority) inspection. A licensed electrician handles this entire process on your behalf — it's included in a proper installation.
 
 ## Cost of EV Charger Installation in Canada
 
@@ -87,13 +87,13 @@ Here's exactly what to expect when you book EV charger installation with our tea
 
 Not all electricians have EV charger installation experience. When choosing, look for:
 
-- **Valid [Province] electrical contractor licence** — required by law for any permit work
+- **Valid Ontario electrical contractor licence** — required by law for any permit work
 - **ESA registration** — confirms they can pull permits and have inspections performed
 - **EV charger installation experience** — ask how many they've installed and for which brands
 - **Written quote with permit included** — protects you from surprise costs and ensures the work is legal
 - **Clean communication** — they should be able to explain exactly what's required at your property
 
-Our [City] electricians have installed Level 2 EV chargers for dozens of homeowners. We handle the full process — assessment, permit, installation, and inspection coordination — with transparent pricing. [Get a free EV charger estimate →](/services/residential-electrical)
+Our Ottawa electricians have installed Level 2 EV chargers for dozens of homeowners. We handle the full process — assessment, permit, installation, and inspection coordination — with transparent pricing. [Get a free EV charger estimate →](/services/residential-electrical)
 
 ---
 

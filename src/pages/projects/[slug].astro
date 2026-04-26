@@ -15,8 +15,8 @@ const { project } = Astro.props;
 const p = project.data;
 
 // SEO fields — fall back to generated values if not set
-const metaTitle = p.metaTitle ?? `${p.title} | [Company Name] Portfolio — [City]`;
-const metaDesc = p.metaDesc ?? p.description ?? `View the ${p.title} project completed by [Company Name] in ${p.location ?? '[City]'}.`;
+const metaTitle = p.metaTitle ?? `${p.title} | Top Design Renovation Portfolio — Ottawa`;
+const metaDesc = p.metaDesc ?? p.description ?? `View the ${p.title} project completed by Top Design Renovation in ${p.location ?? 'Ottawa'}.`;
 
 // JSON-LD: CreativeWork schema for portfolio projects
 const projectSchema = {
@@ -28,11 +28,11 @@ const projectSchema = {
   "dateCreated": p.year,
   "locationCreated": {
     "@type": "City",
-    "name": p.location ?? "[City]"
+    "name": p.location ?? "Ottawa"
   },
   "creator": {
     "@type": "HomeAndConstructionBusiness",
-    "name": "[Company Name]",
+    "name": "Top Design Renovation",
     "url": "https://example.ca"
   },
   "genre": p.category,
@@ -82,7 +82,7 @@ const related = allProjects
         <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true">
           <path d="M21 10c0 7-9 13-9 13S3 17 3 10a9 9 0 0118 0z"/><circle cx="12" cy="10" r="3"/>
         </svg>
-        {p.location ?? '[City]'}
+        {p.location ?? 'Ottawa'}
         {p.year && (
           <>
             <span aria-hidden="true"> · </span>
@@ -188,7 +188,7 @@ const related = allProjects
                   </svg>
                   Location
                 </dt>
-                <dd>{p.location ?? '[City]'}</dd>
+                <dd>{p.location ?? 'Ottawa'}</dd>
               </div>
               {p.year && (
                 <div class="stat-row">
@@ -225,11 +225,11 @@ const related = allProjects
                 <line x1="5" y1="12" x2="19" y2="12"/><polyline points="12 5 19 12 12 19"/>
               </svg>
             </a>
-            <a href="tel:[Phone]" class="sidebar-phone">
+            <a href="tel:+16136981654" class="sidebar-phone">
               <svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true">
                 <path d="M22 16.92v3a2 2 0 01-2.18 2 19.79 19.79 0 01-8.63-3.07A19.5 19.5 0 014.64 10.6 19.79 19.79 0 011.6 2.06 2 2 0 013.58 0h3a2 2 0 012 1.72c.13.96.36 1.9.7 2.81a2 2 0 01-.45 2.11L7.91 7.91a16 16 0 006.16 6.16l.96-.96a2 2 0 012.11-.45c.91.34 1.85.57 2.81.7A2 2 0 0122 16.92z"/>
               </svg>
-              [Phone]
+              (613) 698-1654
             </a>
           </div>
 
@@ -269,7 +269,7 @@ const related = allProjects
               <div class="related-info">
                 <p class="related-cat">{r.data.category}</p>
                 <p class="related-title">{r.data.title}</p>
-                <p class="related-loc">{r.data.location ?? '[City]'} · {r.data.year}</p>
+                <p class="related-loc">{r.data.location ?? 'Ottawa'} · {r.data.year}</p>
               </div>
             </a>
           ))}

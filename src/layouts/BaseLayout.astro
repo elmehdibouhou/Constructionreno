@@ -14,8 +14,8 @@ interface Props {
 }
 
 const {
-  title = "[Company Name] | Renovation & Roofing in [City], Canada",
-  description = "Expert renovation, roofing & construction in [City]. Free estimates. Kitchen, bathroom, basement, painting & more. Call [Phone].",
+  title = "Top Design Renovation | Renovation & Roofing in Ottawa, Canada",
+  description = "Expert renovation, roofing & construction in Ottawa. Free estimates. Kitchen, bathroom, basement, painting & more. Call (613) 698-1654.",
   ogImage = "/Assets/og-image-1200x630.svg",
   canonical,
   schema,
@@ -23,23 +23,23 @@ const {
   tinaSetup,
 } = Astro.props;
 
-const siteUrl = "https://[domain].ca";
+const siteUrl = "https://topdesignrenovation.ca";
 const currentUrl = canonical || `${siteUrl}${Astro.url.pathname}`;
 
 const orgSchema = {
   "@context": "https://schema.org",
   "@type": "HomeAndConstructionBusiness",
-  "name": "[Company Name]",
+  "name": "Top Design Renovation",
   "url": siteUrl,
   "logo": `${siteUrl}/Assets/logo-01-primary-dark.svg`,
-  "telephone": "[Phone]",
-  "email": "info@[domain].ca",
+  "telephone": "(613) 698-1654",
+  "email": "info@topdesignrenovation.ca",
   "address": {
     "@type": "PostalAddress",
-    "streetAddress": "[Address]",
-    "addressLocality": "[City]",
-    "addressRegion": "[Province]",
-    "postalCode": "[Postal Code]",
+    "streetAddress": "1274 Billrian Crescent",
+    "addressLocality": "Ottawa",
+    "addressRegion": "Ontario",
+    "postalCode": "K2S 3A5",
     "addressCountry": "CA"
   },
   "openingHoursSpecification": [
@@ -51,10 +51,10 @@ const orgSchema = {
     }
   ],
   "priceRange": "$$",
-  "areaServed": { "@type": "City", "name": "[City]" },
+  "areaServed": { "@type": "City", "name": "Ottawa" },
   "sameAs": [
-    "https://www.facebook.com/[handle]",
-    "https://www.instagram.com/[handle]"
+    "https://www.facebook.com/topdesignrenovation",
+    "https://www.instagram.com/topdesignrenovation"
   ]
 };
 ---
@@ -79,7 +79,7 @@ const orgSchema = {
   <meta property="og:url" content={currentUrl} />
   <meta property="og:type" content="website" />
   <meta property="og:locale" content="en_CA" />
-  <meta property="og:site_name" content="[Company Name]" />
+  <meta property="og:site_name" content="Top Design Renovation" />
 
   <!-- Twitter Card -->
   <meta name="twitter:card" content="summary_large_image" />

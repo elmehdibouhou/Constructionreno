@@ -19,7 +19,7 @@ Before swinging a hammer, assess the space carefully. A successful basement reno
 * **Foundation cracks:** Hairline cracks are common; stair-step or horizontal cracks in block foundations may indicate structural movement and warrant an engineer's inspection.
 * **HVAC and electrical capacity:** Your existing furnace and electrical panel may need upgrading to support a finished basement, especially if you plan on a bathroom or kitchen.
 
-> "We always do a moisture audit before any framing goes up. Skipping that step is the single biggest mistake homeowners make when finishing a basement." — \[Company Name] Project Manager
+> "We always do a moisture audit before any framing goes up. Skipping that step is the single biggest mistake homeowners make when finishing a basement." — \Top Design Renovation Project Manager
 
 ## Do You Need a Permit?
 

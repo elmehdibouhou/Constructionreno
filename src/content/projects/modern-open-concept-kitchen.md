@@ -1,14 +1,14 @@
 ---
 title: "Modern Open-Concept Kitchen"
 category: "Kitchen Renovation"
-location: "[City]"
+location: "Ottawa"
 year: "2026"
 featured: true
 img: "https://images.unsplash.com/photo-1556909114-f6e7ad7d3136?w=1200&q=80"
 alt: "Modern open-concept kitchen with quartz island and custom two-tone cabinetry"
 description: "Full gut renovation transforming a closed, compartmentalized 1990s kitchen into a bright open-concept space. Load-bearing wall removed to merge the kitchen and dining room. Custom two-tone cabinetry, 10-ft quartz waterfall island, integrated appliances, and under-cabinet lighting throughout."
-metaTitle: "Open-Concept Kitchen Renovation | [Company Name] Portfolio — [City]"
-metaDesc: "Full kitchen gut renovation in [City] — load-bearing wall removal, custom cabinetry, quartz countertops, 10-ft island. View before-and-after photos and project details."
+metaTitle: "Open-Concept Kitchen Renovation | Top Design Renovation Portfolio — Ottawa"
+metaDesc: "Full kitchen gut renovation in Ottawa — load-bearing wall removal, custom cabinetry, quartz countertops, 10-ft island. View before-and-after photos and project details."
 area: "320 sq ft kitchen + dining room merge"
 highlights:
   - "Structural wall removed to create seamless open-concept layout"
