@@ -2,8 +2,8 @@
 title: "Kitchen Renovation"
 category: "Renovation"
 tagline: "Transform your kitchen into the heart of your home."
-heroImg: "https://images.unsplash.com/photo-1556909114-f6e7ad7d3136?w=1920&q=80"
-cardImg: "https://images.unsplash.com/photo-1556909114-f6e7ad7d3136?w=800&q=75"
+heroImg: "/images/services/kitchen-renovation/hero.png"
+cardImg: "/images/services/kitchen-renovation/hero.png"
 alt: "Modern kitchen renovation in Ottawa"
 intro1: "Your kitchen is more than a place to cook — it's where family gathers, meals are shared, and memories are made. Our Ottawa kitchen renovation team combines skilled craftsmanship with premium materials to create a space that's beautiful, functional, and built to last."
 intro2: "From a complete gut renovation to a targeted cabinet and countertop refresh, we handle every aspect of the project: design consultation, demolition, plumbing and electrical coordination, custom cabinetry, tile work, and final finishing — with no subcontracting surprises."
@@ -34,18 +34,20 @@ faqs:
   - q: "Can I stay in my home during the renovation?"
     a: "Yes — most clients remain in their homes during kitchen renovations. We contain the work area, maintain clean pathways, and work Monday to Friday to minimise disruption to your routine."
 gallery:
-  - src: https://images.unsplash.com/photo-1556909114-f6e7ad7d3136?w=800&q=75
-    alt: ""
-  - src: https://images.unsplash.com/photo-1565538810643-b5bdb714032a?w=800&q=75
-    alt: ""
-  - src: https://images.unsplash.com/photo-1600585154340-be6161a56a0c?w=800&q=75
-    alt: ""
-  - src: https://images.unsplash.com/photo-1484154218962-a197022b5858?w=800&q=75
-    alt: ""
-  - src: https://images.unsplash.com/photo-1556909172-89cf0b79bfb0?w=800&q=75
-    alt: ""
-  - src: https://images.unsplash.com/photo-1507089947368-19c1da9775ae?w=800&q=75
-    alt: ""
+  - src: /images/services/kitchen-renovation/hero.png
+    alt: "Kitchen renovation Ottawa — résultat final"
+  - src: /images/services/kitchen-renovation/gallery-1.png
+    alt: "Chantier cuisine en cours — démolition"
+  - src: /images/services/kitchen-renovation/gallery-2.png
+    alt: "Installation des armoires de cuisine"
+  - src: /images/services/kitchen-renovation/gallery-3.png
+    alt: "Installation comptoir quartz"
+  - src: /images/services/kitchen-renovation/gallery-4.png
+    alt: "Cuisine rénovée — angle large"
+  - src: /images/services/kitchen-renovation/gallery-5.png
+    alt: "Détail finition cuisine Ottawa"
+  - src: /images/services/kitchen-renovation/gallery-6.png
+    alt: "Cuisine complète — autre angle"
 related:
   - bathroom-renovation
   - basement-renovation
