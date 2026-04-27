@@ -5,37 +5,37 @@
     "metaTitle": "Kitchen Renovation Ideas Ottawa | Top Design Renovation",
     "metaDesc": "Explore stunning kitchen renovation ideas for Ottawa homes. Modern, traditional & transitional kitchen designs. Get inspired, then get a free estimate.",
     "intro": "The kitchen is the heart of every home. Whether you dream of a sleek modern open-concept layout, a warm farmhouse aesthetic, or a timeless transitional design, our gallery of completed Ottawa kitchen projects will inspire your renovation.",
-    "heroImg": "/images/inspiration/kitchen/kitchen-hero.webp",
+    "heroImg": "/images/inspiration/kitchen/hero.png",
     "ideas": [
       {
         "title": "Open-Concept Kitchen",
         "desc": "Remove walls to create a seamless flow between kitchen, dining, and living areas. Open layouts maximise natural light and make entertaining effortless.",
-        "img": "/images/inspiration/kitchen/kitchen-idea-openconcept.webp"
+        "img": "/images/inspiration/kitchen/idea-1.png"
       },
       {
         "title": "Quartz Countertops",
         "desc": "Quartz is the most popular countertop material for good reason — durable, non-porous, and available in hundreds of patterns from marble-look to solid contemporary.",
-        "img": "/images/inspiration/kitchen/kitchen-idea-quartz.webp"
+        "img": "/images/inspiration/kitchen/idea-2.png"
       },
       {
         "title": "Two-Tone Cabinetry",
         "desc": "Pair a deep navy or forest green lower cabinet with crisp white uppers for a designer look that balances boldness with brightness.",
-        "img": "/images/inspiration/kitchen/kitchen-idea-twotone.webp"
+        "img": "/images/inspiration/kitchen/idea-3.png"
       },
       {
         "title": "Statement Kitchen Island",
         "desc": "A large island with waterfall countertops, integrated seating, and under-counter storage is the ultimate functional and aesthetic centrepiece.",
-        "img": "/images/inspiration/kitchen/kitchen-idea-island.webp"
+        "img": "/images/inspiration/kitchen/idea-4.png"
       }
     ],
     "serviceSlug": "kitchen-renovation",
     "gallery": [
-      "/images/inspiration/kitchen/kitchen-project-1.webp",
-      "/images/inspiration/kitchen/kitchen-project-2.webp",
-      "/images/inspiration/kitchen/kitchen-project-3.webp",
-      "/images/inspiration/kitchen/kitchen-project-4.webp",
-      "/images/inspiration/kitchen/kitchen-project-5.webp",
-      "/images/inspiration/kitchen/kitchen-project-6.webp"
+      "/images/inspiration/kitchen/gallery-1.png",
+      "/images/inspiration/kitchen/gallery-2.png",
+      "/images/inspiration/kitchen/gallery-3.png",
+      "/images/inspiration/kitchen/gallery-4.png",
+      "/images/inspiration/kitchen/gallery-5.png",
+      "/images/inspiration/kitchen/gallery-6.png"
     ]
   },
   {
