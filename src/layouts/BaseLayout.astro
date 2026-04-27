@@ -32,6 +32,11 @@ const orgSchema = {
   "name": "Top Design Renovation",
   "url": siteUrl,
   "logo": `${siteUrl}/Assets/logo-01-primary-dark.svg`,
+  "image": [
+    `${siteUrl}/Assets/og-image-1200x630.svg`,
+    `${siteUrl}/Assets/logo-01-primary-dark.svg`
+  ],
+  "description": "Expert renovation, roofing & construction contractor serving Ottawa and surrounding areas. Specializing in kitchen, bathroom, basement, roofing, painting, and full home renovations. Free estimates.",
   "telephone": "(613) 698-1654",
   "email": "info@topdesignrenovation.ca",
   "address": {
@@ -42,6 +47,11 @@ const orgSchema = {
     "postalCode": "K2S 3A5",
     "addressCountry": "CA"
   },
+  "geo": {
+    "@type": "GeoCoordinates",
+    "latitude": 45.2627,
+    "longitude": -75.9204
+  },
   "openingHoursSpecification": [
     {
       "@type": "OpeningHoursSpecification",
@@ -51,7 +61,15 @@ const orgSchema = {
     }
   ],
   "priceRange": "$$",
-  "areaServed": { "@type": "City", "name": "Ottawa" },
+  "areaServed": [
+    { "@type": "City", "name": "Ottawa" },
+    { "@type": "City", "name": "Stittsville" },
+    { "@type": "City", "name": "Kanata" },
+    { "@type": "City", "name": "Nepean" },
+    { "@type": "City", "name": "Barrhaven" },
+    { "@type": "City", "name": "Gloucester" },
+    { "@type": "City", "name": "Orleans" }
+  ],
   "sameAs": [
     "https://www.facebook.com/topdesignrenovation",
     "https://www.instagram.com/topdesignrenovation"
