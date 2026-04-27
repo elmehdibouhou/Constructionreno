@@ -6,5 +6,5 @@ export default defineConfig({
   integrations: [
     tailwind({ applyBaseStyles: false }),
   ],
-  site: 'https://example.ca',
+  site: 'https://topdesignrenovation.ca',
 });
