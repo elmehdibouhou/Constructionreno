@@ -1,38 +1,43 @@
 ---
 const projects = [
   {
-    title: 'Modern Kitchen Renovation',
+    title: 'Modern Open-Concept Kitchen',
     category: 'Kitchen · Renovation',
-    img: 'https://images.unsplash.com/photo-1556909114-f6e7ad7d3136?w=1200&q=80',
-    alt: 'Modern kitchen renovation project in Ottawa',
+    img: '/images/projects/modern-open-concept-kitchen/hero.png',
+    alt: 'Modern open-concept kitchen renovation Ottawa',
+    href: '/our-work/modern-open-concept-kitchen',
     large: true,
   },
   {
-    title: 'Spa Bathroom',
+    title: 'Spa-Style Primary Ensuite',
     category: 'Bathroom · Renovation',
-    img: 'https://images.unsplash.com/photo-1552321554-5fefe8c9ef14?w=800&q=75',
-    alt: 'Spa-style bathroom renovation',
+    img: '/images/projects/spa-style-primary-ensuite/hero.png',
+    alt: 'Spa-style primary ensuite bathroom Ottawa',
+    href: '/our-work/spa-style-primary-ensuite',
     large: false,
   },
   {
-    title: 'Roof Replacement',
+    title: 'Standing Seam Metal Roof',
     category: 'Roofing',
-    img: 'https://images.unsplash.com/photo-1558618666-fcd25c85cd64?w=800&q=75',
-    alt: 'Complete roof replacement project',
+    img: '/images/projects/standing-seam-metal-roof/hero.png',
+    alt: 'Standing seam metal roof installation Ottawa',
+    href: '/our-work/standing-seam-metal-roof',
     large: false,
   },
   {
-    title: 'Finished Basement',
+    title: 'Legal Basement Apartment',
     category: 'Basement · Renovation',
-    img: 'https://images.unsplash.com/photo-1565538810643-b5bdb714032a?w=800&q=75',
-    alt: 'Basement finishing and renovation',
+    img: '/images/projects/legal-basement-apartment/hero.png',
+    alt: 'Legal basement apartment conversion Ottawa',
+    href: '/our-work/legal-basement-apartment',
     large: false,
   },
   {
-    title: 'Exterior Siding',
-    category: 'Exteriors',
-    img: 'https://images.unsplash.com/photo-1570129477492-45c003edd2be?w=800&q=75',
-    alt: 'Exterior siding replacement',
+    title: 'Complete Exterior Transformation',
+    category: 'Exterior Renovations',
+    img: '/images/projects/complete-exterior-renovation/hero.png',
+    alt: 'Complete exterior renovation Ottawa',
+    href: '/our-work/complete-exterior-renovation',
     large: false,
   },
 ];
@@ -50,7 +55,7 @@ const projects = [
     <div class="work-grid">
       {projects.map((project) => (
         <a
-          href="/our-work"
+          href={project.href}
           class:list={['work-item', { 'work-item--large': project.large }]}
           aria-label={`View project: ${project.title}`}
         >
