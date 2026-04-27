@@ -2,8 +2,8 @@
 title: "Roof Replacement"
 category: "Roofing"
 tagline: "Protect your home with a roof built to last."
-heroImg: "https://images.unsplash.com/photo-1558618666-fcd25c85cd64?w=1920&q=80"
-cardImg: "https://images.unsplash.com/photo-1558618666-fcd25c85cd64?w=800&q=75"
+heroImg: "/images/services/roof-replacement/hero.png"
+cardImg: "/images/services/roof-replacement/hero.png"
 alt: "Roof replacement in Ottawa"
 intro1: "Your roof is your home's first line of defence against Ontario's harsh weather. When it's time for a replacement, you need a team that installs it right — with proper underlayment, ventilation, flashing, and quality shingles that carry full manufacturer warranties."
 intro2: "We are certified installers for GAF, CertainTeed, and Owens Corning roofing systems. Every replacement includes a full tear-off, deck inspection, ice-and-water shield on all eaves, proper ventilation assessment, and clean-up with a magnetic nail sweep of your property."
@@ -34,18 +34,20 @@ faqs:
   - q: "What shingle brands do you recommend?"
     a: "We recommend GAF Timberline HDZ, CertainTeed Landmark, and Owens Corning Duration shingles — all of which offer excellent durability for Ontario's climate, strong wind ratings, and attractive aesthetics."
 gallery:
-  - src: https://images.unsplash.com/photo-1558618666-fcd25c85cd64?w=800&q=75
-    alt: ""
-  - src: https://images.unsplash.com/photo-1504307651254-35680f356dfd?w=800&q=75
-    alt: ""
-  - src: https://images.unsplash.com/photo-1449844908441-8829872d2607?w=800&q=75
-    alt: ""
-  - src: https://images.unsplash.com/photo-1416331108676-a22ccb276e35?w=800&q=75
-    alt: ""
-  - src: https://images.unsplash.com/photo-1570129477492-45c003edd2be?w=800&q=75
-    alt: ""
-  - src: https://images.unsplash.com/photo-1582268611958-ebfd161ef9cf?w=800&q=75
-    alt: ""
+  - src: /images/services/roof-replacement/hero.png
+    alt: "Installation bardeaux GAF CertainTeed Ottawa — équipe professionnelle"
+  - src: /images/services/roof-replacement/gallery-1.png
+    alt: "Démolition ancienne toiture Ottawa — arrachage bardeaux"
+  - src: /images/services/roof-replacement/gallery-2.png
+    alt: "Inspection pontage toiture Ottawa après tear-off"
+  - src: /images/services/roof-replacement/gallery-3.png
+    alt: "Pose membrane glace et eau avant-toit Ottawa"
+  - src: /images/services/roof-replacement/gallery-4.png
+    alt: "Installation bardeaux architecturaux charbon Ottawa"
+  - src: /images/services/roof-replacement/gallery-5.png
+    alt: "Nouvelle toiture complète Ottawa — vue élevée résultat final"
+  - src: /images/services/roof-replacement/gallery-6.png
+    alt: "Nettoyage magnétique après remplacement toiture Ottawa"
 related:
   - roof-repairs
   - metal-roofing

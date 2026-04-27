@@ -2,8 +2,8 @@
 title: "Venting Upgrades"
 category: "Roofing"
 tagline: "Proper ventilation extends roof life and prevents ice dams."
-heroImg: "https://images.unsplash.com/photo-1523217582562-09d0def993a6?w=1920&q=80"
-cardImg: "https://images.unsplash.com/photo-1523217582562-09d0def993a6?w=800&q=75"
+heroImg: "/images/services/venting/hero.png"
+cardImg: "/images/services/venting/hero.png"
 alt: "Roofing ventilation upgrades in Ottawa"
 intro1: "Poor attic ventilation is one of the leading causes of premature roof failure, ice dam formation, and elevated heating and cooling costs. A properly ventilated attic maintains temperature balance, reduces moisture buildup, and dramatically extends the life of your roof shingles."
 intro2: "We assess your current ventilation intake and exhaust balance and recommend the right upgrades — ridge vents, soffit vents, power attic ventilators, or bathroom exhaust fan rerouting — to bring your home to code and optimal performance."
@@ -34,18 +34,20 @@ faqs:
   - q: "Can ventilation issues cause mould in the attic?"
     a: "Yes — moisture from bathroom fans, kitchen exhausts, or condensation that are improperly vented into the attic rather than to the exterior can cause significant mould growth. We diagnose and remedy all moisture sources."
 gallery:
-  - src: https://images.unsplash.com/photo-1523217582562-09d0def993a6?w=800&q=75
-    alt: ""
-  - src: https://images.unsplash.com/photo-1558618666-fcd25c85cd64?w=800&q=75
-    alt: ""
-  - src: https://images.unsplash.com/photo-1504307651254-35680f356dfd?w=800&q=75
-    alt: ""
-  - src: https://images.unsplash.com/photo-1449844908441-8829872d2607?w=800&q=75
-    alt: ""
-  - src: https://images.unsplash.com/photo-1582268611958-ebfd161ef9cf?w=800&q=75
-    alt: ""
-  - src: https://images.unsplash.com/photo-1570129477492-45c003edd2be?w=800&q=75
-    alt: ""
+  - src: /images/services/venting/hero.png
+    alt: "Attic ventilation upgrade Ottawa — ridge vent installation"
+  - src: /images/services/venting/gallery-1.png
+    alt: "Attic inspection Ottawa — ventilation assessment"
+  - src: /images/services/venting/gallery-2.png
+    alt: "Ridge vent installation Ottawa — continuous run"
+  - src: /images/services/venting/gallery-3.png
+    alt: "Soffit vent upgrade Ottawa — vented panels installed"
+  - src: /images/services/venting/gallery-4.png
+    alt: "Power attic ventilator Ottawa — installation complete"
+  - src: /images/services/venting/gallery-5.png
+    alt: "Bathroom exhaust fan rerouting Ottawa — to exterior"
+  - src: /images/services/venting/gallery-6.png
+    alt: "Attic ventilation result Ottawa — ice dam prevention"
 related:
   - roof-replacement
   - roof-inspection

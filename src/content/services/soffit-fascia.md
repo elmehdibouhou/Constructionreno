@@ -2,8 +2,8 @@
 title: "Soffit & Fascia"
 category: "Roofing"
 tagline: "The finishing detail that protects your roofline."
-heroImg: "https://images.unsplash.com/photo-1558036117-15d82a90b9b1?w=1920&q=80"
-cardImg: "https://images.unsplash.com/photo-1558036117-15d82a90b9b1?w=800&q=75"
+heroImg: "/images/services/soffit-fascia/hero.png"
+cardImg: "/images/services/soffit-fascia/hero.png"
 alt: "Soffit and fascia installation in Ottawa"
 intro1: "Soffits and fascia protect your roof's edge and overhang from water, pests, and rot — while giving your home's exterior a clean, finished appearance. When they fail, water enters your wall assembly and attic, causing costly damage."
 intro2: "We replace deteriorated wood soffits and fascia with low-maintenance aluminum or vinyl cladding that never rots, requires no painting, and is available in colours to match your siding and trim."
@@ -34,18 +34,20 @@ faqs:
   - q: "Should I replace eavestroughs at the same time?"
     a: "If eavestroughs are being removed for soffit and fascia work anyway, combining the replacement saves significant labour cost and ensures a clean, consistent look."
 gallery:
-  - src: https://images.unsplash.com/photo-1558036117-15d82a90b9b1?w=800&q=75
-    alt: ""
-  - src: https://images.unsplash.com/photo-1570129477492-45c003edd2be?w=800&q=75
-    alt: ""
-  - src: https://images.unsplash.com/photo-1582268611958-ebfd161ef9cf?w=800&q=75
-    alt: ""
-  - src: https://images.unsplash.com/photo-1523217582562-09d0def993a6?w=800&q=75
-    alt: ""
-  - src: https://images.unsplash.com/photo-1512917774080-9991f1c4c750?w=800&q=75
-    alt: ""
-  - src: https://images.unsplash.com/photo-1600585154526-990dced4db0d?w=800&q=75
-    alt: ""
+  - src: /images/services/soffit-fascia/hero.png
+    alt: "Soffit and fascia installation Ottawa — aluminum cladding"
+  - src: /images/services/soffit-fascia/gallery-1.png
+    alt: "Rotted wood soffit Ottawa — before replacement"
+  - src: /images/services/soffit-fascia/gallery-2.png
+    alt: "Fascia board replacement Ottawa — work in progress"
+  - src: /images/services/soffit-fascia/gallery-3.png
+    alt: "Vented soffit panel installation Ottawa"
+  - src: /images/services/soffit-fascia/gallery-4.png
+    alt: "Soffit and fascia detail Ottawa — corner finish"
+  - src: /images/services/soffit-fascia/gallery-5.png
+    alt: "Completed soffit fascia Ottawa — full roofline"
+  - src: /images/services/soffit-fascia/gallery-6.png
+    alt: "Soffit fascia and eavestrough combination Ottawa"
 related:
   - eavestrough
   - siding

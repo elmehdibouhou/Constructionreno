@@ -2,8 +2,8 @@
 title: "Exterior Siding"
 category: "Roofing"
 tagline: "Premium cladding that protects and impresses."
-heroImg: "https://images.unsplash.com/photo-1582268611958-ebfd161ef9cf?w=1920&q=80"
-cardImg: "https://images.unsplash.com/photo-1582268611958-ebfd161ef9cf?w=800&q=75"
+heroImg: "/images/services/siding/hero.png"
+cardImg: "/images/services/siding/hero.png"
 alt: "Exterior siding installation in Ottawa"
 intro1: "New exterior siding dramatically improves your home's curb appeal while providing critical protection against Ontario's weather. We install vinyl, fibre cement (James Hardie), engineered wood, and steel siding with full moisture barrier and insulation options."
 intro2: "Our siding projects include all associated trim, corner boards, window and door surrounds, and soffit and fascia as needed — so you get a complete, cohesive exterior transformation."
@@ -34,18 +34,20 @@ faqs:
   - q: "Should I replace my soffits and eavestroughs at the same time?"
     a: "If your soffits or eavestroughs are original or showing wear, combining the work saves mobilisation costs and ensures a cohesive finished look."
 gallery:
-  - src: https://images.unsplash.com/photo-1582268611958-ebfd161ef9cf?w=800&q=75
-    alt: ""
-  - src: https://images.unsplash.com/photo-1570129477492-45c003edd2be?w=800&q=75
-    alt: ""
-  - src: https://images.unsplash.com/photo-1512917774080-9991f1c4c750?w=800&q=75
-    alt: ""
-  - src: https://images.unsplash.com/photo-1558036117-15d82a90b9b1?w=800&q=75
-    alt: ""
-  - src: https://images.unsplash.com/photo-1523217582562-09d0def993a6?w=800&q=75
-    alt: ""
-  - src: https://images.unsplash.com/photo-1600585154526-990dced4db0d?w=800&q=75
-    alt: ""
+  - src: /images/services/siding/hero.png
+    alt: "Siding installation Ottawa — James Hardie fibre cement"
+  - src: /images/services/siding/gallery-1.png
+    alt: "Before siding replacement Ottawa — original cladding"
+  - src: /images/services/siding/gallery-2.png
+    alt: "Siding installation Ottawa — moisture barrier install"
+  - src: /images/services/siding/gallery-3.png
+    alt: "Vinyl siding Ottawa — new profile installation"
+  - src: /images/services/siding/gallery-4.png
+    alt: "Siding corner and trim detail Ottawa"
+  - src: /images/services/siding/gallery-5.png
+    alt: "Completed siding Ottawa — full exterior result"
+  - src: /images/services/siding/gallery-6.png
+    alt: "Siding and soffit combination Ottawa — finished look"
 related:
   - soffit-fascia
   - exterior-renovations

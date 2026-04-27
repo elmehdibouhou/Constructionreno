@@ -2,8 +2,8 @@
 title: "Residential Plumbing Services"
 category: "Plumbing"
 tagline: "Expert plumbers for your home — repairs, installations and renovations."
-heroImg: "https://images.unsplash.com/photo-1585771724684-38269d6639fd?w=1920&q=80"
-cardImg: "https://images.unsplash.com/photo-1585771724684-38269d6639fd?w=800&q=75"
+heroImg: "/images/services/residential-plumbing/hero.png"
+cardImg: "/images/services/residential-plumbing/hero.png"
 alt: "Licensed plumber performing residential plumbing work in Ottawa"
 intro1: "From a dripping faucet to a full bathroom rough-in, our Ottawa licensed plumbers handle every residential plumbing need with precision and care. We serve homeowners throughout Ottawa with honest pricing, quality workmanship, and emergency availability seven days a week."
 intro2: "We handle the full scope of residential plumbing: leak detection and repair, pipe replacement, water heater installation, drain cleaning, fixture installation, sump pumps, frozen pipe repair, and emergency plumbing. All work meets Ontario plumbing code, and permits are handled by our team."
@@ -35,18 +35,20 @@ faqs:
   - q: "Do you handle bathroom rough-in plumbing for renovations?"
     a: "Yes — rough-in plumbing for bathroom renovations is a core service. We install supply lines, drain lines, and vent stacks in the correct positions per your renovation plan, coordinating with your contractor to ensure everything is code-compliant before walls are closed."
 gallery:
-  - src: https://images.unsplash.com/photo-1585771724684-38269d6639fd?w=800&q=75
-    alt: ""
-  - src: https://images.unsplash.com/photo-1558618048-fbd3e7e6e4d2?w=800&q=75
-    alt: ""
-  - src: https://images.unsplash.com/photo-1523413555519-6b8b2be47bb6?w=800&q=75
-    alt: ""
-  - src: https://images.unsplash.com/photo-1603575448878-868a20723f5d?w=800&q=75
-    alt: ""
-  - src: https://images.unsplash.com/photo-1504328345606-18bbc8c9d7d1?w=800&q=75
-    alt: ""
-  - src: https://images.unsplash.com/photo-1609220136736-443140cffec6?w=800&q=75
-    alt: ""
+  - src: /images/services/residential-plumbing/hero.png
+    alt: "Licensed plumber Ottawa — residential pipe work"
+  - src: /images/services/residential-plumbing/gallery-1.png
+    alt: "Tankless water heater installation Ottawa — Navien unit"
+  - src: /images/services/residential-plumbing/gallery-2.png
+    alt: "Bathroom rough-in plumbing Ottawa — renovation"
+  - src: /images/services/residential-plumbing/gallery-3.png
+    alt: "Pipe replacement Ottawa — copper and PEX installation"
+  - src: /images/services/residential-plumbing/gallery-4.png
+    alt: "Sump pump installation Ottawa — basement waterproofing"
+  - src: /images/services/residential-plumbing/gallery-5.png
+    alt: "Drain cleaning Ottawa — professional equipment"
+  - src: /images/services/residential-plumbing/gallery-6.png
+    alt: "Leak repair Ottawa — pipe fix completed"
 related:
   - commercial-plumbing
   - residential-electrical

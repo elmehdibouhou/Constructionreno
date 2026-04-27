@@ -2,8 +2,8 @@
 title: "Roof Inspections"
 category: "Roofing"
 tagline: "Know the true condition of your roof before it becomes an emergency."
-heroImg: "https://images.unsplash.com/photo-1416331108676-a22ccb276e35?w=1920&q=80"
-cardImg: "https://images.unsplash.com/photo-1416331108676-a22ccb276e35?w=800&q=75"
+heroImg: "/images/services/roof-inspection/hero.png"
+cardImg: "/images/services/roof-inspection/hero.png"
 alt: "Roof inspection in Ottawa"
 intro1: "A professional roof inspection gives you an accurate picture of your roof's current condition and remaining lifespan — before you're dealing with a leak during a rainstorm. We provide detailed written reports with photos documenting every finding."
 intro2: "Our inspections are commonly requested before home purchases, after severe storms, for insurance claims, and as part of regular maintenance programs. We're independent — our inspection recommendation is based on what's best for your home, not on selling you a new roof."
@@ -34,18 +34,20 @@ faqs:
   - q: "Can I use your inspection report for an insurance claim?"
     a: "Yes. Our detailed photo reports with written assessments documenting storm damage or deterioration are accepted by insurance adjusters. We can also meet with adjusters on-site if needed."
 gallery:
-  - src: https://images.unsplash.com/photo-1416331108676-a22ccb276e35?w=800&q=75
-    alt: ""
-  - src: https://images.unsplash.com/photo-1558618666-fcd25c85cd64?w=800&q=75
-    alt: ""
-  - src: https://images.unsplash.com/photo-1504307651254-35680f356dfd?w=800&q=75
-    alt: ""
-  - src: https://images.unsplash.com/photo-1449844908441-8829872d2607?w=800&q=75
-    alt: ""
-  - src: https://images.unsplash.com/photo-1582268611958-ebfd161ef9cf?w=800&q=75
-    alt: ""
-  - src: https://images.unsplash.com/photo-1570129477492-45c003edd2be?w=800&q=75
-    alt: ""
+  - src: /images/services/roof-inspection/hero.png
+    alt: "Roof inspection Ottawa — inspector examining shingles"
+  - src: /images/services/roof-inspection/gallery-1.png
+    alt: "Roof inspection Ottawa — flashing assessment chimney"
+  - src: /images/services/roof-inspection/gallery-2.png
+    alt: "Shingle condition inspection Ottawa — granule loss check"
+  - src: /images/services/roof-inspection/gallery-3.png
+    alt: "Roof inspection report Ottawa — photo documentation"
+  - src: /images/services/roof-inspection/gallery-4.png
+    alt: "Pipe boot inspection Ottawa — seal condition check"
+  - src: /images/services/roof-inspection/gallery-5.png
+    alt: "Eavestrough inspection Ottawa — gutter condition"
+  - src: /images/services/roof-inspection/gallery-6.png
+    alt: "Post-storm roof inspection Ottawa — damage assessment"
 related:
   - roof-repairs
   - roof-replacement

@@ -2,8 +2,8 @@
 title: "Custom Homes"
 category: "Construction"
 tagline: "Build the home you've always imagined."
-heroImg: "https://images.unsplash.com/photo-1600607687939-ce8a6c25118c?w=1920&q=80"
-cardImg: "https://images.unsplash.com/photo-1600607687939-ce8a6c25118c?w=800&q=75"
+heroImg: "/images/services/custom-homes/hero.png"
+cardImg: "/images/services/custom-homes/hero.png"
 alt: "Custom home construction in Ottawa"
 intro1: "A custom home is the ultimate expression of your vision. Unlike production builds, every decision is yours — the floor plan, finishes, materials, and features — built exactly the way you want it by a team you trust."
 intro2: "We work with your architect or our design partners to build your dream home from the foundation up. With full in-house project management, you have one point of contact and a team that takes ownership of every detail."
@@ -34,20 +34,21 @@ faqs:
   - q: "What is included in your custom home builds?"
     a: "Our builds include all structural work, electrical, plumbing, HVAC, insulation, drywall, interior trim, flooring, kitchen and bathroom installations, and a complete exterior package including siding, roofing, windows, and doors."
 gallery:
-  - src: https://images.unsplash.com/photo-1600607687939-ce8a6c25118c?w=800&q=75
-    alt: ""
-  - src: https://images.unsplash.com/photo-1613490493576-7fde63acd811?w=800&q=75
-    alt: ""
-  - src: https://images.unsplash.com/photo-1416331108676-a22ccb276e35?w=800&q=75
-    alt: ""
-  - src: https://images.unsplash.com/photo-1568605114967-8130f3a36994?w=800&q=75
-    alt: ""
-  - src: https://images.unsplash.com/photo-1449844908441-8829872d2607?w=800&q=75
-    alt: ""
-  - src: https://images.unsplash.com/photo-1523217582562-09d0def993a6?w=800&q=75
-    alt: ""
+  - src: /images/services/custom-homes/hero.png
+    alt: "Custom home construction Ottawa — wood frame structure"
+  - src: /images/services/custom-homes/gallery-1.png
+    alt: "Custom home foundation Ottawa — concrete pour"
+  - src: /images/services/custom-homes/gallery-2.png
+    alt: "Custom home framing Ottawa — multi-storey structure"
+  - src: /images/services/custom-homes/gallery-3.png
+    alt: "Custom home interior Ottawa — work in progress"
+  - src: /images/services/custom-homes/gallery-4.png
+    alt: "Custom kitchen Ottawa — high-end cabinetry"
+  - src: /images/services/custom-homes/gallery-5.png
+    alt: "Custom home bathroom Ottawa — luxury finishes"
+  - src: /images/services/custom-homes/gallery-6.png
+    alt: "Completed custom home Ottawa — exterior final view"
 related:
-  - home-additions
   - exterior-renovations
   - basement-renovation
 ---

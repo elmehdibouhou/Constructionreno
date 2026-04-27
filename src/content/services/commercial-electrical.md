@@ -2,8 +2,8 @@
 title: "Commercial & Industrial Electrical Services"
 category: "Electrical"
 tagline: "Complete electrical solutions for businesses, offices, warehouses and industrial facilities."
-heroImg: "https://images.unsplash.com/photo-1565193566173-7a0ee3dbe261?w=1920&q=80"
-cardImg: "https://images.unsplash.com/photo-1565193566173-7a0ee3dbe261?w=800&q=75"
+heroImg: "/images/services/commercial-electrical/hero.png"
+cardImg: "/images/services/commercial-electrical/hero.png"
 alt: "Commercial and industrial electrical installation in Ottawa factory and warehouse"
 intro1: "Businesses and industrial facilities require electrical solutions that go far beyond residential — 3-phase power systems, heavy-duty panel installations, warehouse lighting upgrades, industrial machinery connections, generator hookups, and emergency backup systems. Our Ottawa commercial electrical team is certified for all of it."
 intro2: "We work around your schedule to minimise downtime, handle all permits and inspections, and deliver work that fully complies with the Canadian Electrical Code for commercial and industrial applications. From a small retail fitout to a large manufacturing facility, we have the experience and crew to execute it right."
@@ -35,18 +35,20 @@ faqs:
   - q: "Do you offer maintenance contracts?"
     a: "Yes — we offer preventive maintenance contracts for commercial and industrial clients that include scheduled inspections, panel maintenance, lighting system checks, and priority emergency response. Contact us for a customised maintenance plan."
 gallery:
-  - src: https://images.unsplash.com/photo-1565193566173-7a0ee3dbe261?w=800&q=75
-    alt: ""
-  - src: https://images.unsplash.com/photo-1518770660439-4636190af475?w=800&q=75
-    alt: ""
-  - src: https://images.unsplash.com/photo-1581092918056-0c4c3acd3789?w=800&q=75
-    alt: ""
-  - src: https://images.unsplash.com/photo-1504328345606-18bbc8c9d7d1?w=800&q=75
-    alt: ""
-  - src: https://images.unsplash.com/photo-1621905251189-08b45d6a269e?w=800&q=75
-    alt: ""
-  - src: https://images.unsplash.com/photo-1580983559367-0dc2f8934365?w=800&q=75
-    alt: ""
+  - src: /images/services/commercial-electrical/hero.png
+    alt: "Commercial electrical installation Ottawa — warehouse lighting"
+  - src: /images/services/commercial-electrical/gallery-1.png
+    alt: "3-phase electrical panel Ottawa — commercial installation"
+  - src: /images/services/commercial-electrical/gallery-2.png
+    alt: "Industrial wiring Ottawa — factory electrical work"
+  - src: /images/services/commercial-electrical/gallery-3.png
+    alt: "Commercial LED lighting upgrade Ottawa — office building"
+  - src: /images/services/commercial-electrical/gallery-4.png
+    alt: "Generator hookup Ottawa — commercial backup power"
+  - src: /images/services/commercial-electrical/gallery-5.png
+    alt: "Commercial electrical conduit Ottawa — code-compliant install"
+  - src: /images/services/commercial-electrical/gallery-6.png
+    alt: "ESA commercial inspection Ottawa — compliance certification"
 related:
   - residential-electrical
   - commercial-plumbing

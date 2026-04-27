@@ -2,8 +2,8 @@
 title: 'Basement Renovation '
 category: Renovation
 tagline: Unlock your home's hidden square footage.
-heroImg: 'https://images.unsplash.com/photo-1565538810643-b5bdb714032a?w=1920&q=80'
-cardImg: 'https://images.unsplash.com/photo-1565538810643-b5bdb714032a?w=800&q=75'
+heroImg: '/images/services/basement-renovation/hero.png'
+cardImg: '/images/services/basement-renovation/hero.png'
 alt: 'Finished basement renovation in Ottawa'
 intro1: 'Your unfinished basement holds enormous potential — a home office, media room, in-law suite, or rental unit. Our Ottawa basement renovation team transforms bare concrete into fully finished living spaces that add real value to your home.'
 intro2: 'We handle every aspect: waterproofing assessment, framing, insulation, electrical, drywall, flooring, pot lights, and full finishing. We also handle all necessary building permits with the city.'
@@ -34,21 +34,22 @@ faqs:
   - q: Can a finished basement be used as a rental unit?
     a: 'Yes, but it must meet specific legal requirements including egress windows, fire separation, separate entrance, and HVAC. We are experienced in building legal secondary suites that comply with municipal requirements.'
 gallery:
-  - src: https://images.unsplash.com/photo-1565538810643-b5bdb714032a?w=800&q=75
-    alt: ""
-  - src: https://images.unsplash.com/photo-1600566752355-35792bedcfea?w=800&q=75
-    alt: ""
-  - src: https://images.unsplash.com/photo-1617806118233-18e1de247200?w=800&q=75
-    alt: ""
-  - src: https://images.unsplash.com/photo-1555041469-a586c61ea9bc?w=800&q=75
-    alt: ""
-  - src: https://images.unsplash.com/photo-1600210492486-724fe5c67fb0?w=800&q=75
-    alt: ""
-  - src: https://images.unsplash.com/photo-1583847268964-b28dc8f51f92?w=800&q=75
-    alt: ""
+  - src: /images/services/basement-renovation/hero.png
+    alt: "Sous-sol fini concept ouvert Ottawa — résultat final"
+  - src: /images/services/basement-renovation/gallery-1.png
+    alt: "Sous-sol brut avant rénovation Ottawa — béton et solives"
+  - src: /images/services/basement-renovation/gallery-2.png
+    alt: "Installation charpente sous-sol Ottawa — rénovation en cours"
+  - src: /images/services/basement-renovation/gallery-3.png
+    alt: "Chambre sous-sol rénovée Ottawa avec fenêtre egress"
+  - src: /images/services/basement-renovation/gallery-4.png
+    alt: "Suite sous-sol Ottawa avec fenêtre de sortie et placard"
+  - src: /images/services/basement-renovation/gallery-5.png
+    alt: "Bar humide sous-sol fini Ottawa — armoires et éclairage"
+  - src: /images/services/basement-renovation/gallery-6.png
+    alt: "Salle familiale sous-sol Ottawa — canapé et foyer électrique"
 related:
   - kitchen-renovation
   - bathroom-renovation
-  - home-additions
 ---
 

@@ -3,8 +3,8 @@
     "slug": "kitchen-renovation",
     "title": "Kitchen Renovation",
     "category": "Renovation",
-    "heroImg": "https://images.unsplash.com/photo-1556909114-f6e7ad7d3136?w=1920&q=80",
-    "cardImg": "https://images.unsplash.com/photo-1556909114-f6e7ad7d3136?w=800&q=75",
+    "heroImg": "/images/services/kitchen-renovation/hero.png",
+    "cardImg": "/images/services/kitchen-renovation/hero.png",
     "alt": "Modern kitchen renovation in Ottawa",
     "tagline": "Transform your kitchen into the heart of your home.",
     "intro1": "Your kitchen is more than a place to cook — it's where family gathers, meals are shared, and memories are made. Our Ottawa kitchen renovation team combines skilled craftsmanship with premium materials to create a space that's beautiful, functional, and built to last.",
@@ -29,12 +29,13 @@
       { "q": "Can I stay in my home during the renovation?", "a": "Yes — most clients remain in their homes during kitchen renovations. We contain the work area, maintain clean pathways, and work Monday to Friday to minimise disruption to your routine." }
     ],
     "gallery": [
-      "https://images.unsplash.com/photo-1556909114-f6e7ad7d3136?w=800&q=75",
-      "https://images.unsplash.com/photo-1565538810643-b5bdb714032a?w=800&q=75",
-      "https://images.unsplash.com/photo-1600585154340-be6161a56a0c?w=800&q=75",
-      "https://images.unsplash.com/photo-1484154218962-a197022b5858?w=800&q=75",
-      "https://images.unsplash.com/photo-1556909172-89cf0b79bfb0?w=800&q=75",
-      "https://images.unsplash.com/photo-1507089947368-19c1da9775ae?w=800&q=75"
+      "/images/services/kitchen-renovation/hero.png",
+      "/images/services/kitchen-renovation/gallery-1.png",
+      "/images/services/kitchen-renovation/gallery-2.png",
+      "/images/services/kitchen-renovation/gallery-3.png",
+      "/images/services/kitchen-renovation/gallery-4.png",
+      "/images/services/kitchen-renovation/gallery-5.png",
+      "/images/services/kitchen-renovation/gallery-6.png"
     ],
     "related": ["bathroom-renovation", "basement-renovation", "painting"]
   },

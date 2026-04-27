@@ -2,8 +2,8 @@
 title: "Interior & Exterior Painting"
 category: "Renovation"
 tagline: "A fresh coat of paint is the fastest way to transform a space."
-heroImg: "https://images.unsplash.com/photo-1562259949-e8e7689d7828?w=1920&q=80"
-cardImg: "https://images.unsplash.com/photo-1562259949-e8e7689d7828?w=800&q=75"
+heroImg: "/images/services/painting/hero.png"
+cardImg: "/images/services/painting/hero.png"
 alt: "Professional interior painting in Ottawa"
 intro1: "Professional painting is about far more than colour. It's proper preparation, the right primer, expert application, and clean edges that make the difference between a DIY look and a showroom finish. Our Ottawa painting team delivers that showroom finish every time."
 intro2: "We handle interior and exterior painting for homes of all sizes — from a single accent wall to a full house repaint inside and out. We use only premium paints (Benjamin Moore, Sherwin-Williams) and protect all surfaces before we ever open a can."
@@ -34,18 +34,20 @@ faqs:
   - q: "What exterior painting prep do you do?"
     a: "All exterior surfaces are pressure washed, scraped, sanded, primed, and caulked before painting. This prep work is what ensures the paint bonds properly and lasts for years."
 gallery:
-  - src: https://images.unsplash.com/photo-1562259949-e8e7689d7828?w=800&q=75
-    alt: ""
-  - src: https://images.unsplash.com/photo-1589939705384-5185137a7f0f?w=800&q=75
-    alt: ""
-  - src: https://images.unsplash.com/photo-1558618047-3c8c76ca7d13?w=800&q=75
-    alt: ""
-  - src: https://images.unsplash.com/photo-1497366216548-37526070297c?w=800&q=75
-    alt: ""
-  - src: https://images.unsplash.com/photo-1600210492493-0946911123ea?w=800&q=75
-    alt: ""
-  - src: https://images.unsplash.com/photo-1618221195710-dd6b41faaea6?w=800&q=75
-    alt: ""
+  - src: /images/services/painting/hero.png
+    alt: "Peintre professionnel appliquant une deuxième couche — Ottawa"
+  - src: /images/services/painting/gallery-1.png
+    alt: "Préparation des surfaces — ponçage et remplissage fissures Ottawa"
+  - src: /images/services/painting/gallery-2.png
+    alt: "Peinture extérieure professionnelle Ottawa — peintre sur échelle"
+  - src: /images/services/painting/gallery-3.png
+    alt: "Résultat peinture intérieure Ottawa — mur accent bleu marine"
+  - src: /images/services/painting/gallery-4.png
+    alt: "Résultat peinture extérieure Ottawa — façade brique et boiseries"
+  - src: /images/services/painting/gallery-5.png
+    alt: "Détail finition peinture Ottawa — jonction plinthe et mur parfaite"
+  - src: /images/services/painting/gallery-6.png
+    alt: "Peinture plafond chambre Ottawa — protection meubles en place"
 related:
   - kitchen-renovation
   - exterior-renovations

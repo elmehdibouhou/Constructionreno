@@ -5,115 +5,115 @@
     "metaTitle": "Kitchen Renovation Ideas Ottawa | Top Design Renovation",
     "metaDesc": "Explore stunning kitchen renovation ideas for Ottawa homes. Modern, traditional & transitional kitchen designs. Get inspired, then get a free estimate.",
     "intro": "The kitchen is the heart of every home. Whether you dream of a sleek modern open-concept layout, a warm farmhouse aesthetic, or a timeless transitional design, our gallery of completed Ottawa kitchen projects will inspire your renovation.",
-    "heroImg": "/images/inspiration/kitchen/kitchen-hero.webp",
+    "heroImg": "/images/inspiration/kitchen/hero.png",
     "ideas": [
       {
         "title": "Open-Concept Kitchen",
         "desc": "Remove walls to create a seamless flow between kitchen, dining, and living areas. Open layouts maximise natural light and make entertaining effortless.",
-        "img": "/images/inspiration/kitchen/kitchen-idea-openconcept.webp"
+        "img": "/images/inspiration/kitchen/idea-1.png"
       },
       {
         "title": "Quartz Countertops",
         "desc": "Quartz is the most popular countertop material for good reason — durable, non-porous, and available in hundreds of patterns from marble-look to solid contemporary.",
-        "img": "/images/inspiration/kitchen/kitchen-idea-quartz.webp"
+        "img": "/images/inspiration/kitchen/idea-2.png"
       },
       {
         "title": "Two-Tone Cabinetry",
         "desc": "Pair a deep navy or forest green lower cabinet with crisp white uppers for a designer look that balances boldness with brightness.",
-        "img": "/images/inspiration/kitchen/kitchen-idea-twotone.webp"
+        "img": "/images/inspiration/kitchen/idea-3.png"
       },
       {
         "title": "Statement Kitchen Island",
         "desc": "A large island with waterfall countertops, integrated seating, and under-counter storage is the ultimate functional and aesthetic centrepiece.",
-        "img": "/images/inspiration/kitchen/kitchen-idea-island.webp"
+        "img": "/images/inspiration/kitchen/idea-4.png"
       }
     ],
     "serviceSlug": "kitchen-renovation",
     "gallery": [
-      "/images/inspiration/kitchen/kitchen-project-1.webp",
-      "/images/inspiration/kitchen/kitchen-project-2.webp",
-      "/images/inspiration/kitchen/kitchen-project-3.webp",
-      "/images/inspiration/kitchen/kitchen-project-4.webp",
-      "/images/inspiration/kitchen/kitchen-project-5.webp",
-      "/images/inspiration/kitchen/kitchen-project-6.webp"
+      "/images/inspiration/kitchen/gallery-1.png",
+      "/images/inspiration/kitchen/gallery-2.png",
+      "/images/inspiration/kitchen/gallery-3.png",
+      "/images/inspiration/kitchen/gallery-4.png",
+      "/images/inspiration/kitchen/gallery-5.png",
+      "/images/inspiration/kitchen/gallery-6.png"
     ]
   },
   {
     "slug": "bathroom",
-    "title": "Bathroom Inspiration & Ideas",
+    "title": "Bathroom Renovation Ideas",
     "metaTitle": "Bathroom Renovation Ideas Ottawa | Top Design Renovation",
     "metaDesc": "Stunning bathroom renovation ideas for Ottawa homes. Spa retreats, modern ensuites & accessible designs. Get inspired & book your free estimate.",
-    "intro": "A beautifully renovated bathroom is one of the highest-return investments you can make in your home. Browse our collection of completed Ottawa bathroom projects — from minimalist modern ensuites to warm, spa-inspired retreats.",
-    "heroImg": "https://images.unsplash.com/photo-1552321554-5fefe8c9ef14?w=1920&q=80",
+    "intro": "A beautifully renovated bathroom is one of the highest-return investments you can make in your home. Browse our collection of completed Ottawa bathroom projects — from minimalist modern ensuites to warm, spa-inspired retreats with heated tile floors and frameless glass showers.",
+    "heroImg": "/images/inspiration/bathroom/hero.png",
     "ideas": [
       {
         "title": "Walk-In Shower Sanctuary",
-        "desc": "Replace a dated tub-shower combo with a frameless glass walk-in shower featuring large-format porcelain tiles, a bench, and a rain shower head for the full spa experience.",
-        "img": "https://images.unsplash.com/photo-1600566753086-00f18fb6b3ea?w=800&q=75"
+        "desc": "Replace a dated tub-shower combo with a frameless glass walk-in shower featuring large-format porcelain tiles, a bench seat, and a rain shower head for the full spa experience.",
+        "img": "/images/inspiration/bathroom/idea-1.png"
       },
       {
         "title": "Heated Tile Floors",
-        "desc": "In-floor radiant heating transforms your morning routine. We install electric heating mats under tile during renovation for whole-floor warmth.",
-        "img": "https://images.unsplash.com/photo-1584622650111-993a426fbf0a?w=800&q=75"
+        "desc": "In-floor radiant heating transforms your morning routine. We install electric heating mats under tile during renovation for whole-floor warmth throughout Ottawa's cold winters.",
+        "img": "/images/inspiration/bathroom/idea-2.png"
       },
       {
-        "title": "Floating Vanity",
+        "title": "Floating Double Vanity",
         "desc": "A floating double vanity with under-cabinet lighting creates the illusion of space and allows easier floor cleaning — a must in modern bathroom design.",
-        "img": "https://images.unsplash.com/photo-1604014237800-1c9102c219da?w=800&q=75"
+        "img": "/images/inspiration/bathroom/idea-3.png"
       },
       {
-        "title": "Statement Tile Feature Wall",
-        "desc": "A bold feature tile behind the shower or vanity is the design moment that makes a bathroom feel designed rather than just functional.",
-        "img": "https://images.unsplash.com/photo-1629079447777-1e605162dc8d?w=800&q=75"
+        "title": "Statement Feature Tile",
+        "desc": "A bold feature tile behind the shower or vanity is the design moment that makes a bathroom feel truly designed rather than just functional.",
+        "img": "/images/inspiration/bathroom/idea-4.png"
       }
     ],
     "serviceSlug": "bathroom-renovation",
     "gallery": [
-      "https://images.unsplash.com/photo-1552321554-5fefe8c9ef14?w=800&q=75",
-      "https://images.unsplash.com/photo-1600566753086-00f18fb6b3ea?w=800&q=75",
-      "https://images.unsplash.com/photo-1584622650111-993a426fbf0a?w=800&q=75",
-      "https://images.unsplash.com/photo-1604014237800-1c9102c219da?w=800&q=75",
-      "https://images.unsplash.com/photo-1629079447777-1e605162dc8d?w=800&q=75",
-      "https://images.unsplash.com/photo-1507652313519-d4e9174996dd?w=800&q=75"
+      "/images/inspiration/bathroom/gallery-1.png",
+      "/images/inspiration/bathroom/gallery-2.png",
+      "/images/inspiration/bathroom/gallery-3.png",
+      "/images/inspiration/bathroom/gallery-4.png",
+      "/images/inspiration/bathroom/gallery-5.png",
+      "/images/inspiration/bathroom/gallery-6.png"
     ]
   },
   {
     "slug": "basement",
-    "title": "Basement Renovation Ideas",
+    "title": "Basement Finishing & Renovation Ideas",
     "metaTitle": "Basement Renovation Ideas Ottawa | Top Design Renovation",
     "metaDesc": "Basement finishing ideas for Ottawa homes. Media rooms, home offices, in-law suites & more. Turn unused space into valuable living area. Free estimate.",
     "intro": "Your unfinished basement holds more potential than you realise. From cozy home theatres to income-generating in-law suites, browse these Ottawa basement transformation projects for ideas that match your goals and budget.",
-    "heroImg": "https://images.unsplash.com/photo-1565538810643-b5bdb714032a?w=1920&q=80",
+    "heroImg": "/images/inspiration/basement/hero.png",
     "ideas": [
       {
         "title": "Home Theatre Room",
         "desc": "A dedicated media room with acoustic wall treatment, tiered seating, hidden wiring, and a proper A/V setup turns your basement into the neighbourhood's favourite movie destination.",
-        "img": "https://images.unsplash.com/photo-1555041469-a586c61ea9bc?w=800&q=75"
+        "img": "/images/inspiration/basement/idea-1.png"
       },
       {
         "title": "Legal In-Law Suite",
-        "desc": "A properly permitted secondary unit with bedroom, kitchen, bathroom, and separate entrance can generate $1,800–$2,500/month in rental income.",
-        "img": "https://images.unsplash.com/photo-1617806118233-18e1de247200?w=800&q=75"
+        "desc": "A properly permitted secondary unit with bedroom, kitchen, bathroom, and separate entrance can generate $1,800–$2,500/month in rental income while housing extended family.",
+        "img": "/images/inspiration/basement/idea-2.png"
       },
       {
-        "title": "Home Office & Gym",
-        "desc": "Combine a dedicated workspace with a home gym in your basement — soundproofed, climate-controlled, and separated from the main living area.",
-        "img": "https://images.unsplash.com/photo-1600210492486-724fe5c67fb0?w=800&q=75"
+        "title": "Home Office & Gym Combo",
+        "desc": "Combine a dedicated workspace with a home gym in your basement — soundproofed, climate-controlled, and completely separated from the main living area.",
+        "img": "/images/inspiration/basement/idea-3.png"
       },
       {
         "title": "Kids Playroom & Family Room",
-        "desc": "A bright, well-insulated basement family room with a durable LVP floor, pot lights, and a half-bath becomes the most-used space in the house.",
-        "img": "https://images.unsplash.com/photo-1583847268964-b28dc8f51f92?w=800&q=75"
+        "desc": "A bright, well-insulated basement family room with durable LVP flooring, recessed lighting, and a half-bath becomes the most-used space in the house.",
+        "img": "/images/inspiration/basement/idea-4.png"
       }
     ],
     "serviceSlug": "basement-renovation",
     "gallery": [
-      "https://images.unsplash.com/photo-1565538810643-b5bdb714032a?w=800&q=75",
-      "https://images.unsplash.com/photo-1555041469-a586c61ea9bc?w=800&q=75",
-      "https://images.unsplash.com/photo-1617806118233-18e1de247200?w=800&q=75",
-      "https://images.unsplash.com/photo-1600210492486-724fe5c67fb0?w=800&q=75",
-      "https://images.unsplash.com/photo-1583847268964-b28dc8f51f92?w=800&q=75",
-      "https://images.unsplash.com/photo-1600566752355-35792bedcfea?w=800&q=75"
+      "/images/inspiration/basement/gallery-1.png",
+      "/images/inspiration/basement/gallery-2.png",
+      "/images/inspiration/basement/gallery-3.png",
+      "/images/inspiration/basement/gallery-4.png",
+      "/images/inspiration/basement/gallery-5.png",
+      "/images/inspiration/basement/gallery-6.png"
     ]
   },
   {
@@ -122,76 +122,349 @@
     "metaTitle": "Living Room Renovation Ideas Ottawa | Top Design Renovation",
     "metaDesc": "Living room renovation & refresh ideas for Ottawa homes. Feature walls, fireplace surrounds, built-in shelving & more. Free estimate.",
     "intro": "Your living room sets the tone for the entire home. Browse these Ottawa living room transformation projects for inspiration on feature walls, fireplace surrounds, built-in cabinetry, and flooring upgrades that make a dramatic difference.",
-    "heroImg": "https://images.unsplash.com/photo-1586023492125-27b2c045efd7?w=1920&q=80",
+    "heroImg": "/images/inspiration/living-room/hero.png",
     "ideas": [
       {
         "title": "Fireplace Feature Wall",
         "desc": "A floor-to-ceiling fireplace surround in stone, tile, or shiplap — with a floating wood mantel — creates a dramatic focal point that anchors the entire room.",
-        "img": "https://images.unsplash.com/photo-1600210492493-0946911123ea?w=800&q=75"
+        "img": "/images/inspiration/living-room/idea-1.png"
       },
       {
         "title": "Built-In Shelving & Cabinetry",
         "desc": "Custom built-ins flanking a fireplace or filling an awkward wall add both storage and character that prefab furniture simply cannot achieve.",
-        "img": "https://images.unsplash.com/photo-1618221195710-dd6b41faaea6?w=800&q=75"
+        "img": "/images/inspiration/living-room/idea-2.png"
       },
       {
-        "title": "Hardwood Flooring",
+        "title": "Engineered Hardwood Flooring",
         "desc": "Engineered hardwood or solid wood flooring immediately elevates a space. We offer installation, refinishing of existing hardwood, and matching to adjacent rooms.",
-        "img": "https://images.unsplash.com/photo-1497366216548-37526070297c?w=800&q=75"
+        "img": "/images/inspiration/living-room/idea-3.png"
       },
       {
         "title": "Open Concept Conversion",
-        "desc": "Opening a wall between the living room and kitchen or dining area is the single renovation that delivers the most perceived space improvement.",
-        "img": "https://images.unsplash.com/photo-1600585154526-990dced4db0d?w=800&q=75"
-      }
-    ],
-    "serviceSlug": "basement-renovation",
-    "gallery": [
-      "https://images.unsplash.com/photo-1586023492125-27b2c045efd7?w=800&q=75",
-      "https://images.unsplash.com/photo-1600210492493-0946911123ea?w=800&q=75",
-      "https://images.unsplash.com/photo-1618221195710-dd6b41faaea6?w=800&q=75",
-      "https://images.unsplash.com/photo-1497366216548-37526070297c?w=800&q=75",
-      "https://images.unsplash.com/photo-1600585154526-990dced4db0d?w=800&q=75",
-      "https://images.unsplash.com/photo-1555041469-a586c61ea9bc?w=800&q=75"
-    ]
-  },
-  {
-    "slug": "design",
-    "title": "Design Trends for Ottawa Homes",
-    "metaTitle": "Home Design Trends 2026 | Top Design Renovation Ottawa",
-    "metaDesc": "2026 home design trends for Ottawa homeowners. Warm minimalism, organic textures, smart home integration & energy-efficient design. Expert insight from local renovation pros.",
-    "intro": "Design trends in 2026 are moving toward warmth, texture, and longevity — away from stark white minimalism and toward spaces that feel lived-in and authentic. Here's what we're seeing in Ottawa renovation projects right now.",
-    "heroImg": "https://images.unsplash.com/photo-1618221195710-dd6b41faaea6?w=1920&q=80",
-    "ideas": [
-      {
-        "title": "Warm Minimalism",
-        "desc": "Organic materials — wood, stone, linen, clay — in warm neutral tones replace cold grey and sterile white. Simplicity with soul.",
-        "img": "https://images.unsplash.com/photo-1600585154340-be6161a56a0c?w=800&q=75"
-      },
-      {
-        "title": "Curved & Organic Forms",
-        "desc": "Rounded arches, curved cabinetry, and organic shapes are replacing sharp 90° corners. The effect is softer, more human, and genuinely distinctive.",
-        "img": "https://images.unsplash.com/photo-1600566752355-35792bedcfea?w=800&q=75"
-      },
-      {
-        "title": "Fluted & Textured Surfaces",
-        "desc": "Fluted wood panels, textured tiles, and reeded glass add tactile depth and visual interest to kitchens, bathrooms, and living spaces.",
-        "img": "https://images.unsplash.com/photo-1584622650111-993a426fbf0a?w=800&q=75"
-      },
-      {
-        "title": "Dark & Moody Kitchens",
-        "desc": "Dramatic deep navy, forest green, and charcoal cabinetry paired with brass hardware — bold, timeless, and a direct reaction to years of all-white kitchens.",
-        "img": "https://images.unsplash.com/photo-1556909172-89cf0b79bfb0?w=800&q=75"
+        "desc": "Opening a wall between the living room and kitchen or dining area is the single renovation that delivers the most perceived space improvement in older Ottawa homes.",
+        "img": "/images/inspiration/living-room/idea-4.png"
       }
     ],
     "serviceSlug": "kitchen-renovation",
     "gallery": [
-      "https://images.unsplash.com/photo-1618221195710-dd6b41faaea6?w=800&q=75",
-      "https://images.unsplash.com/photo-1600585154340-be6161a56a0c?w=800&q=75",
-      "https://images.unsplash.com/photo-1600566752355-35792bedcfea?w=800&q=75",
-      "https://images.unsplash.com/photo-1584622650111-993a426fbf0a?w=800&q=75",
-      "https://images.unsplash.com/photo-1556909172-89cf0b79bfb0?w=800&q=75",
-      "https://images.unsplash.com/photo-1497366216548-37526070297c?w=800&q=75"
+      "/images/inspiration/living-room/gallery-1.png",
+      "/images/inspiration/living-room/gallery-2.png",
+      "/images/inspiration/living-room/gallery-3.png",
+      "/images/inspiration/living-room/gallery-4.png",
+      "/images/inspiration/living-room/gallery-5.png",
+      "/images/inspiration/living-room/gallery-6.png"
+    ]
+  },
+  {
+    "slug": "exterior",
+    "title": "Exterior Renovation & Curb Appeal Ideas",
+    "metaTitle": "Exterior Renovation Ideas Ottawa | Top Design Renovation",
+    "metaDesc": "Exterior renovation & curb appeal ideas for Ottawa homes. Stone cladding, new siding, front door upgrades, decks & more. Free estimate.",
+    "intro": "First impressions matter. The exterior of your home is the first thing neighbours and visitors see — and a well-executed exterior renovation adds significant market value while reflecting your personal style. Browse these Ottawa exterior transformation projects for ideas.",
+    "heroImg": "/images/inspiration/exterior/hero.png",
+    "ideas": [
+      {
+        "title": "Stone & Brick Cladding",
+        "desc": "Natural or manufactured stone veneer on the front facade instantly adds prestige and permanence to any Ottawa home. It's low-maintenance and withstands our harsh winters.",
+        "img": "/images/inspiration/exterior/idea-1.png"
+      },
+      {
+        "title": "James Hardie Fibre Cement Siding",
+        "desc": "Fibre cement siding is the premier choice for Ottawa's freeze-thaw climate — engineered to resist rot, moisture, and insects with a 30-year colour warranty.",
+        "img": "/images/inspiration/exterior/idea-2.png"
+      },
+      {
+        "title": "Covered Front Porch",
+        "desc": "A covered front porch with composite decking, tapered columns, and recessed lighting transforms the entry experience and creates usable outdoor living space year-round.",
+        "img": "/images/inspiration/exterior/idea-3.png"
+      },
+      {
+        "title": "New Windows & Doors",
+        "desc": "Triple-pane windows and an insulated front door dramatically improve energy efficiency and street appeal — two of the highest ROI upgrades for an Ottawa home.",
+        "img": "/images/inspiration/exterior/idea-4.png"
+      }
+    ],
+    "serviceSlug": "exterior-renovations",
+    "gallery": [
+      "/images/inspiration/exterior/gallery-1.png",
+      "/images/inspiration/exterior/gallery-2.png",
+      "/images/inspiration/exterior/gallery-3.png",
+      "/images/inspiration/exterior/gallery-4.png",
+      "/images/inspiration/exterior/gallery-5.png",
+      "/images/inspiration/exterior/gallery-6.png"
+    ]
+  },
+  {
+    "slug": "roofing",
+    "title": "Roofing Styles & Material Ideas",
+    "metaTitle": "Roofing Ideas & Styles Ottawa | Top Design Renovation",
+    "metaDesc": "Roofing ideas for Ottawa homes — asphalt shingles, metal roofing, dormers, skylights & more. Compare materials, styles & get a free estimate.",
+    "intro": "Your roof is your home's primary defence against Ottawa's brutal winters, spring ice storms, and summer heat. Beyond protection, modern roofing materials offer striking aesthetic options that transform a home's silhouette. Browse styles and material options below.",
+    "heroImg": "/images/inspiration/roofing/hero.png",
+    "ideas": [
+      {
+        "title": "Architectural Shingles",
+        "desc": "Architectural (dimensional) asphalt shingles provide a layered, slate-like appearance at a fraction of the cost — with 30–50 year lifespans and excellent performance in Ottawa winters.",
+        "img": "/images/inspiration/roofing/idea-1.png"
+      },
+      {
+        "title": "Metal Standing Seam Roofing",
+        "desc": "Standing seam metal roofing is the premium long-term choice — 50+ year lifespan, superior snow shedding, and a sharp contemporary profile that looks exceptional on modern homes.",
+        "img": "/images/inspiration/roofing/idea-2.png"
+      },
+      {
+        "title": "Dormers & Skylights",
+        "desc": "Adding a dormer or skylight brings natural light deep into the home, increases headroom in upper floors, and creates architectural character from the street.",
+        "img": "/images/inspiration/roofing/idea-3.png"
+      },
+      {
+        "title": "Proper Soffit, Fascia & Eavestrough",
+        "desc": "A complete roofline system — matching soffit, fascia, and seamless gutters — finishes the roof edge cleanly and prevents the ice dams and moisture damage common in Ottawa homes.",
+        "img": "/images/inspiration/roofing/idea-4.png"
+      }
+    ],
+    "serviceSlug": "roof-replacement",
+    "gallery": [
+      "/images/inspiration/roofing/gallery-1.png",
+      "/images/inspiration/roofing/gallery-2.png",
+      "/images/inspiration/roofing/gallery-3.png",
+      "/images/inspiration/roofing/gallery-4.png",
+      "/images/inspiration/roofing/gallery-5.png",
+      "/images/inspiration/roofing/gallery-6.png"
+    ]
+  },
+  {
+    "slug": "master-bedroom",
+    "title": "Master Bedroom & Ensuite Ideas",
+    "metaTitle": "Master Bedroom & Ensuite Ideas Ottawa | Top Design Renovation",
+    "metaDesc": "Master bedroom renovation ideas for Ottawa homes. Walk-in closets, ensuite bathrooms, feature walls, custom lighting & more. Free estimate.",
+    "intro": "The master bedroom is your personal retreat — a space that should feel calm, considered, and completely yours. Browse these Ottawa master bedroom and ensuite renovation projects for ideas on built-in wardrobes, spa ensuites, feature walls, and lighting that transforms the room.",
+    "heroImg": "/images/inspiration/master-bedroom/hero.png",
+    "ideas": [
+      {
+        "title": "Walk-In Closet System",
+        "desc": "A custom walk-in closet with full-height built-in cabinetry, island drawers, and integrated LED lighting turns getting dressed into a luxury experience every morning.",
+        "img": "/images/inspiration/master-bedroom/idea-1.png"
+      },
+      {
+        "title": "Ensuite Spa Bathroom",
+        "desc": "A private ensuite with freestanding soaking tub, double vanity, and a large walk-in steam shower is the renovation that homeowners report transforms their daily quality of life.",
+        "img": "/images/inspiration/master-bedroom/idea-2.png"
+      },
+      {
+        "title": "Accent & Feature Wall",
+        "desc": "A timber-clad, upholstered, or bold-painted feature wall behind the bed creates depth and design intentionality without a full renovation.",
+        "img": "/images/inspiration/master-bedroom/idea-3.png"
+      },
+      {
+        "title": "Layered Bedroom Lighting",
+        "desc": "Recessed ceiling lights, bedside sconces, and LED cove lighting on dimmers give your bedroom full control — bright in the morning, dim and warm at night.",
+        "img": "/images/inspiration/master-bedroom/idea-4.png"
+      }
+    ],
+    "serviceSlug": "bathroom-renovation",
+    "gallery": [
+      "/images/inspiration/master-bedroom/gallery-1.png",
+      "/images/inspiration/master-bedroom/gallery-2.png",
+      "/images/inspiration/master-bedroom/gallery-3.png",
+      "/images/inspiration/master-bedroom/gallery-4.png",
+      "/images/inspiration/master-bedroom/gallery-5.png",
+      "/images/inspiration/master-bedroom/gallery-6.png"
+    ]
+  },
+  {
+    "slug": "home-office",
+    "title": "Home Office & Workspace Ideas",
+    "metaTitle": "Home Office Renovation Ideas Ottawa | Top Design Renovation",
+    "metaDesc": "Home office renovation ideas for Ottawa homes. Built-in desks, custom shelving, acoustic solutions & smart lighting. Turn any room into a productive workspace.",
+    "intro": "Working from home has become permanent for many Ottawa professionals — and a well-designed home office pays dividends in focus, professionalism, and daily quality of life. Browse these dedicated workspace renovation ideas from basement offices to bedroom conversions.",
+    "heroImg": "/images/inspiration/home-office/hero.png",
+    "ideas": [
+      {
+        "title": "Built-In Desk & Shelving Wall",
+        "desc": "A full wall of custom cabinetry with a built-in desk surface, integrated shelving, and concealed storage eliminates clutter and gives a home office the look of a professional boardroom.",
+        "img": "/images/inspiration/home-office/idea-1.png"
+      },
+      {
+        "title": "Acoustic Panel Treatment",
+        "desc": "Acoustic wall panels or fabric-wrapped frames reduce echo and background noise for clearer video calls — a practical upgrade that also adds texture and design interest.",
+        "img": "/images/inspiration/home-office/idea-2.png"
+      },
+      {
+        "title": "Dedicated Basement Office",
+        "desc": "Converting part of an unfinished basement into a quiet, climate-controlled office is one of the best investments for Ottawa remote workers — completely separated from household noise.",
+        "img": "/images/inspiration/home-office/idea-3.png"
+      },
+      {
+        "title": "Smart Lighting for Focus",
+        "desc": "Tunable LED ceiling lights that shift from cool blue-white in the morning to warm amber at night, combined with a backlit monitor setup, improve focus and reduce eye fatigue.",
+        "img": "/images/inspiration/home-office/idea-4.png"
+      }
+    ],
+    "serviceSlug": "basement-renovation",
+    "gallery": [
+      "/images/inspiration/home-office/gallery-1.png",
+      "/images/inspiration/home-office/gallery-2.png",
+      "/images/inspiration/home-office/gallery-3.png",
+      "/images/inspiration/home-office/gallery-4.png",
+      "/images/inspiration/home-office/gallery-5.png",
+      "/images/inspiration/home-office/gallery-6.png"
+    ]
+  },
+  {
+    "slug": "mudroom",
+    "title": "Mudroom & Entryway Ideas",
+    "metaTitle": "Mudroom & Entryway Renovation Ideas Ottawa | Top Design Renovation",
+    "metaDesc": "Mudroom renovation ideas for Ottawa homes. Built-in lockers, bench seating, tile floors & smart storage. Conquer Canada's winter mess. Free estimate.",
+    "intro": "In Ottawa's climate, a well-designed mudroom is not a luxury — it's a necessity. A proper entry space with coat hooks, bench seating, boot storage, and tile flooring contains the mud, salt, and snow before it reaches the rest of your home. Browse these Ottawa mudroom transformations.",
+    "heroImg": "/images/inspiration/mudroom/hero.png",
+    "ideas": [
+      {
+        "title": "Built-In Locker System",
+        "desc": "Custom built-in lockers with cubbies, coat hooks, and lower cabinets for each family member bring order to the chaos of a Canadian winter entry — and look sharp doing it.",
+        "img": "/images/inspiration/mudroom/idea-1.png"
+      },
+      {
+        "title": "Bench with Boot Storage",
+        "desc": "A built-in bench with flip-top storage underneath and pull-out boot trays below keeps footwear organised and off the floor while giving a place to sit while changing shoes.",
+        "img": "/images/inspiration/mudroom/idea-2.png"
+      },
+      {
+        "title": "Heated Ceramic Tile Floor",
+        "desc": "Large-format ceramic tile with in-floor radiant heat is the ideal mudroom floor — completely waterproof, easy to mop, and warm for socked feet on a February morning.",
+        "img": "/images/inspiration/mudroom/idea-3.png"
+      },
+      {
+        "title": "Laundry-Mudroom Combo",
+        "desc": "Combining a mudroom with a main-floor laundry and utility sink creates a functional service hub that handles everything from after-school gear to Saturday sports kits.",
+        "img": "/images/inspiration/mudroom/idea-4.png"
+      }
+    ],
+    "serviceSlug": "exterior-renovations",
+    "gallery": [
+      "/images/inspiration/mudroom/gallery-1.png",
+      "/images/inspiration/mudroom/gallery-2.png",
+      "/images/inspiration/mudroom/gallery-3.png",
+      "/images/inspiration/mudroom/gallery-4.png",
+      "/images/inspiration/mudroom/gallery-5.png",
+      "/images/inspiration/mudroom/gallery-6.png"
+    ]
+  },
+  {
+    "slug": "painting",
+    "title": "Interior & Exterior Painting Ideas",
+    "metaTitle": "Interior & Exterior Painting Ideas Ottawa | Top Design Renovation",
+    "metaDesc": "Painting ideas for Ottawa homes. Accent walls, colour schemes, exterior paint, trim & ceiling colours. Transform your home with the right colour.",
+    "intro": "Paint is the most cost-effective transformation available to any room — and the most badly chosen element in most Ottawa homes. The right colour palette, finish, and application technique change everything. Browse these Ottawa interior and exterior painting projects for ideas.",
+    "heroImg": "/images/inspiration/painting/hero.png",
+    "ideas": [
+      {
+        "title": "Warm Neutral Colour Schemes",
+        "desc": "The 2025–2026 palette shift is decisively away from grey and toward warm whites, creamy beiges, sage greens, and terracotta tones that make spaces feel more human and less clinical.",
+        "img": "/images/inspiration/painting/idea-1.png"
+      },
+      {
+        "title": "Bold Accent Wall",
+        "desc": "A single bold wall in deep navy, forest green, or moody terracotta creates dramatic impact without the commitment of an entire room — paired with crisp white trim for maximum contrast.",
+        "img": "/images/inspiration/painting/idea-2.png"
+      },
+      {
+        "title": "Painted Ceiling & Millwork",
+        "desc": "Painting the ceiling a warm mid-tone — rather than flat white — envelops a room and makes it feel more intimate and considered. Add a contrasting colour on crown moulding for refinement.",
+        "img": "/images/inspiration/painting/idea-3.png"
+      },
+      {
+        "title": "Exterior Colour Refresh",
+        "desc": "A professional exterior repaint with the right body, trim, and door colour combination can modernise a 1990s Ottawa home as dramatically as a full renovation — at a fraction of the cost.",
+        "img": "/images/inspiration/painting/idea-4.png"
+      }
+    ],
+    "serviceSlug": "painting",
+    "gallery": [
+      "/images/inspiration/painting/gallery-1.png",
+      "/images/inspiration/painting/gallery-2.png",
+      "/images/inspiration/painting/gallery-3.png",
+      "/images/inspiration/painting/gallery-4.png",
+      "/images/inspiration/painting/gallery-5.png",
+      "/images/inspiration/painting/gallery-6.png"
+    ]
+  },
+  {
+    "slug": "flooring",
+    "title": "Flooring Ideas & Options",
+    "metaTitle": "Flooring Ideas & Options Ottawa | Top Design Renovation",
+    "metaDesc": "Flooring ideas for Ottawa homes. Hardwood, engineered wood, LVP, tile & heated floors. Compare options & get a free estimate from Ottawa's renovation specialists.",
+    "intro": "Flooring sets the foundation for every room's design — and affects how your home sounds, feels, and holds up to Ottawa's climate. Browse these Ottawa flooring projects to compare materials, finishes, and installation approaches across different rooms and budgets.",
+    "heroImg": "/images/inspiration/flooring/hero.png",
+    "ideas": [
+      {
+        "title": "Wide-Plank Engineered Hardwood",
+        "desc": "Wide-plank engineered hardwood — 5\" to 7\" wide boards in warm oak or walnut — is the most popular flooring choice in Ottawa renovations, offering the beauty of solid wood with superior dimensional stability.",
+        "img": "/images/inspiration/flooring/idea-1.png"
+      },
+      {
+        "title": "Luxury Vinyl Plank (LVP)",
+        "desc": "Modern LVP has closed the gap on hardwood in appearance while exceeding it in durability. Fully waterproof and comfortable underfoot, it's ideal for basements, mudrooms, and family rooms.",
+        "img": "/images/inspiration/flooring/idea-2.png"
+      },
+      {
+        "title": "Large-Format Porcelain Tile",
+        "desc": "24\"×24\" or 24\"×48\" porcelain tiles in a continuous stone-look pattern create a seamless, sophisticated floor in kitchens, bathrooms, and open-concept main floors.",
+        "img": "/images/inspiration/flooring/idea-3.png"
+      },
+      {
+        "title": "Radiant Heated Floors",
+        "desc": "In-floor radiant heating under tile or engineered wood transforms bathrooms, mudrooms, and kitchens into warm comfort zones — particularly valuable in Ottawa's long winters.",
+        "img": "/images/inspiration/flooring/idea-4.png"
+      }
+    ],
+    "serviceSlug": "kitchen-renovation",
+    "gallery": [
+      "/images/inspiration/flooring/gallery-1.png",
+      "/images/inspiration/flooring/gallery-2.png",
+      "/images/inspiration/flooring/gallery-3.png",
+      "/images/inspiration/flooring/gallery-4.png",
+      "/images/inspiration/flooring/gallery-5.png",
+      "/images/inspiration/flooring/gallery-6.png"
+    ]
+  },
+  {
+    "slug": "design",
+    "title": "Home Design Trends 2026",
+    "metaTitle": "Home Design Trends 2026 | Top Design Renovation Ottawa",
+    "metaDesc": "2026 home design trends for Ottawa homeowners. Warm minimalism, organic textures, smart home integration & energy-efficient design. Expert insight from local renovation pros.",
+    "intro": "Design trends in 2026 are moving toward warmth, texture, and longevity — away from stark white minimalism and toward spaces that feel lived-in and authentic. Here's what we're seeing in Ottawa renovation projects right now.",
+    "heroImg": "/images/inspiration/design/hero.png",
+    "ideas": [
+      {
+        "title": "Warm Minimalism",
+        "desc": "Organic materials — wood, stone, linen, clay — in warm neutral tones replace cold grey and sterile white. Simplicity with soul: fewer pieces, better quality, more character.",
+        "img": "/images/inspiration/design/idea-1.png"
+      },
+      {
+        "title": "Curved & Organic Forms",
+        "desc": "Rounded arches, curved cabinetry, and organic shapes are replacing sharp 90° corners in kitchens and bathrooms. The effect is softer, more human, and genuinely distinctive.",
+        "img": "/images/inspiration/design/idea-2.png"
+      },
+      {
+        "title": "Fluted & Textured Surfaces",
+        "desc": "Fluted wood panels, textured tiles, and reeded glass add tactile depth and visual interest to kitchens, bathrooms, and living spaces without adding visual clutter.",
+        "img": "/images/inspiration/design/idea-3.png"
+      },
+      {
+        "title": "Dark & Moody Interiors",
+        "desc": "Dramatic deep navy, forest green, and charcoal cabinetry paired with brass hardware — bold, timeless, and a direct reaction to years of all-white, all-grey interiors.",
+        "img": "/images/inspiration/design/idea-4.png"
+      }
+    ],
+    "serviceSlug": "kitchen-renovation",
+    "gallery": [
+      "/images/inspiration/design/gallery-1.png",
+      "/images/inspiration/design/gallery-2.png",
+      "/images/inspiration/design/gallery-3.png",
+      "/images/inspiration/design/gallery-4.png",
+      "/images/inspiration/design/gallery-5.png",
+      "/images/inspiration/design/gallery-6.png"
     ]
   }
 ]
