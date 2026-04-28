@@ -44,8 +44,8 @@ gallery:
     alt: "James Hardie fibre cement installation Ontario"
   - src: /images/services/exterior-renovations/gallery-4.png
     alt: "Window and door replacement Ontario"
-  - src: /images/services/exterior-renovations/gallery-5.png
-    alt: "Exterior renovation result Ontario — side view"
+  - src: /uploads/Gemini_Generated_Image_slo8leslo8leslo8.png
+    alt: "Exterior renovation result Ottawa — side view"
   - src: /images/services/exterior-renovations/gallery-6.png
     alt: "Exterior trim and finishing detail Ontario"
 related:
