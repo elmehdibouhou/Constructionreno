@@ -1,7 +1,7 @@
 ---
 import { getCollection } from 'astro:content';
 import { client } from '../../../tina/__generated__/client';
-import { prepareTinaData } from '../../lib/tina-helper';
+import { prepareTinaData, normalizeImgSrc } from '../../lib/tina-helper';
 import ServiceLayout from '../../layouts/ServiceLayout.astro';
 
 export async function getStaticPaths() {
@@ -22,7 +22,8 @@ const allServices = await getCollection('services');
 const relatedServices = (serviceData.related ?? [])
   .map((relSlug: string) => {
     const entry = allServices.find(s => s.slug === relSlug);
-    return entry ? { slug: entry.slug, ...entry.data } : null;
+    if (!entry) return null;
+    return { slug: entry.slug, ...entry.data, cardImg: normalizeImgSrc(entry.data.cardImg) };
   })
   .filter(Boolean);
 ---

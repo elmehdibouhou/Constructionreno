@@ -2,6 +2,7 @@
 import { getCollection, getEntry } from 'astro:content';
 import BaseLayout from '../../layouts/BaseLayout.astro';
 import CtaBanner from '../../components/sections/CtaBanner.astro';
+import { normalizeImgSrc } from '../../lib/tina-helper';
 
 export async function getStaticPaths() {
   const projects = await getCollection('projects');
@@ -24,7 +25,7 @@ const projectSchema = {
   "@type": "CreativeWork",
   "name": p.title,
   "description": p.description,
-  "image": p.img,
+  "image": heroImg,
   "dateCreated": p.year,
   "locationCreated": {
     "@type": "City",
@@ -41,6 +42,7 @@ const projectSchema = {
 
 const gallery = p.galleryImages ?? [];
 const highlights = p.highlights ?? [];
+const heroImg = normalizeImgSrc(p.img);
 
 // Related: all projects in same category (excluding this one), max 3
 const allProjects = await getCollection('projects');
@@ -52,7 +54,7 @@ const related = allProjects
 <BaseLayout
   title={metaTitle}
   description={metaDesc}
-  ogImage={p.img}
+  ogImage={heroImg}
   schema={projectSchema}
 >
 
@@ -72,7 +74,7 @@ const related = allProjects
   <!-- Hero -->
   <section
     class="project-hero"
-    style={`background: linear-gradient(105deg, rgba(10,30,42,0.85) 0%, rgba(10,30,42,0.45) 100%), url('${p.img}') center/cover no-repeat;`}
+    style={`background: linear-gradient(105deg, rgba(10,30,42,0.85) 0%, rgba(10,30,42,0.45) 100%), url('${heroImg}') center/cover no-repeat;`}
     aria-labelledby="project-h1"
   >
     <div class="container">
@@ -118,7 +120,7 @@ const related = allProjects
                 <!-- Hero image always first, full width if 1 image -->
                 <div class="gallery-item gallery-item--main">
                   <img
-                    src={p.img}
+                    src={heroImg}
                     alt={p.alt ?? p.title}
                     width="900"
                     height="600"
@@ -130,7 +132,7 @@ const related = allProjects
                 {gallery.map((imgUrl, i) => (
                   <div class="gallery-item">
                     <img
-                      src={imgUrl}
+                      src={normalizeImgSrc(imgUrl)}
                       alt={`${p.title} — photo ${i + 2}`}
                       width="600"
                       height="400"
@@ -257,7 +259,7 @@ const related = allProjects
             <a href={`/projects/${r.slug}`} class="related-card">
               <div class="related-img-wrap">
                 <img
-                  src={r.data.img}
+                  src={normalizeImgSrc(r.data.img)}
                   alt={r.data.alt ?? r.data.title}
                   width="600"
                   height="400"

@@ -1,7 +1,7 @@
 ﻿---
 import { getCollection } from 'astro:content';
 import { client } from '../../../tina/__generated__/client';
-import { prepareTinaData } from '../../lib/tina-helper';
+import { prepareTinaData, normalizeImgSrc } from '../../lib/tina-helper';
 import BaseLayout from '../../layouts/BaseLayout.astro';
 import CtaBanner from '../../components/sections/CtaBanner.astro';
 
@@ -38,7 +38,7 @@ const posts = allPosts.sort((a, b) => new Date(b.data.pubDate).getTime() - new D
           <article class:list={['blog-index-card', { 'blog-index-card--featured': i === 0 }]}>
             <a href={`/blog/${post.slug}`} class="blog-card-img img-overlay">
               <img
-                src={post.data.heroImg}
+                src={normalizeImgSrc(post.data.heroImg)}
                 alt={post.data.heroAlt || post.data.title}
                 width={i === 0 ? 900 : 600}
                 height={i === 0 ? 560 : 380}
