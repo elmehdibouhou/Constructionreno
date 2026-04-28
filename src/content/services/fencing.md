@@ -43,7 +43,7 @@ gallery:
   - src: /uploads/Gemini_Generated_Image_8rxy1w8rxy1w8rxy.png
     alt: White fence around residential backyard Ontario — full perimeter
     videoUrl: ''
-  - src: /uploads/Gemini_Generated_Image_8rxy1w8rxy1w8rxy.png
+  - src: /uploads/Gemini_Generated_Image_pqatapqatapqatap.png
     alt: Wooden cedar fence with gate installation Ontario
     videoUrl: ''
   - src: /uploads/Gemini_Generated_Image_nipg83nipg83nipg.png
