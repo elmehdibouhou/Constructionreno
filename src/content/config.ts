@@ -96,10 +96,33 @@ const settingsCollection = defineCollection({
   }),
 });
 
+const inspirationCollection = defineCollection({
+  type: 'content',
+  schema: z.object({
+    title: z.string(),
+    metaTitle: z.string().optional(),
+    metaDesc: z.string().optional(),
+    intro: z.string().optional(),
+    heroImg: z.string(),
+    serviceSlug: z.string().optional(),
+    gallery: z.array(z.object({
+      src: z.string().optional(),
+      alt: z.string().optional(),
+      videoUrl: z.string().optional(),
+    })).optional(),
+    ideas: z.array(z.object({
+      title: z.string(),
+      desc: z.string(),
+      img: z.string().optional(),
+    })).optional(),
+  }),
+});
+
 export const collections = {
   blog: blogCollection,
   services: servicesCollection,
   testimonials: testimonialsCollection,
   projects: projectsCollection,
   settings: settingsCollection,
+  inspiration: inspirationCollection,
 };

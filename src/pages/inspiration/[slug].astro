@@ -1,15 +1,16 @@
 ---
+import { getCollection } from 'astro:content';
 import InspirationLayout from '../../layouts/InspirationLayout.astro';
-import inspirationData from '../../data/inspiration.json';
 
-export function getStaticPaths() {
-  return inspirationData.map((p) => ({
-    params: { slug: p.slug },
-    props: { page: p },
+export async function getStaticPaths() {
+  const pages = await getCollection('inspiration');
+  return pages.map(entry => ({
+    params: { slug: entry.slug },
+    props: { entry },
   }));
 }
 
-const { page } = Astro.props;
+const { entry } = Astro.props;
 ---
 
-<InspirationLayout page={page} />
+<InspirationLayout page={entry.data} slug={entry.slug} />

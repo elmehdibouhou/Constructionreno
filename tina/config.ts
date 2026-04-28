@@ -522,7 +522,117 @@ export default defineConfig({
       },
 
       // ═══════════════════════════════════════════════════════════════════════
-      // 6. SITE SETTINGS (singleton) — src/content/settings/main.md
+      // 6. INSPIRATION PAGES — src/content/inspiration/*.md
+      // ═══════════════════════════════════════════════════════════════════════
+      {
+        name: "inspiration",
+        label: "💡 Inspiration Pages",
+        path: "src/content/inspiration",
+        format: "md",
+        ui: {
+          router: ({ document }) => `/inspiration/${document._sys.filename}`,
+        },
+        fields: [
+          {
+            type: "string",
+            name: "title",
+            label: "Page Title",
+            isTitle: true,
+            required: true,
+          },
+          {
+            type: "string",
+            name: "metaTitle",
+            label: "SEO Title (50–60 chars)",
+          },
+          {
+            type: "string",
+            name: "metaDesc",
+            label: "SEO Description (150–160 chars)",
+            ui: { component: "textarea" },
+          },
+          {
+            type: "string",
+            name: "intro",
+            label: "Introduction Paragraph",
+            ui: { component: "textarea" },
+          },
+          {
+            type: "image",
+            name: "heroImg",
+            label: "Hero Photo (banner — 1920×1080)",
+            required: true,
+          },
+          {
+            type: "string",
+            name: "serviceSlug",
+            label: "Linked Service Slug (e.g. kitchen-renovation)",
+          },
+          // ── Gallery ───────────────────────────────────────────────────────
+          {
+            type: "object",
+            name: "gallery",
+            label: "📸 Gallery (up to 9 photos or videos)",
+            list: true,
+            ui: {
+              itemProps: (item) => ({ label: item?.alt || item?.src || "Media" }),
+              max: 9,
+            },
+            fields: [
+              {
+                type: "image",
+                name: "src",
+                label: "Photo (optional if video provided)",
+              },
+              {
+                type: "string",
+                name: "alt",
+                label: "Description (alt text for SEO)",
+              },
+              {
+                type: "string",
+                name: "videoUrl",
+                label: "🎬 Video URL (YouTube, Vimeo, or direct MP4 — optional)",
+                description: "Paste a YouTube/Vimeo link or a direct .mp4 URL. Leave empty to show a photo instead.",
+              },
+            ],
+          },
+          // ── Ideas / Trends ────────────────────────────────────────────────
+          {
+            type: "object",
+            name: "ideas",
+            label: "💡 Ideas & Trends (4 cards)",
+            list: true,
+            ui: {
+              itemProps: (item) => ({ label: item?.title || "Idea" }),
+              min: 1,
+              max: 8,
+            },
+            fields: [
+              {
+                type: "string",
+                name: "title",
+                label: "Idea Title",
+                required: true,
+              },
+              {
+                type: "string",
+                name: "desc",
+                label: "Description",
+                ui: { component: "textarea" },
+              },
+              {
+                type: "image",
+                name: "img",
+                label: "Photo",
+              },
+            ],
+          },
+        ],
+      },
+
+      // ═══════════════════════════════════════════════════════════════════════
+      // 7. SITE SETTINGS (singleton) — src/content/settings/main.md
       // ═══════════════════════════════════════════════════════════════════════
       {
         name: "settings",

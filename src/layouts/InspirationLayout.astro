@@ -1,13 +1,89 @@
-﻿---
+---
 import BaseLayout from './BaseLayout.astro';
 import BreadcrumbNav from '../components/ui/BreadcrumbNav.astro';
 import ContactForm from '../components/ui/ContactForm.astro';
-import inspirationData from '../data/inspiration.json';
+import { getCollection } from 'astro:content';
+import { normalizeImgSrc } from '../lib/tina-helper';
 
 interface Props {
-  page: (typeof inspirationData)[0];
+  page: {
+    title: string;
+    metaTitle?: string;
+    metaDesc?: string;
+    intro?: string;
+    heroImg: string;
+    serviceSlug?: string;
+    gallery?: Array<{ src?: string; alt?: string; videoUrl?: string }>;
+    ideas?: Array<{ title: string; desc: string; img?: string }>;
+  };
+  slug: string;
 }
-const { page } = Astro.props;
+
+const { page, slug } = Astro.props;
+
+// Sidebar: load all inspiration pages and sort by canonical order
+const allPages = await getCollection('inspiration');
+const slugOrder = [
+  'kitchen', 'bathroom', 'basement', 'living-room', 'exterior',
+  'roofing', 'master-bedroom', 'home-office', 'mudroom', 'painting', 'flooring', 'design',
+];
+const sortedPages = [...allPages].sort((a, b) => {
+  const ai = slugOrder.indexOf(a.slug);
+  const bi = slugOrder.indexOf(b.slug);
+  return (ai === -1 ? 999 : ai) - (bi === -1 ? 999 : bi);
+});
+
+// ── Video utilities (same logic as ServiceLayout) ─────────────────────────
+function getYoutubeThumbnail(url: string): string | null {
+  const m = url.match(/(?:youtube\.com\/(?:watch\?v=|shorts\/)|youtu\.be\/)([A-Za-z0-9_-]{11})/);
+  return m ? `https://img.youtube.com/vi/${m[1]}/hqdefault.jpg` : null;
+}
+function toEmbedUrl(url: string): string | null {
+  const yt = url.match(/(?:youtube\.com\/(?:watch\?v=|shorts\/)|youtu\.be\/)([A-Za-z0-9_-]{11})/);
+  if (yt) return `https://www.youtube.com/embed/${yt[1]}?autoplay=1`;
+  const v = url.match(/vimeo\.com\/(\d+)/);
+  if (v) return `https://player.vimeo.com/video/${v[1]}?autoplay=1`;
+  return null;
+}
+function isDirectVideo(url: string): boolean {
+  return /\.(mp4|webm|ogg)(\?.*)?$/i.test(url);
+}
+
+interface GalleryItem {
+  src: string;
+  alt: string;
+  videoUrl: string;
+  embedUrl: string;
+  isVideo: boolean;
+  isDirect: boolean;
+}
+
+const galleryItems: GalleryItem[] = (page.gallery ?? []).map((item, i) => {
+  let src: string = normalizeImgSrc(item.src) ?? '';
+  const alt: string = item.alt || `${page.title} — media ${i + 1}`;
+  let videoUrl: string = item.videoUrl ?? '';
+
+  if (!videoUrl && isDirectVideo(src)) {
+    videoUrl = src;
+    src = '';
+  }
+
+  let thumbnail = src;
+  let embed = '';
+  let isDirect = false;
+
+  if (videoUrl) {
+    const ytThumb = getYoutubeThumbnail(videoUrl);
+    if (ytThumb && !thumbnail) thumbnail = ytThumb;
+    embed = toEmbedUrl(videoUrl) ?? '';
+    isDirect = !embed && isDirectVideo(videoUrl);
+    if (isDirect) embed = videoUrl;
+  }
+
+  return { src: thumbnail, alt, videoUrl, embedUrl: embed, isVideo: !!videoUrl, isDirect };
+}).filter((g: GalleryItem) => g.src || g.videoUrl);
+
+const heroImg = normalizeImgSrc(page.heroImg);
 ---
 
 <BaseLayout title={page.metaTitle} description={page.metaDesc}>
@@ -15,7 +91,7 @@ const { page } = Astro.props;
   <!-- Hero -->
   <section
     class="inspiration-hero"
-    style={`background-image: url('${page.heroImg}');`}
+    style={`background-image: url('${heroImg}');`}
     aria-labelledby="insp-h1"
   >
     <div class="hero-overlay" aria-hidden="true"></div>
@@ -37,13 +113,13 @@ const { page } = Astro.props;
       <p class="sidebar-heading">Browse Ideas</p>
       <nav>
         <ul role="list" style="list-style:none;">
-          {inspirationData.map(cat => (
+          {sortedPages.map(cat => (
             <li>
               <a
                 href={`/inspiration/${cat.slug}`}
-                class:list={['sidebar-link', { 'sidebar-link--active': cat.slug === page.slug }]}
+                class:list={['sidebar-link', { 'sidebar-link--active': cat.slug === slug }]}
               >
-                {cat.title.split(' ')[0]} Inspiration
+                {cat.data.title.split(' ')[0]} Inspiration
               </a>
             </li>
           ))}
@@ -70,50 +146,83 @@ const { page } = Astro.props;
       </div>
 
       <!-- Gallery grid -->
-      <section aria-labelledby="gallery-heading">
-        <h2 id="gallery-heading" style="margin-bottom:1.5rem; font-size:var(--text-3xl);">Project Gallery</h2>
-        <div class="insp-gallery">
-          {page.gallery.map((img, i) => (
-            <div class="insp-gallery-item img-overlay card-hover">
-              <img
-                src={img}
-                alt={`${page.title} project ${i + 1} in Ontario`}
-                width="600"
-                height="450"
-                loading="lazy"
-                decoding="async"
-                style="width:100%; height:100%; object-fit:cover;"
-              />
-            </div>
-          ))}
-        </div>
-      </section>
+      {galleryItems.length > 0 && (
+        <section aria-labelledby="gallery-heading">
+          <h2 id="gallery-heading" style="margin-bottom:1.5rem; font-size:var(--text-3xl);">Project Gallery</h2>
+          <div class="insp-gallery">
+            {galleryItems.map((item) => (
+              <div class:list={['insp-gallery-item', 'img-overlay', item.isVideo ? 'insp-gallery-item--video' : '']}>
+                {item.isVideo ? (
+                  <button
+                    class="gallery-video-btn"
+                    data-embed={item.embedUrl}
+                    data-direct={item.isDirect ? 'true' : 'false'}
+                    aria-label={`Play video: ${item.alt}`}
+                  >
+                    {item.src && (
+                      <img
+                        src={item.src}
+                        alt={item.alt}
+                        width="600"
+                        height="450"
+                        loading="lazy"
+                        decoding="async"
+                        style="width:100%; height:100%; object-fit:cover;"
+                      />
+                    )}
+                    <span class="play-btn" aria-hidden="true">
+                      <svg width="48" height="48" viewBox="0 0 48 48" fill="none">
+                        <circle cx="24" cy="24" r="24" fill="rgba(0,0,0,0.55)"/>
+                        <polygon points="19,14 38,24 19,34" fill="white"/>
+                      </svg>
+                    </span>
+                  </button>
+                ) : (
+                  <img
+                    src={item.src}
+                    alt={item.alt}
+                    width="600"
+                    height="450"
+                    loading="lazy"
+                    decoding="async"
+                    style="width:100%; height:100%; object-fit:cover;"
+                  />
+                )}
+              </div>
+            ))}
+          </div>
+        </section>
+      )}
 
       <!-- Ideas section -->
-      <section style="margin-top:4rem;" aria-labelledby="ideas-heading">
-        <h2 id="ideas-heading" style="margin-bottom:2rem; font-size:var(--text-3xl);">Top Ideas & Trends</h2>
-        <div class="ideas-grid">
-          {page.ideas.map(idea => (
-            <div class="idea-card fade-up">
-              <div class="idea-img img-zoom">
-                <img
-                  src={idea.img}
-                  alt={idea.title}
-                  width="600"
-                  height="400"
-                  loading="lazy"
-                  decoding="async"
-                  style="width:100%; height:100%; object-fit:cover;"
-                />
+      {(page.ideas ?? []).length > 0 && (
+        <section style="margin-top:4rem;" aria-labelledby="ideas-heading">
+          <h2 id="ideas-heading" style="margin-bottom:2rem; font-size:var(--text-3xl);">Top Ideas & Trends</h2>
+          <div class="ideas-grid">
+            {(page.ideas ?? []).map(idea => (
+              <div class="idea-card fade-up">
+                {idea.img && (
+                  <div class="idea-img img-zoom">
+                    <img
+                      src={normalizeImgSrc(idea.img)}
+                      alt={idea.title}
+                      width="600"
+                      height="400"
+                      loading="lazy"
+                      decoding="async"
+                      style="width:100%; height:100%; object-fit:cover;"
+                    />
+                  </div>
+                )}
+                <div class="idea-content">
+                  <h3 class="idea-title">{idea.title}</h3>
+                  <p style="color:var(--color-gray-800); line-height:var(--leading-relaxed); font-size:0.95rem;">{idea.desc}</p>
+                </div>
               </div>
-              <div class="idea-content">
-                <h3 class="idea-title">{idea.title}</h3>
-                <p style="color:var(--color-gray-800); line-height:var(--leading-relaxed); font-size:0.95rem;">{idea.desc}</p>
-              </div>
-            </div>
-          ))}
-        </div>
-      </section>
+            ))}
+          </div>
+        </section>
+      )}
 
       <!-- Service link -->
       <section class="insp-service-cta" aria-labelledby="service-cta-heading">
@@ -125,7 +234,9 @@ const { page } = Astro.props;
             Our Ontario renovation team would love to discuss your project. Free estimates, no obligation.
           </p>
           <div style="display:flex; gap:1rem; flex-wrap:wrap;">
-            <a href={`/services/${page.serviceSlug}`} class="btn-primary">View Our {page.title.split(' ')[0]} Services</a>
+            {page.serviceSlug && (
+              <a href={`/services/${page.serviceSlug}`} class="btn-primary">View Our {page.title.split(' ')[0]} Services</a>
+            )}
             <a href="/free-estimate" class="btn-outline">Free Estimate</a>
           </div>
         </div>
@@ -139,6 +250,15 @@ const { page } = Astro.props;
       </section>
 
     </main>
+  </div>
+
+  <!-- Video modal -->
+  <div id="insp-gallery-modal" class="gallery-modal" aria-hidden="true" role="dialog" aria-modal="true" aria-label="Video player">
+    <div class="gallery-modal-backdrop"></div>
+    <div class="gallery-modal-inner">
+      <button class="gallery-modal-close" aria-label="Close" type="button">✕</button>
+      <div class="gallery-modal-player" id="insp-gallery-modal-player"></div>
+    </div>
   </div>
 
 </BaseLayout>
@@ -221,6 +341,29 @@ const { page } = Astro.props;
   cursor: pointer;
 }
 
+/* Video button inside gallery item */
+.gallery-video-btn {
+  display: block;
+  position: relative;
+  width: 100%;
+  height: 100%;
+  background: none;
+  border: none;
+  padding: 0;
+  cursor: pointer;
+}
+.play-btn {
+  position: absolute;
+  inset: 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transition: transform 0.2s ease;
+}
+.gallery-video-btn:hover .play-btn { transform: scale(1.12); }
+.gallery-video-btn:hover img { opacity: 0.8; }
+.gallery-video-btn img { transition: opacity 0.2s ease; }
+
 /* Ideas */
 .ideas-grid {
   display: grid;
@@ -259,6 +402,56 @@ const { page } = Astro.props;
   padding: 3rem;
 }
 
+/* Video modal */
+.gallery-modal {
+  display: none;
+  position: fixed;
+  inset: 0;
+  z-index: 1000;
+  align-items: center;
+  justify-content: center;
+}
+.gallery-modal.is-open { display: flex; }
+.gallery-modal-backdrop {
+  position: absolute;
+  inset: 0;
+  background: rgba(0,0,0,0.88);
+}
+.gallery-modal-inner {
+  position: relative;
+  z-index: 1;
+  width: min(900px, 94vw);
+}
+.gallery-modal-close {
+  position: absolute;
+  top: -2.5rem;
+  right: 0;
+  background: none;
+  border: none;
+  color: white;
+  font-size: 1.5rem;
+  cursor: pointer;
+  line-height: 1;
+  opacity: 0.8;
+}
+.gallery-modal-close:hover { opacity: 1; }
+.gallery-modal-player {
+  position: relative;
+  padding-bottom: 56.25%;
+  height: 0;
+  background: black;
+  border-radius: var(--radius-md);
+  overflow: hidden;
+}
+.gallery-modal-player iframe,
+.gallery-modal-player video {
+  position: absolute;
+  inset: 0;
+  width: 100%;
+  height: 100%;
+  border: none;
+}
+
 @media (max-width: 1023px) {
   .insp-layout { grid-template-columns: 1fr; }
   .insp-sidebar { position: static; }
@@ -269,3 +462,49 @@ const { page } = Astro.props;
   .insp-gallery { grid-template-columns: 1fr; }
 }
 </style>
+
+<script>
+  const modal = document.getElementById('insp-gallery-modal')!;
+  const player = document.getElementById('insp-gallery-modal-player')!;
+
+  function openModal(embedUrl: string, isDirect: boolean) {
+    const safeSrc = isDirect ? encodeURI(decodeURI(embedUrl)) : embedUrl;
+    player.innerHTML = '';
+    if (isDirect) {
+      const video = document.createElement('video');
+      video.src = safeSrc;
+      video.controls = true;
+      video.autoplay = true;
+      video.style.cssText = 'position:absolute;inset:0;width:100%;height:100%;';
+      player.style.display = 'none';
+      player.appendChild(video);
+      player.style.display = '';
+    } else {
+      player.style.display = 'none';
+      player.innerHTML = `<iframe src="${safeSrc}" allow="autoplay; fullscreen; picture-in-picture" allowfullscreen></iframe>`;
+      player.style.display = '';
+    }
+    modal.classList.add('is-open');
+    modal.removeAttribute('aria-hidden');
+    document.body.style.overflow = 'hidden';
+  }
+
+  function closeModal() {
+    modal.classList.remove('is-open');
+    modal.setAttribute('aria-hidden', 'true');
+    player.innerHTML = '';
+    document.body.style.overflow = '';
+  }
+
+  document.querySelectorAll<HTMLButtonElement>('.gallery-video-btn').forEach(btn => {
+    btn.addEventListener('click', () => {
+      const embed = btn.dataset.embed ?? '';
+      const direct = btn.dataset.direct === 'true';
+      openModal(embed, direct);
+    });
+  });
+
+  modal.querySelector('.gallery-modal-backdrop')?.addEventListener('click', closeModal);
+  modal.querySelector('.gallery-modal-close')?.addEventListener('click', closeModal);
+  document.addEventListener('keydown', e => { if (e.key === 'Escape') closeModal(); });
+</script>
