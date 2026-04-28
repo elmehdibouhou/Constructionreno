@@ -369,13 +369,18 @@ export default defineConfig({
               {
                 type: "image",
                 name: "src",
-                label: "Photo",
-                required: true,
+                label: "Photo (optional if video provided)",
               },
               {
                 type: "string",
                 name: "alt",
                 label: "Description (alt text for SEO)",
+              },
+              {
+                type: "string",
+                name: "videoUrl",
+                label: "🎬 Video URL (YouTube, Vimeo, or direct MP4 — optional)",
+                description: "Paste a YouTube/Vimeo link or a direct .mp4 URL. Leave empty to show a photo instead.",
               },
             ],
           },
