@@ -710,9 +710,22 @@ a.contact-info-item:hover { opacity: 0.85; }
   const player = document.getElementById('gallery-modal-player')!;
 
   function openModal(embedUrl: string, isDirect: boolean) {
-    player.innerHTML = isDirect
-      ? `<video src="${embedUrl}" controls autoplay playsinline></video>`
-      : `<iframe src="${embedUrl}" allow="autoplay; fullscreen; picture-in-picture" allowfullscreen></iframe>`;
+    const safeSrc = isDirect ? encodeURI(decodeURI(embedUrl)) : embedUrl;
+    if (isDirect) {
+      player.style.paddingBottom = '';
+      player.style.height = 'auto';
+      player.style.maxHeight = '80vh';
+      player.style.display = 'flex';
+      player.style.alignItems = 'center';
+      player.style.justifyContent = 'center';
+      player.innerHTML = `<video src="${safeSrc}" controls autoplay playsinline style="max-width:100%;max-height:80vh;width:auto;height:auto;display:block;"></video>`;
+    } else {
+      player.style.paddingBottom = '56.25%';
+      player.style.height = '0';
+      player.style.maxHeight = '';
+      player.style.display = '';
+      player.innerHTML = `<iframe src="${safeSrc}" allow="autoplay; fullscreen; picture-in-picture" allowfullscreen></iframe>`;
+    }
     modal.classList.add('is-open');
     modal.removeAttribute('aria-hidden');
     document.body.style.overflow = 'hidden';
