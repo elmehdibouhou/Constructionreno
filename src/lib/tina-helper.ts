@@ -2,6 +2,25 @@
 // so tinaField() generates valid data-tina-field attribute values
 // at Astro SSG build time.
 
+// TinaCloud transforms `type:"image"` field values to CDN URLs like:
+//   https://assets.tina.io/<clientId>/images/services/...
+// Our images live in public/images/... and must be served as /images/...
+// This regex strips the CDN prefix so paths resolve correctly.
+const TINA_CDN_RE = /^https:\/\/assets\.tina\.io\/[^/]+\//;
+
+function normalizeTinaUrls(obj: any): any {
+  if (typeof obj === 'string') {
+    return TINA_CDN_RE.test(obj) ? '/' + obj.replace(TINA_CDN_RE, '') : obj;
+  }
+  if (Array.isArray(obj)) return obj.map(normalizeTinaUrls);
+  if (obj !== null && typeof obj === 'object') {
+    const out: any = {};
+    for (const [k, v] of Object.entries(obj)) out[k] = normalizeTinaUrls(v);
+    return out;
+  }
+  return obj;
+}
+
 function hashFromQuery(input: string): string {
   let hash = 0;
   for (let i = 0; i < input.length; i++) {
@@ -43,7 +62,7 @@ export function prepareTinaData(response: { query: string; variables: any; data:
   data: any;
 } {
   const id = hashFromQuery(JSON.stringify({ query: response.query, variables: response.variables }));
-  const data = addMetadata(id, JSON.parse(JSON.stringify(response.data)), []);
+  const data = addMetadata(id, normalizeTinaUrls(JSON.parse(JSON.stringify(response.data))), []);
   return {
     tinaSetup: { id, query: response.query, variables: response.variables, data: response.data },
     data,
