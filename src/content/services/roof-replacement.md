@@ -34,8 +34,6 @@ faqs:
   - q: "What shingle brands do you recommend?"
     a: "We recommend GAF Timberline HDZ, CertainTeed Landmark, and Owens Corning Duration shingles — all of which offer excellent durability for Ontario's climate, strong wind ratings, and attractive aesthetics."
 gallery:
-  - src: /images/services/roof-replacement/hero.png
-    alt: "Installation bardeaux GAF CertainTeed Ontario — équipe professionnelle"
   - src: /images/services/roof-replacement/gallery-1.png
     alt: "Démolition ancienne toiture Ontario — arrachage bardeaux"
   - src: /images/services/roof-replacement/gallery-2.png

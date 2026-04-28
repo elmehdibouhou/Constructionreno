@@ -33,6 +33,8 @@ function isDirectVideo(url: string): boolean {
 }
 
 const embedUrl = service.videoUrl ? toEmbedUrl(service.videoUrl) : null;
+const heroIsDirectVideo = service.videoUrl ? isDirectVideo(service.videoUrl) : false;
+const heroVideoSrc = heroIsDirectVideo ? service.videoUrl : null;
 
 interface GalleryItem {
   src: string;
@@ -258,19 +260,29 @@ const icons: Record<string, string> = {
   </section>
 
   <!-- Video (optional) -->
-  {embedUrl && (
+  {(embedUrl || heroVideoSrc) && (
     <section class="section section-light">
       <div class="container container--narrow">
         <span class="eyebrow">Watch & Learn</span>
         <h2 style="margin-bottom:2rem;">{service.title} — See Our Work in Action</h2>
         <div class="video-wrapper">
-          <iframe
-            src={embedUrl}
-            title={`${service.title} video`}
-            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
-            allowfullscreen
-            loading="lazy"
-          ></iframe>
+          {heroVideoSrc ? (
+            <video
+              src={heroVideoSrc}
+              controls
+              playsinline
+              preload="metadata"
+              style="width:100%; border-radius:8px;"
+            ></video>
+          ) : (
+            <iframe
+              src={embedUrl}
+              title={`${service.title} video`}
+              allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+              allowfullscreen
+              loading="lazy"
+            ></iframe>
+          )}
         </div>
       </div>
     </section>
