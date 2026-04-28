@@ -42,9 +42,6 @@ gallery:
     alt: Interlock paving stones — professional installation guide
     videoUrl: ''
   - src: /uploads/Gemini_Generated_Image_1ksyss1ksyss1ksy%20(3).png
-    alt: Interlock driveway design Ontario — completed result
-    videoUrl: ''
-  - src: /uploads/Gemini_Generated_Image_1ksyss1ksyss1ksy%20(3).png
     alt: Interlock front walkway and entrance Ontario
     videoUrl: ''
   - src: /uploads/Gemini_Generated_Image_1ksyss1ksyss1ksy.png
