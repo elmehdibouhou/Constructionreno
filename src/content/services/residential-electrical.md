@@ -2,8 +2,8 @@
 title: Residential Electrical Services
 category: Electrical
 tagline: 'Licensed electricians for your home — safe, fast, guaranteed.'
-heroImg: /uploads/images/services/residential-electrical/hero.png
-cardImg: /uploads/images/services/residential-electrical/hero.png
+heroImg: /images/services/residential-electrical/hero.png
+cardImg: /images/services/residential-electrical/hero.png
 alt: Licensed electrician performing residential electrical work in Ontario
 intro1: 'Your home''s electrical system is the backbone of modern living — and when something goes wrong, safety is the priority. Our Ontario licensed electricians handle everything from panel upgrades and new wiring to EV charger installation, smart home automation, smoke detectors, and emergency repairs.'
 intro2: 'We coordinate all work with proper permits, ensuring every job meets the Canadian Electrical Code. From a single outlet replacement to a full rewire, our team delivers clean, reliable electrical work backed by a written warranty. Available 7 days a week for both scheduled work and emergencies.'
@@ -35,19 +35,19 @@ faqs:
   - q: Do you offer free estimates?
     a: 'Yes — all residential electrical estimates are completely free. We''ll assess the scope, explain exactly what''s required, and provide a written quote before any work begins. No hidden fees, no surprises.'
 gallery:
-  - src: /uploads/images/services/residential-electrical/hero.png
+  - src: /images/services/residential-electrical/hero.png
     alt: Licensed electrician residential Ontario — panel work
-  - src: /uploads/images/services/residential-electrical/gallery-1.png
+  - src: /images/services/residential-electrical/gallery-1.png
     alt: Electrical panel upgrade Ontario — 200A installation
-  - src: /uploads/images/services/residential-electrical/gallery-2.png
+  - src: /images/services/residential-electrical/gallery-2.png
     alt: EV charger installation Ontario — Level 2 home charger
-  - src: /uploads/images/services/residential-electrical/gallery-3.png
+  - src: /images/services/residential-electrical/gallery-3.png
     alt: Residential wiring Ontario — new circuit installation
-  - src: /uploads/images/services/residential-electrical/gallery-4.png
+  - src: /images/services/residential-electrical/gallery-4.png
     alt: Pot light installation Ontario — living room
   - src: /uploads/Gemini_Generated_Image_cr9ipecr9ipecr9i.png
     alt: Smoke detector and safety wiring Ontario
-  - src: /uploads/images/services/residential-electrical/gallery-6.png
+  - src: /images/services/residential-electrical/gallery-6.png
     alt: ESA inspection Ontario — electrical certification
 related:
   - commercial-electrical
