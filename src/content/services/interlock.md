@@ -2,8 +2,8 @@
 title: Interlock & Paving Stones
 category: Renovation
 tagline: Elegant outdoor spaces built to last Ontario winters.
-heroImg: '/uploadshttps://images.unsplash.com/photo-1600585154526-990dced4db0d?w=1920&q=80'
-cardImg: '/uploadshttps://images.unsplash.com/photo-1600585154526-990dced4db0d?w=800&q=75'
+heroImg: /uploads/Gemini_Generated_Image_40a36q40a36q40a3.png
+cardImg: /uploads/Gemini_Generated_Image_40a36q40a36q40a3.png
 alt: Interlock driveway and paving stones installation in Ontario
 intro1: 'Interlocking stone is one of the highest-impact upgrades you can make to your home''s exterior. Whether you''re transforming a cracked driveway, creating a backyard patio, or designing a front walkway that makes a statement — our Ontario interlock team delivers precision installation that holds up through every freeze-thaw cycle.'
 intro2: 'We work with all major paving stone brands and offer a full range of design styles: classic brick herringbone, modern large-format slabs, natural cobblestone looks, and custom multi-tone patterns. Every installation starts with a properly engineered and compacted granular base — because in Ontario, the base is everything.'
