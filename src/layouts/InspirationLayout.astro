@@ -84,6 +84,9 @@ const galleryItems: GalleryItem[] = (page.gallery ?? []).map((item: any, i) => {
   return { src: thumbnail, alt, videoUrl, embedUrl: embed, isVideo: !!videoUrl, isDirect };
 }).filter((g: GalleryItem) => g.src || g.videoUrl);
 
+const videoOnlyItems = galleryItems.filter((g: GalleryItem) => g.isVideo && g.isDirect && !g.src);
+const photoGalleryItems = galleryItems.filter((g: GalleryItem) => !g.isVideo || g.src);
+
 const heroImg = normalizeImgSrc(page.heroImg);
 ---
 
@@ -147,11 +150,11 @@ const heroImg = normalizeImgSrc(page.heroImg);
       </div>
 
       <!-- Gallery grid -->
-      {galleryItems.length > 0 && (
+      {photoGalleryItems.length > 0 && (
         <section aria-labelledby="gallery-heading">
           <h2 id="gallery-heading" style="margin-bottom:1.5rem; font-size:var(--text-3xl);">Project Gallery</h2>
           <div class="insp-gallery">
-            {galleryItems.map((item) => (
+            {photoGalleryItems.map((item) => (
               <div class:list={['insp-gallery-item', 'img-overlay', item.isVideo ? 'insp-gallery-item--video' : '']}>
                 {item.isVideo ? (
                   <button
@@ -189,6 +192,27 @@ const heroImg = normalizeImgSrc(page.heroImg);
                     style="width:100%; height:100%; object-fit:cover;"
                   />
                 )}
+              </div>
+            ))}
+          </div>
+        </section>
+      )}
+
+      <!-- Dedicated MP4 video section -->
+      {videoOnlyItems.length > 0 && (
+        <section style="margin-top:3rem;" aria-labelledby="insp-video-heading">
+          <h2 id="insp-video-heading" style="margin-bottom:1.5rem; font-size:var(--text-3xl);">Watch the Transformation</h2>
+          <div class="insp-video-grid">
+            {videoOnlyItems.map((item) => (
+              <div class="insp-video-item">
+                <video
+                  src={encodeURI(decodeURI(item.embedUrl))}
+                  controls
+                  playsinline
+                  preload="metadata"
+                  class="insp-video-player"
+                ></video>
+                {item.alt && <p class="insp-video-caption">{item.alt}</p>}
               </div>
             ))}
           </div>
@@ -364,6 +388,28 @@ const heroImg = normalizeImgSrc(page.heroImg);
 .gallery-video-btn:hover .play-btn { transform: scale(1.12); }
 .gallery-video-btn:hover img { opacity: 0.8; }
 .gallery-video-btn img { transition: opacity 0.2s ease; }
+
+/* Dedicated video section */
+.insp-video-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(min(100%, 420px), 1fr));
+  gap: 2rem;
+}
+.insp-video-player {
+  width: 100%;
+  max-height: 72vh;
+  display: block;
+  border-radius: var(--radius-md);
+  background: #000;
+  box-shadow: var(--shadow-card);
+}
+.insp-video-caption {
+  text-align: center;
+  color: var(--color-gray-600);
+  font-size: 0.875rem;
+  margin-top: 0.6rem;
+  font-style: italic;
+}
 
 /* Ideas */
 .ideas-grid {

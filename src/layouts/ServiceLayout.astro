@@ -5,6 +5,7 @@ import BreadcrumbNav from '../components/ui/BreadcrumbNav.astro';
 import FAQ from '../components/ui/FAQ.astro';
 import ContactForm from '../components/ui/ContactForm.astro';
 import CtaBanner from '../components/sections/CtaBanner.astro';
+import { normalizeImgSrc } from '../lib/tina-helper';
 
 interface Props {
   service: any;
@@ -48,7 +49,7 @@ interface GalleryItem {
 
 const galleryItems: GalleryItem[] = (service.gallery ?? []).map((item: any, i: number) => {
   const raw = typeof item === 'string' ? { src: item, alt: '', videoUrl: '' } : item;
-  let src: string = raw.src ?? '';
+  let src: string = normalizeImgSrc(raw.src) ?? '';
   const alt: string = raw.alt || `${service.title} — media ${i + 1}`;
   // If Tina saved an MP4/video URL in the src field, move it to videoUrl automatically
   let videoUrl: string = raw.videoUrl ?? '';
@@ -71,6 +72,10 @@ const galleryItems: GalleryItem[] = (service.gallery ?? []).map((item: any, i: n
 
   return { src: thumbnail, alt, videoUrl, embedUrl: embed, isVideo: !!videoUrl, isDirect };
 }).filter((g: GalleryItem) => g.src || g.videoUrl);
+
+// MP4 items without a thumbnail go into a dedicated inline video section
+const videoOnlyItems = galleryItems.filter((g: GalleryItem) => g.isVideo && g.isDirect && !g.src);
+const photoGalleryItems = galleryItems.filter((g: GalleryItem) => !g.isVideo || g.src);
 
 const serviceSchema = {
   "@context": "https://schema.org",
@@ -201,7 +206,7 @@ const icons: Record<string, string> = {
   <!-- Hero -->
   <section
     class="service-hero"
-    style={`background-image: url('${service.heroImg}');`}
+    style={`background-image: url('${normalizeImgSrc(service.heroImg)}');`}
     aria-labelledby="service-h1"
   >
     <div class="hero-overlay" aria-hidden="true"></div>
@@ -293,14 +298,38 @@ const icons: Record<string, string> = {
     </section>
   )}
 
+  <!-- Dedicated MP4 video section -->
+  {videoOnlyItems.length > 0 && (
+    <section class="section section-light">
+      <div class="container container--narrow">
+        <span class="eyebrow">Watch Our Work</span>
+        <h2 style="margin-bottom:2rem;">{service.title} — Videos</h2>
+        <div class="video-section-grid">
+          {videoOnlyItems.map((item) => (
+            <div class="video-section-item">
+              <video
+                src={encodeURI(decodeURI(item.embedUrl))}
+                controls
+                playsinline
+                preload="metadata"
+                class="video-section-player"
+              ></video>
+              {item.alt && <p class="video-section-caption">{item.alt}</p>}
+            </div>
+          ))}
+        </div>
+      </div>
+    </section>
+  )}
+
   <!-- Gallery -->
-  {galleryItems.length > 0 && (
+  {photoGalleryItems.length > 0 && (
     <section class="section">
       <div class="container">
         <span class="eyebrow">Our Work</span>
         <h2 style="margin-bottom:2rem;">Recent {service.title} Projects</h2>
         <div class="service-gallery">
-          {galleryItems.map((item) => (
+          {photoGalleryItems.map((item) => (
             <div class:list={['gallery-item', 'img-overlay', item.isVideo ? 'gallery-item--video' : '']}>
               {item.isVideo ? (
                 <button
@@ -432,7 +461,7 @@ const icons: Record<string, string> = {
           {relatedServices.map((rs: any) => (
             <a href={`/services/${rs.slug}`} class="related-card img-overlay">
               <img
-                src={rs.cardImg}
+                src={normalizeImgSrc(rs.cardImg)}
                 alt={rs.alt}
                 width="500"
                 height="320"
@@ -520,6 +549,28 @@ const icons: Record<string, string> = {
 .benefit-title {
   font-size: var(--text-xl);
   margin-bottom: 0.75rem;
+}
+
+/* Dedicated MP4 video section */
+.video-section-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(min(100%, 420px), 1fr));
+  gap: 2rem;
+}
+.video-section-player {
+  width: 100%;
+  max-height: 72vh;
+  display: block;
+  border-radius: var(--radius-lg);
+  background: #000;
+  box-shadow: var(--shadow-card);
+}
+.video-section-caption {
+  text-align: center;
+  color: var(--color-gray-600);
+  font-size: 0.875rem;
+  margin-top: 0.6rem;
+  font-style: italic;
 }
 
 /* Video — YouTube/Vimeo iframe (16:9 forced) */
