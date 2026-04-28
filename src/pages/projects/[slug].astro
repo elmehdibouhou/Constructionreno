@@ -15,6 +15,10 @@ export async function getStaticPaths() {
 const { project } = Astro.props;
 const p = project.data;
 
+const heroImg = normalizeImgSrc(p.img);
+const gallery = p.galleryImages ?? [];
+const highlights = p.highlights ?? [];
+
 // SEO fields — fall back to generated values if not set
 const metaTitle = p.metaTitle ?? `${p.title} | Top Design Renovation Portfolio — Ontario`;
 const metaDesc = p.metaDesc ?? p.description ?? `View the ${p.title} project completed by Top Design Renovation in ${p.location ?? 'Ontario'}.`;
@@ -39,10 +43,6 @@ const projectSchema = {
   "genre": p.category,
   "url": `https://topdesignrenovation.ca/projects/${project.slug}`
 };
-
-const gallery = p.galleryImages ?? [];
-const highlights = p.highlights ?? [];
-const heroImg = normalizeImgSrc(p.img);
 
 // Related: all projects in same category (excluding this one), max 3
 const allProjects = await getCollection('projects');
