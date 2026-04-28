@@ -24,6 +24,9 @@ gallery:
   - src: "/images/inspiration/mudroom/gallery-6.png"
     alt: "Mudroom project 6 — Ontario"
     videoUrl: ""
+  - src: ""
+    alt: "Custom closet transformation — full renovation reveal"
+    videoUrl: "/videos/inspiration/mudroom-closet-transformation.mp4"
 ideas:
   - title: "Built-In Locker System"
     desc: "Custom built-in lockers with cubbies, coat hooks, and lower cabinets for each family member bring order to the chaos of a Canadian winter entry — and look sharp doing it."
