@@ -17,19 +17,52 @@ const { service, relatedServices = [], tinaSetup } = Astro.props;
 function toEmbedUrl(url: string): string | null {
   if (!url) return null;
   const yt = url.match(/(?:youtube\.com\/watch\?v=|youtu\.be\/)([A-Za-z0-9_-]{11})/);
-  if (yt) return `https://www.youtube.com/embed/${yt[1]}?rel=0`;
+  if (yt) return `https://www.youtube.com/embed/${yt[1]}?rel=0&autoplay=1`;
   const vm = url.match(/vimeo\.com\/(\d+)/);
-  if (vm) return `https://player.vimeo.com/video/${vm[1]}`;
+  if (vm) return `https://player.vimeo.com/video/${vm[1]}?autoplay=1`;
   return null;
+}
+
+function getYoutubeThumbnail(url: string): string | null {
+  const yt = url.match(/(?:youtube\.com\/watch\?v=|youtu\.be\/)([A-Za-z0-9_-]{11})/);
+  return yt ? `https://img.youtube.com/vi/${yt[1]}/hqdefault.jpg` : null;
+}
+
+function isDirectVideo(url: string): boolean {
+  return /\.(mp4|webm|ogg)(\?.*)?$/i.test(url);
 }
 
 const embedUrl = service.videoUrl ? toEmbedUrl(service.videoUrl) : null;
 
-const galleryItems: { src: string; alt: string }[] = (service.gallery ?? []).map((item: any, i: number) =>
-  typeof item === 'string'
-    ? { src: item, alt: `${service.title} project ${i + 1}` }
-    : { src: item.src ?? '', alt: item.alt || `${service.title} project ${i + 1}` }
-).filter((g: { src: string }) => g.src);
+interface GalleryItem {
+  src: string;
+  alt: string;
+  videoUrl: string;
+  embedUrl: string;
+  isVideo: boolean;
+  isDirect: boolean;
+}
+
+const galleryItems: GalleryItem[] = (service.gallery ?? []).map((item: any, i: number) => {
+  const raw = typeof item === 'string' ? { src: item, alt: '', videoUrl: '' } : item;
+  const src: string = raw.src ?? '';
+  const alt: string = raw.alt || `${service.title} — media ${i + 1}`;
+  const videoUrl: string = raw.videoUrl ?? '';
+
+  let thumbnail = src;
+  let embed = '';
+  let isDirect = false;
+
+  if (videoUrl) {
+    const ytThumb = getYoutubeThumbnail(videoUrl);
+    if (ytThumb && !thumbnail) thumbnail = ytThumb;
+    embed = toEmbedUrl(videoUrl) ?? '';
+    isDirect = !embed && isDirectVideo(videoUrl);
+    if (isDirect) embed = videoUrl;
+  }
+
+  return { src: thumbnail, alt, videoUrl, embedUrl: embed, isVideo: !!videoUrl, isDirect };
+}).filter((g: GalleryItem) => g.src || g.videoUrl);
 
 const serviceSchema = {
   "@context": "https://schema.org",
@@ -250,23 +283,60 @@ const icons: Record<string, string> = {
         <span class="eyebrow">Our Work</span>
         <h2 style="margin-bottom:2rem;">Recent {service.title} Projects</h2>
         <div class="service-gallery">
-          {galleryItems.map((img) => (
-            <div class="gallery-item img-overlay">
-              <img
-                src={img.src}
-                alt={img.alt}
-                width="600"
-                height="450"
-                loading="lazy"
-                decoding="async"
-                style="width:100%; height:100%; object-fit:cover;"
-              />
+          {galleryItems.map((item) => (
+            <div class:list={['gallery-item', 'img-overlay', item.isVideo ? 'gallery-item--video' : '']}>
+              {item.isVideo ? (
+                <button
+                  class="gallery-video-btn"
+                  data-embed={item.embedUrl}
+                  data-direct={item.isDirect ? 'true' : 'false'}
+                  aria-label={`Lire la vidéo : ${item.alt}`}
+                  type="button"
+                >
+                  {item.src && (
+                    <img
+                      src={item.src}
+                      alt={item.alt}
+                      width="600"
+                      height="450"
+                      loading="lazy"
+                      decoding="async"
+                      style="width:100%; height:100%; object-fit:cover;"
+                    />
+                  )}
+                  <span class="play-btn" aria-hidden="true">
+                    <svg width="52" height="52" viewBox="0 0 52 52" fill="none">
+                      <circle cx="26" cy="26" r="26" fill="rgba(0,0,0,0.55)"/>
+                      <polygon points="21,17 39,26 21,35" fill="white"/>
+                    </svg>
+                  </span>
+                </button>
+              ) : (
+                <img
+                  src={item.src}
+                  alt={item.alt}
+                  width="600"
+                  height="450"
+                  loading="lazy"
+                  decoding="async"
+                  style="width:100%; height:100%; object-fit:cover;"
+                />
+              )}
             </div>
           ))}
         </div>
       </div>
     </section>
   )}
+
+  <!-- Video modal -->
+  <div id="gallery-modal" class="gallery-modal" aria-hidden="true" role="dialog" aria-modal="true" aria-label="Lecteur vidéo">
+    <div class="gallery-modal-backdrop"></div>
+    <div class="gallery-modal-inner">
+      <button class="gallery-modal-close" aria-label="Fermer" type="button">✕</button>
+      <div class="gallery-modal-player" id="gallery-modal-player"></div>
+    </div>
+  </div>
 
   <!-- FAQ -->
   <section class="section section-light" aria-labelledby="faq-heading">
@@ -463,6 +533,77 @@ const icons: Record<string, string> = {
   overflow: hidden;
   cursor: pointer;
 }
+.gallery-video-btn {
+  display: block;
+  position: relative;
+  width: 100%;
+  height: 100%;
+  border: none;
+  padding: 0;
+  background: #0a1e2a;
+  cursor: pointer;
+}
+.play-btn {
+  position: absolute;
+  inset: 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transition: transform 0.2s ease;
+}
+.gallery-video-btn:hover .play-btn { transform: scale(1.12); }
+.gallery-video-btn:hover img { opacity: 0.8; }
+.gallery-video-btn img { transition: opacity 0.2s ease; }
+
+/* Video modal */
+.gallery-modal {
+  display: none;
+  position: fixed;
+  inset: 0;
+  z-index: 9999;
+  align-items: center;
+  justify-content: center;
+}
+.gallery-modal.is-open { display: flex; }
+.gallery-modal-backdrop {
+  position: absolute;
+  inset: 0;
+  background: rgba(0,0,0,0.88);
+}
+.gallery-modal-inner {
+  position: relative;
+  z-index: 1;
+  width: min(900px, 94vw);
+}
+.gallery-modal-close {
+  position: absolute;
+  top: -2.5rem;
+  right: 0;
+  background: none;
+  border: none;
+  color: white;
+  font-size: 1.5rem;
+  cursor: pointer;
+  line-height: 1;
+  opacity: 0.8;
+}
+.gallery-modal-close:hover { opacity: 1; }
+.gallery-modal-player {
+  position: relative;
+  padding-bottom: 56.25%;
+  height: 0;
+  background: #000;
+  border-radius: var(--radius-md);
+  overflow: hidden;
+}
+.gallery-modal-player iframe,
+.gallery-modal-player video {
+  position: absolute;
+  inset: 0;
+  width: 100%;
+  height: 100%;
+  border: 0;
+}
 
 /* Contact */
 .service-contact-grid {
@@ -528,3 +669,36 @@ a.contact-info-item:hover { opacity: 0.85; }
   .related-grid { grid-template-columns: 1fr; }
 }
 </style>
+
+<script>
+  const modal = document.getElementById('gallery-modal')!;
+  const player = document.getElementById('gallery-modal-player')!;
+
+  function openModal(embedUrl: string, isDirect: boolean) {
+    player.innerHTML = isDirect
+      ? `<video src="${embedUrl}" controls autoplay playsinline></video>`
+      : `<iframe src="${embedUrl}" allow="autoplay; fullscreen; picture-in-picture" allowfullscreen></iframe>`;
+    modal.classList.add('is-open');
+    modal.removeAttribute('aria-hidden');
+    document.body.style.overflow = 'hidden';
+  }
+
+  function closeModal() {
+    modal.classList.remove('is-open');
+    modal.setAttribute('aria-hidden', 'true');
+    player.innerHTML = '';
+    document.body.style.overflow = '';
+  }
+
+  document.querySelectorAll<HTMLButtonElement>('.gallery-video-btn').forEach(btn => {
+    btn.addEventListener('click', () => {
+      const embed = btn.dataset.embed ?? '';
+      const direct = btn.dataset.direct === 'true';
+      if (embed) openModal(embed, direct);
+    });
+  });
+
+  modal.querySelector('.gallery-modal-backdrop')?.addEventListener('click', closeModal);
+  modal.querySelector('.gallery-modal-close')?.addEventListener('click', closeModal);
+  document.addEventListener('keydown', e => { if (e.key === 'Escape') closeModal(); });
+</script>
