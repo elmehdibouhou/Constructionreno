@@ -1,4 +1,4 @@
----
+﻿---
 title: "How to Prevent Frozen Pipes in a Canadian Winter: Complete Homeowner Guide"
 description: "Frozen and burst pipes are among the most costly home insurance claims in Canada. Learn how to protect your plumbing before winter arrives with this complete homeowner prevention guide."
 pubDate: "2026-04-26T00:00:00.000Z"
@@ -90,7 +90,7 @@ Call a [licensed plumber](/services/residential-plumbing) immediately if:
 
 **If a pipe bursts:** Shut off the main water supply immediately — the shutoff valve is typically near the front foundation wall of your basement or where the main line enters the home — then call an emergency plumber right away.
 
-Our Ottawa plumbers provide emergency residential plumbing service for burst pipes and freeze damage, with fast response to minimise water damage and restore service.
+Our Ontario plumbers provide emergency residential plumbing service for burst pipes and freeze damage, with fast response to minimise water damage and restore service.
 
 ## The Cost of Burst Pipes vs. Prevention
 

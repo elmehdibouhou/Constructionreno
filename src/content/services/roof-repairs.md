@@ -1,14 +1,14 @@
----
+﻿---
 title: "Roof Repairs"
 category: "Roofing"
 tagline: "Stop the leak before it becomes a disaster."
 heroImg: "/images/services/roof-repairs/hero.png"
 cardImg: "/images/services/roof-repairs/hero.png"
-alt: "Roof repair in Ottawa"
-intro1: "A small roof leak ignored becomes a major structural problem quickly. Our Ottawa roof repair team responds fast — diagnosing the true source of the leak and fixing it properly the first time, not just patching it temporarily."
+alt: "Roof repair in Ontario"
+intro1: "A small roof leak ignored becomes a major structural problem quickly. Our Ontario roof repair team responds fast — diagnosing the true source of the leak and fixing it properly the first time, not just patching it temporarily."
 intro2: "We repair all types of roofing issues: missing shingles, damaged flashing around chimneys and vents, ice dam damage, ridge cap failures, and pipe collar leaks. All repairs come with a written warranty."
-metaTitle: "Roof Repairs Ottawa | Top Design Renovation — Fast Response"
-metaDesc: "Fast, reliable roof repairs in Ottawa. Leaks, missing shingles, damaged flashing & ice dam damage. Written warranty on all repairs. Free estimate."
+metaTitle: "Roof Repairs Ontario | Top Design Renovation — Fast Response"
+metaDesc: "Fast, reliable roof repairs in Ontario. Leaks, missing shingles, damaged flashing & ice dam damage. Written warranty on all repairs. Free estimate."
 whyUs:
   - "Fast response — same-week appointments available"
   - "True leak diagnosis, not just surface patching"
@@ -25,7 +25,7 @@ benefits:
     title: "Written Warranty"
     desc: "All our roof repair work comes with a written labour warranty so you have peace of mind that the fix will hold."
 faqs:
-  - q: "How much do roof repairs cost in Ottawa?"
+  - q: "How much do roof repairs cost in Ontario?"
     a: "Minor roof repairs (missing shingles, small flashing repairs) typically cost $300–$800. More extensive repairs involving multiple areas or structural damage run $1,000–$3,500. We provide a written estimate before any work begins."
   - q: "How quickly can you respond to a roof leak?"
     a: "We typically offer same-week appointments for roof repairs. For active leaks during rain events, we can provide emergency tarping within 24 hours to prevent further water damage."
@@ -35,15 +35,15 @@ faqs:
     a: "The most common sources of roof leaks in Ontario are deteriorated flashing around chimneys and skylights, failed pipe boot collars, ice dam damage, and missing or lifted shingles. We inspect and address all of these."
 gallery:
   - src: /images/services/roof-repairs/hero.png
-    alt: "Couvreur réparant bardeaux et solin cheminée Ottawa"
+    alt: "Couvreur réparant bardeaux et solin cheminée Ontario"
   - src: /images/services/roof-repairs/gallery-1.png
-    alt: "Inspection toiture Ottawa — détection source infiltration eau"
+    alt: "Inspection toiture Ontario — détection source infiltration eau"
   - src: /images/services/roof-repairs/gallery-2.png
-    alt: "Installation solin métallique cheminée brique Ottawa"
+    alt: "Installation solin métallique cheminée brique Ontario"
   - src: /images/services/roof-repairs/gallery-3.png
-    alt: "Remplacement bardeaux endommagés Ottawa — avant et après"
+    alt: "Remplacement bardeaux endommagés Ontario — avant et après"
   - src: /images/services/roof-repairs/gallery-4.png
-    alt: "Pose bâche protection urgence toiture endommagée Ottawa"
+    alt: "Pose bâche protection urgence toiture endommagée Ontario"
 related:
   - roof-replacement
   - roof-inspection

@@ -1,14 +1,14 @@
----
+﻿---
 title: "Residential Plumbing Services"
 category: "Plumbing"
 tagline: "Expert plumbers for your home — repairs, installations and renovations."
 heroImg: "/images/services/residential-plumbing/hero.png"
 cardImg: "/images/services/residential-plumbing/hero.png"
-alt: "Licensed plumber performing residential plumbing work in Ottawa"
-intro1: "From a dripping faucet to a full bathroom rough-in, our Ottawa licensed plumbers handle every residential plumbing need with precision and care. We serve homeowners throughout Ottawa with honest pricing, quality workmanship, and emergency availability seven days a week."
+alt: "Licensed plumber performing residential plumbing work in Ontario"
+intro1: "From a dripping faucet to a full bathroom rough-in, our Ontario licensed plumbers handle every residential plumbing need with precision and care. We serve homeowners throughout Ontario with honest pricing, quality workmanship, and emergency availability seven days a week."
 intro2: "We handle the full scope of residential plumbing: leak detection and repair, pipe replacement, water heater installation, drain cleaning, fixture installation, sump pumps, frozen pipe repair, and emergency plumbing. All work meets Ontario plumbing code, and permits are handled by our team."
-metaTitle: "Residential Plumbing Services | Top Design Renovation - Ottawa, Canada"
-metaDesc: "Expert plumbers for your home in Ottawa. Repairs, installations, water heaters, emergency service. Licensed & insured. Free estimate."
+metaTitle: "Residential Plumbing Services | Top Design Renovation - Ontario, Canada"
+metaDesc: "Expert plumbers for your home in Ontario. Repairs, installations, water heaters, emergency service. Licensed & insured. Free estimate."
 whyUs:
   - "Licensed plumbers, available for emergencies"
   - "Transparent pricing — no surprise fees"
@@ -31,24 +31,24 @@ faqs:
   - q: "Do you install tankless water heaters?"
     a: "Yes — we install all major brands of tankless (on-demand) water heaters including Navien, Rinnai, and Noritz. We assess your hot water demand, size the unit correctly, and handle all gas or electrical connections plus permits and inspections."
   - q: "What areas do you serve?"
-    a: "We serve Ottawa and the surrounding area. Contact us to confirm service in your specific location — we're always expanding our service territory to meet homeowner demand."
+    a: "We serve Ontario and the surrounding area. Contact us to confirm service in your specific location — we're always expanding our service territory to meet homeowner demand."
   - q: "Do you handle bathroom rough-in plumbing for renovations?"
     a: "Yes — rough-in plumbing for bathroom renovations is a core service. We install supply lines, drain lines, and vent stacks in the correct positions per your renovation plan, coordinating with your contractor to ensure everything is code-compliant before walls are closed."
 gallery:
   - src: /images/services/residential-plumbing/hero.png
-    alt: "Licensed plumber Ottawa — residential pipe work"
+    alt: "Licensed plumber Ontario — residential pipe work"
   - src: /images/services/residential-plumbing/gallery-1.png
-    alt: "Tankless water heater installation Ottawa — Navien unit"
+    alt: "Tankless water heater installation Ontario — Navien unit"
   - src: /images/services/residential-plumbing/gallery-2.png
-    alt: "Bathroom rough-in plumbing Ottawa — renovation"
+    alt: "Bathroom rough-in plumbing Ontario — renovation"
   - src: /images/services/residential-plumbing/gallery-3.png
-    alt: "Pipe replacement Ottawa — copper and PEX installation"
+    alt: "Pipe replacement Ontario — copper and PEX installation"
   - src: /images/services/residential-plumbing/gallery-4.png
-    alt: "Sump pump installation Ottawa — basement waterproofing"
+    alt: "Sump pump installation Ontario — basement waterproofing"
   - src: /images/services/residential-plumbing/gallery-5.png
-    alt: "Drain cleaning Ottawa — professional equipment"
+    alt: "Drain cleaning Ontario — professional equipment"
   - src: /images/services/residential-plumbing/gallery-6.png
-    alt: "Leak repair Ottawa — pipe fix completed"
+    alt: "Leak repair Ontario — pipe fix completed"
 related:
   - commercial-plumbing
   - residential-electrical

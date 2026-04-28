@@ -1,11 +1,11 @@
-{
-  "primary": "Ottawa (Stittsville)",
+﻿{
+  "primary": "Ontario (Stittsville)",
   "province": "Ontario",
   "areas": [
     { "name": "Stittsville", "description": "Our home base. We have completed 100+ renovation and roofing projects throughout Stittsville and surrounding neighbourhoods.", "distance": "0 km" },
     { "name": "Kanata", "description": "Serving Kanata homeowners with kitchen, bathroom, basement, and exterior renovations.", "distance": "8 km" },
     { "name": "Nepean", "description": "Full renovation and roofing services available throughout Nepean.", "distance": "15 km" },
-    { "name": "Ottawa", "description": "Renovation and roofing services across the greater Ottawa area — from Barrhaven to Gloucester.", "distance": "18 km" },
+    { "name": "Ontario", "description": "Renovation and roofing services across the greater Ontario area — from Barrhaven to Gloucester.", "distance": "18 km" },
     { "name": "Toronto", "description": "Extended service to the Greater Toronto Area. Contact us to confirm scheduling and availability.", "distance": "450 km" },
     { "name": "Mississauga", "description": "Serving Mississauga residents with the same quality and care as our local clients. Contact us for availability.", "distance": "440 km" }
   ]

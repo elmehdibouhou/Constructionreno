@@ -1,4 +1,4 @@
----
+﻿---
 title: "EV Charger Installation at Home in Canada: Complete 2026 Guide"
 description: "Everything Canadian homeowners need to know about installing a home EV charger in 2026 — Level 1 vs Level 2, installation costs, government rebates, and how to choose a licensed electrician."
 pubDate: "2026-04-26T00:00:00.000Z"
@@ -93,7 +93,7 @@ Not all electricians have EV charger installation experience. When choosing, loo
 - **Written quote with permit included** — protects you from surprise costs and ensures the work is legal
 - **Clean communication** — they should be able to explain exactly what's required at your property
 
-Our Ottawa electricians have installed Level 2 EV chargers for dozens of homeowners. We handle the full process — assessment, permit, installation, and inspection coordination — with transparent pricing. [Get a free EV charger estimate →](/services/residential-electrical)
+Our Ontario electricians have installed Level 2 EV chargers for dozens of homeowners. We handle the full process — assessment, permit, installation, and inspection coordination — with transparent pricing. [Get a free EV charger estimate →](/services/residential-electrical)
 
 ---
 
