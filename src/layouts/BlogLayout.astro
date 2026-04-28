@@ -30,16 +30,30 @@ const {
   readTime,
 } = Astro.props;
 
+const breadcrumbSchema = {
+  "@context": "https://schema.org",
+  "@type": "BreadcrumbList",
+  "itemListElement": [
+    { "@type": "ListItem", "position": 1, "name": "Home", "item": "https://topdesignrenovation.ca" },
+    { "@type": "ListItem", "position": 2, "name": "Blog", "item": "https://topdesignrenovation.ca/blog" },
+    { "@type": "ListItem", "position": 3, "name": title }
+  ]
+};
+
 const articleSchema = {
   "@context": "https://schema.org",
   "@type": "BlogPosting",
   "headline": title,
   "description": description,
-  "author": { "@type": "Organization", "name": "Top Design Renovation" },
+  "author": {
+    "@type": "Person",
+    "name": "Top Design Renovation Team",
+    "url": "https://topdesignrenovation.ca/about"
+  },
   "publisher": {
     "@type": "Organization",
     "name": "Top Design Renovation",
-    "logo": { "@type": "ImageObject", "url": "https://example.ca/images/logo.png" }
+    "logo": { "@type": "ImageObject", "url": "https://topdesignrenovation.ca/Assets/logo-01-primary-dark.svg" }
   },
   "datePublished": pubDate,
   "dateModified": updatedDate || pubDate,
@@ -51,7 +65,7 @@ const formattedDate = new Date(pubDate).toLocaleDateString('en-CA', {
 });
 ---
 
-<BaseLayout {title} {description} schema={articleSchema} tinaSetup={tinaSetup}>
+<BaseLayout {title} {description} schema={[articleSchema, breadcrumbSchema]} tinaSetup={tinaSetup}>
 
   <!-- Hero -->
   <section
