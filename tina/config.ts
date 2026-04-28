@@ -93,9 +93,9 @@ export default defineConfig({
             required: true,
           },
           {
-            type: "image",
+            type: "string",
             name: "heroImg",
-            label: "Cover Photo",
+            label: "Cover Photo URL",
             required: true,
           },
           {
@@ -166,9 +166,9 @@ export default defineConfig({
             label: "⭐ Featured (shows large in gallery grid)",
           },
           {
-            type: "image",
+            type: "string",
             name: "img",
-            label: "Main Photo",
+            label: "Main Photo URL",
             required: true,
           },
           {
@@ -177,14 +177,14 @@ export default defineConfig({
             label: "Main Photo Alt Text",
           },
           {
-            type: "image",
+            type: "string",
             name: "beforeImage",
-            label: "Before Photo (optional — for before/after)",
+            label: "Before Photo URL (optional — for before/after)",
           },
           {
-            type: "image",
+            type: "string",
             name: "afterImage",
-            label: "After Photo (optional — for before/after)",
+            label: "After Photo URL (optional — for before/after)",
           },
           {
             type: "object",
@@ -195,7 +195,7 @@ export default defineConfig({
               itemProps: (item) => ({ label: item?.alt || "Photo" }),
             },
             fields: [
-              { type: "image", name: "src", label: "Photo" },
+              { type: "string", name: "src", label: "Photo URL" },
               { type: "string", name: "alt", label: "Alt Text" },
             ],
           },
@@ -241,15 +241,15 @@ export default defineConfig({
           },
           // ── Images ────────────────────────────────────────────────────────
           {
-            type: "image",
+            type: "string",
             name: "heroImg",
-            label: "Hero Photo (page banner — 1920×1080)",
+            label: "Hero Photo URL (page banner — 1920×1080)",
             required: true,
           },
           {
-            type: "image",
+            type: "string",
             name: "cardImg",
-            label: "Card Photo (service grid — 800×600)",
+            label: "Card Photo URL (service grid — 800×600)",
           },
           {
             type: "string",
@@ -367,9 +367,9 @@ export default defineConfig({
             },
             fields: [
               {
-                type: "image",
+                type: "string",
                 name: "src",
-                label: "Photo",
+                label: "Photo URL",
                 required: true,
               },
               {
@@ -481,9 +481,9 @@ export default defineConfig({
             ui: { component: "textarea" },
           },
           {
-            type: "image",
+            type: "string",
             name: "heroImage",
-            label: "Hero — Background Image",
+            label: "Hero — Background Image URL",
           },
           // ── About section ─────────────────────────────────────────────────
           {
@@ -504,9 +504,9 @@ export default defineConfig({
             ui: { component: "textarea" },
           },
           {
-            type: "image",
+            type: "string",
             name: "aboutImage",
-            label: "About — Photo",
+            label: "About — Photo URL",
           },
           {
             type: "string",
@@ -578,14 +578,14 @@ export default defineConfig({
           },
           // ── Branding ──────────────────────────────────────────────────────
           {
-            type: "image",
+            type: "string",
             name: "logo",
-            label: "Logo (PNG/SVG)",
+            label: "Logo URL (PNG/SVG)",
           },
           {
-            type: "image",
+            type: "string",
             name: "ogImage",
-            label: "Social Share Image (1200×630px)",
+            label: "Social Share Image URL (1200×630px)",
           },
           // ── Tracking & integrations ───────────────────────────────────────
           {
