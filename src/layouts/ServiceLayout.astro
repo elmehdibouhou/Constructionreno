@@ -16,7 +16,8 @@ const { service, relatedServices = [], tinaSetup } = Astro.props;
 
 function toEmbedUrl(url: string): string | null {
   if (!url) return null;
-  const yt = url.match(/(?:youtube\.com\/watch\?v=|youtu\.be\/)([A-Za-z0-9_-]{11})/);
+  // YouTube standard + Shorts
+  const yt = url.match(/(?:youtube\.com\/watch\?v=|youtu\.be\/|youtube\.com\/shorts\/)([A-Za-z0-9_-]{11})/);
   if (yt) return `https://www.youtube.com/embed/${yt[1]}?rel=0&autoplay=1`;
   const vm = url.match(/vimeo\.com\/(\d+)/);
   if (vm) return `https://player.vimeo.com/video/${vm[1]}?autoplay=1`;
@@ -24,7 +25,7 @@ function toEmbedUrl(url: string): string | null {
 }
 
 function getYoutubeThumbnail(url: string): string | null {
-  const yt = url.match(/(?:youtube\.com\/watch\?v=|youtu\.be\/)([A-Za-z0-9_-]{11})/);
+  const yt = url.match(/(?:youtube\.com\/watch\?v=|youtu\.be\/|youtube\.com\/shorts\/)([A-Za-z0-9_-]{11})/);
   return yt ? `https://img.youtube.com/vi/${yt[1]}/hqdefault.jpg` : null;
 }
 
@@ -47,9 +48,14 @@ interface GalleryItem {
 
 const galleryItems: GalleryItem[] = (service.gallery ?? []).map((item: any, i: number) => {
   const raw = typeof item === 'string' ? { src: item, alt: '', videoUrl: '' } : item;
-  const src: string = raw.src ?? '';
+  let src: string = raw.src ?? '';
   const alt: string = raw.alt || `${service.title} — media ${i + 1}`;
-  const videoUrl: string = raw.videoUrl ?? '';
+  // If Tina saved an MP4/video URL in the src field, move it to videoUrl automatically
+  let videoUrl: string = raw.videoUrl ?? '';
+  if (!videoUrl && isDirectVideo(src)) {
+    videoUrl = src;
+    src = '';
+  }
 
   let thumbnail = src;
   let embed = '';
@@ -265,14 +271,13 @@ const icons: Record<string, string> = {
       <div class="container container--narrow">
         <span class="eyebrow">Watch & Learn</span>
         <h2 style="margin-bottom:2rem;">{service.title} — See Our Work in Action</h2>
-        <div class="video-wrapper">
+        <div class:list={[heroVideoSrc ? 'video-wrapper-direct' : 'video-wrapper']}>
           {heroVideoSrc ? (
             <video
               src={heroVideoSrc}
               controls
               playsinline
               preload="metadata"
-              style="width:100%; border-radius:8px;"
             ></video>
           ) : (
             <iframe
@@ -517,7 +522,7 @@ const icons: Record<string, string> = {
   margin-bottom: 0.75rem;
 }
 
-/* Video */
+/* Video — YouTube/Vimeo iframe (16:9 forced) */
 .video-wrapper {
   position: relative;
   padding-bottom: 56.25%;
@@ -531,6 +536,24 @@ const icons: Record<string, string> = {
   top: 0; left: 0;
   width: 100%; height: 100%;
   border: 0;
+}
+
+/* Direct MP4 — ratio naturel, centré, max-height pour portrait */
+.video-wrapper-direct {
+  display: flex;
+  justify-content: center;
+  border-radius: var(--radius-lg);
+  overflow: hidden;
+  box-shadow: var(--shadow-card);
+  background: #000;
+}
+.video-wrapper-direct video {
+  max-height: 75vh;
+  max-width: 100%;
+  width: auto;
+  height: auto;
+  display: block;
+  border-radius: var(--radius-lg);
 }
 
 /* Gallery */
