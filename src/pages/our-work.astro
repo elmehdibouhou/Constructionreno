@@ -1,7 +1,7 @@
 ﻿---
 import { getCollection } from 'astro:content';
 import { client } from '../../tina/__generated__/client';
-import { prepareTinaData } from '../lib/tina-helper';
+import { prepareTinaData, normalizeImgSrc } from '../lib/tina-helper';
 import BaseLayout from '../layouts/BaseLayout.astro';
 import CtaBanner from '../components/sections/CtaBanner.astro';
 
@@ -66,7 +66,7 @@ const categories = ['All', ...new Set(projects.map(p => p.data.category))];
           >
             <a href={`/projects/${p.slug}`} class="gallery-project-inner img-overlay" aria-label={`View project: ${p.data.title}`}>
               <img
-                src={p.data.img}
+                src={normalizeImgSrc(p.data.img)}
                 alt={p.data.alt || p.data.title}
                 width={p.data.featured ? 900 : 600}
                 height={p.data.featured ? 600 : 400}

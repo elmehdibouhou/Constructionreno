@@ -56,6 +56,15 @@ function addMetadata(id: string, obj: any, path: (string | number)[]): any {
   return result;
 }
 
+// Exported for pages that use getCollection() instead of TinaClient.
+// Handles CDN URLs that TinaCloud may write into markdown when editing via admin.
+export function normalizeImgSrc(src: string | undefined | null): string {
+  if (!src) return '';
+  if (!TINA_CDN_RE.test(src)) return src;
+  const stripped = src.replace(TINA_CDN_RE, '');
+  return stripped.startsWith('images/') ? '/' + stripped : src;
+}
+
 export interface TinaSetup {
   id: string;
   query: string;
