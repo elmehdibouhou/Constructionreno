@@ -10,7 +10,13 @@ const TINA_CDN_RE = /^https:\/\/assets\.tina\.io\/[^/]+\//;
 
 function normalizeTinaUrls(obj: any): any {
   if (typeof obj === 'string') {
-    return TINA_CDN_RE.test(obj) ? '/' + obj.replace(TINA_CDN_RE, '') : obj;
+    if (TINA_CDN_RE.test(obj)) {
+      const stripped = obj.replace(TINA_CDN_RE, '');
+      // Only rewrite our static /images/ assets — TinaCloud doesn't host those.
+      // Uploaded files (anything else) ARE hosted on the TinaCloud CDN, so keep the URL.
+      return stripped.startsWith('images/') ? '/' + stripped : obj;
+    }
+    return obj;
   }
   if (Array.isArray(obj)) return obj.map(normalizeTinaUrls);
   if (obj !== null && typeof obj === 'object') {
