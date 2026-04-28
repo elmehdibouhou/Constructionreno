@@ -67,6 +67,23 @@ export function normalizeImgSrc(src: string | undefined | null): string {
   return stripped.startsWith('images/') ? '/' + stripped : src;
 }
 
+// Parses any video URL into a renderable form.
+// Returns type='youtube'|'vimeo'|'direct'|null and the resolved embedUrl.
+export function getVideoEmbed(url: string | undefined | null): {
+  type: 'youtube' | 'vimeo' | 'direct' | null;
+  embedUrl: string;
+} {
+  if (!url) return { type: null, embedUrl: '' };
+  const ytMatch = url.match(/(?:youtube\.com\/(?:watch\?v=|embed\/)|youtu\.be\/)([A-Za-z0-9_-]{11})/);
+  if (ytMatch) return { type: 'youtube', embedUrl: `https://www.youtube-nocookie.com/embed/${ytMatch[1]}` };
+  const vimeoMatch = url.match(/vimeo\.com\/(\d+)/);
+  if (vimeoMatch) return { type: 'vimeo', embedUrl: `https://player.vimeo.com/video/${vimeoMatch[1]}` };
+  if (url.match(/\.mp4($|\?)/i) || url.startsWith('/videos/')) {
+    return { type: 'direct', embedUrl: encodeURI(decodeURI(url)) };
+  }
+  return { type: null, embedUrl: '' };
+}
+
 export interface TinaSetup {
   id: string;
   query: string;

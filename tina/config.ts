@@ -104,6 +104,12 @@ export default defineConfig({
             label: "Cover Photo Alt Text (for SEO)",
           },
           {
+            type: "string",
+            name: "videoUrl",
+            label: "🎬 Featured Video URL (YouTube, Vimeo, or direct MP4 — optional)",
+            description: "Paste a YouTube/Vimeo link or .mp4 URL to show a video at the top of the article.",
+          },
+          {
             type: "rich-text",
             name: "body",
             label: "Article Content",
@@ -189,14 +195,28 @@ export default defineConfig({
           {
             type: "object",
             name: "galleryImages",
-            label: "Additional Gallery Photos",
+            label: "📸 Gallery Photos & Videos",
             list: true,
             ui: {
-              itemProps: (item) => ({ label: item?.alt || "Photo" }),
+              itemProps: (item) => ({ label: item?.alt || item?.src || "Media" }),
             },
             fields: [
-              { type: "image", name: "src", label: "Photo" },
-              { type: "string", name: "alt", label: "Alt Text" },
+              {
+                type: "image",
+                name: "src",
+                label: "Photo (optional if video provided)",
+              },
+              {
+                type: "string",
+                name: "alt",
+                label: "Description (alt text for SEO)",
+              },
+              {
+                type: "string",
+                name: "videoUrl",
+                label: "🎬 Video URL (YouTube, Vimeo, or direct MP4 — optional)",
+                description: "Paste a YouTube/Vimeo link or a direct .mp4 URL. Leave empty to show a photo instead.",
+              },
             ],
           },
           {

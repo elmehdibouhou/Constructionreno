@@ -11,6 +11,7 @@ const blogCollection = defineCollection({
     heroAlt: z.string(),
     category: z.string(),
     readTime: z.string(),
+    videoUrl: z.string().optional(),
   }),
 });
 
@@ -37,7 +38,12 @@ const servicesCollection = defineCollection({
       q: z.string(),
       a: z.string(),
     })).optional(),
-    gallery: z.array(z.union([z.string(), z.object({ src: z.string(), alt: z.string().optional() })])).optional(),
+    videoUrl: z.string().optional(),
+    gallery: z.array(z.union([z.string(), z.object({
+      src: z.string().optional(),
+      alt: z.string().optional(),
+      videoUrl: z.string().optional(),
+    })])).optional(),
     related: z.array(z.string()).optional(),
   }),
 });
@@ -68,7 +74,14 @@ const projectsCollection = defineCollection({
     beforeImage: z.string().optional(),
     afterImage: z.string().optional(),
     description: z.string().optional(),
-    galleryImages: z.array(z.string()).optional(),
+    galleryImages: z.array(z.union([
+      z.string(),
+      z.object({
+        src: z.string().optional(),
+        alt: z.string().optional(),
+        videoUrl: z.string().optional(),
+      }),
+    ])).optional(),
     metaTitle: z.string().optional(),
     metaDesc: z.string().optional(),
     highlights: z.array(z.string()).optional(),
