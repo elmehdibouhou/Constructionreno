@@ -60,6 +60,8 @@ function addMetadata(id: string, obj: any, path: (string | number)[]): any {
 // Handles CDN URLs that TinaCloud may write into markdown when editing via admin.
 export function normalizeImgSrc(src: string | undefined | null): string {
   if (!src) return '';
+  // TinaCMS sometimes writes /uploads/images/... when the file lives in /images/
+  if (src.startsWith('/uploads/images/')) return src.replace('/uploads/images/', '/images/');
   if (!TINA_CDN_RE.test(src)) return src;
   const stripped = src.replace(TINA_CDN_RE, '');
   return stripped.startsWith('images/') ? '/' + stripped : src;
