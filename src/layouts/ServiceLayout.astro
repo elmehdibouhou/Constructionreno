@@ -16,7 +16,8 @@ const { service, relatedServices = [], tinaSetup } = Astro.props;
 
 function toEmbedUrl(url: string): string | null {
   if (!url) return null;
-  const yt = url.match(/(?:youtube\.com\/watch\?v=|youtu\.be\/)([A-Za-z0-9_-]{11})/);
+  // YouTube standard + Shorts
+  const yt = url.match(/(?:youtube\.com\/watch\?v=|youtu\.be\/|youtube\.com\/shorts\/)([A-Za-z0-9_-]{11})/);
   if (yt) return `https://www.youtube.com/embed/${yt[1]}?rel=0&autoplay=1`;
   const vm = url.match(/vimeo\.com\/(\d+)/);
   if (vm) return `https://player.vimeo.com/video/${vm[1]}?autoplay=1`;
@@ -24,7 +25,7 @@ function toEmbedUrl(url: string): string | null {
 }
 
 function getYoutubeThumbnail(url: string): string | null {
-  const yt = url.match(/(?:youtube\.com\/watch\?v=|youtu\.be\/)([A-Za-z0-9_-]{11})/);
+  const yt = url.match(/(?:youtube\.com\/watch\?v=|youtu\.be\/|youtube\.com\/shorts\/)([A-Za-z0-9_-]{11})/);
   return yt ? `https://img.youtube.com/vi/${yt[1]}/hqdefault.jpg` : null;
 }
 
@@ -47,9 +48,14 @@ interface GalleryItem {
 
 const galleryItems: GalleryItem[] = (service.gallery ?? []).map((item: any, i: number) => {
   const raw = typeof item === 'string' ? { src: item, alt: '', videoUrl: '' } : item;
-  const src: string = raw.src ?? '';
+  let src: string = raw.src ?? '';
   const alt: string = raw.alt || `${service.title} — media ${i + 1}`;
-  const videoUrl: string = raw.videoUrl ?? '';
+  // If Tina saved an MP4/video URL in the src field, move it to videoUrl automatically
+  let videoUrl: string = raw.videoUrl ?? '';
+  if (!videoUrl && isDirectVideo(src)) {
+    videoUrl = src;
+    src = '';
+  }
 
   let thumbnail = src;
   let embed = '';
