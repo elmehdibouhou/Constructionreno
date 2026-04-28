@@ -265,14 +265,13 @@ const icons: Record<string, string> = {
       <div class="container container--narrow">
         <span class="eyebrow">Watch & Learn</span>
         <h2 style="margin-bottom:2rem;">{service.title} — See Our Work in Action</h2>
-        <div class="video-wrapper">
+        <div class:list={[heroVideoSrc ? 'video-wrapper-direct' : 'video-wrapper']}>
           {heroVideoSrc ? (
             <video
               src={heroVideoSrc}
               controls
               playsinline
               preload="metadata"
-              style="width:100%; border-radius:8px;"
             ></video>
           ) : (
             <iframe
@@ -517,7 +516,7 @@ const icons: Record<string, string> = {
   margin-bottom: 0.75rem;
 }
 
-/* Video */
+/* Video — YouTube/Vimeo iframe (16:9 forced) */
 .video-wrapper {
   position: relative;
   padding-bottom: 56.25%;
@@ -531,6 +530,24 @@ const icons: Record<string, string> = {
   top: 0; left: 0;
   width: 100%; height: 100%;
   border: 0;
+}
+
+/* Direct MP4 — ratio naturel, centré, max-height pour portrait */
+.video-wrapper-direct {
+  display: flex;
+  justify-content: center;
+  border-radius: var(--radius-lg);
+  overflow: hidden;
+  box-shadow: var(--shadow-card);
+  background: #000;
+}
+.video-wrapper-direct video {
+  max-height: 75vh;
+  max-width: 100%;
+  width: auto;
+  height: auto;
+  display: block;
+  border-radius: var(--radius-lg);
 }
 
 /* Gallery */
