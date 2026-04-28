@@ -15,8 +15,8 @@ const { project } = Astro.props;
 const p = project.data;
 
 // SEO fields — fall back to generated values if not set
-const metaTitle = p.metaTitle ?? `${p.title} | Top Design Renovation Portfolio — Ottawa`;
-const metaDesc = p.metaDesc ?? p.description ?? `View the ${p.title} project completed by Top Design Renovation in ${p.location ?? 'Ottawa'}.`;
+const metaTitle = p.metaTitle ?? `${p.title} | Top Design Renovation Portfolio — Ontario`;
+const metaDesc = p.metaDesc ?? p.description ?? `View the ${p.title} project completed by Top Design Renovation in ${p.location ?? 'Ontario'}.`;
 
 // JSON-LD: CreativeWork schema for portfolio projects
 const projectSchema = {
@@ -28,7 +28,7 @@ const projectSchema = {
   "dateCreated": p.year,
   "locationCreated": {
     "@type": "City",
-    "name": p.location ?? "Ottawa"
+    "name": p.location ?? "Ontario"
   },
   "creator": {
     "@type": "HomeAndConstructionBusiness",
@@ -82,7 +82,7 @@ const related = allProjects
         <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true">
           <path d="M21 10c0 7-9 13-9 13S3 17 3 10a9 9 0 0118 0z"/><circle cx="12" cy="10" r="3"/>
         </svg>
-        {p.location ?? 'Ottawa'}
+        {p.location ?? 'Ontario'}
         {p.year && (
           <>
             <span aria-hidden="true"> · </span>
@@ -188,7 +188,7 @@ const related = allProjects
                   </svg>
                   Location
                 </dt>
-                <dd>{p.location ?? 'Ottawa'}</dd>
+                <dd>{p.location ?? 'Ontario'}</dd>
               </div>
               {p.year && (
                 <div class="stat-row">
@@ -269,7 +269,7 @@ const related = allProjects
               <div class="related-info">
                 <p class="related-cat">{r.data.category}</p>
                 <p class="related-title">{r.data.title}</p>
-                <p class="related-loc">{r.data.location ?? 'Ottawa'} · {r.data.year}</p>
+                <p class="related-loc">{r.data.location ?? 'Ontario'} · {r.data.year}</p>
               </div>
             </a>
           ))}

@@ -1,14 +1,14 @@
----
+﻿---
 title: "Metal Roofing"
 category: "Roofing"
 tagline: "The last roof you'll ever need to install."
 heroImg: "/images/services/metal-roofing/hero.png"
 cardImg: "/images/services/metal-roofing/hero.png"
-alt: "Metal roofing installation in Ottawa"
+alt: "Metal roofing installation in Ontario"
 intro1: "Metal roofing is the premium choice for Ontario homeowners who want a roof that lasts 40–70 years with minimal maintenance. Standing seam and exposed fastener metal panels are energy-efficient, lightweight, and available in a wide range of colours."
 intro2: "We are experienced in both exposed fastener steel roofing and concealed fastener standing seam systems. Our metal roof installations include proper underlayment, closed-cell insulation options, and trim and flashing work that matches the clean aesthetic of the panels."
-metaTitle: "Metal Roofing Ottawa | Top Design Renovation — Standing Seam & Steel"
-metaDesc: "Expert metal roofing installation in Ottawa. Standing seam & steel roofing systems. 40–70 year lifespan. Energy-efficient, low-maintenance. Free estimate."
+metaTitle: "Metal Roofing Ontario | Top Design Renovation — Standing Seam & Steel"
+metaDesc: "Expert metal roofing installation in Ontario. Standing seam & steel roofing systems. 40–70 year lifespan. Energy-efficient, low-maintenance. Free estimate."
 whyUs:
   - "Standing seam & exposed fastener metal systems"
   - "40–70 year lifespan — longest of any roofing material"
@@ -25,7 +25,7 @@ benefits:
     title: "Snow Performance"
     desc: "Metal panels shed snow efficiently, reducing the structural load on your roof deck and minimising ice dam formation during Ontario winters."
 faqs:
-  - q: "How much does metal roofing cost in Ottawa?"
+  - q: "How much does metal roofing cost in Ontario?"
     a: "Metal roofing costs $15,000–$35,000 for a standard residential home, depending on panel type and roof complexity. While higher upfront than asphalt, the 50+ year lifespan makes it the most cost-effective choice long-term."
   - q: "Is metal roofing loud in the rain?"
     a: "Modern metal roofing installed over solid sheathing with proper underlayment is no louder than asphalt shingles. The structure beneath the panels absorbs sound effectively."
@@ -35,19 +35,19 @@ faqs:
     a: "Yes, in many cases metal panels can be installed over existing asphalt shingles, saving tear-off costs. We assess the existing deck condition before recommending this approach."
 gallery:
   - src: /images/services/metal-roofing/hero.png
-    alt: "Metal roofing installation Ottawa — standing seam panels"
+    alt: "Metal roofing installation Ontario — standing seam panels"
   - src: /images/services/metal-roofing/gallery-1.png
-    alt: "Steel roofing panels Ottawa — before installation"
+    alt: "Steel roofing panels Ontario — before installation"
   - src: /images/services/metal-roofing/gallery-2.png
-    alt: "Standing seam metal roof Ottawa — detail view"
+    alt: "Standing seam metal roof Ontario — detail view"
   - src: /images/services/metal-roofing/gallery-3.png
-    alt: "Metal roof installation Ottawa — team at work"
+    alt: "Metal roof installation Ontario — team at work"
   - src: /images/services/metal-roofing/gallery-4.png
-    alt: "Completed metal roof Ottawa — aerial view"
+    alt: "Completed metal roof Ontario — aerial view"
   - src: /images/services/metal-roofing/gallery-5.png
-    alt: "Metal roofing flashing and trim Ottawa"
+    alt: "Metal roofing flashing and trim Ontario"
   - src: /images/services/metal-roofing/gallery-6.png
-    alt: "Metal roof Ottawa — winter performance result"
+    alt: "Metal roof Ontario — winter performance result"
 related:
   - roof-replacement
   - roof-repairs

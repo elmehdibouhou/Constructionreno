@@ -1,14 +1,14 @@
----
+﻿---
 title: "Exterior Siding"
 category: "Roofing"
 tagline: "Premium cladding that protects and impresses."
 heroImg: "/images/services/siding/hero.png"
 cardImg: "/images/services/siding/hero.png"
-alt: "Exterior siding installation in Ottawa"
+alt: "Exterior siding installation in Ontario"
 intro1: "New exterior siding dramatically improves your home's curb appeal while providing critical protection against Ontario's weather. We install vinyl, fibre cement (James Hardie), engineered wood, and steel siding with full moisture barrier and insulation options."
 intro2: "Our siding projects include all associated trim, corner boards, window and door surrounds, and soffit and fascia as needed — so you get a complete, cohesive exterior transformation."
-metaTitle: "Exterior Siding Ottawa | Top Design Renovation — Vinyl & Fibre Cement"
-metaDesc: "Expert exterior siding installation in Ottawa. Vinyl, fibre cement (James Hardie) & engineered wood. Full exterior transformation with trim & flashing. Free estimate."
+metaTitle: "Exterior Siding Ontario | Top Design Renovation — Vinyl & Fibre Cement"
+metaDesc: "Expert exterior siding installation in Ontario. Vinyl, fibre cement (James Hardie) & engineered wood. Full exterior transformation with trim & flashing. Free estimate."
 whyUs:
   - "James Hardie preferred installer"
   - "Full moisture barrier & insulation backing available"
@@ -25,7 +25,7 @@ benefits:
     title: "Insulation Backing"
     desc: "We offer insulated vinyl and fibre cement with foam-backed options to improve your wall R-value and reduce heating and cooling costs."
 faqs:
-  - q: "How much does siding replacement cost in Ottawa?"
+  - q: "How much does siding replacement cost in Ontario?"
     a: "Vinyl siding replacement costs $12–$18 per sq ft installed. Fibre cement (James Hardie) costs $18–$28 per sq ft. An average 2,000 sq ft home runs $15,000–$35,000 depending on material and home complexity."
   - q: "What is the best siding for Ontario climate?"
     a: "James Hardie fibre cement is our top recommendation for Ontario — it's dimensionally stable through freeze-thaw cycles, resists moisture, and holds its painted finish for 15+ years. Premium vinyl is also excellent for cold climates with modern insulated profiles."
@@ -35,19 +35,19 @@ faqs:
     a: "If your soffits or eavestroughs are original or showing wear, combining the work saves mobilisation costs and ensures a cohesive finished look."
 gallery:
   - src: /images/services/siding/hero.png
-    alt: "Siding installation Ottawa — James Hardie fibre cement"
+    alt: "Siding installation Ontario — James Hardie fibre cement"
   - src: /images/services/siding/gallery-1.png
-    alt: "Before siding replacement Ottawa — original cladding"
+    alt: "Before siding replacement Ontario — original cladding"
   - src: /images/services/siding/gallery-2.png
-    alt: "Siding installation Ottawa — moisture barrier install"
+    alt: "Siding installation Ontario — moisture barrier install"
   - src: /images/services/siding/gallery-3.png
-    alt: "Vinyl siding Ottawa — new profile installation"
+    alt: "Vinyl siding Ontario — new profile installation"
   - src: /images/services/siding/gallery-4.png
-    alt: "Siding corner and trim detail Ottawa"
+    alt: "Siding corner and trim detail Ontario"
   - src: /images/services/siding/gallery-5.png
-    alt: "Completed siding Ottawa — full exterior result"
+    alt: "Completed siding Ontario — full exterior result"
   - src: /images/services/siding/gallery-6.png
-    alt: "Siding and soffit combination Ottawa — finished look"
+    alt: "Siding and soffit combination Ontario — finished look"
 related:
   - soffit-fascia
   - exterior-renovations

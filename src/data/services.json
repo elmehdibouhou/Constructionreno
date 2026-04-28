@@ -1,16 +1,16 @@
-[
+﻿[
   {
     "slug": "kitchen-renovation",
     "title": "Kitchen Renovation",
     "category": "Renovation",
     "heroImg": "/images/services/kitchen-renovation/hero.png",
     "cardImg": "/images/services/kitchen-renovation/hero.png",
-    "alt": "Modern kitchen renovation in Ottawa",
+    "alt": "Modern kitchen renovation in Ontario",
     "tagline": "Transform your kitchen into the heart of your home.",
-    "intro1": "Your kitchen is more than a place to cook — it's where family gathers, meals are shared, and memories are made. Our Ottawa kitchen renovation team combines skilled craftsmanship with premium materials to create a space that's beautiful, functional, and built to last.",
+    "intro1": "Your kitchen is more than a place to cook — it's where family gathers, meals are shared, and memories are made. Our Ontario kitchen renovation team combines skilled craftsmanship with premium materials to create a space that's beautiful, functional, and built to last.",
     "intro2": "From a complete gut renovation to a targeted cabinet and countertop refresh, we handle every aspect of the project: design consultation, demolition, plumbing and electrical coordination, custom cabinetry, tile work, and final finishing — with no subcontracting surprises.",
-    "metaTitle": "Kitchen Renovation Ottawa | Top Design Renovation — Free Estimate",
-    "metaDesc": "Professional kitchen renovation in Ottawa. Custom designs, quality materials & skilled tradespeople. Full project management from design to finish. Free estimate.",
+    "metaTitle": "Kitchen Renovation Ontario | Top Design Renovation — Free Estimate",
+    "metaDesc": "Professional kitchen renovation in Ontario. Custom designs, quality materials & skilled tradespeople. Full project management from design to finish. Free estimate.",
     "whyUs": [
       "Custom cabinetry built to your exact specifications",
       "Premium quartz, granite & butcher block countertops",
@@ -23,7 +23,7 @@
       { "icon": "shield", "title": "5-Year Warranty", "desc": "All our kitchen renovations are backed by a 5-year workmanship warranty. We stand behind every cabinet door and tile we install." }
     ],
     "faqs": [
-      { "q": "How much does a kitchen renovation cost in Ottawa?", "a": "Kitchen renovations in Ottawa typically range from $20,000 to $80,000 depending on the scope. A basic cabinet and countertop refresh starts around $15,000–$25,000, while a full gut renovation with custom cabinets and premium finishes runs $40,000–$80,000. We provide a detailed written estimate before any work begins." },
+      { "q": "How much does a kitchen renovation cost in Ontario?", "a": "Kitchen renovations in Ontario typically range from $20,000 to $80,000 depending on the scope. A basic cabinet and countertop refresh starts around $15,000–$25,000, while a full gut renovation with custom cabinets and premium finishes runs $40,000–$80,000. We provide a detailed written estimate before any work begins." },
       { "q": "How long does a kitchen renovation take?", "a": "Most kitchen renovations take 4–8 weeks from demo to final walkthrough. A smaller refresh (countertops + hardware) can be completed in 1–2 weeks. We provide a detailed timeline at the start of your project." },
       { "q": "Do I need permits for a kitchen renovation in Ontario?", "a": "Most cosmetic kitchen renovations don't require permits. However, if the scope includes moving walls, relocating plumbing, or upgrading electrical panels, permits are required. We handle all permit applications on your behalf." },
       { "q": "Can I stay in my home during the renovation?", "a": "Yes — most clients remain in their homes during kitchen renovations. We contain the work area, maintain clean pathways, and work Monday to Friday to minimise disruption to your routine." }
@@ -45,12 +45,12 @@
     "category": "Renovation",
     "heroImg": "https://images.unsplash.com/photo-1552321554-5fefe8c9ef14?w=1920&q=80",
     "cardImg": "https://images.unsplash.com/photo-1552321554-5fefe8c9ef14?w=800&q=75",
-    "alt": "Luxury bathroom renovation in Ottawa",
+    "alt": "Luxury bathroom renovation in Ontario",
     "tagline": "Your personal spa retreat starts here.",
-    "intro1": "A beautifully renovated bathroom can completely change how you start and end your day. Our Ottawa bathroom renovation team specialises in creating luxurious, spa-inspired spaces — from sleek modern designs to warm, timeless classics.",
+    "intro1": "A beautifully renovated bathroom can completely change how you start and end your day. Our Ontario bathroom renovation team specialises in creating luxurious, spa-inspired spaces — from sleek modern designs to warm, timeless classics.",
     "intro2": "We manage the full scope: custom tile work, walk-in showers, soaker tubs, vanities, heated floors, and all plumbing and electrical work. Every detail is coordinated in-house so you have one point of contact throughout.",
-    "metaTitle": "Bathroom Renovation Ottawa | Top Design Renovation — Free Estimate",
-    "metaDesc": "Transform your bathroom into a luxury spa retreat. Expert bathroom renovations in Ottawa — custom tile, walk-in showers, soaker tubs. Free estimate.",
+    "metaTitle": "Bathroom Renovation Ontario | Top Design Renovation — Free Estimate",
+    "metaDesc": "Transform your bathroom into a luxury spa retreat. Expert bathroom renovations in Ontario — custom tile, walk-in showers, soaker tubs. Free estimate.",
     "whyUs": [
       "Custom tile work by experienced tile setters",
       "Walk-in showers, soaker tubs, heated floors",
@@ -63,7 +63,7 @@
       { "icon": "zap", "title": "Heated Floors", "desc": "We install in-floor radiant heating systems during renovation — the perfect upgrade that transforms your bathroom into a year-round comfort zone." }
     ],
     "faqs": [
-      { "q": "How much does a bathroom renovation cost in Ottawa?", "a": "Bathroom renovations in Ottawa range from $10,000 for a basic refresh to $40,000+ for a full primary bathroom with custom tile and premium fixtures. A standard main-floor bathroom renovation typically costs $15,000–$25,000." },
+      { "q": "How much does a bathroom renovation cost in Ontario?", "a": "Bathroom renovations in Ontario range from $10,000 for a basic refresh to $40,000+ for a full primary bathroom with custom tile and premium fixtures. A standard main-floor bathroom renovation typically costs $15,000–$25,000." },
       { "q": "How long does a bathroom renovation take?", "a": "A standard bathroom renovation takes 2–4 weeks. Larger ensuite renovations can take 4–6 weeks. Waterproofing and tile setting require proper cure times, which we build into the schedule." },
       { "q": "Can I choose my own tiles and fixtures?", "a": "Absolutely. We work with multiple suppliers and can source materials from your preferred retailer or showroom. We can also guide you to our trusted suppliers for the best selection and pricing." },
       { "q": "Do you offer accessible bathroom renovations?", "a": "Yes — we specialize in barrier-free and accessible bathroom designs including walk-in showers with zero thresholds, grab bars, comfort-height toilets, and wider doorways for mobility aid access." }
@@ -84,12 +84,12 @@
     "category": "Renovation",
     "heroImg": "https://images.unsplash.com/photo-1565538810643-b5bdb714032a?w=1920&q=80",
     "cardImg": "https://images.unsplash.com/photo-1565538810643-b5bdb714032a?w=800&q=75",
-    "alt": "Finished basement renovation in Ottawa",
+    "alt": "Finished basement renovation in Ontario",
     "tagline": "Unlock your home's hidden square footage.",
-    "intro1": "Your unfinished basement holds enormous potential — a home office, media room, in-law suite, or rental unit. Our Ottawa basement renovation team transforms bare concrete into fully finished living spaces that add real value to your home.",
+    "intro1": "Your unfinished basement holds enormous potential — a home office, media room, in-law suite, or rental unit. Our Ontario basement renovation team transforms bare concrete into fully finished living spaces that add real value to your home.",
     "intro2": "We handle every aspect: waterproofing assessment, framing, insulation, electrical, drywall, flooring, pot lights, and full finishing. We also handle all necessary building permits with the city.",
-    "metaTitle": "Basement Renovation Ottawa | Top Design Renovation — Free Estimate",
-    "metaDesc": "Convert your unfinished basement into beautiful living space. Expert basement renovations in Ottawa — in-law suites, home offices, media rooms. Free estimate.",
+    "metaTitle": "Basement Renovation Ontario | Top Design Renovation — Free Estimate",
+    "metaDesc": "Convert your unfinished basement into beautiful living space. Expert basement renovations in Ontario — in-law suites, home offices, media rooms. Free estimate.",
     "whyUs": [
       "Building permit application handled by our team",
       "Waterproofing assessment included",
@@ -102,7 +102,7 @@
       { "icon": "check-circle", "title": "Permit-Compliant", "desc": "Every basement renovation we complete meets current Ontario building code requirements. We handle all permits and inspections." }
     ],
     "faqs": [
-      { "q": "How much does a basement renovation cost in Ottawa?", "a": "Basic basement finishing in Ottawa starts around $30–$60 per sq ft. A 1,000 sq ft basement typically costs $35,000–$60,000 for a standard finish. A full in-law suite with kitchen and bathroom runs $50,000–$90,000." },
+      { "q": "How much does a basement renovation cost in Ontario?", "a": "Basic basement finishing in Ontario starts around $30–$60 per sq ft. A 1,000 sq ft basement typically costs $35,000–$60,000 for a standard finish. A full in-law suite with kitchen and bathroom runs $50,000–$90,000." },
       { "q": "Do I need a permit to finish my basement in Ontario?", "a": "Yes. Finishing or renovating a basement requires a building permit in most Ontario municipalities. We apply for permits on your behalf and manage all inspections throughout the project." },
       { "q": "How do you prevent basement moisture issues?", "a": "We start every basement renovation with a moisture assessment. Depending on findings, we may recommend interior drainage membranes, sump pump upgrades, or exterior waterproofing. Proper moisture control is done before any framing begins." },
       { "q": "Can a finished basement be used as a rental unit?", "a": "Yes, but it must meet specific legal requirements including egress windows, fire separation, separate entrance, and HVAC. We are experienced in building legal secondary suites that comply with municipal requirements." }
@@ -123,12 +123,12 @@
     "category": "Renovation",
     "heroImg": "https://images.unsplash.com/photo-1562259949-e8e7689d7828?w=1920&q=80",
     "cardImg": "https://images.unsplash.com/photo-1562259949-e8e7689d7828?w=800&q=75",
-    "alt": "Professional interior painting in Ottawa",
+    "alt": "Professional interior painting in Ontario",
     "tagline": "A fresh coat of paint is the fastest way to transform a space.",
-    "intro1": "Professional painting is about far more than colour. It's proper preparation, the right primer, expert application, and clean edges that make the difference between a DIY look and a showroom finish. Our Ottawa painting team delivers that showroom finish every time.",
+    "intro1": "Professional painting is about far more than colour. It's proper preparation, the right primer, expert application, and clean edges that make the difference between a DIY look and a showroom finish. Our Ontario painting team delivers that showroom finish every time.",
     "intro2": "We handle interior and exterior painting for homes of all sizes — from a single accent wall to a full house repaint inside and out. We use only premium paints (Benjamin Moore, Sherwin-Williams) and protect all surfaces before we ever open a can.",
-    "metaTitle": "Interior & Exterior Painting Ottawa | Top Design Renovation — Free Estimate",
-    "metaDesc": "Professional interior & exterior painting in Ottawa. Premium paints, meticulous prep, clean results. Residential & commercial painting. Free estimate.",
+    "metaTitle": "Interior & Exterior Painting Ontario | Top Design Renovation — Free Estimate",
+    "metaDesc": "Professional interior & exterior painting in Ontario. Premium paints, meticulous prep, clean results. Residential & commercial painting. Free estimate.",
     "whyUs": [
       "Benjamin Moore & Sherwin-Williams certified applicators",
       "Full surface prep — no shortcuts",
@@ -141,7 +141,7 @@
       { "icon": "sun", "title": "Exterior Protection", "desc": "Our exterior coatings protect against Ontario's freeze-thaw cycles, UV damage, and moisture. We prep and prime before applying two full coats." }
     ],
     "faqs": [
-      { "q": "How much does interior painting cost in Ottawa?", "a": "Interior painting in Ottawa typically costs $2–$4 per sq ft depending on prep work required and number of rooms. A standard 2,000 sq ft home runs $4,000–$8,000 for a full interior repaint." },
+      { "q": "How much does interior painting cost in Ontario?", "a": "Interior painting in Ontario typically costs $2–$4 per sq ft depending on prep work required and number of rooms. A standard 2,000 sq ft home runs $4,000–$8,000 for a full interior repaint." },
       { "q": "How long does a full interior paint job take?", "a": "A full interior repaint of an average home (3 bedrooms) takes 3–5 days. We work efficiently to minimise disruption while never rushing the prep work." },
       { "q": "Can you paint while I'm living in the house?", "a": "Yes — we work room by room and use low-VOC paints to minimise fumes. Furniture is moved and protected before painting begins and returned at the end of each day." },
       { "q": "What exterior painting prep do you do?", "a": "All exterior surfaces are pressure washed, scraped, sanded, primed, and caulked before painting. This prep work is what ensures the paint bonds properly and lasts for years." }
@@ -162,12 +162,12 @@
     "category": "Renovation",
     "heroImg": "https://images.unsplash.com/photo-1570129477492-45c003edd2be?w=1920&q=80",
     "cardImg": "https://images.unsplash.com/photo-1570129477492-45c003edd2be?w=800&q=75",
-    "alt": "Exterior home renovation in Ottawa",
+    "alt": "Exterior home renovation in Ontario",
     "tagline": "Exceptional curb appeal starts with exceptional craftsmanship.",
-    "intro1": "First impressions matter. A beautifully renovated exterior boosts your home's value, enhances curb appeal, and provides real weather protection for the Ontario climate. Our Ottawa exterior renovation team handles siding, trim, windows, doors, and full exterior makeovers.",
+    "intro1": "First impressions matter. A beautifully renovated exterior boosts your home's value, enhances curb appeal, and provides real weather protection for the Ontario climate. Our Ontario exterior renovation team handles siding, trim, windows, doors, and full exterior makeovers.",
     "intro2": "We work with all exterior cladding types — vinyl, fibre cement, engineered wood, and stucco — and coordinate all associated work including eavestroughs, windows, insulation upgrades, and exterior painting.",
-    "metaTitle": "Exterior Renovation Ottawa | Top Design Renovation — Free Estimate",
-    "metaDesc": "Expert exterior renovations in Ottawa. Siding, windows, doors, trim & full exterior makeovers. Boost your home's curb appeal & protection. Free estimate.",
+    "metaTitle": "Exterior Renovation Ontario | Top Design Renovation — Free Estimate",
+    "metaDesc": "Expert exterior renovations in Ontario. Siding, windows, doors, trim & full exterior makeovers. Boost your home's curb appeal & protection. Free estimate.",
     "whyUs": [
       "All exterior cladding types: vinyl, fibre cement, wood",
       "Full window and door replacement coordination",
@@ -180,7 +180,7 @@
       { "icon": "thermometer", "title": "Energy Savings", "desc": "Exterior renovations are the ideal time to upgrade wall insulation. We can improve your home's thermal envelope and reduce heating and cooling costs." }
     ],
     "faqs": [
-      { "q": "How much does exterior siding replacement cost in Ottawa?", "a": "Vinyl siding replacement typically costs $8,000–$20,000 for an average home. Fibre cement (Hardie Board) runs $15,000–$35,000. Prices vary based on home size, cladding type, and condition of existing sheathing." },
+      { "q": "How much does exterior siding replacement cost in Ontario?", "a": "Vinyl siding replacement typically costs $8,000–$20,000 for an average home. Fibre cement (Hardie Board) runs $15,000–$35,000. Prices vary based on home size, cladding type, and condition of existing sheathing." },
       { "q": "What's the best siding material for Ontario climate?", "a": "Fibre cement (James Hardie) is the top choice for Ontario — it handles freeze-thaw cycles, doesn't rot, and holds paint exceptionally well. Premium vinyl is also an excellent value option with modern profiles that look like real wood." },
       { "q": "Should I replace windows at the same time as siding?", "a": "If your windows are more than 15 years old, doing both simultaneously is significantly more cost-effective — the siding work involves opening up walls around window frames anyway." },
       { "q": "How long does an exterior renovation take?", "a": "Full exterior siding replacement on an average home takes 1–2 weeks. Combined siding + windows + trim projects run 2–4 weeks." }
@@ -201,12 +201,12 @@
     "category": "Roofing",
     "heroImg": "https://images.unsplash.com/photo-1558618666-fcd25c85cd64?w=1920&q=80",
     "cardImg": "https://images.unsplash.com/photo-1558618666-fcd25c85cd64?w=800&q=75",
-    "alt": "Roof replacement in Ottawa",
+    "alt": "Roof replacement in Ontario",
     "tagline": "Protect your home with a roof built to last.",
     "intro1": "Your roof is your home's first line of defence against Ontario's harsh weather. When it's time for a replacement, you need a team that installs it right — with proper underlayment, ventilation, flashing, and quality shingles that carry full manufacturer warranties.",
     "intro2": "We are certified installers for GAF, CertainTeed, and Owens Corning roofing systems. Every replacement includes a full tear-off, deck inspection, ice-and-water shield on all eaves, proper ventilation assessment, and clean-up with a magnetic nail sweep of your property.",
-    "metaTitle": "Roof Replacement Ottawa | Top Design Renovation — Free Estimate",
-    "metaDesc": "Expert roof replacement in Ottawa. GAF, CertainTeed & Owens Corning certified installers. Full tear-off, 25-year shingle warranty. Free roof estimate.",
+    "metaTitle": "Roof Replacement Ontario | Top Design Renovation — Free Estimate",
+    "metaDesc": "Expert roof replacement in Ontario. GAF, CertainTeed & Owens Corning certified installers. Full tear-off, 25-year shingle warranty. Free roof estimate.",
     "whyUs": [
       "GAF, CertainTeed & Owens Corning certified",
       "Full tear-off & deck inspection on every job",
@@ -219,7 +219,7 @@
       { "icon": "check-circle", "title": "Clean & Professional", "desc": "We protect your landscaping, remove all old shingles and debris, and complete a magnetic nail sweep of the entire property before we leave." }
     ],
     "faqs": [
-      { "q": "How much does a roof replacement cost in Ottawa?", "a": "Roof replacements in Ottawa typically cost $8,000–$20,000 for a standard residential home. Price depends on roof size, pitch, existing layers, and shingle grade. We provide a detailed written quote after a free inspection." },
+      { "q": "How much does a roof replacement cost in Ontario?", "a": "Roof replacements in Ontario typically cost $8,000–$20,000 for a standard residential home. Price depends on roof size, pitch, existing layers, and shingle grade. We provide a detailed written quote after a free inspection." },
       { "q": "How long does a roof replacement take?", "a": "Most residential roof replacements are completed in 1–2 days. Larger or more complex roofs may take 2–3 days. Weather permitting, we complete the project without leaving your roof exposed overnight." },
       { "q": "How do I know if I need a full replacement vs. repairs?", "a": "If your roof is over 20–25 years old, has multiple layers, or shows widespread granule loss, curling, or cracking, a full replacement is typically more cost-effective than ongoing repairs. We'll give you an honest assessment." },
       { "q": "What shingle brands do you recommend?", "a": "We recommend GAF Timberline HDZ, CertainTeed Landmark, and Owens Corning Duration shingles — all of which offer excellent durability for Ontario's climate, strong wind ratings, and attractive aesthetics." }
@@ -240,12 +240,12 @@
     "category": "Roofing",
     "heroImg": "https://images.unsplash.com/photo-1504307651254-35680f356dfd?w=1920&q=80",
     "cardImg": "https://images.unsplash.com/photo-1504307651254-35680f356dfd?w=800&q=75",
-    "alt": "Roof repair in Ottawa",
+    "alt": "Roof repair in Ontario",
     "tagline": "Stop the leak before it becomes a disaster.",
-    "intro1": "A small roof leak ignored becomes a major structural problem quickly. Our Ottawa roof repair team responds fast — diagnosing the true source of the leak and fixing it properly the first time, not just patching it temporarily.",
+    "intro1": "A small roof leak ignored becomes a major structural problem quickly. Our Ontario roof repair team responds fast — diagnosing the true source of the leak and fixing it properly the first time, not just patching it temporarily.",
     "intro2": "We repair all types of roofing issues: missing shingles, damaged flashing around chimneys and vents, ice dam damage, ridge cap failures, and pipe collar leaks. All repairs come with a written warranty.",
-    "metaTitle": "Roof Repairs Ottawa | Top Design Renovation — Fast Response",
-    "metaDesc": "Fast, reliable roof repairs in Ottawa. Leaks, missing shingles, damaged flashing & ice dam damage. Written warranty on all repairs. Free estimate.",
+    "metaTitle": "Roof Repairs Ontario | Top Design Renovation — Fast Response",
+    "metaDesc": "Fast, reliable roof repairs in Ontario. Leaks, missing shingles, damaged flashing & ice dam damage. Written warranty on all repairs. Free estimate.",
     "whyUs": [
       "Fast response — same-week appointments available",
       "True leak diagnosis, not just surface patching",
@@ -258,7 +258,7 @@
       { "icon": "file-text", "title": "Written Warranty", "desc": "All our roof repair work comes with a written labour warranty so you have peace of mind that the fix will hold." }
     ],
     "faqs": [
-      { "q": "How much do roof repairs cost in Ottawa?", "a": "Minor roof repairs (missing shingles, small flashing repairs) typically cost $300–$800. More extensive repairs involving multiple areas or structural damage run $1,000–$3,500. We provide a written estimate before any work begins." },
+      { "q": "How much do roof repairs cost in Ontario?", "a": "Minor roof repairs (missing shingles, small flashing repairs) typically cost $300–$800. More extensive repairs involving multiple areas or structural damage run $1,000–$3,500. We provide a written estimate before any work begins." },
       { "q": "How quickly can you respond to a roof leak?", "a": "We typically offer same-week appointments for roof repairs. For active leaks during rain events, we can provide emergency tarping within 24 hours to prevent further water damage." },
       { "q": "Should I repair or replace my roof?", "a": "If your roof is under 15 years old and damage is isolated, a repair is usually the right call. If it's over 20 years old or damage is widespread, a full replacement is often more economical in the long run. We'll give you an honest recommendation." },
       { "q": "What causes most roof leaks?", "a": "The most common sources of roof leaks in Ontario are deteriorated flashing around chimneys and skylights, failed pipe boot collars, ice dam damage, and missing or lifted shingles. We inspect and address all of these." }
@@ -279,12 +279,12 @@
     "category": "Roofing",
     "heroImg": "https://images.unsplash.com/photo-1449844908441-8829872d2607?w=1920&q=80",
     "cardImg": "https://images.unsplash.com/photo-1449844908441-8829872d2607?w=800&q=75",
-    "alt": "Metal roofing installation in Ottawa",
+    "alt": "Metal roofing installation in Ontario",
     "tagline": "The last roof you'll ever need to install.",
     "intro1": "Metal roofing is the premium choice for Ontario homeowners who want a roof that lasts 40–70 years with minimal maintenance. Standing seam and exposed fastener metal panels are energy-efficient, lightweight, and available in a wide range of colours.",
     "intro2": "We are experienced in both exposed fastener steel roofing and concealed fastener standing seam systems. Our metal roof installations include proper underlayment, closed-cell insulation options, and trim and flashing work that matches the clean aesthetic of the panels.",
-    "metaTitle": "Metal Roofing Ottawa | Top Design Renovation — Standing Seam & Steel",
-    "metaDesc": "Expert metal roofing installation in Ottawa. Standing seam & steel roofing systems. 40–70 year lifespan. Energy-efficient, low-maintenance. Free estimate.",
+    "metaTitle": "Metal Roofing Ontario | Top Design Renovation — Standing Seam & Steel",
+    "metaDesc": "Expert metal roofing installation in Ontario. Standing seam & steel roofing systems. 40–70 year lifespan. Energy-efficient, low-maintenance. Free estimate.",
     "whyUs": [
       "Standing seam & exposed fastener metal systems",
       "40–70 year lifespan — longest of any roofing material",
@@ -297,7 +297,7 @@
       { "icon": "cloud-snow", "title": "Snow Performance", "desc": "Metal panels shed snow efficiently, reducing the structural load on your roof deck and minimising ice dam formation during Ontario winters." }
     ],
     "faqs": [
-      { "q": "How much does metal roofing cost in Ottawa?", "a": "Metal roofing costs $15,000–$35,000 for a standard residential home, depending on panel type and roof complexity. While higher upfront than asphalt, the 50+ year lifespan makes it the most cost-effective choice long-term." },
+      { "q": "How much does metal roofing cost in Ontario?", "a": "Metal roofing costs $15,000–$35,000 for a standard residential home, depending on panel type and roof complexity. While higher upfront than asphalt, the 50+ year lifespan makes it the most cost-effective choice long-term." },
       { "q": "Is metal roofing loud in the rain?", "a": "Modern metal roofing installed over solid sheathing with proper underlayment is no louder than asphalt shingles. The structure beneath the panels absorbs sound effectively." },
       { "q": "What metal roofing systems do you install?", "a": "We install exposed fastener corrugated and R-panel systems (most economical), snap-lock standing seam (mid-range), and mechanical seam standing seam (premium). We'll recommend the best system for your roof geometry and budget." },
       { "q": "Can metal roofing be installed over existing shingles?", "a": "Yes, in many cases metal panels can be installed over existing asphalt shingles, saving tear-off costs. We assess the existing deck condition before recommending this approach." }
@@ -318,12 +318,12 @@
     "category": "Roofing",
     "heroImg": "https://images.unsplash.com/photo-1582268611958-ebfd161ef9cf?w=1920&q=80",
     "cardImg": "https://images.unsplash.com/photo-1582268611958-ebfd161ef9cf?w=800&q=75",
-    "alt": "Exterior siding installation in Ottawa",
+    "alt": "Exterior siding installation in Ontario",
     "tagline": "Premium cladding that protects and impresses.",
     "intro1": "New exterior siding dramatically improves your home's curb appeal while providing critical protection against Ontario's weather. We install vinyl, fibre cement (James Hardie), engineered wood, and steel siding with full moisture barrier and insulation options.",
     "intro2": "Our siding projects include all associated trim, corner boards, window and door surrounds, and soffit and fascia as needed — so you get a complete, cohesive exterior transformation.",
-    "metaTitle": "Exterior Siding Ottawa | Top Design Renovation — Vinyl & Fibre Cement",
-    "metaDesc": "Expert exterior siding installation in Ottawa. Vinyl, fibre cement (James Hardie) & engineered wood. Full exterior transformation with trim & flashing. Free estimate.",
+    "metaTitle": "Exterior Siding Ontario | Top Design Renovation — Vinyl & Fibre Cement",
+    "metaDesc": "Expert exterior siding installation in Ontario. Vinyl, fibre cement (James Hardie) & engineered wood. Full exterior transformation with trim & flashing. Free estimate.",
     "whyUs": [
       "James Hardie preferred installer",
       "Full moisture barrier & insulation backing available",
@@ -336,7 +336,7 @@
       { "icon": "thermometer", "title": "Insulation Backing", "desc": "We offer insulated vinyl and fibre cement with foam-backed options to improve your wall R-value and reduce heating and cooling costs." }
     ],
     "faqs": [
-      { "q": "How much does siding replacement cost in Ottawa?", "a": "Vinyl siding replacement costs $12–$18 per sq ft installed. Fibre cement (James Hardie) costs $18–$28 per sq ft. An average 2,000 sq ft home runs $15,000–$35,000 depending on material and home complexity." },
+      { "q": "How much does siding replacement cost in Ontario?", "a": "Vinyl siding replacement costs $12–$18 per sq ft installed. Fibre cement (James Hardie) costs $18–$28 per sq ft. An average 2,000 sq ft home runs $15,000–$35,000 depending on material and home complexity." },
       { "q": "What is the best siding for Ontario climate?", "a": "James Hardie fibre cement is our top recommendation for Ontario — it's dimensionally stable through freeze-thaw cycles, resists moisture, and holds its painted finish for 15+ years. Premium vinyl is also excellent for cold climates with modern insulated profiles." },
       { "q": "How long does siding installation take?", "a": "Siding installation on an average home takes 1–2 weeks. Larger homes or those requiring significant sheathing repair may take 2–3 weeks." },
       { "q": "Should I replace my soffits and eavestroughs at the same time?", "a": "If your soffits or eavestroughs are original or showing wear, combining the work saves mobilisation costs and ensures a cohesive finished look." }
@@ -357,12 +357,12 @@
     "category": "Roofing",
     "heroImg": "https://images.unsplash.com/photo-1558036117-15d82a90b9b1?w=1920&q=80",
     "cardImg": "https://images.unsplash.com/photo-1558036117-15d82a90b9b1?w=800&q=75",
-    "alt": "Soffit and fascia installation in Ottawa",
+    "alt": "Soffit and fascia installation in Ontario",
     "tagline": "The finishing detail that protects your roofline.",
     "intro1": "Soffits and fascia protect your roof's edge and overhang from water, pests, and rot — while giving your home's exterior a clean, finished appearance. When they fail, water enters your wall assembly and attic, causing costly damage.",
     "intro2": "We replace deteriorated wood soffits and fascia with low-maintenance aluminum or vinyl cladding that never rots, requires no painting, and is available in colours to match your siding and trim.",
-    "metaTitle": "Soffit & Fascia Ottawa | Top Design Renovation — Free Estimate",
-    "metaDesc": "Expert soffit & fascia installation in Ottawa. Aluminum & vinyl replacement for wood rot protection. Improves ventilation & curb appeal. Free estimate.",
+    "metaTitle": "Soffit & Fascia Ontario | Top Design Renovation — Free Estimate",
+    "metaDesc": "Expert soffit & fascia installation in Ontario. Aluminum & vinyl replacement for wood rot protection. Improves ventilation & curb appeal. Free estimate.",
     "whyUs": [
       "Aluminum & vinyl — never rots, never needs painting",
       "Vented soffit panels for proper attic ventilation",
@@ -396,12 +396,12 @@
     "category": "Roofing",
     "heroImg": "https://images.unsplash.com/photo-1512917774080-9991f1c4c750?w=1920&q=80",
     "cardImg": "https://images.unsplash.com/photo-1512917774080-9991f1c4c750?w=800&q=75",
-    "alt": "Eavestrough installation in Ottawa",
+    "alt": "Eavestrough installation in Ontario",
     "tagline": "Protect your foundation from water damage.",
     "intro1": "Eavestroughs direct roof runoff away from your foundation — without them, water pools against your home and causes basement leaks, foundation erosion, and landscape damage. We install seamless aluminum eavestroughs fabricated on-site for a perfect, leak-free fit.",
     "intro2": "We also install gutter guards that prevent leaf and debris buildup, eliminating twice-yearly cleaning. All our eavestrough systems include proper slope, downspout sizing, and extensions to move water well away from your foundation.",
-    "metaTitle": "Eavestrough & Gutter Guards Ottawa | Top Design Renovation — Free Estimate",
-    "metaDesc": "Seamless aluminum eavestrough installation & gutter guard systems in Ottawa. Protect your foundation from water damage. Free estimate.",
+    "metaTitle": "Eavestrough & Gutter Guards Ontario | Top Design Renovation — Free Estimate",
+    "metaDesc": "Seamless aluminum eavestrough installation & gutter guard systems in Ontario. Protect your foundation from water damage. Free estimate.",
     "whyUs": [
       "Seamless aluminum — fabricated on-site, no joints to leak",
       "Gutter guard installation — no more annual cleaning",
@@ -435,12 +435,12 @@
     "category": "Roofing",
     "heroImg": "https://images.unsplash.com/photo-1523217582562-09d0def993a6?w=1920&q=80",
     "cardImg": "https://images.unsplash.com/photo-1523217582562-09d0def993a6?w=800&q=75",
-    "alt": "Roofing ventilation upgrades in Ottawa",
+    "alt": "Roofing ventilation upgrades in Ontario",
     "tagline": "Proper ventilation extends roof life and prevents ice dams.",
     "intro1": "Poor attic ventilation is one of the leading causes of premature roof failure, ice dam formation, and elevated heating and cooling costs. A properly ventilated attic maintains temperature balance, reduces moisture buildup, and dramatically extends the life of your roof shingles.",
     "intro2": "We assess your current ventilation intake and exhaust balance and recommend the right upgrades — ridge vents, soffit vents, power attic ventilators, or bathroom exhaust fan rerouting — to bring your home to code and optimal performance.",
-    "metaTitle": "Roofing Ventilation Upgrades Ottawa | Top Design Renovation — Free Estimate",
-    "metaDesc": "Attic ventilation upgrades in Ottawa. Ridge vents, soffit vents & power attic ventilators. Prevent ice dams, extend roof life. Free assessment.",
+    "metaTitle": "Roofing Ventilation Upgrades Ontario | Top Design Renovation — Free Estimate",
+    "metaDesc": "Attic ventilation upgrades in Ontario. Ridge vents, soffit vents & power attic ventilators. Prevent ice dams, extend roof life. Free assessment.",
     "whyUs": [
       "Full ventilation intake/exhaust balance assessment",
       "Ridge vent, soffit vent & power ventilator installation",
@@ -474,12 +474,12 @@
     "category": "Roofing",
     "heroImg": "https://images.unsplash.com/photo-1416331108676-a22ccb276e35?w=1920&q=80",
     "cardImg": "https://images.unsplash.com/photo-1416331108676-a22ccb276e35?w=800&q=75",
-    "alt": "Roof inspection in Ottawa",
+    "alt": "Roof inspection in Ontario",
     "tagline": "Know the true condition of your roof before it becomes an emergency.",
     "intro1": "A professional roof inspection gives you an accurate picture of your roof's current condition and remaining lifespan — before you're dealing with a leak during a rainstorm. We provide detailed written reports with photos documenting every finding.",
     "intro2": "Our inspections are commonly requested before home purchases, after severe storms, for insurance claims, and as part of regular maintenance programs. We're independent — our inspection recommendation is based on what's best for your home, not on selling you a new roof.",
-    "metaTitle": "Roof Inspection Ottawa | Top Design Renovation — Written Report with Photos",
-    "metaDesc": "Professional roof inspections in Ottawa. Written report with photos, honest assessment & repair recommendations. Pre-purchase & post-storm inspections.",
+    "metaTitle": "Roof Inspection Ontario | Top Design Renovation — Written Report with Photos",
+    "metaDesc": "Professional roof inspections in Ontario. Written report with photos, honest assessment & repair recommendations. Pre-purchase & post-storm inspections.",
     "whyUs": [
       "Detailed written report with photo documentation",
       "Pre-purchase & post-storm inspections",
@@ -492,7 +492,7 @@
       { "icon": "dollar-sign", "title": "Insurance Support", "desc": "Our inspection reports are accepted by most insurance companies for storm damage claims and are useful documentation for property transactions." }
     ],
     "faqs": [
-      { "q": "How much does a roof inspection cost in Ottawa?", "a": "A professional roof inspection with written report typically costs $150–$300. This fee is credited toward any repair or replacement work we complete. Pre-purchase inspections are commonly completed within 48 hours." },
+      { "q": "How much does a roof inspection cost in Ontario?", "a": "A professional roof inspection with written report typically costs $150–$300. This fee is credited toward any repair or replacement work we complete. Pre-purchase inspections are commonly completed within 48 hours." },
       { "q": "When should I get a roof inspection?", "a": "We recommend inspections after major hail or wind storms, before purchasing a home, if you notice signs of leakage inside, if your roof is 15+ years old, or every 3–5 years as preventive maintenance." },
       { "q": "What does a roof inspection include?", "a": "Our inspection covers all roofing surfaces, flashing at all penetrations and transitions, ridge and hip condition, gutters and downspouts, soffit and fascia condition, attic access assessment, and photos of all findings." },
       { "q": "Can I use your inspection report for an insurance claim?", "a": "Yes. Our detailed photo reports with written assessments documenting storm damage or deterioration are accepted by insurance adjusters. We can also meet with adjusters on-site if needed." }
@@ -513,12 +513,12 @@
     "category": "Roofing",
     "heroImg": "https://images.unsplash.com/photo-1548777123-e216912df7d8?w=1920&q=80",
     "cardImg": "https://images.unsplash.com/photo-1548777123-e216912df7d8?w=800&q=75",
-    "alt": "Roof snow removal in Ottawa",
+    "alt": "Roof snow removal in Ontario",
     "tagline": "Protect your roof from dangerous snow and ice loads.",
     "intro1": "Heavy snow accumulation on roofs can cause structural failure, ice dam formation, and serious leaking. Ontario winters regularly bring snow loads that exceed the capacity of older roof structures — professional removal protects both your home and your family.",
     "intro2": "We provide safe, professional roof snow removal using proper tools that remove snow without damaging shingles or flashing. We also offer seasonal snow removal contracts for peace of mind throughout winter.",
-    "metaTitle": "Roof Snow Removal Ottawa | Top Design Renovation — Fast & Safe",
-    "metaDesc": "Professional roof snow removal in Ottawa. Safe tools that protect your shingles. Emergency & seasonal contracts available. Call (613) 698-1654.",
+    "metaTitle": "Roof Snow Removal Ontario | Top Design Renovation — Fast & Safe",
+    "metaDesc": "Professional roof snow removal in Ontario. Safe tools that protect your shingles. Emergency & seasonal contracts available. Call (613) 698-1654.",
     "whyUs": [
       "Non-abrasive tools — zero shingle damage",
       "Emergency same-day response available",
@@ -532,7 +532,7 @@
     ],
     "faqs": [
       { "q": "When is roof snow removal necessary?", "a": "Consider professional snow removal when accumulation exceeds 12–18 inches, when you see signs of sagging or hear unusual creaking, when ice dam icicles form at eaves, or after freezing rain events that add significant ice weight." },
-      { "q": "How much does roof snow removal cost in Ottawa?", "a": "Single-visit roof snow removal typically costs $200–$600 depending on roof size, accessibility, and snow depth. Seasonal contracts provide better value for homeowners who want ongoing coverage." },
+      { "q": "How much does roof snow removal cost in Ontario?", "a": "Single-visit roof snow removal typically costs $200–$600 depending on roof size, accessibility, and snow depth. Seasonal contracts provide better value for homeowners who want ongoing coverage." },
       { "q": "Can snow removal damage my shingles?", "a": "Only if done improperly with metal shovels or excessive force. Our team uses roof rakes and non-abrasive tools designed for safe snow removal — leaving a 2\" snow layer on the deck to protect shingles." },
       { "q": "Do you remove ice dams?", "a": "Yes. We remove ice dams using controlled steam or careful mechanical methods that eliminate the ice buildup without harming shingles or flashing — stopping the leak source immediately." }
     ],
@@ -552,12 +552,12 @@
     "category": "Electrical",
     "heroImg": "https://images.unsplash.com/photo-1621905251189-08b45d6a269e?w=1920&q=80",
     "cardImg": "https://images.unsplash.com/photo-1621905251189-08b45d6a269e?w=800&q=75",
-    "alt": "Licensed electrician performing residential electrical work in Ottawa",
+    "alt": "Licensed electrician performing residential electrical work in Ontario",
     "tagline": "Licensed electricians for your home — safe, fast, guaranteed.",
-    "intro1": "Your home's electrical system is the backbone of modern living — and when something goes wrong, safety is the priority. Our Ottawa licensed electricians handle everything from panel upgrades and new wiring to EV charger installation, smart home automation, smoke detectors, and emergency repairs.",
+    "intro1": "Your home's electrical system is the backbone of modern living — and when something goes wrong, safety is the priority. Our Ontario licensed electricians handle everything from panel upgrades and new wiring to EV charger installation, smart home automation, smoke detectors, and emergency repairs.",
     "intro2": "We coordinate all work with proper permits, ensuring every job meets the Canadian Electrical Code. From a single outlet replacement to a full rewire, our team delivers clean, reliable electrical work backed by a written warranty.",
-    "metaTitle": "Residential Electrical Services | Top Design Renovation - Ottawa, Canada",
-    "metaDesc": "Licensed electricians for your home in Ottawa. Panel upgrades, wiring, EV chargers, emergency repairs. Free estimate — call now!",
+    "metaTitle": "Residential Electrical Services | Top Design Renovation - Ontario, Canada",
+    "metaDesc": "Licensed electricians for your home in Ontario. Panel upgrades, wiring, EV chargers, emergency repairs. Free estimate — call now!",
     "whyUs": [
       "Licensed & insured electricians",
       "Up to code — all permits handled",
@@ -589,12 +589,12 @@
     "category": "Electrical",
     "heroImg": "https://images.unsplash.com/photo-1565193566173-7a0ee3dbe261?w=1920&q=80",
     "cardImg": "https://images.unsplash.com/photo-1565193566173-7a0ee3dbe261?w=800&q=75",
-    "alt": "Commercial and industrial electrical installation in Ottawa factory and warehouse",
+    "alt": "Commercial and industrial electrical installation in Ontario factory and warehouse",
     "tagline": "Complete electrical solutions for businesses, offices, warehouses and industrial facilities.",
     "intro1": "Businesses and industrial facilities require electrical solutions that go far beyond residential — 3-phase power systems, heavy-duty panel installations, warehouse lighting, industrial machinery connections, generator hookups, and emergency backup systems.",
     "intro2": "We work around your schedule to minimise downtime, handle all permits and inspections, and deliver work that fully complies with the Canadian Electrical Code for commercial and industrial applications.",
-    "metaTitle": "Commercial & Industrial Electrical | Top Design Renovation - Ottawa",
-    "metaDesc": "Certified commercial electricians in Ottawa. Offices, warehouses, factories. 3-phase power, industrial wiring, full code compliance. Get a free quote.",
+    "metaTitle": "Commercial & Industrial Electrical | Top Design Renovation - Ontario",
+    "metaDesc": "Certified commercial electricians in Ontario. Offices, warehouses, factories. 3-phase power, industrial wiring, full code compliance. Get a free quote.",
     "whyUs": [
       "Certified for commercial & industrial projects",
       "Minimal downtime — we work around your schedule",
@@ -626,12 +626,12 @@
     "category": "Plumbing",
     "heroImg": "https://images.unsplash.com/photo-1585771724684-38269d6639fd?w=1920&q=80",
     "cardImg": "https://images.unsplash.com/photo-1585771724684-38269d6639fd?w=800&q=75",
-    "alt": "Licensed plumber performing residential plumbing work in Ottawa",
+    "alt": "Licensed plumber performing residential plumbing work in Ontario",
     "tagline": "Expert plumbers for your home — repairs, installations and renovations.",
-    "intro1": "From a dripping faucet to a full bathroom rough-in, our Ottawa licensed plumbers handle every residential plumbing need with precision and care. We serve homeowners throughout Ottawa with honest pricing, quality workmanship, and emergency availability.",
+    "intro1": "From a dripping faucet to a full bathroom rough-in, our Ontario licensed plumbers handle every residential plumbing need with precision and care. We serve homeowners throughout Ontario with honest pricing, quality workmanship, and emergency availability.",
     "intro2": "We handle the full scope: leak detection and repair, pipe replacement, water heater installation, drain cleaning, fixture installation, sump pumps, frozen pipe repair, and emergency plumbing. All work meets Ontario plumbing code.",
-    "metaTitle": "Residential Plumbing Services | Top Design Renovation - Ottawa, Canada",
-    "metaDesc": "Expert plumbers for your home in Ottawa. Repairs, installations, water heaters, emergency service. Licensed & insured. Free estimate.",
+    "metaTitle": "Residential Plumbing Services | Top Design Renovation - Ontario, Canada",
+    "metaDesc": "Expert plumbers for your home in Ontario. Repairs, installations, water heaters, emergency service. Licensed & insured. Free estimate.",
     "whyUs": [
       "Licensed plumbers, available for emergencies",
       "Transparent pricing — no surprise fees",
@@ -646,7 +646,7 @@
       { "q": "Do you offer emergency plumbing services?", "a": "Yes — we provide emergency service for active leaks, burst pipes, sewer backups, and flooding. Call our emergency line for same-day or after-hours assistance." },
       { "q": "Can you replace old galvanized pipes?", "a": "Absolutely. We replace old galvanized plumbing with modern copper or PEX piping — with full permits and inspection in Ontario." },
       { "q": "Do you install tankless water heaters?", "a": "Yes — we install Navien, Rinnai, Noritz and other leading brands. We assess demand, size the unit, and handle all connections plus permits." },
-      { "q": "What areas do you serve?", "a": "We serve Ottawa and the surrounding area. Contact us to confirm service in your specific location." },
+      { "q": "What areas do you serve?", "a": "We serve Ontario and the surrounding area. Contact us to confirm service in your specific location." },
       { "q": "Do you handle bathroom rough-in plumbing for renovations?", "a": "Yes — supply lines, drain lines, and vent stacks installed to plan, coordinated with your contractor and code-compliant before walls close." }
     ],
     "gallery": [
@@ -663,12 +663,12 @@
     "category": "Plumbing",
     "heroImg": "https://images.unsplash.com/photo-1504328345606-18bbc8c9d7d1?w=1920&q=80",
     "cardImg": "https://images.unsplash.com/photo-1504328345606-18bbc8c9d7d1?w=800&q=75",
-    "alt": "Commercial and industrial plumbing installation for restaurant and facility in Ottawa",
+    "alt": "Commercial and industrial plumbing installation for restaurant and facility in Ontario",
     "tagline": "Large-scale plumbing solutions for businesses, restaurants, offices and industrial facilities.",
-    "intro1": "Commercial and industrial plumbing demands expertise well beyond residential — large-diameter pipe systems, backflow prevention, grease trap installation, industrial water treatment, and new construction rough-in. Our Ottawa team delivers on all of it.",
+    "intro1": "Commercial and industrial plumbing demands expertise well beyond residential — large-diameter pipe systems, backflow prevention, grease trap installation, industrial water treatment, and new construction rough-in. Our Ontario team delivers on all of it.",
     "intro2": "We serve restaurants, offices, manufacturing facilities, healthcare sites, and new construction. Every installation meets Ontario plumbing code and National Plumbing Code requirements, with full permit management and compliance documentation.",
-    "metaTitle": "Commercial & Industrial Plumbing | Top Design Renovation - Ottawa",
-    "metaDesc": "Commercial plumbing specialists in Ottawa. Restaurants, offices, industrial facilities. Grease traps, backflow, rough-in. Get a free quote.",
+    "metaTitle": "Commercial & Industrial Plumbing | Top Design Renovation - Ontario",
+    "metaDesc": "Commercial plumbing specialists in Ontario. Restaurants, offices, industrial facilities. Grease traps, backflow, rough-in. Get a free quote.",
     "whyUs": [
       "Certified for commercial & industrial projects",
       "Handles large-scale installations and new builds",

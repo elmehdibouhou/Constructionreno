@@ -1,14 +1,14 @@
----
+﻿---
 title: "Soffit & Fascia"
 category: "Roofing"
 tagline: "The finishing detail that protects your roofline."
 heroImg: "/images/services/soffit-fascia/hero.png"
 cardImg: "/images/services/soffit-fascia/hero.png"
-alt: "Soffit and fascia installation in Ottawa"
+alt: "Soffit and fascia installation in Ontario"
 intro1: "Soffits and fascia protect your roof's edge and overhang from water, pests, and rot — while giving your home's exterior a clean, finished appearance. When they fail, water enters your wall assembly and attic, causing costly damage."
 intro2: "We replace deteriorated wood soffits and fascia with low-maintenance aluminum or vinyl cladding that never rots, requires no painting, and is available in colours to match your siding and trim."
-metaTitle: "Soffit & Fascia Ottawa | Top Design Renovation — Free Estimate"
-metaDesc: "Expert soffit & fascia installation in Ottawa. Aluminum & vinyl replacement for wood rot protection. Improves ventilation & curb appeal. Free estimate."
+metaTitle: "Soffit & Fascia Ontario | Top Design Renovation — Free Estimate"
+metaDesc: "Expert soffit & fascia installation in Ontario. Aluminum & vinyl replacement for wood rot protection. Improves ventilation & curb appeal. Free estimate."
 whyUs:
   - "Aluminum & vinyl — never rots, never needs painting"
   - "Vented soffit panels for proper attic ventilation"
@@ -35,19 +35,19 @@ faqs:
     a: "If eavestroughs are being removed for soffit and fascia work anyway, combining the replacement saves significant labour cost and ensures a clean, consistent look."
 gallery:
   - src: /images/services/soffit-fascia/hero.png
-    alt: "Soffit and fascia installation Ottawa — aluminum cladding"
+    alt: "Soffit and fascia installation Ontario — aluminum cladding"
   - src: /images/services/soffit-fascia/gallery-1.png
-    alt: "Rotted wood soffit Ottawa — before replacement"
+    alt: "Rotted wood soffit Ontario — before replacement"
   - src: /images/services/soffit-fascia/gallery-2.png
-    alt: "Fascia board replacement Ottawa — work in progress"
+    alt: "Fascia board replacement Ontario — work in progress"
   - src: /images/services/soffit-fascia/gallery-3.png
-    alt: "Vented soffit panel installation Ottawa"
+    alt: "Vented soffit panel installation Ontario"
   - src: /images/services/soffit-fascia/gallery-4.png
-    alt: "Soffit and fascia detail Ottawa — corner finish"
+    alt: "Soffit and fascia detail Ontario — corner finish"
   - src: /images/services/soffit-fascia/gallery-5.png
-    alt: "Completed soffit fascia Ottawa — full roofline"
+    alt: "Completed soffit fascia Ontario — full roofline"
   - src: /images/services/soffit-fascia/gallery-6.png
-    alt: "Soffit fascia and eavestrough combination Ottawa"
+    alt: "Soffit fascia and eavestrough combination Ontario"
 related:
   - eavestrough
   - siding

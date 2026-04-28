@@ -1,14 +1,14 @@
----
+﻿---
 title: "Spa-Style Primary Ensuite"
 category: "Bathroom Renovation"
-location: "Glebe, Ottawa"
+location: "Glebe, Ontario"
 year: "2026"
 featured: true
 img: "/images/projects/spa-style-primary-ensuite/hero.png"
 alt: "Luxury spa-style primary ensuite with freestanding soaker tub, frameless glass walk-in shower and heated tile floors"
 description: "Complete primary ensuite transformation — a dated 1990s 4-piece converted into a hotel-quality retreat. Features a freestanding matte white soaker tub, a frameless glass walk-in shower with rain head and body jets, heated large-format porcelain floors, a custom double vanity with integrated LED mirror, and a dedicated makeup station with built-in task lighting."
-metaTitle: "Spa-Style Ensuite Renovation | Top Design Renovation Portfolio — Ottawa"
-metaDesc: "Luxury ensuite bathroom renovation in Ottawa's Glebe — freestanding soaker tub, frameless shower, heated floors, custom double vanity. Full photo gallery."
+metaTitle: "Spa-Style Ensuite Renovation | Top Design Renovation Portfolio — Ontario"
+metaDesc: "Luxury ensuite bathroom renovation in Ontario's Glebe — freestanding soaker tub, frameless shower, heated floors, custom double vanity. Full photo gallery."
 area: "120 sq ft — full gut and reconfiguration"
 highlights:
   - "Freestanding matte white soaker tub as the centrepiece focal point"

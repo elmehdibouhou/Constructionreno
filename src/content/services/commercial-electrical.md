@@ -1,14 +1,14 @@
----
+﻿---
 title: "Commercial & Industrial Electrical Services"
 category: "Electrical"
 tagline: "Complete electrical solutions for businesses, offices, warehouses and industrial facilities."
 heroImg: "/images/services/commercial-electrical/hero.png"
 cardImg: "/images/services/commercial-electrical/hero.png"
-alt: "Commercial and industrial electrical installation in Ottawa factory and warehouse"
-intro1: "Businesses and industrial facilities require electrical solutions that go far beyond residential — 3-phase power systems, heavy-duty panel installations, warehouse lighting upgrades, industrial machinery connections, generator hookups, and emergency backup systems. Our Ottawa commercial electrical team is certified for all of it."
+alt: "Commercial and industrial electrical installation in Ontario factory and warehouse"
+intro1: "Businesses and industrial facilities require electrical solutions that go far beyond residential — 3-phase power systems, heavy-duty panel installations, warehouse lighting upgrades, industrial machinery connections, generator hookups, and emergency backup systems. Our Ontario commercial electrical team is certified for all of it."
 intro2: "We work around your schedule to minimise downtime, handle all permits and inspections, and deliver work that fully complies with the Canadian Electrical Code for commercial and industrial applications. From a small retail fitout to a large manufacturing facility, we have the experience and crew to execute it right."
-metaTitle: "Commercial & Industrial Electrical | Top Design Renovation - Ottawa"
-metaDesc: "Certified commercial electricians in Ottawa. Offices, warehouses, factories. 3-phase power, industrial wiring, full code compliance. Get a free quote."
+metaTitle: "Commercial & Industrial Electrical | Top Design Renovation - Ontario"
+metaDesc: "Certified commercial electricians in Ontario. Offices, warehouses, factories. 3-phase power, industrial wiring, full code compliance. Get a free quote."
 whyUs:
   - "Certified for commercial & industrial projects"
   - "Minimal downtime — we work around your schedule"
@@ -36,19 +36,19 @@ faqs:
     a: "Yes — we offer preventive maintenance contracts for commercial and industrial clients that include scheduled inspections, panel maintenance, lighting system checks, and priority emergency response. Contact us for a customised maintenance plan."
 gallery:
   - src: /images/services/commercial-electrical/hero.png
-    alt: "Commercial electrical installation Ottawa — warehouse lighting"
+    alt: "Commercial electrical installation Ontario — warehouse lighting"
   - src: /images/services/commercial-electrical/gallery-1.png
-    alt: "3-phase electrical panel Ottawa — commercial installation"
+    alt: "3-phase electrical panel Ontario — commercial installation"
   - src: /images/services/commercial-electrical/gallery-2.png
-    alt: "Industrial wiring Ottawa — factory electrical work"
+    alt: "Industrial wiring Ontario — factory electrical work"
   - src: /images/services/commercial-electrical/gallery-3.png
-    alt: "Commercial LED lighting upgrade Ottawa — office building"
+    alt: "Commercial LED lighting upgrade Ontario — office building"
   - src: /images/services/commercial-electrical/gallery-4.png
-    alt: "Generator hookup Ottawa — commercial backup power"
+    alt: "Generator hookup Ontario — commercial backup power"
   - src: /images/services/commercial-electrical/gallery-5.png
-    alt: "Commercial electrical conduit Ottawa — code-compliant install"
+    alt: "Commercial electrical conduit Ontario — code-compliant install"
   - src: /images/services/commercial-electrical/gallery-6.png
-    alt: "ESA commercial inspection Ottawa — compliance certification"
+    alt: "ESA commercial inspection Ontario — compliance certification"
 related:
   - residential-electrical
   - commercial-plumbing

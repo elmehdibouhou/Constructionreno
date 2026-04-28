@@ -1,14 +1,14 @@
----
+﻿---
 title: "Commercial & Industrial Plumbing Services"
 category: "Plumbing"
 tagline: "Large-scale plumbing solutions for businesses, restaurants, offices and industrial facilities."
 heroImg: "/images/services/commercial-plumbing/hero.png"
 cardImg: "/images/services/commercial-plumbing/hero.png"
-alt: "Commercial and industrial plumbing installation for restaurant and facility in Ottawa"
-intro1: "Commercial and industrial plumbing demands expertise well beyond residential work — large-diameter pipe systems, backflow prevention, grease trap installation, industrial water treatment, fire suppression connections, and new construction rough-in. Our Ottawa commercial plumbing team delivers on all of it."
-intro2: "We work with restaurants, office buildings, manufacturing facilities, healthcare sites, and new construction projects throughout Ottawa. Every installation meets Ontario plumbing code and National Plumbing Code requirements, with full permit management and compliance documentation provided."
-metaTitle: "Commercial & Industrial Plumbing | Top Design Renovation - Ottawa"
-metaDesc: "Commercial plumbing specialists in Ottawa. Restaurants, offices, industrial facilities. Grease traps, backflow, rough-in. Get a free quote."
+alt: "Commercial and industrial plumbing installation for restaurant and facility in Ontario"
+intro1: "Commercial and industrial plumbing demands expertise well beyond residential work — large-diameter pipe systems, backflow prevention, grease trap installation, industrial water treatment, fire suppression connections, and new construction rough-in. Our Ontario commercial plumbing team delivers on all of it."
+intro2: "We work with restaurants, office buildings, manufacturing facilities, healthcare sites, and new construction projects throughout Ontario. Every installation meets Ontario plumbing code and National Plumbing Code requirements, with full permit management and compliance documentation provided."
+metaTitle: "Commercial & Industrial Plumbing | Top Design Renovation - Ontario"
+metaDesc: "Commercial plumbing specialists in Ontario. Restaurants, offices, industrial facilities. Grease traps, backflow, rough-in. Get a free quote."
 whyUs:
   - "Certified for commercial & industrial projects"
   - "Handles large-scale installations and new builds"
@@ -36,19 +36,19 @@ faqs:
     a: "Yes — we offer scheduled maintenance contracts for commercial and industrial clients including grease trap servicing, backflow preventer testing, drain cleaning, and full plumbing system inspections. All maintenance contracts include priority emergency response."
 gallery:
   - src: /images/services/commercial-plumbing/hero.png
-    alt: "Commercial plumbing Ottawa — restaurant kitchen installation"
+    alt: "Commercial plumbing Ontario — restaurant kitchen installation"
   - src: /images/services/commercial-plumbing/gallery-1.png
-    alt: "Grease trap installation Ottawa — commercial kitchen"
+    alt: "Grease trap installation Ontario — commercial kitchen"
   - src: /images/services/commercial-plumbing/gallery-2.png
-    alt: "Commercial pipe installation Ottawa — large diameter"
+    alt: "Commercial pipe installation Ontario — large diameter"
   - src: /images/services/commercial-plumbing/gallery-3.png
-    alt: "Backflow prevention Ottawa — commercial system"
+    alt: "Backflow prevention Ontario — commercial system"
   - src: /images/services/commercial-plumbing/gallery-4.png
-    alt: "Industrial plumbing Ottawa — warehouse facility"
+    alt: "Industrial plumbing Ontario — warehouse facility"
   - src: /images/services/commercial-plumbing/gallery-5.png
-    alt: "New construction plumbing rough-in Ottawa — commercial build"
+    alt: "New construction plumbing rough-in Ontario — commercial build"
   - src: /images/services/commercial-plumbing/gallery-6.png
-    alt: "Commercial plumbing inspection Ottawa — code compliance"
+    alt: "Commercial plumbing inspection Ontario — code compliance"
 related:
   - residential-plumbing
   - commercial-electrical

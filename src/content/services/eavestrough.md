@@ -1,14 +1,14 @@
----
+﻿---
 title: "Eavestrough & Gutter Guards"
 category: "Roofing"
 tagline: "Protect your foundation from water damage."
 heroImg: "/images/services/eavestrough/hero.png"
 cardImg: "/images/services/eavestrough/hero.png"
-alt: "Eavestrough installation in Ottawa"
+alt: "Eavestrough installation in Ontario"
 intro1: "Eavestroughs direct roof runoff away from your foundation — without them, water pools against your home and causes basement leaks, foundation erosion, and landscape damage. We install seamless aluminum eavestroughs fabricated on-site for a perfect, leak-free fit."
 intro2: "We also install gutter guards that prevent leaf and debris buildup, eliminating twice-yearly cleaning. All our eavestrough systems include proper slope, downspout sizing, and extensions to move water well away from your foundation."
-metaTitle: "Eavestrough & Gutter Guards Ottawa | Top Design Renovation — Free Estimate"
-metaDesc: "Seamless aluminum eavestrough installation & gutter guard systems in Ottawa. Protect your foundation from water damage. Free estimate."
+metaTitle: "Eavestrough & Gutter Guards Ontario | Top Design Renovation — Free Estimate"
+metaDesc: "Seamless aluminum eavestrough installation & gutter guard systems in Ontario. Protect your foundation from water damage. Free estimate."
 whyUs:
   - "Seamless aluminum — fabricated on-site, no joints to leak"
   - "Gutter guard installation — no more annual cleaning"
@@ -35,19 +35,19 @@ faqs:
     a: "Quality micro-mesh gutter guards significantly reduce maintenance — eliminating full-debris clogs entirely. We recommend and install products that allow water in while keeping leaves and pine needles out."
 gallery:
   - src: /images/services/eavestrough/hero.png
-    alt: "Seamless eavestrough installation Ottawa — aluminum gutters"
+    alt: "Seamless eavestrough installation Ontario — aluminum gutters"
   - src: /images/services/eavestrough/gallery-1.png
-    alt: "Eavestrough fabrication on-site Ottawa — seamless run"
+    alt: "Eavestrough fabrication on-site Ontario — seamless run"
   - src: /images/services/eavestrough/gallery-2.png
-    alt: "Downspout installation Ottawa — foundation drainage"
+    alt: "Downspout installation Ontario — foundation drainage"
   - src: /images/services/eavestrough/gallery-3.png
-    alt: "Gutter guard installation Ottawa — micro-mesh system"
+    alt: "Gutter guard installation Ontario — micro-mesh system"
   - src: /images/services/eavestrough/gallery-4.png
-    alt: "Eavestrough replacement Ottawa — old gutters removed"
+    alt: "Eavestrough replacement Ontario — old gutters removed"
   - src: /images/services/eavestrough/gallery-5.png
-    alt: "Completed eavestrough Ottawa — full perimeter install"
+    alt: "Completed eavestrough Ontario — full perimeter install"
   - src: /images/services/eavestrough/gallery-6.png
-    alt: "Eavestrough and soffit combination Ottawa"
+    alt: "Eavestrough and soffit combination Ontario"
 related:
   - soffit-fascia
   - siding

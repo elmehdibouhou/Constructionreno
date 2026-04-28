@@ -1,4 +1,4 @@
----
+﻿---
 title: "Home Electrical Safety: 10 Warning Signs You Need an Electrician Now"
 description: "Flickering lights? Warm outlets? Tripping breakers? These 10 electrical warning signs in Canadian homes demand immediate professional attention. Learn when to call a licensed electrician before a small issue becomes a fire hazard."
 pubDate: "2026-04-26T00:00:00.000Z"
@@ -104,7 +104,7 @@ AFCI (Arc Fault Circuit Interrupter) breakers detect the subtle electrical signa
 
 If you've recognized any of these warning signs in your home, the right move is to call a licensed electrician for a professional assessment. Don't wait until a small problem becomes an emergency.
 
-Our Ottawa electricians offer [free residential electrical estimates](/services/residential-electrical) and are available 7 days a week for both scheduled inspections and emergency calls. We also handle [commercial and industrial electrical work](/services/commercial-electrical) for businesses across Ottawa.
+Our Ontario electricians offer [free residential electrical estimates](/services/residential-electrical) and are available 7 days a week for both scheduled inspections and emergency calls. We also handle [commercial and industrial electrical work](/services/commercial-electrical) for businesses across Ontario.
 
 ---
 
@@ -114,7 +114,7 @@ Our Ottawa electricians offer [free residential electrical estimates](/services/
 Most electrical professionals recommend an inspection every 10 years for homes under 25 years old, and every 5 years for older homes. Always inspect after purchasing a home, after any major renovation, or if you've noticed any of the warning signs above.
 
 **How much does a home electrical inspection cost?**
-A professional home electrical inspection typically costs $150–$300 in Ottawa. The inspection cost is often credited toward any repair or upgrade work we complete following the assessment.
+A professional home electrical inspection typically costs $150–$300 in Ontario. The inspection cost is often credited toward any repair or upgrade work we complete following the assessment.
 
 **Can I do electrical repairs myself in Ontario?**
 In Ontario, most electrical work requires a permit and must be performed by a licensed electrical contractor. DIY electrical work that bypasses the permit and inspection process is both dangerous and may create problems when selling your home.

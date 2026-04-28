@@ -1,14 +1,14 @@
----
+﻿---
 title: "Interior & Exterior Painting"
 category: "Renovation"
 tagline: "A fresh coat of paint is the fastest way to transform a space."
 heroImg: "/images/services/painting/hero.png"
 cardImg: "/images/services/painting/hero.png"
-alt: "Professional interior painting in Ottawa"
-intro1: "Professional painting is about far more than colour. It's proper preparation, the right primer, expert application, and clean edges that make the difference between a DIY look and a showroom finish. Our Ottawa painting team delivers that showroom finish every time."
+alt: "Professional interior painting in Ontario"
+intro1: "Professional painting is about far more than colour. It's proper preparation, the right primer, expert application, and clean edges that make the difference between a DIY look and a showroom finish. Our Ontario painting team delivers that showroom finish every time."
 intro2: "We handle interior and exterior painting for homes of all sizes — from a single accent wall to a full house repaint inside and out. We use only premium paints (Benjamin Moore, Sherwin-Williams) and protect all surfaces before we ever open a can."
-metaTitle: "Interior & Exterior Painting Ottawa | Top Design Renovation — Free Estimate"
-metaDesc: "Professional interior & exterior painting in Ottawa. Premium paints, meticulous prep, clean results. Residential & commercial painting. Free estimate."
+metaTitle: "Interior & Exterior Painting Ontario | Top Design Renovation — Free Estimate"
+metaDesc: "Professional interior & exterior painting in Ontario. Premium paints, meticulous prep, clean results. Residential & commercial painting. Free estimate."
 whyUs:
   - "Benjamin Moore & Sherwin-Williams certified applicators"
   - "Full surface prep — no shortcuts"
@@ -25,8 +25,8 @@ benefits:
     title: "Exterior Protection"
     desc: "Our exterior coatings protect against Ontario's freeze-thaw cycles, UV damage, and moisture. We prep and prime before applying two full coats."
 faqs:
-  - q: "How much does interior painting cost in Ottawa?"
-    a: "Interior painting in Ottawa typically costs $2–$4 per sq ft depending on prep work required and number of rooms. A standard 2,000 sq ft home runs $4,000–$8,000 for a full interior repaint."
+  - q: "How much does interior painting cost in Ontario?"
+    a: "Interior painting in Ontario typically costs $2–$4 per sq ft depending on prep work required and number of rooms. A standard 2,000 sq ft home runs $4,000–$8,000 for a full interior repaint."
   - q: "How long does a full interior paint job take?"
     a: "A full interior repaint of an average home (3 bedrooms) takes 3–5 days. We work efficiently to minimise disruption while never rushing the prep work."
   - q: "Can you paint while I'm living in the house?"
@@ -35,19 +35,19 @@ faqs:
     a: "All exterior surfaces are pressure washed, scraped, sanded, primed, and caulked before painting. This prep work is what ensures the paint bonds properly and lasts for years."
 gallery:
   - src: /images/services/painting/hero.png
-    alt: "Peintre professionnel appliquant une deuxième couche — Ottawa"
+    alt: "Peintre professionnel appliquant une deuxième couche — Ontario"
   - src: /images/services/painting/gallery-1.png
-    alt: "Préparation des surfaces — ponçage et remplissage fissures Ottawa"
+    alt: "Préparation des surfaces — ponçage et remplissage fissures Ontario"
   - src: /images/services/painting/gallery-2.png
-    alt: "Peinture extérieure professionnelle Ottawa — peintre sur échelle"
+    alt: "Peinture extérieure professionnelle Ontario — peintre sur échelle"
   - src: /images/services/painting/gallery-3.png
-    alt: "Résultat peinture intérieure Ottawa — mur accent bleu marine"
+    alt: "Résultat peinture intérieure Ontario — mur accent bleu marine"
   - src: /images/services/painting/gallery-4.png
-    alt: "Résultat peinture extérieure Ottawa — façade brique et boiseries"
+    alt: "Résultat peinture extérieure Ontario — façade brique et boiseries"
   - src: /images/services/painting/gallery-5.png
-    alt: "Détail finition peinture Ottawa — jonction plinthe et mur parfaite"
+    alt: "Détail finition peinture Ontario — jonction plinthe et mur parfaite"
   - src: /images/services/painting/gallery-6.png
-    alt: "Peinture plafond chambre Ottawa — protection meubles en place"
+    alt: "Peinture plafond chambre Ontario — protection meubles en place"
 related:
   - kitchen-renovation
   - exterior-renovations

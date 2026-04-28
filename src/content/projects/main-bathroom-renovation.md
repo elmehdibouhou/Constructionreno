@@ -1,14 +1,14 @@
----
+﻿---
 title: "Main Bathroom Renovation"
 category: "Bathroom Renovation"
-location: "Orleans, Ottawa"
+location: "Orleans, Ontario"
 year: "2025"
 featured: false
 img: "/images/projects/main-bathroom-renovation/hero.png"
-alt: "Renovated main family bathroom in Orleans Ottawa with walk-in shower, floating vanity and large format tile"
+alt: "Renovated main family bathroom in Orleans Ontario with walk-in shower, floating vanity and large format tile"
 description: "Main family bathroom renovation in an Orleans two-storey — converting an outdated 4-piece with a tub-shower combo into a practical modern 3-piece. The tub was removed to allow a generous walk-in shower with large-format porcelain tile, a rain shower head, and a recessed niche. A new floating double vanity replaced the old bulky cabinet. Heated large-format floor tile, a backlit mirror, and matte black fixtures complete a clean, contemporary result."
-metaTitle: "Main Bathroom Renovation Orleans | Top Design Renovation Portfolio — Ottawa"
-metaDesc: "Main bathroom renovation in Orleans Ottawa — tub removed for walk-in shower, floating vanity, heated tile floors, matte black fixtures. Full project photos."
+metaTitle: "Main Bathroom Renovation Orleans | Top Design Renovation Portfolio — Ontario"
+metaDesc: "Main bathroom renovation in Orleans Ontario — tub removed for walk-in shower, floating vanity, heated tile floors, matte black fixtures. Full project photos."
 area: "85 sq ft — full gut, tub-to-shower conversion"
 highlights:
   - "Tub removed and replaced with spacious walk-in shower"

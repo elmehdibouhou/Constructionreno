@@ -1,4 +1,4 @@
----
+﻿---
 import { getCollection } from 'astro:content';
 import { client } from '../../tina/__generated__/client';
 import { prepareTinaData } from '../lib/tina-helper';
@@ -19,8 +19,8 @@ const categories = ['All', ...new Set(projects.map(p => p.data.category))];
 ---
 
 <BaseLayout
-  title="Renovation Portfolio Ottawa | Top Design Renovation"
-  description="View completed renovation and roofing projects by Top Design Renovation in Ottawa. Kitchen renovations, roof replacements, home additions & more."
+  title="Renovation Portfolio Ontario | Top Design Renovation"
+  description="View completed renovation and roofing projects by Top Design Renovation in Ontario. Kitchen renovations, roof replacements, home additions & more."
   tinaSetup={tinaSetup}
 >
 
@@ -33,7 +33,7 @@ const categories = ['All', ...new Set(projects.map(p => p.data.category))];
       <span class="eyebrow">Our Portfolio</span>
       <h1 id="work-h1" style="color:white; max-width:600px; margin-bottom:1rem;">Our Work</h1>
       <p style="color:rgba(255,255,255,0.8); max-width:500px; font-size:var(--text-lg);">
-        Browse completed renovation and roofing projects across Ottawa and the surrounding area.
+        Browse completed renovation and roofing projects across Ontario and the surrounding area.
       </p>
     </div>
   </section>

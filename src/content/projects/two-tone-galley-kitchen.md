@@ -1,14 +1,14 @@
----
+﻿---
 title: "Two-Tone Galley Kitchen"
 category: "Kitchen Renovation"
-location: "Barrhaven, Ottawa"
+location: "Barrhaven, Ontario"
 year: "2025"
 featured: false
 img: "/images/projects/two-tone-galley-kitchen/hero.png"
 alt: "Renovated galley kitchen with sage green lower cabinets, white upper cabinets, quartz counters and subway tile backsplash"
 description: "Compact galley kitchen renovation in a Barrhaven semi-detached — transformed from builder-grade oak into a clean, contemporary space without moving a single wall. New sage green lower cabinets, white upper cabinets, quartz countertops, and a full-height subway tile backsplash. New hardware, undermount sink, pull-out faucet, and under-cabinet LED strip lighting complete the refresh. Budget-conscious scope, designer result."
-metaTitle: "Galley Kitchen Renovation Barrhaven | Top Design Renovation Portfolio — Ottawa"
-metaDesc: "Compact galley kitchen renovation in Barrhaven Ottawa — sage green cabinets, quartz counters, subway tile, LED lighting. Designer look on a realistic budget."
+metaTitle: "Galley Kitchen Renovation Barrhaven | Top Design Renovation Portfolio — Ontario"
+metaDesc: "Compact galley kitchen renovation in Barrhaven Ontario — sage green cabinets, quartz counters, subway tile, LED lighting. Designer look on a realistic budget."
 area: "145 sq ft — galley layout, no structural changes"
 highlights:
   - "New two-tone cabinetry — sage green lowers, white uppers — replacing dated oak"
