@@ -51,6 +51,12 @@ gallery:
     alt: Cuisine complète — autre angle
   - src: /uploads/Kitchen backsplash installation.mp4
   - src: /uploads/Kitchen%20Design.mp4
+  - src: ''
+    alt: Kitchen design ideas and planning
+    videoUrl: /videos/kitchen/kitchen-design.mp4
+  - src: ''
+    alt: Kitchen transformation before and after
+    videoUrl: /videos/kitchen/kitchen-transformation.mp4
 related:
   - bathroom-renovation
   - basement-renovation

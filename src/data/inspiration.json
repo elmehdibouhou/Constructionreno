@@ -342,12 +342,13 @@
     ],
     "serviceSlug": "exterior-renovations",
     "gallery": [
-      "/images/inspiration/mudroom/gallery-1.png",
-      "/images/inspiration/mudroom/gallery-2.png",
-      "/images/inspiration/mudroom/gallery-3.png",
-      "/images/inspiration/mudroom/gallery-4.png",
-      "/images/inspiration/mudroom/gallery-5.png",
-      "/images/inspiration/mudroom/gallery-6.png"
+      { "src": "/images/inspiration/mudroom/gallery-1.png", "alt": "Built-in mudroom lockers with bench seating — Ontario home" },
+      { "src": "/images/inspiration/mudroom/gallery-2.png", "alt": "Mudroom entryway with coat hooks and boot storage" },
+      { "src": "/images/inspiration/mudroom/gallery-3.png", "alt": "Heated tile floor and built-in bench — Ontario mudroom renovation" },
+      { "src": "/images/inspiration/mudroom/gallery-4.png", "alt": "Custom mudroom storage system with cubbies Ontario" },
+      { "src": "/images/inspiration/mudroom/gallery-5.png", "alt": "Modern mudroom renovation with built-in cabinetry" },
+      { "src": "/images/inspiration/mudroom/gallery-6.png", "alt": "Mudroom entryway — organized family home Ontario" },
+      { "src": "", "alt": "Custom closet transformation — full renovation reveal", "videoUrl": "/videos/inspiration/mudroom-closet-transformation.mp4" }
     ]
   },
   {

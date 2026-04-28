@@ -13,7 +13,7 @@ interface Props {
     intro?: string;
     heroImg: string;
     serviceSlug?: string;
-    gallery?: Array<{ src?: string; alt?: string; videoUrl?: string }>;
+    gallery?: Array<string | { src?: string; alt?: string; videoUrl?: string }>;
     ideas?: Array<{ title: string; desc: string; img?: string }>;
   };
   slug: string;
@@ -58,10 +58,11 @@ interface GalleryItem {
   isDirect: boolean;
 }
 
-const galleryItems: GalleryItem[] = (page.gallery ?? []).map((item, i) => {
-  let src: string = normalizeImgSrc(item.src) ?? '';
-  const alt: string = item.alt || `${page.title} — media ${i + 1}`;
-  let videoUrl: string = item.videoUrl ?? '';
+const galleryItems: GalleryItem[] = (page.gallery ?? []).map((item: any, i) => {
+  const raw = typeof item === 'string' ? { src: item, alt: '', videoUrl: '' } : item;
+  let src: string = normalizeImgSrc(raw.src) ?? '';
+  const alt: string = raw.alt || `${page.title} — media ${i + 1}`;
+  let videoUrl: string = raw.videoUrl ?? '';
 
   if (!videoUrl && isDirectVideo(src)) {
     videoUrl = src;
@@ -471,18 +472,19 @@ const heroImg = normalizeImgSrc(page.heroImg);
     const safeSrc = isDirect ? encodeURI(decodeURI(embedUrl)) : embedUrl;
     player.innerHTML = '';
     if (isDirect) {
-      const video = document.createElement('video');
-      video.src = safeSrc;
-      video.controls = true;
-      video.autoplay = true;
-      video.style.cssText = 'position:absolute;inset:0;width:100%;height:100%;';
-      player.style.display = 'none';
-      player.appendChild(video);
-      player.style.display = '';
+      player.style.paddingBottom = '';
+      player.style.height = 'auto';
+      player.style.maxHeight = '80vh';
+      player.style.display = 'flex';
+      player.style.alignItems = 'center';
+      player.style.justifyContent = 'center';
+      player.innerHTML = `<video src="${safeSrc}" controls autoplay playsinline style="max-width:100%;max-height:80vh;width:auto;height:auto;display:block;border-radius:var(--radius-md);"></video>`;
     } else {
-      player.style.display = 'none';
-      player.innerHTML = `<iframe src="${safeSrc}" allow="autoplay; fullscreen; picture-in-picture" allowfullscreen></iframe>`;
+      player.style.paddingBottom = '56.25%';
+      player.style.height = '0';
+      player.style.maxHeight = '';
       player.style.display = '';
+      player.innerHTML = `<iframe src="${safeSrc}" allow="autoplay; fullscreen; picture-in-picture" allowfullscreen></iframe>`;
     }
     modal.classList.add('is-open');
     modal.removeAttribute('aria-hidden');
@@ -493,6 +495,10 @@ const heroImg = normalizeImgSrc(page.heroImg);
     modal.classList.remove('is-open');
     modal.setAttribute('aria-hidden', 'true');
     player.innerHTML = '';
+    player.style.paddingBottom = '56.25%';
+    player.style.height = '0';
+    player.style.maxHeight = '';
+    player.style.display = '';
     document.body.style.overflow = '';
   }
 
