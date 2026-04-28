@@ -40,7 +40,7 @@ const serviceSchema = {
     "name": "Top Design Renovation",
     "url": "https://topdesignrenovation.ca"
   },
-  "areaServed": { "@type": "City", "name": "Ottawa" },
+  "areaServed": { "@type": "AdministrativeArea", "name": "Ontario" },
   "description": service.metaDesc,
   "offers": {
     "@type": "Offer",
@@ -59,13 +59,57 @@ const faqSchema = {
   }))
 };
 
+const breadcrumbSchema = {
+  "@context": "https://schema.org",
+  "@type": "BreadcrumbList",
+  "itemListElement": [
+    { "@type": "ListItem", "position": 1, "name": "Home", "item": "https://topdesignrenovation.ca" },
+    { "@type": "ListItem", "position": 2, "name": "Services", "item": "https://topdesignrenovation.ca/services" },
+    { "@type": "ListItem", "position": 3, "name": service.title }
+  ]
+};
+
+const howToSchema = {
+  "@context": "https://schema.org",
+  "@type": "HowTo",
+  "name": `How to Get ${service.title} in Ontario`,
+  "description": `Step-by-step process to get professional ${service.title} service from Top Design Renovation in Ontario.`,
+  "step": [
+    {
+      "@type": "HowToStep",
+      "position": 1,
+      "name": "Request a Free Estimate",
+      "text": "Fill out our online form or call (613) 698-1654. We respond within 1 business day.",
+      "url": "https://topdesignrenovation.ca/free-estimate"
+    },
+    {
+      "@type": "HowToStep",
+      "position": 2,
+      "name": "On-Site Assessment",
+      "text": "Our team visits your property to assess the scope of work and take measurements."
+    },
+    {
+      "@type": "HowToStep",
+      "position": 3,
+      "name": "Receive a Written Quote",
+      "text": "You get a detailed written quote within 3-5 business days — no hidden fees, no pressure."
+    },
+    {
+      "@type": "HowToStep",
+      "position": 4,
+      "name": "Project Execution",
+      "text": "Our licensed team completes the work on schedule, backed by a 5-year workmanship warranty."
+    }
+  ]
+};
+
 const specialistSchema = service.category === 'Electrical' ? {
   "@context": "https://schema.org",
   "@type": "Electrician",
   "name": "Top Design Renovation",
   "url": "https://topdesignrenovation.ca",
   "telephone": "(613) 698-1654",
-  "areaServed": { "@type": "City", "name": "Ottawa" },
+  "areaServed": { "@type": "AdministrativeArea", "name": "Ontario" },
   "description": service.metaDesc,
 } : service.category === 'Plumbing' ? {
   "@context": "https://schema.org",
@@ -73,7 +117,7 @@ const specialistSchema = service.category === 'Electrical' ? {
   "name": "Top Design Renovation",
   "url": "https://topdesignrenovation.ca",
   "telephone": "(613) 698-1654",
-  "areaServed": { "@type": "City", "name": "Ottawa" },
+  "areaServed": { "@type": "AdministrativeArea", "name": "Ontario" },
   "description": service.metaDesc,
 } : null;
 
@@ -110,7 +154,7 @@ const icons: Record<string, string> = {
 <BaseLayout
   title={service.metaTitle}
   description={service.metaDesc}
-  schema={serviceSchema}
+  schema={[serviceSchema, breadcrumbSchema, howToSchema]}
   tinaSetup={tinaSetup}
 >
   <!-- Hero -->

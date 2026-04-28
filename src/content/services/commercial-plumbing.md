@@ -52,5 +52,4 @@ gallery:
 related:
   - residential-plumbing
   - commercial-electrical
-  - custom-homes
 ---

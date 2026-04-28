@@ -93,9 +93,9 @@ export default defineConfig({
             required: true,
           },
           {
-            type: "string",
+            type: "image",
             name: "heroImg",
-            label: "Cover Photo URL",
+            label: "Cover Photo",
             required: true,
           },
           {
@@ -166,9 +166,9 @@ export default defineConfig({
             label: "⭐ Featured (shows large in gallery grid)",
           },
           {
-            type: "string",
+            type: "image",
             name: "img",
-            label: "Main Photo URL",
+            label: "Main Photo",
             required: true,
           },
           {
@@ -177,14 +177,14 @@ export default defineConfig({
             label: "Main Photo Alt Text",
           },
           {
-            type: "string",
+            type: "image",
             name: "beforeImage",
-            label: "Before Photo URL (optional — for before/after)",
+            label: "Before Photo (optional — for before/after)",
           },
           {
-            type: "string",
+            type: "image",
             name: "afterImage",
-            label: "After Photo URL (optional — for before/after)",
+            label: "After Photo (optional — for before/after)",
           },
           {
             type: "object",
@@ -195,7 +195,7 @@ export default defineConfig({
               itemProps: (item) => ({ label: item?.alt || "Photo" }),
             },
             fields: [
-              { type: "string", name: "src", label: "Photo URL" },
+              { type: "image", name: "src", label: "Photo" },
               { type: "string", name: "alt", label: "Alt Text" },
             ],
           },
@@ -241,15 +241,15 @@ export default defineConfig({
           },
           // ── Images ────────────────────────────────────────────────────────
           {
-            type: "string",
+            type: "image",
             name: "heroImg",
-            label: "Hero Photo URL (page banner — 1920×1080)",
+            label: "Hero Photo (page banner — 1920×1080)",
             required: true,
           },
           {
-            type: "string",
+            type: "image",
             name: "cardImg",
-            label: "Card Photo URL (service grid — 800×600)",
+            label: "Card Photo (service grid — 800×600)",
           },
           {
             type: "string",
@@ -367,9 +367,9 @@ export default defineConfig({
             },
             fields: [
               {
-                type: "string",
+                type: "image",
                 name: "src",
-                label: "Photo URL",
+                label: "Photo",
                 required: true,
               },
               {
@@ -481,9 +481,9 @@ export default defineConfig({
             ui: { component: "textarea" },
           },
           {
-            type: "string",
+            type: "image",
             name: "heroImage",
-            label: "Hero — Background Image URL",
+            label: "Hero — Background Image",
           },
           // ── About section ─────────────────────────────────────────────────
           {
@@ -504,9 +504,9 @@ export default defineConfig({
             ui: { component: "textarea" },
           },
           {
-            type: "string",
+            type: "image",
             name: "aboutImage",
-            label: "About — Photo URL",
+            label: "About — Photo",
           },
           {
             type: "string",
@@ -578,14 +578,14 @@ export default defineConfig({
           },
           // ── Branding ──────────────────────────────────────────────────────
           {
-            type: "string",
+            type: "image",
             name: "logo",
-            label: "Logo URL (PNG/SVG — upload via Media Manager then paste path)",
+            label: "Logo (PNG/SVG)",
           },
           {
-            type: "string",
+            type: "image",
             name: "ogImage",
-            label: "Social Share Image URL (1200×630px — upload via Media Manager)",
+            label: "Social Share Image (1200×630px)",
           },
           // ── Tracking & integrations ───────────────────────────────────────
           {

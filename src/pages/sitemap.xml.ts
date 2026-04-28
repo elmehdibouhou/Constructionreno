@@ -4,7 +4,7 @@ import { getCollection } from 'astro:content';
 const SITE = 'https://topdesignrenovation.ca';
 const TODAY = new Date().toISOString().split('T')[0];
 
-// Static pages — excludes: /thank-you, /privacy-policy, /terms, /404 (non-indexable)
+// Static pages — excludes: /thank-you, /404 (non-indexable)
 const staticPages = [
   { url: '/',               priority: '1.0', changefreq: 'weekly',  lastmod: TODAY },
   { url: '/free-estimate/', priority: '0.95', changefreq: 'monthly', lastmod: TODAY },
@@ -17,6 +17,8 @@ const staticPages = [
   { url: '/faq/',           priority: '0.65', changefreq: 'monthly', lastmod: TODAY },
   { url: '/about/',         priority: '0.60', changefreq: 'monthly', lastmod: TODAY },
   { url: '/products/',      priority: '0.50', changefreq: 'monthly', lastmod: TODAY },
+  { url: '/privacy-policy/', priority: '0.20', changefreq: 'yearly',  lastmod: TODAY },
+  { url: '/terms/',           priority: '0.20', changefreq: 'yearly',  lastmod: TODAY },
 ];
 
 // Inspiration pages (topical cluster — local SEO supporting content)
