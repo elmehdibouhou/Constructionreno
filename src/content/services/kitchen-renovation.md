@@ -2,8 +2,8 @@
 title: Kitchen Renovation
 category: Renovation
 tagline: Transform your kitchen into the heart of your home.
-heroImg: /images/services/kitchen-renovation/hero.png
-cardImg: /images/services/kitchen-renovation/hero.png
+heroImg: /uploads/images/services/kitchen-renovation/hero.png
+cardImg: /uploads/images/services/kitchen-renovation/hero.png
 alt: Modern kitchen renovation in Ontario
 intro1: 'Your kitchen is more than a place to cook — it''s where family gathers, meals are shared, and memories are made. Our Ontario kitchen renovation team combines skilled craftsmanship with premium materials to create a space that''s beautiful, functional, and built to last.'
 intro2: 'From a complete gut renovation to a targeted cabinet and countertop refresh, we handle every aspect of the project: design consultation, demolition, plumbing and electrical coordination, custom cabinetry, tile work, and final finishing — with no subcontracting surprises.'
@@ -35,32 +35,23 @@ faqs:
     a: 'Yes — most clients remain in their homes during kitchen renovations. We contain the work area, maintain clean pathways, and work Monday to Friday to minimise disruption to your routine.'
 videoUrl: 'https://www.youtube.com/shorts/r4iQwJb6wDw?feature=share'
 gallery:
-  - src: /images/services/kitchen-renovation/hero.png
+  - src: /uploads/images/services/kitchen-renovation/hero.png
     alt: Kitchen renovation Ontario — résultat final
-  - src: /images/services/kitchen-renovation/gallery-1.png
+  - src: /uploads/images/services/kitchen-renovation/gallery-1.png
     alt: Chantier cuisine en cours — démolition
-  - src: /images/services/kitchen-renovation/gallery-2.png
+  - src: /uploads/images/services/kitchen-renovation/gallery-2.png
     alt: Installation des armoires de cuisine
-  - src: /images/services/kitchen-renovation/gallery-3.png
+  - src: /uploads/images/services/kitchen-renovation/gallery-3.png
     alt: Installation comptoir quartz
-  - src: /images/services/kitchen-renovation/gallery-4.png
+  - src: /uploads/images/services/kitchen-renovation/gallery-4.png
     alt: Cuisine rénovée — angle large
-  - src: /images/services/kitchen-renovation/gallery-5.png
+  - src: /uploads/images/services/kitchen-renovation/gallery-5.png
     alt: Détail finition cuisine Ontario
-  - src: /images/services/kitchen-renovation/gallery-6.png
+  - src: /uploads/images/services/kitchen-renovation/gallery-6.png
     alt: Cuisine complète — autre angle
-  - src: /images/services/kitchen-renovation/gallery-4.png
-    alt: Kitchen backsplash installation
-    videoUrl: /uploads/Kitchen backsplash installation.mp4
-  - src: /images/services/kitchen-renovation/gallery-5.png
+  - src: /uploads/images/services/kitchen-renovation/gallery-5.png
     alt: Kitchen design ideas
     videoUrl: /uploads/Kitchen%20Design.mp4
-  - src: /images/services/kitchen-renovation/gallery-6.png
-    alt: Kitchen design walkthrough
-    videoUrl: /videos/kitchen/kitchen-design.mp4
-  - src: /images/services/kitchen-renovation/gallery-1.png
-    alt: Kitchen transformation before and after
-    videoUrl: /videos/kitchen/kitchen-transformation.mp4
 related:
   - bathroom-renovation
   - basement-renovation
