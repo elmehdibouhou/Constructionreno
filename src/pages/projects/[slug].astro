@@ -2,7 +2,7 @@
 import { getCollection, getEntry } from 'astro:content';
 import BaseLayout from '../../layouts/BaseLayout.astro';
 import CtaBanner from '../../components/sections/CtaBanner.astro';
-import { normalizeImgSrc } from '../../lib/tina-helper';
+import { normalizeImgSrc, getVideoEmbed } from '../../lib/tina-helper';
 
 export async function getStaticPaths() {
   const projects = await getCollection('projects');
@@ -16,8 +16,20 @@ const { project } = Astro.props;
 const p = project.data;
 
 const heroImg = normalizeImgSrc(p.img);
-const gallery = p.galleryImages ?? [];
 const highlights = p.highlights ?? [];
+
+// Normalize gallery items — support both legacy strings and new {src,alt,videoUrl} objects
+type GalleryItem = { src: string; alt: string; videoUrl: string };
+const galleryItems: GalleryItem[] = (p.galleryImages ?? []).map((item: any) => {
+  if (typeof item === 'string') return { src: normalizeImgSrc(item), alt: '', videoUrl: '' };
+  return {
+    src: normalizeImgSrc(item.src),
+    alt: item.alt ?? '',
+    videoUrl: item.videoUrl ?? '',
+  };
+});
+const videoOnlyItems = galleryItems.filter((g) => g.videoUrl && !g.src);
+const photoGalleryItems = galleryItems.filter((g) => !g.videoUrl || g.src);
 
 // SEO fields — fall back to generated values if not set
 const metaTitle = p.metaTitle ?? `${p.title} | Top Design Renovation Portfolio — Ontario`;
@@ -113,11 +125,10 @@ const related = allProjects
           </div>
 
           <!-- Photo Gallery -->
-          {gallery.length > 0 && (
+          {photoGalleryItems.length > 0 && (
             <div class="project-gallery fade-up">
               <h2 class="project-section-title">Project Photos</h2>
-              <div class:list={['gallery-grid', gallery.length === 1 ? 'gallery-grid--single' : gallery.length === 2 ? 'gallery-grid--two' : 'gallery-grid--three']}>
-                <!-- Hero image always first, full width if 1 image -->
+              <div class:list={['gallery-grid', photoGalleryItems.length === 0 ? 'gallery-grid--single' : photoGalleryItems.length === 1 ? 'gallery-grid--two' : 'gallery-grid--three']}>
                 <div class="gallery-item gallery-item--main">
                   <img
                     src={heroImg}
@@ -129,11 +140,11 @@ const related = allProjects
                     class="gallery-img"
                   />
                 </div>
-                {gallery.map((imgUrl, i) => (
+                {photoGalleryItems.map((item, i) => (
                   <div class="gallery-item">
                     <img
-                      src={normalizeImgSrc(imgUrl)}
-                      alt={`${p.title} — photo ${i + 2}`}
+                      src={item.src}
+                      alt={item.alt || `${p.title} — photo ${i + 2}`}
                       width="600"
                       height="400"
                       loading="lazy"
@@ -142,6 +153,42 @@ const related = allProjects
                     />
                   </div>
                 ))}
+              </div>
+            </div>
+          )}
+
+          <!-- Video Section -->
+          {videoOnlyItems.length > 0 && (
+            <div class="project-videos fade-up">
+              <h2 class="project-section-title">Project Videos</h2>
+              <div class="proj-video-grid">
+                {videoOnlyItems.map((item) => {
+                  const embed = getVideoEmbed(item.videoUrl);
+                  return embed.type ? (
+                    <div class="proj-video-wrap">
+                      {embed.type === 'direct' ? (
+                        <video
+                          src={embed.embedUrl}
+                          controls
+                          playsinline
+                          preload="metadata"
+                          class="proj-video-player"
+                        />
+                      ) : (
+                        <div class="proj-video-iframe-wrap">
+                          <iframe
+                            src={embed.embedUrl}
+                            title={item.alt || 'Project video'}
+                            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                            allowfullscreen
+                            loading="lazy"
+                          />
+                        </div>
+                      )}
+                      {item.alt && <p class="proj-video-caption">{item.alt}</p>}
+                    </div>
+                  ) : null;
+                })}
               </div>
             </div>
           )}
@@ -573,6 +620,40 @@ const related = allProjects
   .related-grid {
     grid-template-columns: repeat(2, 1fr);
   }
+}
+
+/* ─── Project Videos ─── */
+.project-videos { margin-bottom: 2.5rem; }
+.proj-video-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(min(100%, 480px), 1fr));
+  gap: 1.5rem;
+}
+.proj-video-wrap { display: flex; flex-direction: column; gap: 0.5rem; }
+.proj-video-player {
+  width: 100%;
+  border-radius: var(--radius-md);
+  background: #000;
+  display: block;
+}
+.proj-video-iframe-wrap {
+  position: relative;
+  padding-bottom: 56.25%;
+  border-radius: var(--radius-md);
+  overflow: hidden;
+}
+.proj-video-iframe-wrap iframe {
+  position: absolute;
+  inset: 0;
+  width: 100%;
+  height: 100%;
+  border: none;
+}
+.proj-video-caption {
+  font-size: var(--text-sm);
+  color: var(--color-gray-500);
+  text-align: center;
+  margin: 0;
 }
 
 @media (max-width: 639px) {

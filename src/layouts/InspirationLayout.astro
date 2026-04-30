@@ -4,6 +4,7 @@ import BreadcrumbNav from '../components/ui/BreadcrumbNav.astro';
 import ContactForm from '../components/ui/ContactForm.astro';
 import { getCollection } from 'astro:content';
 import { normalizeImgSrc } from '../lib/tina-helper';
+import VideoSection from '../components/sections/VideoSection.astro';
 
 interface Props {
   page: {
@@ -15,6 +16,7 @@ interface Props {
     serviceSlug?: string;
     gallery?: Array<string | { src?: string; alt?: string; videoUrl?: string }>;
     ideas?: Array<{ title: string; desc: string; img?: string }>;
+    videoSection?: any;
   };
   slug: string;
 }
@@ -148,6 +150,13 @@ const heroImg = normalizeImgSrc(page.heroImg);
         <p class="body-lg" style="color:var(--color-gray-800); max-width:680px;">{page.intro}</p>
         <div class="gold-rule"></div>
       </div>
+
+      <!-- Section Vidéo (TinaCMS videoSection field) -->
+      {page.videoSection?.videoSrc && (
+        <div style="margin-bottom:3rem;">
+          <VideoSection data={page.videoSection} />
+        </div>
+      )}
 
       <!-- Gallery grid -->
       {photoGalleryItems.length > 0 && (

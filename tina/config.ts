@@ -1,5 +1,62 @@
 import { defineConfig } from "tinacms";
 
+// ─── Shared videoSection field ────────────────────────────────────────────────
+// Reused across blog, services, inspiration, home collections.
+const videoSectionField = {
+  type: "object" as const,
+  name: "videoSection",
+  label: "🎬 Section Vidéo",
+  ui: {
+    description: "Ajoutez une vidéo à cette page : YouTube, Vimeo ou MP4 uploadé via Médias.",
+  },
+  fields: [
+    {
+      type: "string" as const,
+      name: "title",
+      label: "Titre de la section (optionnel)",
+    },
+    {
+      type: "string" as const,
+      name: "format",
+      label: "Format d'affichage",
+      options: [
+        { value: "landscape", label: "Paysage 16:9 — YouTube / Vimeo / Horizontal" },
+        { value: "story",     label: "Story 9:16 — Portrait / TikTok / Instagram" },
+        { value: "square",    label: "Carré 1:1" },
+      ],
+    },
+    {
+      type: "string" as const,
+      name: "videoSrc",
+      label: "🎬 URL YouTube/Vimeo OU chemin MP4 uploadé",
+      ui: {
+        description:
+          "Collez un lien YouTube/Vimeo (ex: https://youtu.be/ABC) ou uploadez votre vidéo MP4 via l'onglet Médias → copiez le chemin (ex: /uploads/mon-video.mp4).",
+      },
+    },
+    {
+      type: "image" as const,
+      name: "poster",
+      label: "Miniature / Image de prévisualisation (optionnel)",
+    },
+    {
+      type: "boolean" as const,
+      name: "autoplay",
+      label: "Lecture automatique (muet, démarre à l'affichage)",
+    },
+    {
+      type: "boolean" as const,
+      name: "loop",
+      label: "Boucle (répète automatiquement)",
+    },
+    {
+      type: "string" as const,
+      name: "caption",
+      label: "Légende (optionnel)",
+    },
+  ],
+};
+
 // ─────────────────────────────────────────────────────────────────────────────
 // TINA CMS CONFIG
 // Docs: https://tina.io/docs
@@ -104,6 +161,13 @@ export default defineConfig({
             label: "Cover Photo Alt Text (for SEO)",
           },
           {
+            type: "string",
+            name: "videoUrl",
+            label: "🎬 Featured Video URL (YouTube, Vimeo, or direct MP4 — optional)",
+            description: "Paste a YouTube/Vimeo link or .mp4 URL to show a video at the top of the article.",
+          },
+          videoSectionField,
+          {
             type: "rich-text",
             name: "body",
             label: "Article Content",
@@ -189,14 +253,28 @@ export default defineConfig({
           {
             type: "object",
             name: "galleryImages",
-            label: "Additional Gallery Photos",
+            label: "📸 Gallery Photos & Videos",
             list: true,
             ui: {
-              itemProps: (item) => ({ label: item?.alt || "Photo" }),
+              itemProps: (item) => ({ label: item?.alt || item?.src || "Media" }),
             },
             fields: [
-              { type: "image", name: "src", label: "Photo" },
-              { type: "string", name: "alt", label: "Alt Text" },
+              {
+                type: "image",
+                name: "src",
+                label: "Photo (optional if video provided)",
+              },
+              {
+                type: "string",
+                name: "alt",
+                label: "Description (alt text for SEO)",
+              },
+              {
+                type: "string",
+                name: "videoUrl",
+                label: "🎬 Video URL (YouTube, Vimeo, or direct MP4 — optional)",
+                description: "Paste a YouTube/Vimeo link or a direct .mp4 URL. Leave empty to show a photo instead.",
+              },
             ],
           },
           {
@@ -355,6 +433,7 @@ export default defineConfig({
             label: "🎬 Video URL (YouTube or Vimeo — optional)",
             description: "Paste a YouTube or Vimeo link, e.g. https://www.youtube.com/watch?v=XXXXX",
           },
+          videoSectionField,
           // ── Gallery ───────────────────────────────────────────────────────
           {
             type: "object",
@@ -518,6 +597,7 @@ export default defineConfig({
             name: "yearsExperience",
             label: "About — Years of Experience Badge (e.g. 15+)",
           },
+          videoSectionField,
         ],
       },
 
@@ -597,6 +677,7 @@ export default defineConfig({
               },
             ],
           },
+          videoSectionField,
           // ── Ideas / Trends ────────────────────────────────────────────────
           {
             type: "object",

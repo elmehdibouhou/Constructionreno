@@ -3,6 +3,8 @@ import { tinaField } from 'tinacms/dist/react';
 import BaseLayout from './BaseLayout.astro';
 import BreadcrumbNav from '../components/ui/BreadcrumbNav.astro';
 import CtaBanner from '../components/sections/CtaBanner.astro';
+import VideoSection from '../components/sections/VideoSection.astro';
+import { getVideoEmbed } from '../lib/tina-helper';
 
 interface Props {
   tinaData?: any;
@@ -15,6 +17,8 @@ interface Props {
   heroAlt: string;
   category: string;
   readTime: string;
+  videoUrl?: string;
+  videoSection?: any;
 }
 
 const {
@@ -28,7 +32,11 @@ const {
   heroAlt,
   category,
   readTime,
+  videoUrl,
+  videoSection,
 } = Astro.props;
+
+const featuredVideo = getVideoEmbed(videoUrl);
 
 const breadcrumbSchema = {
   "@context": "https://schema.org",
@@ -96,7 +104,34 @@ const formattedDate = new Date(pubDate).toLocaleDateString('en-CA', {
 
     <!-- Article content -->
     <article class="blog-article prose" aria-labelledby="blog-h1">
+      {featuredVideo.type && (
+        <div class="blog-video-wrap" data-tina-field={tinaData ? tinaField(tinaData, 'videoUrl') : undefined}>
+          {featuredVideo.type === 'direct' ? (
+            <video
+              src={featuredVideo.embedUrl}
+              controls
+              playsinline
+              preload="metadata"
+              class="blog-video-player"
+            />
+          ) : (
+            <div class="blog-video-iframe-wrap">
+              <iframe
+                src={featuredVideo.embedUrl}
+                title={`${title} — video`}
+                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                allowfullscreen
+                loading="lazy"
+              />
+            </div>
+          )}
+        </div>
+      )}
       <slot />
+
+      {videoSection?.videoSrc && (
+        <VideoSection data={videoSection} />
+      )}
     </article>
 
     <!-- Sidebar -->
@@ -267,6 +302,28 @@ const formattedDate = new Date(pubDate).toLocaleDateString('en-CA', {
   margin-bottom: 0.75rem;
 }
 .sidebar-service-link:hover { color: white !important; }
+
+/* ─── Blog video ─── */
+.blog-video-wrap { margin-bottom: 2rem; }
+.blog-video-player {
+  width: 100%;
+  border-radius: var(--radius-md);
+  background: #000;
+  display: block;
+}
+.blog-video-iframe-wrap {
+  position: relative;
+  padding-bottom: 56.25%;
+  border-radius: var(--radius-md);
+  overflow: hidden;
+}
+.blog-video-iframe-wrap iframe {
+  position: absolute;
+  inset: 0;
+  width: 100%;
+  height: 100%;
+  border: none;
+}
 
 @media (max-width: 1023px) {
   .blog-layout { grid-template-columns: 1fr; }

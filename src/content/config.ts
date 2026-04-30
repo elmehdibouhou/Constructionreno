@@ -1,5 +1,15 @@
 import { z, defineCollection } from "astro:content";
 
+const videoSectionSchema = z.object({
+  title: z.string().optional(),
+  format: z.enum(['landscape', 'story', 'square']).optional(),
+  videoSrc: z.string().optional(),
+  poster: z.string().optional(),
+  autoplay: z.boolean().optional(),
+  loop: z.boolean().optional(),
+  caption: z.string().optional(),
+}).optional();
+
 const blogCollection = defineCollection({
   type: 'content',
   schema: z.object({
@@ -11,6 +21,8 @@ const blogCollection = defineCollection({
     heroAlt: z.string(),
     category: z.string(),
     readTime: z.string(),
+    videoUrl: z.string().optional(),
+    videoSection: videoSectionSchema,
   }),
 });
 
@@ -37,7 +49,13 @@ const servicesCollection = defineCollection({
       q: z.string(),
       a: z.string(),
     })).optional(),
-    gallery: z.array(z.union([z.string(), z.object({ src: z.string(), alt: z.string().optional() })])).optional(),
+    videoUrl: z.string().optional(),
+    videoSection: videoSectionSchema,
+    gallery: z.array(z.union([z.string(), z.object({
+      src: z.string().optional(),
+      alt: z.string().optional(),
+      videoUrl: z.string().optional(),
+    })])).optional(),
     related: z.array(z.string()).optional(),
   }),
 });
@@ -68,7 +86,14 @@ const projectsCollection = defineCollection({
     beforeImage: z.string().optional(),
     afterImage: z.string().optional(),
     description: z.string().optional(),
-    galleryImages: z.array(z.string()).optional(),
+    galleryImages: z.array(z.union([
+      z.string(),
+      z.object({
+        src: z.string().optional(),
+        alt: z.string().optional(),
+        videoUrl: z.string().optional(),
+      }),
+    ])).optional(),
     metaTitle: z.string().optional(),
     metaDesc: z.string().optional(),
     highlights: z.array(z.string()).optional(),
@@ -105,6 +130,7 @@ const inspirationCollection = defineCollection({
     intro: z.string().optional(),
     heroImg: z.string(),
     serviceSlug: z.string().optional(),
+    videoSection: videoSectionSchema,
     gallery: z.array(z.object({
       src: z.string().optional(),
       alt: z.string().optional(),
