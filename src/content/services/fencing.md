@@ -40,7 +40,7 @@ gallery:
   - src: /uploads/Gemini_Generated_Image_dv9eeqdv9eeqdv9e.png
     alt: Fence and deck installation — backyard Ontario Canada
     videoUrl: ''
-  - src: /uploads/Gemini_Generated_Image_8rxy1w8rxy1w8rxy.png
+  - src: /uploads/Beige-Minimal-Aesthetic-Photo-Collage--1536x1229.png
     alt: White fence around residential backyard Ontario — full perimeter
     videoUrl: ''
   - src: /uploads/Gemini_Generated_Image_pqatapqatapqatap.png
