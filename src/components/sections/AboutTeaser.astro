@@ -3,6 +3,12 @@ import { tinaField } from 'tinacms/dist/react';
 interface Props { data: any; }
 const { data } = Astro.props;
 
+const aboutImage = data?.aboutImage || '/images/kitchen_renovation_1777116505921.png';
+const aboutHeadline = data?.aboutHeadline || 'Quality Craftsmanship, Built on Trust';
+const aboutPara1 = data?.aboutPara1 || '';
+const aboutPara2 = data?.aboutPara2 || '';
+const yearsExperience = data?.yearsExperience || '26+';
+
 const values = [
   { label: 'Licensed & Insured' },
   { label: 'Free Estimates' },
@@ -18,8 +24,8 @@ const values = [
       <div class="about-image-col fade-up">
         <div class="about-image-wrap">
           <img
-            src={data.aboutImage}
-            data-tina-field={tinaField(data, 'aboutImage')}
+            src={aboutImage}
+            data-tina-field={data ? tinaField(data, 'aboutImage') : undefined}
             alt="Professional renovation and construction team at work in Ontario"
             width="600"
             height="720"
@@ -31,7 +37,7 @@ const values = [
           <div class="about-accent-border" aria-hidden="true"></div>
           <!-- Floating badge -->
           <div class="about-badge" aria-hidden="true">
-            <span class="about-badge-number" data-tina-field={tinaField(data, 'yearsExperience')}>{data.yearsExperience}</span>
+            <span class="about-badge-number" data-tina-field={data ? tinaField(data, 'yearsExperience') : undefined}>{yearsExperience}</span>
             <span class="about-badge-text">Years<br>Experience</span>
           </div>
         </div>
@@ -40,14 +46,14 @@ const values = [
       <!-- Right: content -->
       <div class="about-content-col fade-up">
         <span class="eyebrow">About Us</span>
-        <h2 style="margin-bottom:0.75rem;" data-tina-field={tinaField(data, 'aboutHeadline')}>{data.aboutHeadline}</h2>
+        <h2 style="margin-bottom:0.75rem;" data-tina-field={data ? tinaField(data, 'aboutHeadline') : undefined}>{aboutHeadline}</h2>
         <div class="gold-rule"></div>
 
-        <p style="color:var(--color-gray-800); line-height:var(--leading-relaxed); margin-bottom:1.25rem; font-size:var(--text-lg);" data-tina-field={tinaField(data, 'aboutPara1')}>
-          {data.aboutPara1}
+        <p style="color:var(--color-gray-800); line-height:var(--leading-relaxed); margin-bottom:1.25rem; font-size:var(--text-lg);" data-tina-field={data ? tinaField(data, 'aboutPara1') : undefined}>
+          {aboutPara1}
         </p>
-        <p style="color:var(--color-gray-800); line-height:var(--leading-relaxed); margin-bottom:2rem;" data-tina-field={tinaField(data, 'aboutPara2')}>
-          {data.aboutPara2}
+        <p style="color:var(--color-gray-800); line-height:var(--leading-relaxed); margin-bottom:2rem;" data-tina-field={data ? tinaField(data, 'aboutPara2') : undefined}>
+          {aboutPara2}
         </p>
 
         <!-- Value pills -->
