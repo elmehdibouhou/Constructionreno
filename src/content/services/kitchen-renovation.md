@@ -33,7 +33,7 @@ faqs:
     a: 'Most cosmetic kitchen renovations don''t require permits. However, if the scope includes moving walls, relocating plumbing, or upgrading electrical panels, permits are required. We handle all permit applications on your behalf.'
   - q: Can I stay in my home during the renovation?
     a: 'Yes — most clients remain in their homes during kitchen renovations. We contain the work area, maintain clean pathways, and work Monday to Friday to minimise disruption to your routine.'
-videoUrl: 'https://www.youtube.com/shorts/r4iQwJb6wDw?feature=share'
+videoUrl: ''
 gallery:
   - src: /uploads/images/services/kitchen-renovation/hero.png
     alt: Kitchen renovation Ontario — résultat final
