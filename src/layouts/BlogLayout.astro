@@ -3,6 +3,7 @@ import { tinaField } from 'tinacms/dist/react';
 import BaseLayout from './BaseLayout.astro';
 import BreadcrumbNav from '../components/ui/BreadcrumbNav.astro';
 import CtaBanner from '../components/sections/CtaBanner.astro';
+import VideoSection from '../components/sections/VideoSection.astro';
 import { getVideoEmbed } from '../lib/tina-helper';
 
 interface Props {
@@ -17,6 +18,7 @@ interface Props {
   category: string;
   readTime: string;
   videoUrl?: string;
+  videoSection?: any;
 }
 
 const {
@@ -31,6 +33,7 @@ const {
   category,
   readTime,
   videoUrl,
+  videoSection,
 } = Astro.props;
 
 const featuredVideo = getVideoEmbed(videoUrl);
@@ -125,6 +128,10 @@ const formattedDate = new Date(pubDate).toLocaleDateString('en-CA', {
         </div>
       )}
       <slot />
+
+      {videoSection?.videoSrc && (
+        <VideoSection data={videoSection} />
+      )}
     </article>
 
     <!-- Sidebar -->

@@ -78,7 +78,7 @@ export function getVideoEmbed(url: string | undefined | null): {
   if (ytMatch) return { type: 'youtube', embedUrl: `https://www.youtube-nocookie.com/embed/${ytMatch[1]}` };
   const vimeoMatch = url.match(/vimeo\.com\/(\d+)/);
   if (vimeoMatch) return { type: 'vimeo', embedUrl: `https://player.vimeo.com/video/${vimeoMatch[1]}` };
-  if (url.match(/\.mp4($|\?)/i) || url.startsWith('/videos/')) {
+  if (url.match(/\.(mp4|webm|mov|ogg)($|\?)/i) || url.startsWith('/videos/') || url.startsWith('/uploads/')) {
     return { type: 'direct', embedUrl: encodeURI(decodeURI(url)) };
   }
   return { type: null, embedUrl: '' };

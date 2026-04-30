@@ -6,6 +6,7 @@ import FAQ from '../components/ui/FAQ.astro';
 import ContactForm from '../components/ui/ContactForm.astro';
 import CtaBanner from '../components/sections/CtaBanner.astro';
 import { normalizeImgSrc } from '../lib/tina-helper';
+import VideoSection from '../components/sections/VideoSection.astro';
 
 interface Props {
   service: any;
@@ -318,6 +319,15 @@ const icons: Record<string, string> = {
             </div>
           ))}
         </div>
+      </div>
+    </section>
+  )}
+
+  <!-- Section Vidéo (TinaCMS videoSection field) -->
+  {service.videoSection?.videoSrc && (
+    <section class="section section-light">
+      <div class="container container--narrow">
+        <VideoSection data={service.videoSection} />
       </div>
     </section>
   )}

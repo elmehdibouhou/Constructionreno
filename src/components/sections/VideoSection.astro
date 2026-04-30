@@ -1,0 +1,220 @@
+---
+import { getVideoEmbed, normalizeImgSrc } from '../../lib/tina-helper';
+
+export interface VideoSectionData {
+  title?: string | null;
+  format?: 'landscape' | 'story' | 'square' | null;
+  videoSrc?: string | null;
+  poster?: string | null;
+  autoplay?: boolean | null;
+  loop?: boolean | null;
+  caption?: string | null;
+}
+
+interface Props {
+  data: VideoSectionData | null | undefined;
+  tinaData?: any;
+  class?: string;
+}
+
+const { data, class: extraClass } = Astro.props;
+
+if (!data?.videoSrc) return;
+
+const format = (data.format ?? 'landscape') as 'landscape' | 'story' | 'square';
+const { type, embedUrl } = getVideoEmbed(data.videoSrc);
+const posterSrc = data.poster ? normalizeImgSrc(data.poster) : '';
+
+if (!type) return;
+
+const isIframe = type === 'youtube' || type === 'vimeo';
+const autoplay = data.autoplay ?? false;
+const loop = data.loop ?? false;
+
+const iframeSrc = isIframe
+  ? embedUrl + (autoplay ? (embedUrl.includes('?') ? '&' : '?') + 'autoplay=1&mute=1' : '')
+  : '';
+---
+
+<section class:list={['vid-sec', `vid-sec--${format}`, extraClass]}>
+  {data.title && (
+    <div class="vid-sec__header">
+      <h2 class="vid-sec__title">{data.title}</h2>
+      <div class="gold-rule" style="width:60px; margin-inline:auto;"></div>
+    </div>
+  )}
+
+  <div class={`vid-sec__wrap vid-sec__wrap--${format}`}>
+    {isIframe ? (
+      <div class="vid-sec__ratio">
+        <iframe
+          src={iframeSrc}
+          title={data.title ?? 'Vidéo'}
+          allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+          allowfullscreen
+          loading="lazy"
+          class="vid-sec__iframe"
+        />
+      </div>
+    ) : (
+      <video
+        src={embedUrl}
+        poster={posterSrc || undefined}
+        controls={!autoplay}
+        autoplay={autoplay || undefined}
+        muted={autoplay || undefined}
+        loop={loop || undefined}
+        playsinline
+        preload="metadata"
+        class="vid-sec__video"
+      />
+    )}
+  </div>
+
+  {data.caption && (
+    <p class="vid-sec__caption">{data.caption}</p>
+  )}
+</section>
+
+<style>
+.vid-sec {
+  width: 100%;
+  padding-block: 3rem;
+}
+
+.vid-sec__header {
+  text-align: center;
+  margin-bottom: 2rem;
+}
+
+.vid-sec__title {
+  font-size: var(--text-3xl, 1.875rem);
+  font-weight: 700;
+  color: var(--color-gray-900, #111);
+  margin-bottom: 0.75rem;
+}
+
+.vid-sec__caption {
+  text-align: center;
+  font-size: 0.875rem;
+  color: var(--color-gray-600, #555);
+  margin-top: 1rem;
+  font-style: italic;
+}
+
+/* ── Landscape 16:9 ─────────────────────────── */
+.vid-sec__wrap--landscape {
+  width: 100%;
+  max-width: 900px;
+  margin-inline: auto;
+}
+
+.vid-sec__wrap--landscape .vid-sec__ratio {
+  position: relative;
+  aspect-ratio: 16 / 9;
+  overflow: hidden;
+  border-radius: 0.75rem;
+  background: #000;
+}
+
+.vid-sec__wrap--landscape .vid-sec__iframe {
+  position: absolute;
+  inset: 0;
+  width: 100%;
+  height: 100%;
+  border: none;
+}
+
+.vid-sec__wrap--landscape .vid-sec__video {
+  width: 100%;
+  aspect-ratio: 16 / 9;
+  object-fit: contain;
+  background: #000;
+  border-radius: 0.75rem;
+  display: block;
+}
+
+/* ── Story 9:16 portrait ────────────────────── */
+.vid-sec__wrap--story {
+  display: flex;
+  justify-content: center;
+}
+
+.vid-sec__wrap--story .vid-sec__ratio {
+  width: 100%;
+  max-width: 380px;
+  aspect-ratio: 9 / 16;
+  position: relative;
+  overflow: hidden;
+  border-radius: 1.5rem;
+  background: #000;
+  box-shadow: 0 8px 32px rgba(0, 0, 0, 0.22);
+}
+
+.vid-sec__wrap--story .vid-sec__iframe {
+  position: absolute;
+  inset: 0;
+  width: 100%;
+  height: 100%;
+  border: none;
+}
+
+.vid-sec__wrap--story .vid-sec__video {
+  width: 100%;
+  max-width: 380px;
+  aspect-ratio: 9 / 16;
+  object-fit: cover;
+  border-radius: 1.5rem;
+  display: block;
+  background: #000;
+  box-shadow: 0 8px 32px rgba(0, 0, 0, 0.22);
+}
+
+/* ── Square 1:1 ─────────────────────────────── */
+.vid-sec__wrap--square {
+  display: flex;
+  justify-content: center;
+}
+
+.vid-sec__wrap--square .vid-sec__ratio {
+  width: 100%;
+  max-width: 600px;
+  aspect-ratio: 1;
+  position: relative;
+  overflow: hidden;
+  border-radius: 0.75rem;
+  background: #000;
+}
+
+.vid-sec__wrap--square .vid-sec__iframe {
+  position: absolute;
+  inset: 0;
+  width: 100%;
+  height: 100%;
+  border: none;
+}
+
+.vid-sec__wrap--square .vid-sec__video {
+  width: 100%;
+  max-width: 600px;
+  aspect-ratio: 1;
+  object-fit: cover;
+  border-radius: 0.75rem;
+  display: block;
+  background: #000;
+}
+
+/* ── Mobile ─────────────────────────────────── */
+@media (max-width: 480px) {
+  .vid-sec__wrap--story .vid-sec__ratio,
+  .vid-sec__wrap--story .vid-sec__video {
+    max-width: 100%;
+    border-radius: 0.75rem;
+  }
+
+  .vid-sec__wrap--square .vid-sec__ratio,
+  .vid-sec__wrap--square .vid-sec__video {
+    max-width: 100%;
+  }
+}
+</style>
