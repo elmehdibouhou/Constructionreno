@@ -43,12 +43,15 @@ gallery:
   - src: /uploads/Beige-Minimal-Aesthetic-Photo-Collage--1536x1229.png
     alt: White fence around residential backyard Ontario — full perimeter
     videoUrl: ''
-  - src: /uploads/Gemini_Generated_Image_pqatapqatapqatap.png
+  - src: /uploads/66f5013a07f0eef01affc03e_IMG_20181025_110834-p-3200.jpg
     alt: Wooden cedar fence with gate installation Ontario
     videoUrl: ''
-  - src: /uploads/Gemini_Generated_Image_nipg83nipg83nipg.png
+  - src: /uploads/66f50139e6cc6a9964490be2_IMG_4687.jpg
     alt: White vinyl fence in front of house Ontario
     videoUrl: ''
+  - src: /uploads/670ebf8bbd77795c45a15d14_IMG_20200617_192354.webp
+  - src: /uploads/665da182dfe03a40f3d1ea5a_IMG_0079.webp
+    alt: fences canada
 related:
   - exterior-renovations
   - interlock
