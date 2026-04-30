@@ -33,7 +33,7 @@ faqs:
     a: 'Yes — sunken, heaved, or shifted interlock can often be relevelled and reset rather than fully replaced. We lift the affected stones, re-grade and compact the base, and relay the stones. This is significantly more cost-effective than a full replacement.'
   - q: What interlock styles work best for Ontario homes?
     a: 'Classic tumbled brick in charcoal or buff tones are perennially popular for driveways. For patios and backyard spaces, large-format 24×24 concrete slabs in modern grey tones are trending across Ontario. We offer free design consultations with physical samples to help you choose.'
-videoUrl: /videos/interlock-driveway-timelapse.mp4
+videoUrl: ''
 gallery:
   - src: /uploads/Gemini_Generated_Image_40a36q40a36q40a3.png
     alt: Interlock driveway installation Ontario — timelapse
