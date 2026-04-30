@@ -49,9 +49,6 @@ gallery:
     alt: Détail finition cuisine Ontario
   - src: /uploads/images/services/kitchen-renovation/gallery-6.png
     alt: Cuisine complète — autre angle
-  - src: /uploads/images/services/kitchen-renovation/gallery-5.png
-    alt: Kitchen design ideas
-    videoUrl: /uploads/Kitchen%20Design.mp4
 related:
   - bathroom-renovation
   - basement-renovation
