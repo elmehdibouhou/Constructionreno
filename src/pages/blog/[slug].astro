@@ -1,7 +1,7 @@
 ---
 import { getCollection } from 'astro:content';
 import { client } from '../../../tina/__generated__/client';
-import { prepareTinaData } from '../../lib/tina-helper';
+import { prepareTinaData, normalizeImgSrc } from '../../lib/tina-helper';
 import BlogLayout from '../../layouts/BlogLayout.astro';
 
 export async function getStaticPaths() {
@@ -14,15 +14,22 @@ export async function getStaticPaths() {
 
 const { slug } = Astro.props;
 
-// Tina data with visual editing metadata
-const tinaResult = await client.queries.blog({ relativePath: `${slug}.md` });
-const { tinaSetup, data: tinaBlogData } = prepareTinaData(tinaResult);
-const tinaData = tinaBlogData.blog;
-
-// Render markdown body from Content Collections
+// Content collections data (markdown files — always available)
 const posts = await getCollection('blog');
 const post = posts.find(p => p.slug === slug)!;
 const { Content } = await post.render();
+
+// Tina data with visual editing metadata (may fail if TinaCloud hasn't indexed schema yet)
+let tinaSetup: any = null;
+let tinaData: any = null;
+try {
+  const tinaResult = await client.queries.blog({ relativePath: `${slug}.md` });
+  const prepared = prepareTinaData(tinaResult);
+  tinaSetup = prepared.tinaSetup;
+  tinaData = prepared.data.blog;
+} catch {
+  tinaData = { ...post.data, heroImg: normalizeImgSrc(post.data.heroImg) };
+}
 ---
 
 <BlogLayout

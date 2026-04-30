@@ -14,11 +14,20 @@ export async function getStaticPaths() {
 
 const { slug } = Astro.props;
 
-const serviceResult = await client.queries.services({ relativePath: `${slug}.md` });
-const { tinaSetup, data: tinaServiceData } = prepareTinaData(serviceResult);
-const serviceData = tinaServiceData.services;
-
 const allServices = await getCollection('services');
+const serviceEntry = allServices.find(s => s.slug === slug)!;
+
+let tinaSetup: any = null;
+let serviceData: any = null;
+try {
+  const serviceResult = await client.queries.services({ relativePath: `${slug}.md` });
+  const prepared = prepareTinaData(serviceResult);
+  tinaSetup = prepared.tinaSetup;
+  serviceData = prepared.data.services;
+} catch {
+  serviceData = { ...serviceEntry.data, heroImg: normalizeImgSrc(serviceEntry.data.heroImg) };
+}
+
 const relatedServices = (serviceData.related ?? [])
   .map((relSlug: string) => {
     const entry = allServices.find(s => s.slug === relSlug);

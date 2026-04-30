@@ -597,7 +597,6 @@ export default defineConfig({
             name: "yearsExperience",
             label: "About — Years of Experience Badge (e.g. 15+)",
           },
-          videoSectionField,
         ],
       },
 

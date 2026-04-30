@@ -5,8 +5,11 @@ import { prepareTinaData, normalizeImgSrc } from '../../lib/tina-helper';
 import BaseLayout from '../../layouts/BaseLayout.astro';
 import CtaBanner from '../../components/sections/CtaBanner.astro';
 
-const servicesResult = await client.queries.servicesConnection();
-const { tinaSetup } = prepareTinaData(servicesResult);
+let tinaSetup: any = null;
+try {
+  const servicesResult = await client.queries.servicesConnection();
+  tinaSetup = prepareTinaData(servicesResult).tinaSetup;
+} catch { /* TinaCloud schema not yet synced — proceed without visual editing metadata */ }
 
 const services = await getCollection('services');
 

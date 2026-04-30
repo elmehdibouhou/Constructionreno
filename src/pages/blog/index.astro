@@ -5,8 +5,11 @@ import { prepareTinaData, normalizeImgSrc } from '../../lib/tina-helper';
 import BaseLayout from '../../layouts/BaseLayout.astro';
 import CtaBanner from '../../components/sections/CtaBanner.astro';
 
-const blogResult = await client.queries.blogConnection();
-const { tinaSetup } = prepareTinaData(blogResult);
+let tinaSetup: any = null;
+try {
+  const blogResult = await client.queries.blogConnection();
+  tinaSetup = prepareTinaData(blogResult).tinaSetup;
+} catch { /* TinaCloud schema not yet synced — proceed without visual editing metadata */ }
 
 const allPosts = await getCollection('blog');
 const posts = allPosts.sort((a, b) => new Date(b.data.pubDate).getTime() - new Date(a.data.pubDate).getTime());

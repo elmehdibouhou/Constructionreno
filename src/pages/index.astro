@@ -11,9 +11,14 @@ import TestimonialSlider from '../components/sections/TestimonialSlider.astro';
 import CtaBanner from '../components/sections/CtaBanner.astro';
 import FloatingCTA from '../components/ui/FloatingCTA.astro';
 
-const homeResult = await client.queries.home({ relativePath: 'home.md' });
-const { tinaSetup, data: tinaHomeData } = prepareTinaData(homeResult);
-const homeData = tinaHomeData.home;
+let tinaSetup: any = null;
+let homeData: any = null;
+try {
+  const homeResult = await client.queries.home({ relativePath: 'home.md' });
+  const prepared = prepareTinaData(homeResult);
+  tinaSetup = prepared.tinaSetup;
+  homeData = prepared.data.home;
+} catch { /* TinaCloud schema not yet synced — proceed without visual editing metadata */ }
 ---
 
 <BaseLayout
